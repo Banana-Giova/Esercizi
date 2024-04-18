@@ -126,7 +126,7 @@ if False:
     print(f"I would like to be know how to ride a {my_own_list[0]}, \n to use a {my_own_list[1]} \n and to own a {my_own_list[2]}")        #print del messaggio
 
 if False:
-    #From 3-5 to 3-7
+    #From 3-5 to 3-7, and also 3-9
     guest_list:list = ["Freddie Mercury", "Caius Giulius Caesar Octavianus Augustus", "Albert Einstein"]        #lista dei famosi
     print(f"Let's have a good time together {guest_list[0]} \nA vobis peto, venit {guest_list[1]} \nKomm zu mir nach Haus {guest_list[2]}")      #print del messaggio
     print(f"Oh no, {guest_list[0]} can't come!")        #print dell'ospite che va via
@@ -144,8 +144,26 @@ if False:
     lost_guest4:str = guest_list.pop(0)
     print(f"Cari {lost_guest1}, {lost_guest1}, {lost_guest2}, {lost_guest3}, {lost_guest4} mi spiace, ma non potete più venire")     #messaggio di addio
     print(f"Cari {guest_list[0]} e {guest_list[1]}, voi siete ancora invitati")     #inviti rimanenti
-    guest_list.clear()
+
+    print(f"Alla fine quindi invito solo {len(guest_list)} persone")        #3-9, numero di invitati
+
+    guest_list.clear()      #svuotare la lista
     print(guest_list)
 
-if True:
-    print("Ayo")
+if False:
+    #3-8. Seeing the World
+    za_warudo:list = ["Japan", "China", "Iceland", "Switzerland", "Greece"]      #lista di posti nel mondo che vorrei visitare
+    print(f"Ordine originale della lista => {za_warudo}")        #raw print
+    print(sorted(za_warudo))        #lista ordinata
+    print(za_warudo)        #raw print
+    print(sorted(za_warudo, reverse=True))        #lista invertita
+    print(za_warudo)        #raw print
+    za_warudo.reverse()     #invertire la lista
+    print(za_warudo)        #reverse print
+    za_warudo.reverse()     #reinvertire la lista
+    print(za_warudo)        #re-reverse print
+    za_warudo.sort()     #oridnare la lista
+    print(za_warudo)        #sorted print
+    za_warudo.sort(reverse=True)    #ordinare al contrario la lista
+    print(za_warudo)        #reverse-sorted print
+
