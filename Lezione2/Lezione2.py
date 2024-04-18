@@ -167,3 +167,22 @@ if False:
     za_warudo.sort(reverse=True)    #ordinare al contrario la lista
     print(za_warudo)        #reverse-sorted print
 
+if True:
+    #3-10. Every Function:
+    comic_villains:list = ["Joker", "Ultron", "Darkseid", "Magneto", "Lex Luthor"]
+    print(f"Ordine originale della lista => {comic_villains}")        #raw print
+    comic_villains.append("Thanos")     #append
+    print(comic_villains)
+    comic_villains.insert(-1, "Nemesis")        #insert
+    print(comic_villains.pop(-2))       #pop
+    print(comic_villains)
+    comic_villains.remove("Magneto")        #remove
+    print(comic_villains)
+    comic_villains.reverse()        #reverse
+    print(comic_villains)
+    print(sorted(comic_villains, reverse=True))     #sorted
+    comic_villains.sort()       #sort
+    print(comic_villains)
+    comic_villains.clear()      #clear
+    print(comic_villains)
+    del comic_villains      #del
