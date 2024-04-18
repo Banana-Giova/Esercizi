@@ -147,3 +147,5 @@ if False:
     guest_list.clear()
     print(guest_list)
 
+if True:
+    print("Ayo")
