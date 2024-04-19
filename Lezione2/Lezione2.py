@@ -167,7 +167,7 @@ if False:
     za_warudo.sort(reverse=True)    #ordinare al contrario la lista
     print(za_warudo)        #reverse-sorted print
 
-if True:
+if False:
     #3-10. Every Function:
     comic_villains:list = ["Joker", "Ultron", "poste.it", "Darkseid", "Magneto", "Lex Luthor"]
     print(f"Ordine originale della lista => {comic_villains}")        #raw print
@@ -183,10 +183,13 @@ if True:
     print(sorted(comic_villains, reverse=True))     #sorted
     comic_villains.sort()       #sort
     print(comic_villains)
+    comic_villains_nosu:list[str] = []      #lista vuota per contenere la copia della lista precedente
     for i in comic_villains:        #removesuffix
-        if ".it" in i:
-            i.removesuffix(".it")      #ciclo per verificare quale cattivo ha il suffisso
-    print(comic_villains)
+        if ".it" in i:      #ciclo per verificare quale variabile ha il suffisso e rimuoverlo
+            comic_villains_nosu.append(i.removesuffix(".it"))        #una volta individuato si inserisce in una nuova variabile senza suffisso e la si appende
+        else:
+            comic_villains_nosu.append(i)       #riempire la nuova lista, senza il suffisso
+    print(comic_villains_nosu)
     comic_villains.clear()      #clear
     print(comic_villains)
     del comic_villains      #del
@@ -256,3 +259,4 @@ if False:
     #6-2. Favorite Numbers:
     best_nums:dict[str, int] = {"Giovanni": 47, "Emanuele": 10, "Lorenzino": 7, "Lollino": 22, "Marco": 69}     #lista dei numeri preferiti
     print(best_nums)       #print del dizionario
+

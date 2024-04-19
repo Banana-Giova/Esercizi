@@ -74,3 +74,19 @@ if False:
     
     lista_numerevole:list[float] = [4.2, 5.5, 532.532, 53, -5]
     check_each(lista_numerevole, digit_inputter())
+
+if False:
+    #Esercizio 5
+    def add_one(addint:int):
+        addint += 1
+        return addint
+    
+    def add_one_to_list(lint:list[int]):
+        new_list:list[int] = []
+        for i in lint:
+            new_list.append(add_one(i))
+        print (new_list)
+    
+    lint:list[int] = [4,1,412,341,134,6,8,0]
+
+    add_one_to_list(lint)
