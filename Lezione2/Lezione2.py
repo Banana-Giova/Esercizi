@@ -275,8 +275,9 @@ if False:
 
 if False:
     #6-2. Favorite Numbers:
-    best_nums:dict[str, int] = {"Giovanni": 47, "Emanuele": 10, "Lorenzino": 7, "Lollino": 22, "Marco": 69}     #lista dei numeri preferiti
-    print(best_nums)       #print del dizionario
+    best_nums:dict[str, int] = {"Giovanni": 47, "Emanuele": 10, "Lorenzone": 7, "Lollino": 22, "Marco": 69}     #lista dei numeri preferiti
+    for ki, vi in best_nums.items():       #ciclo for per iterare
+        print(f"{ki}: {vi}\n")       #print del dict
 
 if False:
     #6-3. Glossary:
@@ -287,3 +288,50 @@ if False:
                                        "Castare": "Specificare il tipo di una variabile." }
     for ki, vi in new_python_words.items():       #ciclo for per iterare
         print(f"{ki}:\n {vi}\n")       #print del dict
+
+if False:
+    #6-7. People:
+        carlo_info:dict[str, {str, int}] = {"Nome": "Carlo", "Cognome": "Conti", "Age": 63, "City": "Firenze" }     #dizionario sulle info di Carlo Conti
+        amadeus_info:dict[str, {str, int}] = {"Nome": "Amedeo", "Cognome": "Sebastiani", "Age": 62, "City": "Ravenna" }     #dizionario sulle info di Amadeus
+        gerry_info:dict[str, {str, int}] = {"Nome": "Virginio", "Cognome": "Scotti", "Age": 67, "City": "Pavia" }     #dizionario sulle info di Gerry Scotti
+        conduttori_italiani:list[dict] = [carlo_info, amadeus_info, gerry_info]     #lista di dizionari
+        for i in conduttori_italiani:
+            for ki, vi in i.items():        #doppio ciclo per legghere tutti i dizionari
+                print(f"{ki}: {vi}")
+
+if False:
+    #6-8 Pets:
+    albicocca:dict[str, str] = {"Nome": "Albicocca", "Tipo di animale": "Gatto", "Padrone": "Ludovica"}
+    isa:dict[str, str] = {"Nome": "Isa", "Tipo di animale": "Gatto", "Padrone": "Giovanni"}
+    ariel:dict[str, str] = {"Nome": "Ariel", "Tipo di animale": "Cane", "Padrone": "Eleonora"}      #dizionari degli animali
+    koda:dict[str, str] = {"Nome": "Koda", "Tipo di animale": "Cane", "Padrone": "Nicola"}
+    cowo:dict[str, str] = {"Nome": "Cowo", "Tipo di animale": "Criceto", "Padrone": "Flavio"}
+    animali:list[dict] = [albicocca, isa, ariel, koda, cowo]        #lista di dizionari
+    for i in animali:
+            for ki, vi in i.items():        #doppio ciclo per leggere tutti i dizionari
+                print(f"{ki}: {vi}")
+
+if False:
+    #6-9 Favorite Places:
+    favorite_places:dict[str, list[str]] = {"Anakin": ["Death Star", "Cities of the Empire", "The Bathroom"],
+                                            "Solo": ["Millenium Falcon", "Where Chewbe is", "Graphite"],            #dizionario con liste
+                                            "R2D2": ["On top of a cruiser", "With C3PO", "The Broom Closet"]}
+    for ki, vi in favorite_places.items():       #ciclo for per iterare
+        print(f"{ki}:\n {vi}\n")       #print del dict
+    
+if False:
+    #6-10 Favorite Numbers (part 2):
+    best_nums:dict[str, list[int]] = {"Giovanni": [47, 11], "Emanuele": [10, 1], 
+                                      "Lorenzone": [7, 77], "Lollino": [22, 27], "Marco": [69, 96]}     #lista dei numeri preferiti
+    for ki, vi in best_nums.items():       #ciclo for per iterare
+        print(f"{ki}: {vi}\n")       #print del dict
+
+if True:
+    #6=11. Cities:
+    cities:dict[str, dict[str, str, int]] = {"Rome": {"Country": "Italy", "Population": 4355000, "Fact": "Rome was the first city in the world to reach 1 million citizens"},
+                                             "Stockholm": {"Country": "Sweden", "Population": 2450000, "Fact": "People live in the area Stockholm is built in since the Stone Age"},    #dizionari sulle citta'
+                                             "Barcelona": {"Country": "Spain", "Population": 1460000, "Fact": "Barcelona has 12 completely abandoned underground stations"}}
+    for ki, vi in cities.items():
+            print(ki)
+            for ki2, vi2 in vi.items():        #doppio ciclo per leggere tutti i dizionari
+                print(f"{ki2}: {vi2}")    
