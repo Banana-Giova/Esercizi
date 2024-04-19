@@ -1,7 +1,7 @@
 #Giovanni di Giuseppe   19/04/2024
 
 if True:
-    def subtract(x, y):     #funzione per sottrarre due numeri
+    def subtract(x:float, y:float) -> float:     #funzione per sottrarre due numeri
         subt = x - y        #scope
         return subt     #valore returnato
     
