@@ -244,6 +244,11 @@ changing the context of the program, or improving the formatting of the output.
 
 if False:
     #6-1. Person:
-    person_info:dict = {"Nome": "Carlo", "Cognome": "Conti", "Age": 63, "City": "Firenze" }     #dizionario sulle info di Carlo Conti
+    person_info:dict[str, {str, int}] = {"Nome": "Carlo", "Cognome": "Conti", "Age": 63, "City": "Firenze" }     #dizionario sulle info di Carlo Conti
     for i in person_info:       #ciclo for per iterare
         print(person_info[i])       #print delle value del dict
+
+if True:
+    #6-2. Favorite Numbers:
+    best_nums:dict[str, int] = {"Giovanni": 47, "Emanuele": 10, "Lorenzino": 7, "Lollino": 22, "Marco": 69}     #lista dei numeri preferiti
+    print(best_nums)       #print del dizionario
