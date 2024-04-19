@@ -35,7 +35,7 @@ if False:
         if x > check:
             print(f"{x} is bigger than {check}")
         elif x == check:
-            print(f"{x} is equal to {check}")           #funzione check_value
+            print(f"{x} is equal to {check}")           #funzione per rilevare quale fra due numeri e' piu' grande
         else:
             print(f"{x} is smaller than {check}")
     x = digit_inputter()
@@ -49,8 +49,8 @@ if False:
         if xlen > y:
             print(f"The length of the string is bigger than {y}")
         elif xlen == y:
-            print(f"The length of the string is equal to {y}")      #funzione check_length
-        else:
+            print(f"The length of the string is equal to {y}")      #funzione per rilevare quale fra un numero
+        else:                                                       #e la lunghezza di una stringa e' piu' grande
             print(f"The length of the string is smaller than {y}")
     
     x:str = "hcijcioqoi"
@@ -68,7 +68,7 @@ if False:
 
 if False:
     #Esercizio 4
-    def check_each(x:list, y:float):        #funzione check_each
+    def check_each(x:list, y:float):        #funzione per rilevare quale fra un numero in una lista ed un int e' piu' grande
         for i in x:
             if i > y:
                 print(f"{i} is bigger than {y}")
@@ -82,11 +82,11 @@ if False:
 
 if False:
     #Esercizio 5
-    def add_one(addint:int):        #funzione add_one
+    def add_one(addint:int):        #funzione per sommare 1 ad un int
         addint += 1
         return addint
     
-    def add_one_to_list(lint:list[int]):        #funzione add one to list
+    def add_one_to_list(lint:list[int]):        #funzione per sommare 1 ad ogni elemento di una lista
         new_list:list[int] = []
         for i in lint:
             new_list.append(add_one(i))
