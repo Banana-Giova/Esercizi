@@ -3,6 +3,24 @@
 if False:
     print("I gonfaloni")
 
+def digit_inputter() -> float:
+    """
+        Questa funzione permette di inputtare rapidamente numeri, 
+        senza incorrere in errori nel qual caso venga inserita
+        una stringa come input.
+    """
+    inputted_number = "No"
+    while inputted_number == "No":
+        
+        inputted_number = input()
+        try:
+            float(inputted_number)
+        except ValueError:
+            print("Errore, inserire un numero valido")
+            inputted_number = "No"
+            continue
+    return float(inputted_number)
+
 """
 2-3. Personal Message: 
 - Use a variable to represent a person’s name, and print a message to that person. 
@@ -260,3 +278,12 @@ if False:
     best_nums:dict[str, int] = {"Giovanni": 47, "Emanuele": 10, "Lorenzino": 7, "Lollino": 22, "Marco": 69}     #lista dei numeri preferiti
     print(best_nums)       #print del dizionario
 
+if False:
+    #6-3. Glossary:
+    new_python_words:dict[str, str] = {"Runtime Error": "Errore che avviene nel terminale.", 
+                                       "Syntax Error": "Errore di sintassi nel linguaggio di programmazione.",
+                                       "Logical Error": "Errore nella logica del programma, anche se funziona.",          #dizionario su python
+                                       "Iterare": "Scorrere in un ciclo fra gli elementi di una collezione indicizzata.",
+                                       "Castare": "Specificare il tipo di una variabile." }
+    for ki, vi in new_python_words.items():       #ciclo for per iterare
+        print(f"{ki}:\n {vi}\n")       #print del dict

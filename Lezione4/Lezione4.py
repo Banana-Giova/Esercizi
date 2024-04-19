@@ -1,6 +1,11 @@
 #Giovanni di Giuseppe   19/04/2024
 
-def digit_inputter():
+def digit_inputter() -> float:
+    """
+        Questa funzione permette di inputtare rapidamente numeri, 
+        senza incorrere in errori nel qual caso venga inserita
+        una stringa come input.
+    """
     inputted_number = "No"
     while inputted_number == "No":
         
@@ -30,11 +35,11 @@ if False:
         if x > check:
             print(f"{x} is bigger than {check}")
         elif x == check:
-            print(f"{x} is equal to {check}")
+            print(f"{x} is equal to {check}")           #funzione check_value
         else:
             print(f"{x} is smaller than {check}")
     x = digit_inputter()
-    check = digit_inputter()
+    check = digit_inputter()        #utilizzo della funzione digit_inputter
     check_value(x, check)
 
 if False:
@@ -44,26 +49,26 @@ if False:
         if xlen > y:
             print(f"The length of the string is bigger than {y}")
         elif xlen == y:
-            print(f"The length of the string is equal to {y}")
+            print(f"The length of the string is equal to {y}")      #funzione check_length
         else:
             print(f"The length of the string is smaller than {y}")
     
     x:str = "hcijcioqoi"
-    y:float = 11
+    y:float = 11            #variabili
     check_length(x, y)
 
 if False:
     #Eserizio 3
-    def print_numbers(x:list):
+    def print_numbers(x:list):      #funzione print_numbers
         for i in x:
             print(i)
     
-    listanumerosa:list = [1, 4, 3, 6]
+    listanumerosa:list = [1, 4, 3, 6]       #lista di integers
     print_numbers(listanumerosa)
 
 if False:
     #Esercizio 4
-    def check_each(x:list, y:float):
+    def check_each(x:list, y:float):        #funzione check_each
         for i in x:
             if i > y:
                 print(f"{i} is bigger than {y}")
@@ -72,21 +77,20 @@ if False:
             else:
                 print(f"{i} is smaller than {y}")
     
-    lista_numerevole:list[float] = [4.2, 5.5, 532.532, 53, -5]
+    lista_numerevole:list[float] = [4.2, 5.5, 532.532, 53, -5]      #lista di integers
     check_each(lista_numerevole, digit_inputter())
 
 if False:
     #Esercizio 5
-    def add_one(addint:int):
+    def add_one(addint:int):        #funzione add_one
         addint += 1
         return addint
     
-    def add_one_to_list(lint:list[int]):
+    def add_one_to_list(lint:list[int]):        #funzione add one to list
         new_list:list[int] = []
         for i in lint:
             new_list.append(add_one(i))
         print (new_list)
     
-    lint:list[int] = [4,1,412,341,134,6,8,0]
-
+    lint:list[int] = [4,1,412,341,134,6,8,0]        #lista di integers
     add_one_to_list(lint)
