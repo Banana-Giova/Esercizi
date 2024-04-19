@@ -61,7 +61,7 @@ if False:
     listanumerosa:list = [1, 4, 3, 6]
     print_numbers(listanumerosa)
 
-if True:
+if False:
     #Esercizio 4
     def check_each(x:list, y:float):
         for i in x:
