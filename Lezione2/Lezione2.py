@@ -327,11 +327,11 @@ if False:
         print(f"{ki}: {vi}\n")       #print del dict
 
 if True:
-    #6=11. Cities:
+    #6-11. Cities:
     cities:dict[str, dict[str, str, int]] = {"Rome": {"Country": "Italy", "Population": 4355000, "Fact": "Rome was the first city in the world to reach 1 million citizens"},
                                              "Stockholm": {"Country": "Sweden", "Population": 2450000, "Fact": "People live in the area Stockholm is built in since the Stone Age"},    #dizionari sulle citta'
                                              "Barcelona": {"Country": "Spain", "Population": 1460000, "Fact": "Barcelona has 12 completely abandoned underground stations"}}
     for ki, vi in cities.items():
             print(ki)
-            for ki2, vi2 in vi.items():        #doppio ciclo per leggere tutti i dizionari
-                print(f"{ki2}: {vi2}")    
+            for ki2, vi2 in vi.items():        #doppio ciclo per leggere tutti i dizionari, con print della chiave
+                print(f"{ki2}: {vi2}")
