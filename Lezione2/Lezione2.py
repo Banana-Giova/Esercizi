@@ -305,7 +305,7 @@ if False:
     isa:dict[str, str] = {"Nome": "Isa", "Tipo di animale": "Gatto", "Padrone": "Giovanni"}
     ariel:dict[str, str] = {"Nome": "Ariel", "Tipo di animale": "Cane", "Padrone": "Eleonora"}      #dizionari degli animali
     koda:dict[str, str] = {"Nome": "Koda", "Tipo di animale": "Cane", "Padrone": "Nicola"}
-    cowo:dict[str, str] = {"Nome": "Cowo", "Tipo di animale": "Criceto", "Padrone": "Flavio"}
+    cowo:dict[str, str] = {"Nome": "Cowo", "Tipo di animale": "Porcellino d'India", "Padrone": "Flavio"}
     animali:list[dict] = [albicocca, isa, ariel, koda, cowo]        #lista di dizionari
     for i in animali:
             for ki, vi in i.items():        #doppio ciclo per leggere tutti i dizionari
@@ -326,7 +326,7 @@ if False:
     for ki, vi in best_nums.items():       #ciclo for per iterare
         print(f"{ki}: {vi}\n")       #print del dict
 
-if True:
+if False:
     #6-11. Cities:
     cities:dict[str, dict[str, str, int]] = {"Rome": {"Country": "Italy", "Population": 4355000, "Fact": "Rome was the first city in the world to reach 1 million citizens"},
                                              "Stockholm": {"Country": "Sweden", "Population": 2450000, "Fact": "People live in the area Stockholm is built in since the Stone Age"},    #dizionari sulle citta'
@@ -335,3 +335,23 @@ if True:
             print(ki)
             for ki2, vi2 in vi.items():        #doppio ciclo per leggere tutti i dizionari, con print della chiave
                 print(f"{ki2}: {vi2}")
+
+if False:
+    #6-12. Extensions:
+    dong:dict[str, dict[str, str, int]] = {"noot.space": {"Name": "Noot-Space", "Creation Date": "26/02/2015", "Function": "Has a GIF of Pingu in infinite loop and interacting with the page makes Pingu say \"Noot Noot\"."},
+                                           "isthiswhite.com": {"Name": "Is-It-White.com", "Creation Date": "27/02/2015", "Function": "Informs the user that the background of the website is in fact not white. However, the font on the website indeed is white."},    
+                                           "pixelfighting.com": {"Name": "Pixel-Fighting.com", "Creation Date": "22/11/2012", "Function": "Shows a battle between clumps of pixels, in which the winning pixel clump takes over the space of the losing clump."}, 
+                                           "pointerpointer.com": {"Name": "Pointer-Pointer.com", "Creation Date": "08/06/2012", "Function": "When the pointer of the mouse rests on the screen for a few seconds finds an image containing a person pointing at the pointer."},         #dizionario su siti divertenti
+                                           "staggeringbeauty.com": {"Name": "Staggering-Beauty.com", "Creation Date": "30/07/2012", "Function": "It tracks the movements of the pointer associating it with a pool noodle-like creature. \nIf the pointer is moved fast enough the screen and the creature will flicker. The website also has an epilepsy warning."}, 
+                                           "papertoilet.com": {"Name": "Paper-Toilet.com", "Creation Date": "03/05/2006", "Function": "There's a roll of toilet paper. When pulling the paper it will unroll the roll of toilet paper. \nWhen it ends, it won't come back."},
+                                           "cat-bounce.com": {"Name": "Cat-Bounce.com", "Creation Date": "14/09/2012", "Function": "When opening the website cats will fall from the top of your screen and bounce around when they hit the bottom. \nYou can also manipulate the cats using your pointer."}, 
+                                           "eelslap.com": {"Name": "Eel-Slap.com", "Creation Date": "02/03/2011", "Function": "When moving the pointer back and forth in this website, a man will get repeatedly slapped by an eel. \nThe position of your pointer on the screen determines where the eel will be."}}
+    for ki, vi in dong.items():    
+        for ki2, vi2 in vi.items():                 #doppio ciclo per leggere tutti i dizionari
+            vi3 = vi2.replace("-", " ")             #replace per rimuovere i trattini e inserire uno spazio vuoto
+            if ".com" in vi2:                       #if per verificare se c'e' un suffisso ed eventualmente rimuoverlo
+                vi3 = vi3.removesuffix(".com")      #else per gli altri casi
+                print(f"{ki2}: {vi3}\n")            #print di tutto con un divisore per ogni iterazione
+            else:
+                print(f"{ki2}: {vi2}\n")
+        print("--------------------")
