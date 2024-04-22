@@ -1,22 +1,24 @@
+#Giovanni di Giuseppe   22/04/2024
+
 def is_palindrome(x: int) -> bool:
     """
 
-    Dato un intero x, restituisce True se x è
-    palindromo, e False altrimenti
+        Dato un intero x, restituisce True se x è
+        palindromo, e False altrimenti
 
-    Esempio 1:
-    x = 121 -> True
-    Spigazione: 121 si legge come 121 sia da destra che da sinistra.
+        Esempio 1:
+        x = 121 -> True
+        Spigazione: 121 si legge come 121 sia da destra che da sinistra.
 
-    Esempio 2:
-    x = -121 -> False
-    Spiegazione: Da sinistra a destra leggiamo -121.
-    Da destra a sinistra leggiamo 121-, perciò non è palindromo.
+        Esempio 2:
+        x = -121 -> False
+        Spiegazione: Da sinistra a destra leggiamo -121.
+        Da destra a sinistra leggiamo 121-, perciò non è palindromo.
 
-    Esempio 3:
-    x = 10 -> False
-    Speigazione: 01 da destra a sinistra.
-    Perciò non è palindromo
+        Esempio 3:
+        x = 10 -> False
+        Speigazione: 01 da destra a sinistra.
+        Perciò non è palindromo
 
     """
     x_string:str = str(x)
