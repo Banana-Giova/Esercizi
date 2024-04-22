@@ -2,6 +2,7 @@
 
 def lenght_of_last_word(s:str) -> int:
     """
+        
         Data una stringa s che contiene parole e spazi,
         restituire la lunghezza dell'ultima parola in s.
 
