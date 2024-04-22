@@ -347,6 +347,7 @@ if False:
                                            "cat-bounce.com": {"Name": "Cat-Bounce.com", "Creation Date": "14/09/2012", "Function": "When opening the website cats will fall from the top of your screen and bounce around when they hit the bottom. \nYou can also manipulate the cats using your pointer."}, 
                                            "eelslap.com": {"Name": "Eel-Slap.com", "Creation Date": "02/03/2011", "Function": "When moving the pointer back and forth in this website, a man will get repeatedly slapped by an eel. \nThe position of your pointer on the screen determines where the eel will be."}}
     for ki, vi in dong.items():    
+        print(f"Address: {ki}\n")
         for ki2, vi2 in vi.items():                 #doppio ciclo per leggere tutti i dizionari
             vi3 = vi2.replace("-", " ")             #replace per rimuovere i trattini e inserire uno spazio vuoto
             if ".com" in vi2:                       #if per verificare se c'e' un suffisso ed eventualmente rimuoverlo
