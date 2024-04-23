@@ -135,7 +135,7 @@ if False:
     city_country("Copenhagen", "Denmark")
     city_country("Oslo", "Norway")
 
-if True:
+if False:
     #8-7. Album & 8-8. User Album:
     def make_album(x:str, y:str, opt:None=None) -> dict[str, str]:                      
         #opt is an optional variable, a variable which already has a
@@ -148,23 +148,46 @@ if True:
     sincer:dict = make_album("Mostro", "Sinceramente Mostro")               #dictionaries of albums
     mood:dict = make_album("Nayt", "Mood", 15)
 
-for ki, vi in danger.items():       #ciclo for per iterare
-        print(f"{ki}:\n {vi}\n")
-for ki, vi in sincer.items():       #ciclo for per iterare
-        print(f"{ki}:\n {vi}\n")      #ciclo for per iterare
-for ki, vi in mood.items():       #ciclo for per iterare
-        print(f"{ki}:\n {vi}\n")
+    for ki, vi in danger.items():       
+        print(f"{ki}: {vi}")
+    for ki, vi in sincer.items():       
+        print(f"{ki}: {vi}")      #loop to iterate and print items
+    for ki, vi in mood.items():       
+        print(f"{ki}: {vi}")
 
-if True:
     complete_ver:bool = False
     while complete_ver == False:
-        try:    
+        try:             #try to avoid wrong inputs by the user
             art_name:str = input("Input the name of the artist -> ")
             art_name:str = str(art_name)
             alb_name:str = input("Input the name of the album -> ")
             alb_name:str = str(alb_name)
             dict_name:dict = make_album(art_name, alb_name)
-            for ki, vi in dict_name.items():       #ciclo for per iterare
-                print(f"{ki}:\n {vi}\n")
+            for ki, vi in dict_name.items():       #loop to iterate and print items
+                print(f"{ki}: {vi}\n")
+            complete_ver = True     #when the inputs has been given, the while loop ends by this conditon
         except Exception:
             print("An invalid value has been inserted, try again.")
+
+if False:
+    #8-9. Messages:
+    suco_de_wosap:list[str] = ["Hello!", "Hi there!", "How are you doing?", "Fine :)"]
+    def show_messages(x:list[str]) -> str:
+        for i in x:     #loop to iterate and print every message
+            print(i)
+    
+    show_messages(suco_de_wosap)
+
+if False:
+    #8-10. Sending Messages:
+    suco_de_wosap:list[str] = ["Hello!", "Hi there!", "How are you doing?", "Fine :)"]
+    def show_messages(x:list[str]) -> str:
+        sent_messages:list = []
+        for i in x:     #loop to iterate and print every message
+            print(i)
+            sent_messages.append(i)     #append the iterated value to the sent messages list
+        x.clear()       #clearing the original list
+        print(f"Here are the messages that were sent: \n{sent_messages}")
+        print(x)
+
+    show_messages(suco_de_wosap)
