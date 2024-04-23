@@ -86,3 +86,85 @@ from module_name import *
 - Choose any three programs you wrote for this chapter, 
 and make sure they follow the styling guidelines described in this section.
 """
+
+if False:
+    #8-1 Message:
+    def display_message() -> str:
+        print("Sto studiando Python!")
+
+    display_message()
+
+if False:
+    #8-2 Favorite Book:
+    def favorite_book(x: str) -> str:
+        print(f"One of my favorite books is {x}")
+
+    favorite_book("The Metamorphosis")
+
+if False:
+    #8-3. T-Shirt:
+    def make_shirt(x: str, y: str) -> str:
+        print(f"The shirt is size {x} and on it there's written the following message: ' {y} '")
+
+    make_shirt("XS", "Vendo CD falsi di Gigi D'Alessio")        #print with positional arguments
+    make_shirt(y="Vendo CD falsi di Gigi D'Alessio", x="XS")    #print with keyword arguments
+    L_shirt:str = "L"                                           #setting the default variable for the function
+    py_message:str = "I love Python"
+    make_shirt(L_shirt, py_message)                             #print with default variable
+    make_shirt("M", py_message)                                 #print with a positional argument and a default variable
+    make_shirt("XL", "Metro boomin' make it boom")
+
+
+
+if False:
+    #8-5. Cities:
+    def describe_city(x:str, y:str) -> str:
+        print(f"{x} is in {y}")
+
+    var_country:str = "Italy"                   #setting the default variable for the function
+    describe_city("Sassari", var_country)
+    describe_city("Benevento", var_country)
+    describe_city("Alnicco", var_country)
+
+if False:
+    #8-6. City Names:
+    def city_country(x:str, y:str) -> str:
+        print(f"{x}, {y}")
+
+    city_country("Stockholm", "Sweden")
+    city_country("Copenhagen", "Denmark")
+    city_country("Oslo", "Norway")
+
+if True:
+    #8-7. Album & 8-8. User Album:
+    def make_album(x:str, y:str, opt:None=None) -> dict[str, str]:                      
+        #opt is an optional variable, a variable which already has a
+        #definition, therefore in the definition of the args including
+        #it is optional
+        new_dict:dict[str, str] = {"Artist Name": x, "Album Title": y, "Songs": opt}
+        return new_dict
+    
+    danger:dict = make_album("Nitro", "Danger")
+    sincer:dict = make_album("Mostro", "Sinceramente Mostro")               #dictionaries of albums
+    mood:dict = make_album("Nayt", "Mood", 15)
+
+for ki, vi in danger.items():       #ciclo for per iterare
+        print(f"{ki}:\n {vi}\n")
+for ki, vi in sincer.items():       #ciclo for per iterare
+        print(f"{ki}:\n {vi}\n")      #ciclo for per iterare
+for ki, vi in mood.items():       #ciclo for per iterare
+        print(f"{ki}:\n {vi}\n")
+
+if True:
+    complete_ver:bool = False
+    while complete_ver == False:
+        try:    
+            art_name:str = input("Input the name of the artist -> ")
+            art_name:str = str(art_name)
+            alb_name:str = input("Input the name of the album -> ")
+            alb_name:str = str(alb_name)
+            dict_name:dict = make_album(art_name, alb_name)
+            for ki, vi in dict_name.items():       #ciclo for per iterare
+                print(f"{ki}:\n {vi}\n")
+        except Exception:
+            print("An invalid value has been inserted, try again.")
