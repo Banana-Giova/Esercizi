@@ -179,8 +179,9 @@ if False:
     show_messages(suco_de_wosap)
 
 if False:
-    #8-10. Sending Messages:
+    #8-10. Sending Messages & 8-11. Archived Messages:
     suco_de_wosap:list[str] = ["Hello!", "Hi there!", "How are you doing?", "Fine :)"]
+    copy_suco_de_wosap:list = suco_de_wosap.copy()
     def show_messages(x:list[str]) -> str:
         sent_messages:list = []
         for i in x:     #loop to iterate and print every message
@@ -188,6 +189,7 @@ if False:
             sent_messages.append(i)     #append the iterated value to the sent messages list
         x.clear()       #clearing the original list
         print(f"Here are the messages that were sent: \n{sent_messages}")
-        print(x)
 
     show_messages(suco_de_wosap)
+    print(f"Here's the original list of messages: \n{suco_de_wosap}")
+    print(f"Here's a copy of the archived messages: \n{copy_suco_de_wosap}")
