@@ -1,96 +1,88 @@
-#Giovanni di Giuseppe   19/04/2024
+"""
+8-1. Message: 
+- Write a function called display_message() that prints one sentence telling everyone what you are learning about 
+in this chapter. Call the function, and make sure the message displays correctly.
+8-2. Favorite Book: 
+- Write a function called favorite_book() that accepts one parameter, title. 
+The function should print a message, such as "One of my favorite books is Alice in Wonderland". 
+Call the function, making sure to include a book title as an argument in the function call.
 
-def digit_inputter() -> float:
-    """
-        Questa funzione permette di inputtare rapidamente numeri, 
-        senza incorrere in errori nel qual caso venga inserita
-        una stringa come input.
-    """
-    inputted_number = "No"
-    while inputted_number == "No":
-        
-        inputted_number = input()
-        try:
-            float(inputted_number)
-        except ValueError:
-            print("Errore, inserire un numero valido")
-            inputted_number = "No"
-            continue
-    return float(inputted_number)
-    
+8-3. T-Shirt: 
+- Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. 
+The function should print a sentence summarizing the size of the shirt and the message printed on it. 
+Call the function once using positional arguments to make a shirt. Call the function a second time using keyword arguments.
 
+8-4. Large Shirts: 
+- Modify the make_shirt() function so that shirts are large by default with a message that reads I love Python. 
+Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
+8-5. Cities: 
+- Write a function called describe_city() that accepts the name of a city and its country. 
+The function should print a simple sentence, such as Reykjavik is in Iceland. 
+Give the parameter for the country a default value. 
+Call your function for three different cities, at least one of which is not in the default country.
 
-if False:
-    #Esercizio 0
-    def subtract(x:float, y:float) -> float:     #funzione per sottrarre due numeri
-        subt = x - y        #scope
-        return subt     #valore returnato
-    
-    x, y = (17, 7)      #variabili da una tupa spacchettata
-    print(subtract(x, y))       #print della funzione
+8-6. City Names: 
+- Write a function called city_country() that takes in the name of a city and its country. 
+The function should return a string formatted like this: "Santiago, Chile". 
+Call your function with at least three city-country pairs, and print the values that are returned.
 
-if False:
-    #Esercizio 1
-    def check_value(x:float, check:float):
-        if x > check:
-            print(f"{x} is bigger than {check}")
-        elif x == check:
-            print(f"{x} is equal to {check}")           #funzione per rilevare quale fra due numeri e' piu' grande
-        else:
-            print(f"{x} is smaller than {check}")
-    x = digit_inputter()
-    check = digit_inputter()        #utilizzo della funzione digit_inputter
-    check_value(x, check)
+8-7. Album: 
+- Write a function called make_album() that builds a dictionary describing a music album. 
+The function should take in an artist name and an album title, 
+and it should return a dictionary containing these two pieces of information. 
+Use the function to make three dictionaries representing different albums. 
+Use None to add an optional parameter to make_album() that allows you to store the number of songs on an album. 
+If the calling line includes a value for the number of songs, add that value to the album’s dictionary.
+Make at least one new function call that includes the number of songs on an album.
+8-8. User Albums: 
+- Start with your program from Exercise 8-7. Write a while loop that allows users to enter an album’s artist and title. 
+Once you have that information, call make_album() with the user’s input and print the dictionary that’s created. 
+Be sure to include a quit value in the while loop.
 
-if False:
-    #Esercizio 2
-    def check_length(x:str, y:float):
-        xlen = len(x)
-        if xlen > y:
-            print(f"The length of the string is bigger than {y}")
-        elif xlen == y:
-            print(f"The length of the string is equal to {y}")      #funzione per rilevare quale fra un numero
-        else:                                                       #e la lunghezza di una stringa e' piu' grande
-            print(f"The length of the string is smaller than {y}")
-    
-    x:str = "hcijcioqoi"
-    y:float = 11            #variabili
-    check_length(x, y)
+8-9. Messages: 
+- Make a list containing a series of short text messages. 
+Pass the list to a function called show_messages(), which prints each text message.
+8-10. Sending Messages: 
+- Start with a copy of your program from Exercise 8-9. Write a function called send_messages() 
+that prints each text message and moves each message to a new list called sent_messages as it’s printed. 
+After calling the function, print both of your lists to make sure the messages were moved correctly.
 
-if False:
-    #Eserizio 3
-    def print_numbers(x:list):      #funzione print_numbers
-        for i in x:
-            print(i)
-    
-    listanumerosa:list = [1, 4, 3, 6]       #lista di integers
-    print_numbers(listanumerosa)
+8-11. Archived Messages: 
+- Start with your work from Exercise 8-10. Call the function send_messages() with a copy of the list of messages. 
+After calling the function, print both of your lists to show that the original list has retained its messages.
 
-if False:
-    #Esercizio 4
-    def check_each(x:list, y:float):        #funzione per rilevare quale fra un numero in una lista ed un int e' piu' grande
-        for i in x:
-            if i > y:
-                print(f"{i} is bigger than {y}")
-            elif i == y:
-                print(f"{i} is equal to {y}")
-            else:
-                print(f"{i} is smaller than {y}")
-    
-    lista_numerevole:list[float] = [4.2, 5.5, 532.532, 53, -5]      #lista di integers
-    check_each(lista_numerevole, digit_inputter())
+8-12. Sandwiches: 
+- Write a function that accepts a list of items a person wants on a sandwich. 
+The function should have one parameter that collects as many items as the function call provides, 
+and it should print a summary of the sandwich that’s being ordered. Call the function three times, 
+using a different number of arguments each time.
 
-if False:
-    #Esercizio 5
-    def add_one(addint:int):        #funzione per sommare 1 ad un int
-        addint += 1
-        return addint
-    
-    def add_one_to_list(lint:list[int]):        #funzione per sommare 1 ad ogni elemento di una lista
-        new_list:list[int] = []
-        for i in lint:
-            new_list.append(add_one(i))
-        print (new_list)
-    
-    lint:list[int] = [4,1,412,341,134,6,8,0]        #lista di integers
-    add_one_to_list(lint)
+8-13. User Profile: 
+- Build a profile of yourself by calling build_profile(), 
+using your first and last names and three other key-value pairs that describe you. 
+All the values must be passed to the function as parameters. 
+The function then must return a string such as "Eric Crow, age 45, hair brown, weight 67".
+
+8-14. Cars: 
+- Write a function that stores information about a car in a dictionary. 
+The function should always receive a manufacturer and a model name. 
+It should then accept an arbitrary number of keyword arguments. 
+Call the function with the required information and two other name-value pairs, such as a color or an optional feature. 
+Your function should work for a call like this one: car = make_car('subaru', 'outback', color='blue', tow_package=True). 
+Print the dictionary that’s returned to make sure all the information was stored correctly. 
+
+8-15. Printing Models: 
+- Put the functions for the example printing_models.py in a separate file called printing_functions.py. 
+Write an import statement at the top of printing_models.py, and modify the file to use the imported functions.
+8-16. Imports: 
+- Using a program you wrote that has one function in it, store that function in a separate file. 
+Import the function into your main program file, and call the function using each of these approaches:
+import module_name
+from module_name import function_name
+from module_name import function_name as fn
+import module_name as mn
+from module_name import *
+8-17. Styling Functions: 
+- Choose any three programs you wrote for this chapter, 
+and make sure they follow the styling guidelines described in this section.
+"""
