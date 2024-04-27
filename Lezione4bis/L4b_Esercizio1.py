@@ -29,5 +29,4 @@ def is_palindrome(x: int) -> bool:
 
     return x_list == rev_x_list       #risultato in bool del dilemma: palindromo o no?
 
-if False:
-    print(is_palindrome(121))
+print(is_palindrome(121))
