@@ -102,7 +102,7 @@ if False:
     favorite_book("The Metamorphosis")
 
 if False:
-    #8-3. T-Shirt:
+    #8-3. T-Shirt & 8-4. Large Shirts::
     def make_shirt(x: str, y: str) -> str:
         print(f"The shirt is size {x} and on it there's written the following message: ' {y} '")
 
@@ -113,8 +113,6 @@ if False:
     make_shirt(L_shirt, py_message)                             #print with default variable
     make_shirt("M", py_message)                                 #print with a positional argument and a default variable
     make_shirt("XL", "Metro boomin' make it boom")
-
-
 
 if False:
     #8-5. Cities:
@@ -157,7 +155,7 @@ if False:
 
     complete_ver:bool = False
     while complete_ver == False:
-        try:             #try to avoid wrong inputs by the user
+        try:                                      #try to avoid wrong inputs by the user
             art_name:str = input("Input the name of the artist -> ")
             art_name:str = str(art_name)
             alb_name:str = input("Input the name of the album -> ")
@@ -165,7 +163,7 @@ if False:
             dict_name:dict = make_album(art_name, alb_name)
             for ki, vi in dict_name.items():       #loop to iterate and print items
                 print(f"{ki}: {vi}\n")
-            complete_ver = True     #when the inputs has been given, the while loop ends by this conditon
+            complete_ver = True                    #when the inputs has been given, the while loop ends by this conditon
         except Exception:
             print("An invalid value has been inserted, try again.")
 
@@ -173,7 +171,7 @@ if False:
     #8-9. Messages:
     suco_de_wosap:list[str] = ["Hello!", "Hi there!", "How are you doing?", "Fine :)"]
     def show_messages(x:list[str]) -> str:
-        for i in x:     #loop to iterate and print every message
+        for i in x:                             #loop to iterate and print every message
             print(i)
     
     show_messages(suco_de_wosap)
@@ -184,12 +182,66 @@ if False:
     copy_suco_de_wosap:list = suco_de_wosap.copy()
     def show_messages(x:list[str]) -> str:
         sent_messages:list = []
-        for i in x:     #loop to iterate and print every message
+        for i in x:                     #loop to iterate and print every message
             print(i)
             sent_messages.append(i)     #append the iterated value to the sent messages list
-        x.clear()       #clearing the original list
+        x.clear()                       #clearing the original list
         print(f"Here are the messages that were sent: \n{sent_messages}")
 
     show_messages(suco_de_wosap)
     print(f"Here's the original list of messages: \n{suco_de_wosap}")
     print(f"Here's a copy of the archived messages: \n{copy_suco_de_wosap}")
+
+if False:
+    #8-12. Sandwiches:
+    def subway(*ingredients:str) -> str:
+        sandwich:str = "I want a sandwich with "
+        for i in ingredients:                           #loop to iterate in the tuple "ingredients" and add every value
+            if len(ingredients) > 1:                    #to a string called "sandwich", this way the final print 
+                if i == ingredients[-2]:                #will be on one single line, clean, without unnecessary \n
+                    sandwich += f"{i} and"               
+                elif i == ingredients[-1]:              #the "if" verifies the posiioning of the ingredients in the tuple
+                    sandwich += f"{i}."                 #to ensure correct punctuation
+                else:
+                    sandwich += f"{i}, "                #could've just printed everything, but it's way more boring and less elegant
+            else:
+                sandwich += f"{ingredients[0]}."
+        print(sandwich)    
+
+    subway("Tomatoes", "Mustard", "Ham")
+    subway("Cheese")
+    subway("Tomatoes", "Cheese", "Ham", "Lettuce", "Ketchup")
+
+if False:
+    #8-13. User Profile:
+    def build_profile(name:str, surname:str, **other_chars:str) -> str:
+        profile:str = f"{name} {surname},"
+        if len(other_chars) > 1:
+            for ki, vi in other_chars.items():
+                profile += f" {ki} {vi},"
+            profile.removesuffix(",")
+        else:
+            [(ki, vi)] = other_chars.items()        #almost identical to the exercise above,
+            profile += f" {ki} {vi} "               #but if kwargs has only one pair the function puts them in a list
+        print(profile[:-1])
+
+    build_profile("Giovanni", "di Giuseppe", age = "21", hair = "dark brown", height = "1.70 m")
+    build_profile("Carlo", "Conti", age = "67")
+
+if True:
+    #8-14. Cars:
+    def make_car(manufacturer:str, model:str, **other_feats) -> str:
+        car_info:dict[str:str] = {"Manufacturer": manufacturer, "Model Name": model}
+        for ki, vi in other_feats.items():
+            car_info.update({ki: vi})
+        car:str = ""
+        for ki, vi in car_info.items():
+            if vi == True:
+                car += f" {ki}: Included,"
+            elif vi == False:
+                car += f" {ki}: Not Included,"      #similar to what I did in the previous two exercises,
+            else:                                   #but this time I made an "if" to include booleans
+                car += f" {ki}: {vi},"
+        print(car[:-1])
+
+    make_car("Subaru", "Outback", Color = "Blue", Tow_Package = True)
