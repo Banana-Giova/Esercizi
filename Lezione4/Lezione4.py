@@ -228,7 +228,7 @@ if False:
     build_profile("Giovanni", "di Giuseppe", age = "21", hair = "dark brown", height = "1.70 m")
     build_profile("Carlo", "Conti", age = "67")
 
-if True:
+if True:            #has to be kept active to make printing_functions.py work
     #8-14. Cars:
     def make_car(manufacturer:str, model:str, **other_feats) -> str:
         car_info:dict[str:str] = {"Manufacturer": manufacturer, "Model Name": model}
@@ -244,4 +244,15 @@ if True:
                 car += f" {ki}: {vi},"
         print(car[:-1])
 
-    make_car("Subaru", "Outback", Color = "Blue", Tow_Package = True)
+    if False:
+        make_car("Volkswagen", "Polo", Color = "Blue", GPL = True)
+
+if False:
+    #8-16. Imports:
+    from L4_Esercizi_Slide import digit_inputter as fortyseven      #importing a function from another module and renaming it locally
+
+    print("Ecco il numero selezionato moltiplicato per 47 -> ", fortyseven()*47)    #using the renamed imported function
+
+if True:
+    #8-17. Styling Functions:
+    print("WIP")

@@ -9,7 +9,7 @@ def digit_inputter() -> float:
     inputted_number = "No"
     while inputted_number == "No":
         
-        inputted_number = input()
+        inputted_number = input("Inserire un numero -> ")
         try:
             float(inputted_number)
         except ValueError:
