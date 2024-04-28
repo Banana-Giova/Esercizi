@@ -17,7 +17,7 @@ def digit_inputter() -> float:
             inputted_number = "No"
             continue
     return float(inputted_number)
-    
+
 
 
 if False:

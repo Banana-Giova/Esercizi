@@ -253,6 +253,90 @@ if False:
 
     print("Ecco il numero selezionato moltiplicato per 47 -> ", fortyseven()*47)    #using the renamed imported function
 
-if True:
+if False:
     #8-17. Styling Functions:
-    print("WIP")
+    
+    #PEP8 Remake 8-5. Cities:
+    def describe_city(x:str, 
+                      y:str
+                      ) -> str:
+        """Vertical layout alignment."""
+        return(f"{x} is in {y}")
+
+    var_country:str = "Italy"
+    print(f"""    {describe_city("Sassari", var_country)}\n
+    {describe_city("Benevento", var_country)}\n
+    {describe_city("Alnicco", var_country)}""")
+    """Aligned multiline print."""
+
+
+    print("------------------------------------------------------------")
+
+    #8-7. Album & 8-8. User Album:
+    def make_album(x:str, y:str, 
+                   opt:None=None
+                   ) -> dict[str, str]:                      
+        """opt is an optional variable, a variable which already has a
+        definition, therefore in the definition of the args including
+        it is optional
+        """
+        #used the standard method to multiline a comment
+        new_dict:dict[str, str] = {"Artist Name": x, 
+                                   "Album Title": y, "Songs": opt}
+        """Vertical layout alignment."""
+        return new_dict
+    
+    danger:dict = make_album("Nitro", "Danger")
+    sincer:dict = make_album("Mostro", "Sinceramente Mostro")
+    mood:dict = make_album("Nayt", "Mood", 15)
+
+    for ki, vi in danger.items():       
+        print(f"{ki}: {vi}")
+    for ki, vi in sincer.items():       
+        print(f"{ki}: {vi}")    
+    for ki, vi in mood.items():       
+        print(f"{ki}: {vi}")
+    """No comments stating the obvious."""
+
+    complete_ver:bool = False
+    while True:
+        """Try to avoid wrong inputs by the user,
+        when the inputs has been given, 
+        the while loop ends by this conditon
+        """
+        try:
+            art_name:str = str(input("Input the name of the artist -> "))
+            alb_name:str = str(input("Input the name of the album -> "))
+            dict_name:dict = make_album(art_name, alb_name)
+            for ki, vi in dict_name.items():
+                print(f"{ki}: {vi}\n")
+            break
+        except Exception:
+            print("An invalid value has been inserted, try again.")
+        """Break and While True, in place of variable conditions."""
+
+    print("------------------------------------------------------------")
+
+    #PEP8 Remake 8-13. User Profile:
+    def build_profile(name:str, surname:str, 
+                      **other_chars:str) -> str:
+        """Vertical layout alignment."""
+        profile:str = f"{name} {surname},"
+
+        if len(other_chars) > 1:
+            for ki, vi in other_chars.items():
+                profile += f" {ki} {vi},"
+            profile.removesuffix(",")
+        else:
+            [(ki, vi)] = other_chars.items()
+            profile += f" {ki} {vi} "
+        """almost identical to the exercise above,
+        but if kwargs has only a pair the function puts them in a list
+        """
+        #modified the original comments to be less than 72 characters
+        print(profile[:-1])
+
+    build_profile("Giovanni", "di Giuseppe", age="21", 
+                  hair="dark brown", height="1.70 m")
+    """A line shouldn't be over 79 characters."""
+    build_profile("Carlo", "Conti", age="67")
