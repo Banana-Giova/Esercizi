@@ -58,18 +58,16 @@ You won’t use much of it now, but it might be interesting to skim through it.
 - Choose three of the programs you’ve written in this chapter and modify each one to comply with PEP 8.
 
 5-1. Conditional Tests: 
-- Write a series of conditional tests. Print a statement
-describing each test and your prediction for the results of each test. Your code
-should look something like this:
+- Write a series of conditional tests. 
+Print a statement describing each test and your prediction for the results of each test. 
+Your code should look something like this:
 car = 'subaru'
 print("Is car == 'subaru'? I predict True.")
 print(car == 'subaru')
 print("\nIs car == 'audi'? I predict False.")
 print(car == 'audi')
-• Look closely at your results, and make sure you understand why each line
-evaluates to True or False.
-• Create at least 10 tests. Have at least 5 tests evaluate to True and another
-5 tests evaluate to False.
+• Look closely at your results, and make sure you understand why each line evaluates to True or False.
+• Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
 
 5-2. More Conditional Tests: 
 You don’t have to limit the number of tests you create to 10. 
@@ -198,7 +196,7 @@ if False:
     print(f"The middle three felines are {animals[3:6]}")
     print(f"The last three felines are {animals[-3:]}")
 
-if True:
+if False:
     #4-11. My pizzas, Your pizzas & 4-12. More Loops:
     pizzas:list[str] = ["Rossa", "Patate e Salsiccia", "Salsiccia e Friarielli"]
     friends_pizzas:list = pizzas.copy()
@@ -208,3 +206,96 @@ if True:
         print(f"I love pizza {i}")
     for i in friends_pizzas:
         print(f"My friends' favorite pizzas {i}")
+
+if False:
+    #4-14. PEP 8 & 4-15. Code Review:
+    print("WIP")
+
+if False:
+    #5-1. Conditional Tests: 
+    cat = "Evil"
+    print("Is cat == \"Evil\"? I predict True.")
+    print(cat == "Evil")
+    print("Is cat == \"Stinky\"? I predict False.")
+    print(cat == "Stinky")
+
+    car = "Volkswagen"
+    print("\nIs car == \"Volkswagen\"? I predict True.")
+    print(car == "Volkswagen")
+    print("Is car == \"Subaru\"? I predict False.")
+    print(car == "Subaru")
+
+    juice = "Peach"
+    print("\nIs juice == \"Orange\"? I predict False.")
+    print(juice == "Orange")
+    print("Is juice == \"Peach\"? I predict True.")
+    print(juice == "Peach")
+
+    kiwi = ["Brown", "Green"]
+    print("\nIs kiwi == \"Brown\"? I predict True.")
+    print("Brown" in kiwi)
+    print("Is kiwi == \"Green\"? I predict True.")
+    print("Green" in kiwi)
+
+    water = "Moist"
+    print("\nIs water == \"Evil\"? I predict False.")
+    print(water == "Evil")
+    print("Is water == \"Blue\"? I predict False.")
+    print(water == "Blue")
+
+if False:
+    #5-3 to 5-5. Alien Colors:
+    alien_colors:dict[str] = {"1": "Green", "2": "Yellow", "3": "Red"}        #I'll just make one version for all of the three alien colors exercises
+    valid_nos:list[int, str] = [1, 2, 3, "1", "2", "3"]                       #it's more interisting, faster and it doesn't hinder my understanding
+
+    inputted_number:str = "No"
+    while inputted_number == "No":
+        
+        inputted_number = input("Inserire un numero da 1 a 3 -> ")
+        if inputted_number in valid_nos:
+            str(inputted_number)
+        else:
+            print("Errore, inserire un numero valido.\n")
+            inputted_number = "No"
+            continue
+
+    shot_alien:str = alien_colors[inputted_number]
+    if shot_alien == "Green":
+        print("You scored 5 points!")
+    elif shot_alien == "Yellow":
+        print("You scored 10 points!!")
+    else:
+        print("You scored 15 points!!!")
+
+if False:
+    #5-6. Stages of Life:
+    valid_nos:list = []
+    for i in range(1, 123):
+        valid_nos.append(int(i))
+
+    inputted_number = "No"
+    while inputted_number == "No":
+        
+        inputted_number = input("Inserire un numero -> ")
+        if int(inputted_number) in valid_nos:
+            inputted_number = int(inputted_number)
+        else:
+            print("Errore, inserire un numero valido")
+            inputted_number = "No"
+            continue
+
+    if inputted_number == 0 or inputted_number == 1:
+        print("You are a baby.")
+    elif inputted_number == 2 or inputted_number == 3 or inputted_number == 4:
+        print("You are a toddler.")
+    elif inputted_number in valid_nos[4:12]:
+        print("You are a kid.")
+    elif inputted_number in valid_nos[12:19]:
+        print ("You are a teenager.")
+    elif inputted_number in valid_nos[19:64]:
+        print ("You are an adult.")
+    elif inputted_number in valid_nos[64:99]:
+        print ("You are an elder.")
+    else: 
+        print("You are as old as Methuselah.")
+
