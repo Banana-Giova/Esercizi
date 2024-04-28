@@ -18,7 +18,8 @@ if True:
     car:str = "Smart"
     lucky:int = 47
     dead_lucky:int = 4774
-    animals:list[str] = ["Cat", "Caracal", "Cheetah", "Cougar", "Leopard", "Lion", "Lynx", "Puma", "Tiger"]
+    animals:list[str] = ["Cat", "Caracal", "Cheetah", "Cougar", 
+                         "Leopard", "Lion", "Lynx", "Puma", "Tiger"]
 
     print("Is cat == car? I predict False.")
     print(cat == car)

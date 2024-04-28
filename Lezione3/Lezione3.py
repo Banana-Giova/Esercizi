@@ -123,7 +123,8 @@ Loop through the list, and print a greeting to each user.
 • Otherwise, print a generic greeting, such as Hello Jaden, thank you for logging in again.
 
 
-5-9. No Users: Add an if test to hello_admin.py to make sure the list of users is not empty.
+5-9. No Users: 
+- Add an if test to hello_admin.py to make sure the list of users is not empty.
 • If the list is empty, print the message We need to find some users!
 • Remove all of the usernames from your list, and make sure the correct message is printed.
 
@@ -186,7 +187,9 @@ if False:
 
 if False:
     #4-8 Cubes & 4-9. Cube Comprehension:
-    cubes:list[int] = [(i**3) for i in range(1, 11)]
+    cubes:list[int] = []
+    for i in range(1, 11):
+        cubes.append(i**3)
     print(cubes)
 
 if False:
@@ -205,11 +208,53 @@ if False:
     for i in pizzas:
         print(f"I love pizza {i}")
     for i in friends_pizzas:
-        print(f"My friends' favorite pizzas {i}")
+        print(f"My friends' favorite pizza is pizza {i}")
 
 if False:
     #4-14. PEP 8 & 4-15. Code Review:
-    print("WIP")
+    
+    #PEP8 Remake 4-8 Cubes & 4-9. Cube Comprehension:
+    cubes:list[int] = [(i**3) for i in range(1, 11)]
+    """Used comprehension instead of the full loop"""
+
+    print(cubes)
+    
+    print("------------------------------------------------------------")
+
+    #PEP8 Remake 4-10. Slices:
+    animals:list[str] = ["Cat", "Caracal", "Cheetah", "Cougar", 
+                         "Leopard", "Lion", "Lynx", "Puma", "Tiger"]
+    """A line shouldn't be over 79 characters. 
+    Indentation has to remain on the same level as the list origin.
+    """
+
+    print(f"""The first three felines are {animals[0:3]}\n
+          The middle three felines are {animals[3:6]}\n
+          The last three felines are {animals[-3:]}
+          """)
+    """A line shouldn't be over 79 characters.
+    Printing multiline strings is more easy to read.
+    """
+    
+    print("------------------------------------------------------------")
+
+    #PEP8 Remake 4-11. My pizzas, Your pizzas & 4-12. More Loops:
+    pizzas:list[str] = ["Rossa", "Patate e Salsiccia", 
+                        "Salsiccia e Friarielli"]
+    """A line shouldn't be over 79 characters. 
+    Indentation has to remain on the same level as the list origin.
+    """
+
+    friends_pizzas:list = pizzas.copy()
+    pizzas.append("Focaccia con mortadella")
+    friends_pizzas.append("Diavola")
+
+    for i, fri in zip(pizzas, friends_pizzas):
+        print(f"I love pizza {i}")
+        print(f"My friends' favorite pizza is pizza {fri}")
+    """In place of a double for, a zipped for is more clean."""
+
+
 
 if False:
     #5-1. Conditional Tests: 
@@ -299,3 +344,82 @@ if False:
     else: 
         print("You are as old as Methuselah.")
 
+if False:
+    #5-7. Favorite Fruit:
+    favorite_fruits:list[str] = ["Apples", "Mandarins", "Peaches"]
+
+    if "Mandarins" in favorite_fruits:
+        print("You really like mandarins!")
+    else:
+        print("You don't like mandarins!")
+    if "Tangerines" in favorite_fruits:
+        print("You really like tangerines!")
+    else:
+        print("You don't like tangerines!")
+    if "Apples" in favorite_fruits:
+        print("You really like apples!")
+    else:
+        print("You don't like apples!")
+    if "Kiwis" in favorite_fruits:
+        print("You really like kiwis!")
+    else:
+        print("You don't like kiwis!")
+    if "Peaches" in favorite_fruits:
+        print("You really like peaches!")
+    else:
+        print("You don't like peaches!")
+
+if False:
+    #5-8. Hello Admin & 5-9. No Users:
+    usernames:list[str] = ["Peppino", "Mimmo", "Ciro", "admin", "Pasquale"]
+    empty_usernames:list = usernames.copy()
+    empty_usernames.clear()
+
+    def user_greeter(users:list[str]) -> str:       #I made a function here instead of a copy of the loop
+        print("Accessing the list of users...")     #simply because it's faster and more interesting
+        if users:       #"if len(users) !=" it's the same as "if users"
+            for i in users:
+                if i != "admin":
+                    print(f"Hello {i}, thank you for logging in again")
+                else:
+                    print(f"Hello {i}, would you like to see a status report?")
+        else:
+                print("We need to find some users!")
+
+    user_greeter(usernames)
+    user_greeter(empty_usernames)
+
+if False:
+    #5-10. Checking Usernames:
+    current_users:list[str] = ["Peppino", "Mimmo", "Ciro", "admin", "Pasquale"]
+    new_users:list[str] = ["Pino", "Toni", "Ciro", "Gianni", "Pasquale"]
+    current_users_case:list = [i.casefold() for i in current_users]    #creation of the control list
+
+    for i in new_users:
+        if i.casefold() not in current_users_case:
+            print(f"{i} is available!")
+            current_users.append(i)
+            current_users_case.append(i.casefold())    #it's important to update the control list
+        else:
+            valid:bool = False          #this while detects already used usernames
+            while valid == False:       #and makes the user input a new valid one, accounting for errors
+                print(f"{i} is not available! You need to enter a new username!")
+                i = input(f"Write your new username! Here's the list of the taken usernames:\n {current_users}\nBe careful, the database is case insensitive!\n>")
+                if i.casefold() not in current_users_case:
+                    print(f"{i} is available!")
+                    current_users.append(i)
+                    current_users_case.append(i.casefold())
+                    valid = True
+
+    print(f"Here's the list of users with the new usernames!\n{current_users}")
+ 
+if False:
+    #5-11. Ordinal Numbers:
+    ordinal_numbers:list[int] = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    for i in ordinal_numbers:
+        if i == 1:
+            print(f"{i}st")
+        elif i == 2:
+            print(f"{i}nd")
+        else:
+            print(f"{i}th")
