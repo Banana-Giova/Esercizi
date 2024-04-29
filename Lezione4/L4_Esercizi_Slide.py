@@ -2,23 +2,21 @@
 
 def digit_inputter() -> float:
     """
-        Questa funzione permette di inputtare rapidamente numeri, 
-        senza incorrere in errori nel qual caso venga inserita
-        una stringa come input.
+        This function allows the user to input a float easily, 
+        without incurring in errors if the number is not valid.
     """
-    inputted_number = "No"
-    while inputted_number == "No":
+    inputted_number = ""
+    while True:
         
-        inputted_number = input("Inserire un numero -> ")
+        inputted_number = input("Input a number -> ")
         try:
             float(inputted_number)
+            break
         except ValueError:
-            print("Errore, inserire un numero valido")
-            inputted_number = "No"
+            print("Error, input a valid number.")
+            inputted_number = ""
             continue
     return float(inputted_number)
-
-
 
 if False:
     #Esercizio 0
