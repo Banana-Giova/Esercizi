@@ -199,7 +199,7 @@ if False:
         for i in ingredients:                           #loop to iterate in the tuple "ingredients" and add every value
             if len(ingredients) > 1:                    #to a string called "sandwich", this way the final print 
                 if i == ingredients[-2]:                #will be on one single line, clean, without unnecessary \n
-                    sandwich += f"{i} and"               
+                    sandwich += f"{i} and "               
                 elif i == ingredients[-1]:              #the "if" verifies the posiioning of the ingredients in the tuple
                     sandwich += f"{i}."                 #to ensure correct punctuation
                 else:
