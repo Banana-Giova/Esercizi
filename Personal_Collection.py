@@ -33,3 +33,16 @@ def int_inputter() -> int:
             inputted_number = ""
             continue
     return int(inputted_number)
+
+if False:
+    #(Y/n) Manager
+    while True:
+        choice:str = (input("Choice Placeholder?(Y/n)")).lower()
+        if choice == "y":
+            #Y choice placeholder
+            break
+        elif choice == "n":
+            #n choice placeholder
+            break
+        else:
+            print("Invalid choice, type 'Y' or 'n'.")

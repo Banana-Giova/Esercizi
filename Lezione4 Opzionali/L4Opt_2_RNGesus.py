@@ -33,7 +33,8 @@ strings and floats are not accepted!""")
             print("Attempts ran out, you lost! Try again!")
             break
 
-from L4_Esercizi_Slide import int_inputter
-
+import sys
+sys.path.append('/home/banana/Desktop/Coding/Esercizi')
+from Personal_Collection import int_inputter
 
 rngesus(int_inputter())

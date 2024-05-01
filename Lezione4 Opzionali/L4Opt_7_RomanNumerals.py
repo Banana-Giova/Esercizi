@@ -13,6 +13,7 @@
     D = 500
     M = 1000
 """
+
 import sys
 sys.path.append('/home/banana/Desktop/Coding/Esercizi')
 from Personal_Collection import int_inputter

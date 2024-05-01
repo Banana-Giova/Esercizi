@@ -6,6 +6,7 @@
     The function should calculate the cart total and apply any discounts or taxes.
     Implement a for loop to iterate over the items in the cart and print detailed information about each product and the total.
 """
+
 import sys
 sys.path.append('/home/banana/Desktop/Coding/Esercizi')
 from Personal_Collection import int_inputter
@@ -95,7 +96,7 @@ Type 'Exit' to close your shopping cart.""")
             break
 
         else:
-            print("Error, invalid choice.")
+            print("Error, invalid input.")
 
         if len(shopping_cart) > 0:
             for ki in products_list:

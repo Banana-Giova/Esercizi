@@ -249,7 +249,9 @@ if True:            #has to be kept active to make printing_functions.py work
 
 if False:
     #8-16. Imports:
-    from L4_Esercizi_Slide import digit_inputter as fortyseven      #importing a function from another module and renaming it locally
+    import sys
+    sys.path.append('/home/banana/Desktop/Coding/Esercizi')
+    from Personal_Collection import int_inputter as fortyseven      #importing a function from another module and renaming it locally
 
     print("Ecco il numero selezionato moltiplicato per 47 -> ", fortyseven()*47)    #using the renamed imported function
 
