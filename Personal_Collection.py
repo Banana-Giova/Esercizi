@@ -35,7 +35,7 @@ def int_inputter() -> int:
     return int(inputted_number)
 
 if False:
-    #(Y/n) Manager
+    #(Y/n) Inputter
     while True:
         choice:str = (input("Choice Placeholder?(Y/n)")).lower()
         if choice == "y":
