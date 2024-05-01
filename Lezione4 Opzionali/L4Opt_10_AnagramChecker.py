@@ -34,6 +34,7 @@ def anagram_checker(first_str:str, second_str:str) -> str:
         return False
     
 
+
 x:str = "the dogs were mad"
 y:str = "methods wagered"
 

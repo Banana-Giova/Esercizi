@@ -43,6 +43,7 @@ Type 'Encrypt' or 'Decrypt' -> """)).casefold()
             for i in list_to_cipher:
                 low_char:bool = False
                 upp_char:bool = False
+
                 if i in low_alphabet\
                 or i in upp_alphabet:
                     counter:int = shift_value
@@ -84,6 +85,7 @@ Type 'Encrypt' or 'Decrypt' -> """)).casefold()
             for i in list_to_cipher:
                 low_char:bool = False
                 upp_char:bool = False
+
                 if i in low_alphabet\
                 or i in upp_alphabet:
                     counter:int = shift_value
@@ -124,6 +126,6 @@ Type 'Encrypt' or 'Decrypt' -> """)).casefold()
         else:
             print("Error, invalid input.")
 
-    
+
 
 print(caesar_cipher("Signori, buonasera"))
