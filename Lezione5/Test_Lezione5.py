@@ -193,6 +193,4 @@ def merge_dictionaries(dict1:dict, dict2:dict) -> dict:
 
     return dict3
 
- 	
-
 print(merge_dictionaries({}, {'a': 10, 'b': 20}))
