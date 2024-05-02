@@ -16,6 +16,10 @@ def float_inputter() -> float:
             continue
     return float(inputted_number)
 
+
+"---------------------------------------------------------------------"
+
+
 def int_inputter() -> int:
     """
         This function allows the user to input an int easily, 
@@ -33,6 +37,10 @@ def int_inputter() -> int:
             inputted_number = ""
             continue
     return int(inputted_number)
+
+
+"---------------------------------------------------------------------"
+
 
 if False:
     #(Y/n) Inputter
