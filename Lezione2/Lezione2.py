@@ -1,4 +1,5 @@
 #Giovanni di Giuseppe   18/04/2024
+#Esercizi Lezione 2
 
 if False:
     print("I gonfaloni")
