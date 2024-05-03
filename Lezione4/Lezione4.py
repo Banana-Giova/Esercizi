@@ -1,3 +1,6 @@
+#Giovanni di Giuseppe   18/04/2024
+#Esercizi Lezione 4
+
 """
 8-1. Message: 
 - Write a function called display_message() that prints one sentence telling everyone what you are learning about 
