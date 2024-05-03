@@ -1,3 +1,6 @@
+#Giovanni di Giuseppe   18/04/2024
+#Esercizi Lezione 5
+
 """
 1. Create a Playlist:
 
