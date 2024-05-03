@@ -1,3 +1,6 @@
+#Giovanni di Giuseppe   18/04/2024
+#Esercizi Lezione 3
+
 """
 4-1. Pizzas: 
 - Think of at least three kinds of your favorite pizza. 
