@@ -27,8 +27,8 @@ def rngesus(userange:int) -> str:
                     print("Correct, you won!")
                     break
             except ValueError:
-                print("""Insert a valid int number, 
-strings and floats are not accepted!""")
+                print("Insert a valid int number," \
+                      "strings and floats are not accepted!")
         else: 
             print("Attempts ran out, you lost! Try again!")
             break

@@ -79,20 +79,20 @@ Type 'Exit' to close your inventory manager.""")
             print("Main menu loading...")
         
         elif user_choice == "search":
-            choice:str = input("""What item do you want to search?
-Input the code of the item -> """)
+            choice:str = input("What item do you want to search?\n"\
+                               "Input the code of the item -> ")
             if choice in inventory:
-                print(f"""Item found! 
-Here's the info of the item -> {inventory[choice]}""")
+                print(f"Item found!\n"\
+                      f"Here's the info of the item -> {inventory[choice]}")
             else:
                 print("Error, invalid code or item absent.")
         
         elif user_choice == "update":
-            choice:str = input("""What item do you want to update?
-Input the code of the item -> """)
+            choice:str = input("What item do you want to update?\n"\
+                               "Input the code of the item -> ")
             if choice in inventory:
-                up_choice:str = (input("""What do you want to update?
-Input 'Name' or 'Price' -> """)).casefold()
+                up_choice:str = (input("What do you want to update?\n"\
+                                       "Input 'Name' or 'Price' -> ")).casefold()
                 if up_choice == "name":
                     new_choice:str = input("Input the new name -> ")
                     inventory[choice][0] = new_choice

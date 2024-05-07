@@ -12,12 +12,12 @@ sys.path.append('/home/banana/Desktop/Coding/Esercizi')
 from Personal_Collection import int_inputter
 
 def caesar_cipher(str_to_cipher:str) -> str:
-    print("""Welcome to the Caesar Cipher Encrypter!
-Input the shift value of your cipher!""")
+    print("Welcome to the Caesar Cipher Encrypter!\n"\
+          "Input the shift value of your cipher!")
     shift_value:int = int_inputter()
     while True:
-        choice:str = (input("""Great! Do you want to encrypt or decrypt?
-Type 'Encrypt' or 'Decrypt' -> """)).casefold()
+        choice:str = (input("Great! Do you want to encrypt or decrypt?\n"\
+                            "Type 'Encrypt' or 'Decrypt' -> ")).casefold()
         if choice == "encrypt":
             print("Encryption loading...")
             break

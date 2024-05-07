@@ -23,12 +23,12 @@ symbols_list:list[str] = ["!","(", ")", "-", "[", "]", "{", "}", ";", ":",
 
 
 def password_generator() -> str:
-    print("""Welcome to the Password Generator!
-Input the lenght that your new password will have!""")
+    print("Welcome to the Password Generator!\n"\
+          "Input the lenght that your new password will have!")
     pass_lenght:int = int_inputter()
-    print("""Great! Now input your desired character types.
-You can choose between:
-lowercase letters, uppercase letters, numbers, symbols!""")
+    print("Great! Now input your desired character types.\n"\
+          "You can choose between:\n"
+          "lowercase letters, uppercase letters, numbers, symbols!")
     
     password_list:list = []
 

@@ -20,8 +20,8 @@ from Personal_Collection import int_inputter
 
 def roman_numerals_converter() -> str:
     
-    print("""Welcome to the Roman Numeral Conversion program!
-Input the number that you want to convert into roman numerals!""")
+    print("Welcome to the Roman Numeral Conversion program!\n"\
+          "Input the number that you want to convert into roman numerals!")
     num_to_convert:int = int_inputter()
 
     roman_num:str = ""
