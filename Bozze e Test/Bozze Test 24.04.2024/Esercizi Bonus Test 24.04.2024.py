@@ -76,52 +76,25 @@ La funzione dovrebbe restituire 5 (la lunghezza di questa sottosequenza).
 """
 
 def find_lhs(nums: list[int]) -> int:
-    counter:None = None
-    harm:list = []
-    harm_val:None = None
-    compharm:list = []
-    compharm_val:str = ''
+    harm_val:int = 0
     num_count:dict = {
     }
 
     for i in nums:
         if i not in num_count:
             num_count[i] = nums.count(i)
-    
-    """
-    prev_ki:None = None
-    for ki, vi in num_count.items():
-        if prev_ki == None:
-            prev_ki = ki
-        else:
-            if (ki == prev_ki\
-            or ki - prev_ki == 1\
-            or ki - prev_ki == -1)\
-            and len(harm) == 0:
-                harm.append(ki)
-                harm.append(prev_ki)
-                harm_val = vi + (num_count[prev_ki])
-            else:
-                if (ki == prev_ki\
-                or ki - prev_ki == 1\
-                or ki - prev_ki == -1)\
-                and ki not in harm:
-                    compharm_val = vi + (num_count[prev_ki])
-                    if compharm_val > harm_val:
-                        harm_val = compharm_val
-                        harm.clear()
-                        harm.append(ki)
-                        harm.append(prev_ki)
-    """
 
-
-
-    if harm_val == None:
-        harm_val = 0
+    for ki1, vi1 in num_count.items():
+        for ki2, vi2 in num_count.items():
+            if ki1 == ki2:
+                continue
+            elif ki1 == ki2\
+                 or ki1 - ki2 == 1\
+                 or ki1 - ki2 == -1:
+                    if (vi1 + vi2) >  harm_val:
+                        harm_val = vi1 + vi2
 
     return harm_val
-
-print(find_lhs([1,3,2,2,5,2,3,7]))
 
 """
 Date due stringhe note e magazine, restituisci true se note 
