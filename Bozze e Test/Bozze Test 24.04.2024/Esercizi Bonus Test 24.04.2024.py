@@ -116,8 +116,6 @@ def to_hex(num: int) -> str:
         
     return hexadecimal
 
-print(to_hex(-1))
-
 
 """
 Immagina di avere una raccolta di note musicali 
