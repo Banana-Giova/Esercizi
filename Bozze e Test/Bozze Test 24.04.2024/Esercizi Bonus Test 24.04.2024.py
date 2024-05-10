@@ -65,56 +65,58 @@ def to_hex(num: int) -> str:
                      15: "f"}
 
     if num < 0:
-        bin_list = list(str((bin(num & 0b11111111111111111111111111111111)).removeprefix('0b')))
-        for i in bin_list:
-            if i == 1:
-                i = 0
-            else:
-                i = 1
-        for i in bin_list:
-            binary += i
+        num += 2**32
 
-        bin_cluster1:str = binary[0:4]
-        bin_cluster1:str = hex_conv[(int(bin_cluster1[0])*8) + (int(bin_cluster1[0])*4) \
-                         + (int(bin_cluster1[0])*2) + (int(bin_cluster1[0])*1)]
-        bin_cluster2:str = binary[4:8]
-        bin_cluster2:str = hex_conv[(int(bin_cluster2[0])*8) + (int(bin_cluster2[0])*4) \
-                         + (int(bin_cluster2[0])*2) + (int(bin_cluster2[0])*1)]
-        bin_cluster3:str = binary[8:12]
-        bin_cluster3:str = hex_conv[(int(bin_cluster3[0])*8) + (int(bin_cluster3[0])*4) \
-                         + (int(bin_cluster3[0])*2) + (int(bin_cluster3[0])*1)]
-        bin_cluster4:str = binary[12:16]
-        bin_cluster4:str = hex_conv[(int(bin_cluster4[0])*8) + (int(bin_cluster4[0])*4) \
-                         + (int(bin_cluster4[0])*2) + (int(bin_cluster4[0])*1)]
-        bin_cluster5:str = binary[16:20]
-        bin_cluster5:str = hex_conv[(int(bin_cluster5[0])*8) + (int(bin_cluster5[0])*4) \
-                         + (int(bin_cluster5[0])*2) + (int(bin_cluster5[0])*1)]
-        bin_cluster6:str = binary[20:24]
-        bin_cluster6:str = hex_conv[(int(bin_cluster6[0])*8) + (int(bin_cluster6[0])*4) \
-                         + (int(bin_cluster6[0])*2) + (int(bin_cluster6[0])*1)]
-        bin_cluster7:str = binary[24:28]
-        bin_cluster7:str = hex_conv[(int(bin_cluster7[0])*8) + (int(bin_cluster7[0])*4) \
-                         + (int(bin_cluster7[0])*2) + (int(bin_cluster7[0])*1)]
-        bin_cluster8:str = binary[28:32]
-        bin_cluster8:str = hex_conv[(int(bin_cluster8[0])*8) + (int(bin_cluster8[0])*4) \
-                         + (int(bin_cluster8[0])*2) + (int(bin_cluster8[0])*1)]
-        
-        hexadecimal = str(bin_cluster1) + str(bin_cluster2) + str(bin_cluster3) + str(bin_cluster4)\
-                    + str(bin_cluster5) + str(bin_cluster6) + str(bin_cluster7) + str(bin_cluster8)
+    """
+    bin_list = list(str((bin(num & 0b11111111111111111111111111111111)).removeprefix('0b')))
+    for i in bin_list:
+        if i == 1:
+            i = 0
+        else:
+            i = 1
+    for i in bin_list:
+        binary += i
 
-
-
-    else:
-        while num > 16:
-            remaind:int = num % 16
-            hex_note:str = str(hex_conv[remaind])
-            hexadecimal = hex_note + hexadecimal
-            num //= 16
-        hexadecimal = str(num) + hexadecimal
+    bin_cluster1:str = binary[0:4]
+    bin_cluster1:str = hex_conv[(int(bin_cluster1[0])*8) + (int(bin_cluster1[0])*4) \
+                        + (int(bin_cluster1[0])*2) + (int(bin_cluster1[0])*1)]
+    bin_cluster2:str = binary[4:8]
+    bin_cluster2:str = hex_conv[(int(bin_cluster2[0])*8) + (int(bin_cluster2[0])*4) \
+                        + (int(bin_cluster2[0])*2) + (int(bin_cluster2[0])*1)]
+    bin_cluster3:str = binary[8:12]
+    bin_cluster3:str = hex_conv[(int(bin_cluster3[0])*8) + (int(bin_cluster3[0])*4) \
+                        + (int(bin_cluster3[0])*2) + (int(bin_cluster3[0])*1)]
+    bin_cluster4:str = binary[12:16]
+    bin_cluster4:str = hex_conv[(int(bin_cluster4[0])*8) + (int(bin_cluster4[0])*4) \
+                        + (int(bin_cluster4[0])*2) + (int(bin_cluster4[0])*1)]
+    bin_cluster5:str = binary[16:20]
+    bin_cluster5:str = hex_conv[(int(bin_cluster5[0])*8) + (int(bin_cluster5[0])*4) \
+                        + (int(bin_cluster5[0])*2) + (int(bin_cluster5[0])*1)]
+    bin_cluster6:str = binary[20:24]
+    bin_cluster6:str = hex_conv[(int(bin_cluster6[0])*8) + (int(bin_cluster6[0])*4) \
+                        + (int(bin_cluster6[0])*2) + (int(bin_cluster6[0])*1)]
+    bin_cluster7:str = binary[24:28]
+    bin_cluster7:str = hex_conv[(int(bin_cluster7[0])*8) + (int(bin_cluster7[0])*4) \
+                        + (int(bin_cluster7[0])*2) + (int(bin_cluster7[0])*1)]
+    bin_cluster8:str = binary[28:32]
+    bin_cluster8:str = hex_conv[(int(bin_cluster8[0])*8) + (int(bin_cluster8[0])*4) \
+                        + (int(bin_cluster8[0])*2) + (int(bin_cluster8[0])*1)]
+    
+    hexadecimal = str(bin_cluster1) + str(bin_cluster2) + str(bin_cluster3) + str(bin_cluster4)\
+                + str(bin_cluster5) + str(bin_cluster6) + str(bin_cluster7) + str(bin_cluster8)
+    """
+    
+    while num > 16:
+        remaind:int = num % 16
+        hex_note:str = str(hex_conv[remaind])
+        hexadecimal = hex_note + hexadecimal
+        num //= 16
+    num = str(hex_conv[num])
+    hexadecimal = num + hexadecimal
         
     return hexadecimal
 
-print(to_hex(1261))
+print(to_hex(-1))
 
 
 """
