@@ -218,12 +218,66 @@ if False:
     the_gelatist.which_flavors()
     print(the_gelatist.describe_restaurant())
 
-if True:
-    #9-7. Admin:
+
+#9-7. Admin:
+class Admin(User):
+    def __init__(self, first_name: str, last_name: str, 
+                    date_of_birth: str, gender: str,
+                    privileges: list[str]) -> None:
+        super().__init__(first_name, last_name, 
+                            date_of_birth, gender)
+        
+        self.first_name = first_name
+        self.last_name = last_name
+        self.date_of_birth = date_of_birth
+        self.gender = gender
+        self.login_attempts = 0
+        self.privileges = privileges
+        
+    def show_privileges(self):
+        privilegium:str = ''
+        print("The privileges of the admin are:")
+        for i in self.privileges:
+            privilegium += i
+            if i != self.privileges[-1]\
+            and i != self.privileges:
+                privilegium += ', '
+            else:
+                privilegium += '.'
+        print(privilegium)
+
+if False:
+    giovanni_admin:Admin = Admin("Giovanni", "di Giuseppe",
+                           "19/07/2002", "M",
+                           ["Modify documents", "Download updates",
+                            "Seek larger souls", 
+                            "Lest this land swallow us all"])
+    
+    giovanni_admin.show_privileges()
+
+if False:
+    #9-8. Privileges:
+    
+    class Privileges:
+        def __init__(self, privileges:list[str]) -> None:
+            self.privileges = privileges
+
+        def show_privileges(self):
+            privilegium:str = ''
+            print("The privileges of the admin are:")
+            for i in self.privileges:
+                privilegium += i
+                if i != self.privileges[-1]\
+                and i != self.privileges:
+                    privilegium += ', '
+                else:
+                    privilegium += '.'
+            print(privilegium)
+    
     class Admin(User):
         def __init__(self, first_name: str, last_name: str, 
                      date_of_birth: str, gender: str,
-                     privileges: list[str]) -> None:
+                     privileges: Privileges) -> None:
             super().__init__(first_name, last_name, 
                              date_of_birth, gender)
             
@@ -246,10 +300,124 @@ if True:
                     privilegium += '.'
             print(privilegium)
 
-    giovanni_admn:Admin = Admin("Giovanni", "di Giuseppe",
+    giovannis_privileges:Privileges \
+                       = Privileges(["Modify documents", "Download updates",
+                                    "Seek larger souls", 
+                                    "Lest this land swallow us all"])
+    giovanni_admin:Admin = Admin("Giovanni", "di Giuseppe",
                            "19/07/2002", "M",
-                           ["Modify documents", "Download updates",
-                            "Seek larger souls", 
-                            "Lest this land swallow us all"])
+                           giovannis_privileges)
     
-    giovanni_admn.show_privileges()
+    giovanni_admin.privileges.show_privileges()
+
+
+if False:
+    #9-9. Battery Upgrade:
+    """
+    electric_car.pu assente
+    Esercizio non completabile
+    """
+
+if False:
+    #9-10. Imported Restaurant, 9-11. Imported Admin & 9-12. Multiple Modules:
+    from module_import1 import Restaurant, User
+    from module_import2 import Admin, Privileges
+
+    betto_e_mary:Restaurant = Restaurant("Betto e Mary",
+                                         "cucina romana")
+    reinbo:Restaurant = Restaurant("Reinbo Sushi",
+                                   "cucina orientale", 22)
+    viecce:Restaurant = Restaurant("Viecce",
+                                   "cucina da pub", 713)
+    
+    print(betto_e_mary.describe_restaurant())
+    print(reinbo.describe_restaurant())
+    print(viecce.describe_restaurant())
+
+    print(betto_e_mary.open_restaurant())
+    print(reinbo.open_restaurant())
+    print(viecce.open_restaurant())
+
+    viecce.increment_number_served(101)
+    viecce.set_number_served(42)
+    print(viecce.describe_restaurant())
+    betto_e_mary.set_number_served(1000)
+    print(betto_e_mary.describe_restaurant())
+
+    print("\n------------------------------------------------------\n")
+
+    giovannis_privileges:Privileges \
+                       = Privileges(["Modify documents", "Download updates",
+                                    "Seek larger souls", 
+                                    "Lest this land swallow us all"])
+    giovanni_admin:Admin = Admin("Giovanni", "di Giuseppe",
+                           "19/07/2002", "M",
+                           giovannis_privileges)
+    
+    giovanni_admin.privileges.show_privileges()
+
+if False:
+    #9-13. Dice:
+    import random
+    class Die:
+        def __init__(self, sides:int=6) -> None:
+            self.sides = sides
+
+        def roll_die(self):
+            return f"Rolling... {random.randint(1, self.sides)}!\n"\
+                   f"This die has {self.sides} faces."
+
+    d6:Die = Die()
+    d10:Die = Die(10)
+    d20:Die = Die(20)
+
+    if True:
+        for i in range(10):
+            print (d6.roll_die())
+    if True:
+        for i in range(10):
+            print (d10.roll_die())
+    if True:
+        for i in range(10):
+            print (d20.roll_die())
+
+if True:
+    #9-14. Lottery & 9-15. Lottery Analysis:
+    import random
+
+    low_alphabet:list = list(map(chr, range(ord('a'), ord('z')+1)))
+    upp_alphabet:list = []
+    for i in low_alphabet:
+        upp_alphabet.append(i.capitalize())
+    letters:list = []
+    letters.extend(low_alphabet)
+    letters.extend(upp_alphabet)
+
+    lottery:list = []
+    for i in range(5):
+        lottery.append(str(random.choice(letters)))
+    for i in range(10):
+        lottery.append(random.randint(0,9))
+    
+    if False:
+        print("The alphanums are...")
+        for i in range(4):
+            print(str(random.choice(lottery)))
+
+    my_ticket:list = ["4", "7", "7", "4"]
+
+    counter = 0
+    beb:bool = True
+    while beb == True:
+        lucky:list =[]
+        for i in range(4):
+            lucky.append(str(random.choice(lottery)))
+        
+        if lucky[0] == my_ticket[0]\
+        and lucky[1] == my_ticket[1]\
+        and lucky[2] == my_ticket[2]\
+        and lucky[3] == my_ticket[3]:
+            print(f"You won! It took {counter} tries.")
+            beb = False
+        else:
+            counter += 1
