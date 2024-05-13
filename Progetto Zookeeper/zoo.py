@@ -54,25 +54,60 @@ ci si aspetta di avere una rappresentazione testuale dello zoo come segue:
     Animal(name=Scoiattolo, species=Blabla, age=25)
 
     Animal(name=Lupo, species=Lupus, age=14)
-    #########################
+    ##############################
 
     Fra un recinto e l'altro mettete 30 volte il carattere #.
 """
 
+
 #When multiplying floats round by 3.
+
+#Create a global/class dictionary,
+#containing fences(classes) and animals in them(list of classes)
+
+
+
 
 
 class Zoo:
-    def __init__(self, fences:list, zoo_keepers:list):
+    def __init__(self, fences:list, zoo_keepers:list) -> None:
         self.fences = fences
-        self.zoo_keeper = zoo_keepers
+        self.zoo_keepers = zoo_keepers
 
-    def describe_zoo(self):
-        pass
+    def describe_zoo(self) -> str:
+        
+        print(f"Guardians:")
+        if len(self.zoo_keepers) > 0:
+          for keeper in self.zoo_keepers:
+              print(f"\n\nZooKeeper(name={keeper.name}, "\
+                    f"surname={keeper.surname}, id={keeper.id})")
+            
+        print("\n\nFences:")
+        if len(self.fences) > 0:
+          for fence in self.fences:
+                print(f"\n\nFence(area={fence.area}, "\
+                    f"temperature={fence.temperature}, habitat={fence.habitat})")
+            
+                if len(fence.animals) != 0:
+                    print("\n\nwith animals:")
+
+                    for animal in fence.animals:
+                        print(f"\n\nAnimal(name={animal.name}, "\
+                            f"species={animal.species}, age={animal.age})")
+                    
+                print("#"*30)
 
 class Animal:
     def __init__(self, name:str, species:str, age:int,
-                 height:float, width:float, preferred_habitat:str):
+                 height:float, width:float, preferred_habitat:str) -> None:
+        
+        if height < 0:
+            height = 0
+        if width < 0:
+            width = 0
+        if age <= 0:
+            age = 0.1
+
         self.name = name
         self.species = species
         self.age = age
@@ -80,27 +115,64 @@ class Animal:
         self.width = width
         self.preferred_habitat = preferred_habitat
         self.health:float = round(100*(1/age), 3)
+        self.fence = None
+        self.area = height*width
 
 class Fence:
-    def __init__(self, area:float, temperature:int, habitat:str):
+    def __init__(self, area:float, temperature:int, habitat:str) -> None:
+
+        if area < 0:
+            area = 0
+
         self.area = area
         self.temperature = temperature
         self.habitat = habitat
+        self.animals = []
+        self.remaining_area = area
 
 class ZooKeeper:
-    def __init__(self, name:str, surname:str, id:str):
+    def __init__(self, name:str, surname:str, id:str) -> None:
         self.name = name
         self.surname = surname
         self.id = id
 
-    def add_animal(self, animal:Animal, fence:Fence):
-        pass
+    def add_animal(self, animal:Animal, fence:Fence) -> None:
 
-    def remove_animal(self, animal:Animal, fence:Fence):
-        pass
+        if animal.preferred_habitat == fence.habitat\
+        and (animal.height*animal.width) <= fence.remaining_area\
+        and animal.fence == None:
+            
+            fence.animals.append(animal)
+            fence.remaining_area -= animal.area
+            animal.fence = fence
+                
 
-    def feed(self, animal:Animal):
-        pass
+    def remove_animal(self, animal:Animal, fence:Fence) -> None:
 
-    def clean(self, fence:Fence):
-        pass
+        if animal in fence.animals:
+            fence.animals.remove(animal)
+            fence.remaining_area += animal.area
+            animal.fence = None
+
+    def feed(self, animal:Animal) -> None:
+
+        temp_area:float = animal.fence.area\
+                        - ((animal.area*1.02)-animal.area)
+        
+        if temp_area >= 0:
+            animal.fence.remaining_area -= (animal.area*1.02)-animal.area
+            round(animal.fence.remaining_area, 3)
+            animal.health *= 1.01
+            round(animal.health, 3)
+            if animal.health > 100.0:
+                animal.health = 100.0
+
+    def clean(self, fence:Fence) -> float:
+        
+        time_clean:float = 0.0
+        if fence.remaining_area == 0:
+            return fence.remaining_area
+        else:
+            time_clean = round((fence.area - fence.remaining_area)\
+                               /fence.remaining_area, 3)
+            return time_clean
