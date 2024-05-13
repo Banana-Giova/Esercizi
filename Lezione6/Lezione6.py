@@ -52,6 +52,8 @@ dipendente1:Dipendente = Dipendente(nome="Giovanni",
 print(dipendente1.ore_lavorate)
 print(dipendente1.calcola_età())
 
+
+
 class Professore(Dipendente):
     def __init__(self, nome: str, cognome: str, 
                  data_di_nascita: str, genere: str, 
