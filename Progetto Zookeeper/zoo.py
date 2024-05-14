@@ -74,28 +74,29 @@ class Zoo:
         self.fences = fences
         self.zoo_keepers = zoo_keepers
 
+
     def describe_zoo(self) -> str:
         
         print(f"Guardians:")
         if len(self.zoo_keepers) > 0:
           for keeper in self.zoo_keepers:
-              print(f"\n\nZooKeeper(name={keeper.name}, "\
+              print(f"\nZooKeeper(name={keeper.name}, "\
                     f"surname={keeper.surname}, id={keeper.id})")
             
-        print("\n\nFences:")
+        print("\nFences:")
         if len(self.fences) > 0:
           for fence in self.fences:
-                print(f"\n\nFence(area={fence.area}, "\
+                print(f"\nFence(area={fence.area}, "\
                     f"temperature={fence.temperature}, habitat={fence.habitat})")
             
                 if len(fence.animals) != 0:
-                    print("\n\nwith animals:")
+                    print("\nwith animals:")
 
                     for animal in fence.animals:
-                        print(f"\n\nAnimal(name={animal.name}, "\
+                        print(f"\nAnimal(name={animal.name}, "\
                             f"species={animal.species}, age={animal.age})")
                     
-                print("#"*30)
+                print("\n" + "#"*30)
 
 class Animal:
     def __init__(self, name:str, species:str, age:int,
@@ -118,8 +119,10 @@ class Animal:
         self.fence = None
         self.area = height*width
 
+
+
 class Fence:
-    def __init__(self, area:float, temperature:int, habitat:str) -> None:
+    def __init__(self, area:float, temperature:float, habitat:str) -> None:
 
         if area < 0:
             area = 0
@@ -130,11 +133,14 @@ class Fence:
         self.animals = []
         self.remaining_area = area
 
+
+
 class ZooKeeper:
     def __init__(self, name:str, surname:str, id:str) -> None:
         self.name = name
         self.surname = surname
         self.id = id
+
 
     def add_animal(self, animal:Animal, fence:Fence) -> None:
 
@@ -154,25 +160,85 @@ class ZooKeeper:
             fence.remaining_area += animal.area
             animal.fence = None
 
+
     def feed(self, animal:Animal) -> None:
 
-        temp_area:float = animal.fence.area\
-                        - ((animal.area*1.02)-animal.area)
-        
-        if temp_area >= 0:
-            animal.fence.remaining_area -= (animal.area*1.02)-animal.area
-            round(animal.fence.remaining_area, 3)
-            animal.health *= 1.01
-            round(animal.health, 3)
-            if animal.health > 100.0:
-                animal.health = 100.0
+        try:
+            if animal.fence != None:
+                temp_area:float = animal.fence.remaining_area\
+                                - ((animal.area*1.02)-animal.area)
+                
+                if temp_area >= 0:
+                    animal.fence.remaining_area -= (animal.area*1.02)-animal.area
+                    round(animal.fence.remaining_area, 3)
+                    animal.health *= 1.01
+                    round(animal.health, 3)
+        except Exception:
+            pass
+
 
     def clean(self, fence:Fence) -> float:
         
         time_clean:float = 0.0
         if fence.remaining_area == 0:
-            return fence.remaining_area
+            return fence.area
         else:
             time_clean = round((fence.area - fence.remaining_area)\
                                /fence.remaining_area, 3)
             return time_clean
+
+
+
+lorenzina:ZooKeeper = ZooKeeper(name="Lorenzo", 
+                                surname="Maggi", 
+                                id="1234")
+
+lorenzino:ZooKeeper = ZooKeeper(name="Lorenzo", 
+                                surname="Trombini", 
+                                id="5678")
+
+continental:Fence = Fence(area=234651614, 
+                          temperature=25, 
+                          habitat="Continent")
+
+mexico:Fence = Fence(area=24562457, 
+                          temperature=29, 
+                          habitat="Carlos")
+
+squirrel:Animal = Animal(name="Scoiattolo", 
+                         species="Scoiatolus", 
+                         age=25,
+                         height=2, width=2,
+                         preferred_habitat="Continent")
+
+wolf:Animal = Animal(name="Lupo", 
+                     species="Lupus", 
+                     age=14,
+                     height=137546, width=1344,
+                     preferred_habitat="Continent")
+
+scronf:Animal= Animal(name="Gorb",
+                      species="Zorpal",
+                      age=32,
+                      height=232345, width=4,
+                      preferred_habitat="Carlos")
+
+biomarco:Zoo = Zoo(fences=[continental],
+                   zoo_keepers=[lorenzina])
+
+biomuchaco:Zoo = Zoo(fences=[mexico],
+                     zoo_keepers=[lorenzino])
+
+
+
+lorenzina.add_animal(squirrel, continental)
+lorenzina.add_animal(wolf, continental)
+lorenzino.add_animal(scronf, mexico)
+
+biomarco.describe_zoo()
+print(lorenzina.clean(continental))
+lorenzina.feed(wolf)
+print(lorenzina.clean(continental))
+lorenzino.add_animal(scronf, mexico)
+biomuchaco.describe_zoo()
+print(lorenzino.clean(mexico))
