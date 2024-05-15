@@ -1,3 +1,7 @@
+"""
+Materiale del prof Bardh
+"""
+
 class Room:
     
     def __init__(self, id: str, floor: int, seats: int):
