@@ -31,8 +31,6 @@ class Student(Person):
         + f", n_matricola={self.n_matricola} "
 
 
-
-
 class Cat(Animal):
     def __init__(self, età: int, nome:str, 
                  cat_id:str) -> None:
