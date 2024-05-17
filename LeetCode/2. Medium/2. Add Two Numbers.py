@@ -2,8 +2,11 @@ class Solution:
     def addTwoNumbers(self, l1: list, 
                       l2: list) -> list[int]:
         
-        #Not working because ListNodes are trash
-        #Logically it does indeed work
+        """
+        while head:
+        glorb.append(head.val)
+        head = head.next
+        """
 
         list(str(l1))
         list(str(l2))
