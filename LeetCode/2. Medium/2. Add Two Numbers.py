@@ -1,3 +1,14 @@
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+def listNodeCreator(listing:list[int]):
+    head = None
+    for val in reversed(listing):
+        head = ListNode(val, head)
+    return head
+
 class Solution:
     def addTwoNumbers(self, l1: list, 
                       l2: list) -> list[int]:
@@ -26,7 +37,9 @@ class Solution:
         
         l3 = list(str(int(l1_str) + int(l2_str)))
         l3.reverse()
-        return l3   #to add a listnode creator
+        return listNodeCreator(l3)
+    
+
     
 solution:Solution = Solution()
 print(solution.addTwoNumbers([2,4,3], [5,6,4]))
