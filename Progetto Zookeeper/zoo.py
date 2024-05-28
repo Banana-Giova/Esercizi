@@ -127,15 +127,19 @@ class ZooKeeper:
             if animal.fence != None:
                 try:
                     temp_area:float = animal.fence.remaining_area\
-                                    - ((animal.area*1.02)-animal.area)
+                                    - ((animal.area*1.04)-animal.area)
                 except ZeroDivisionError:
                     temp_area:float = 0.0
                 
                 if temp_area >= 0:
-                    animal.fence.remaining_area -= (animal.area*1.02)-animal.area
+                    animal.fence.remaining_area -= (animal.area*1.04)-animal.area
                     round(animal.fence.remaining_area, 3)
+                    animal.height *= 1.02
+                    animal.width *= 1.02
                     animal.health *= 1.01
                     round(animal.health, 3)
+                    round(animal.height, 3)
+                    round(animal.width, 3)
         except Exception:
             pass
 
