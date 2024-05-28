@@ -173,8 +173,3 @@ def is_valid_parenthesis(s: str) -> bool:
         return True
     else:
         return False
-    
-#Esercizio 6
-
-def has_cycle(head) -> list[int]:
-    print("sium")
