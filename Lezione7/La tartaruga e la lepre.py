@@ -18,7 +18,6 @@ def view_pos(tartaruga:int, lepre:int) -> str:
         + f"THE HARE IS IN THE SQUARE N. {lepre+1}!")
     
 def tarta_choice(tartaruga:int, tartamina:int) -> str:
-    tired:bool = False
     tarta_movement:dict[int, int] = {1: (3, 5),
                                      2: (3, 5),
                                      3: (3, 5),
@@ -31,23 +30,20 @@ def tarta_choice(tartaruga:int, tartamina:int) -> str:
                                     10: (1, 3)}
     
     choice = random.randint(1, 10)
-    tartamina -= tarta_movement[choice][1]
-    if tartamina <= 0:
-        tartamina = 0
-        tired = True
+    if tartamina < tarta_movement[choice][1]:
         print("THE TORTOISE IS TIRED!!!")
-
-    if tired != True:
+        tartamina += 10
+    else:
         tartaruga += tarta_movement[choice][0]
+        tartamina -= tarta_movement[choice][1]
 
     if tartaruga < 0:
         tartaruga = 0
-    return tartaruga
+    return tartaruga, tartamina
 
 def lep_choice(lepre:int, leprergia:int) -> str:
-    tired:bool = False
-    lep_movement:dict[int, int] = {1: (0, -5),
-                                   2: (0, -5),
+    lep_movement:dict[int, int] = {1: (0, -10),
+                                   2: (0, -10),
                                    3: (9, 15),
                                    4: (9, 15),
                                    5: (-12, 20),
@@ -58,18 +54,18 @@ def lep_choice(lepre:int, leprergia:int) -> str:
                                   10: (-2, 8)}
     
     choice = random.randint(1, 10)
-    leprergia -= lep_movement[choice][1]
-    if leprergia <= 0:
-        leprergia = 0
-        tired = True
+    if leprergia < lep_movement[choice][1]:
         print("THE HARE IS TIRED!!!")
-
-    if tired != True:
+    else:
         lepre += lep_movement[choice][0]
+        leprergia -= lep_movement[choice][1]
+
+    if leprergia > 100:
+        leprergia = 100
 
     if lepre < 0:
         lepre = 0
-    return lepre
+    return lepre, leprergia
 
 
 
@@ -85,16 +81,19 @@ while winner == False:
         weather = 0
         pioggia:bool = random.getrandbits(1)
 
-    tartaruga = tarta_choice(tartaruga, tartamina)
-    lepre = lep_choice(lepre, leprergia)
+    tartaruga, tartamina = tarta_choice(tartaruga, tartamina)
+    lepre, leprergia = lep_choice(lepre, leprergia)
 
     if (tartaruga+1) in modifiers:
         print(f"THE TORTOISE STEPPED ON A {modifiers[tartaruga+1][1]}!!!")
         tartaruga += modifiers[tartaruga+1][0]
+        if tartaruga > 69:
+            tartaruga = 69
     if (lepre+1) in modifiers:
         print(f"THE HARE STEPPED ON A {modifiers[lepre+1][1]}!!!")
         lepre += modifiers[lepre+1][0]
-        
+        if lepre > 69:
+            lepre = 69        
 
     if pioggia == True:
         print("IT'S RAINING!!!")
@@ -109,6 +108,7 @@ while winner == False:
     and tartaruga == lepre:
         winner = True
         print("IT'S A TIE")
+        continue
     elif tartaruga > 69:
         winner = True
         print("TORTOISE WINS! || VAY!!!")
@@ -123,13 +123,6 @@ while winner == False:
     else:
         percorso[tartaruga] = "T"
         percorso[lepre] = "H"
-
-    tartamina += 10
-    if tartamina > 100:
-        tartamina = 100
-    leprergia += 10
-    if leprergia > 100:
-        leprergia = 100
 
     print(percorso)
     view_pos(tartaruga, lepre)
