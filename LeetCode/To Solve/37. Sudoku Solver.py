@@ -1,10 +1,9 @@
 class Solution:
     def solveSudoku(self, board: list[list[str]]) -> None:
-        
         """
         Do not return anything, modify board in-place instead.
         """
-
+        
         sqr1:list = [board[0][0,1,2],
                      board[1][0,1,2],
                      board[2][0,1,2]]
@@ -34,7 +33,7 @@ class Solution:
         sqr9:list = [board[6][6,7,8],
                      board[7][6,7,8],
                      board[8][6,7,8]]
-                     
+        
+
 
         
-        current_sqr:list = 'placeholder'

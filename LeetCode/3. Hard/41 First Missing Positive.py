@@ -1,5 +1,7 @@
 class Solution:
-    def firstMissingPositive(self, nums: list[int]) -> int:
+    
+    @staticmethod
+    def firstMissingPositive(nums: list[int]) -> int:
         max_num:int = max(nums)
         nums = list(set(nums))
         nums.sort()
@@ -15,5 +17,5 @@ class Solution:
         else:
             return 1
         
-solution:Solution = Solution()
-print(solution.firstMissingPositive([1,2,0]))
+
+print(Solution.firstMissingPositive([1,2,0]))
