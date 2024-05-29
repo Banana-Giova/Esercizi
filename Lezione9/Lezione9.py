@@ -283,6 +283,9 @@ class Account:
         return self.balance
 
 class Bank:
+
+    vault:int = 0
+
     def __init__(self) -> None:
         self.accounts:dict[str, Account] = {}
 
@@ -290,13 +293,14 @@ class Bank:
         if account_id not in self.accounts.keys():
             self.accounts[account_id] = Account(account_id=account_id)
             new_account:Account = Account(account_id=account_id,
-                                        balance=0.0)
+                                          balance=0.0)
             return new_account
         else:
             raise ValueError("Account with this ID already exists")
         
     def deposit(self, account_id, amount):
         self.accounts[account_id].balance += amount
+        Bank.vault += amount
 
     def get_balance(self, account_id):
         try:
