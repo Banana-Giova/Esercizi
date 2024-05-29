@@ -285,7 +285,6 @@ class Account:
 class Bank:
 
     vault:int = 0
-
     def __init__(self) -> None:
         self.accounts:dict[str, Account] = {}
 
