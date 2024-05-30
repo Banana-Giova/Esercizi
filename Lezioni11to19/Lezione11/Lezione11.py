@@ -87,7 +87,6 @@ if False:
     print(sala_bisanzio.posti_disponibili())
     print(sala_muschiello.posti_disponibili())
 
-
 """
 Gestione di un magazzino
 Scrivi un programma in Python che gestisca un magazzino. Il programma deve permettere di aggiungere prodotti al magazzino, cercare prodotti per nome e verificare la disponibilità di un prodotto.
