@@ -23,8 +23,64 @@ Test Cases:
 - In qualsiasi momento, un utente può visualizzare quali libri sono disponibili per il prestito.
 """
 
+class Libro:
+    def __init__(self, titolo:str, autore:str, 
+                is_borrowed:bool=False) -> None:
+        self.titolo = titolo
+        self.autore = autore
+        self.is_borrowed = is_borrowed
 
+class Libreria:
+    def __init__(self, libri:dict[str, bool]={}) -> None:
+        self.libri = libri
 
+    def aggiungi_libro(self, libro:Libro) -> str:
+        self.libri[libro.titolo] = libro.is_borrowed
+        return "Libro aggiunto con successo."
+
+    def presta_libro(self, titolo:str) -> str:
+        if titolo in self.libri\
+        and self.libri[titolo] == False:
+            self.libri[titolo] = True
+            return "Prestito effettuato con successo."
+        else:
+            return "Il libro richiesto non è disponibile."
+    
+    def restituisci_libro(self, titolo:str) -> str:
+        if titolo in self.libri\
+        and self.libri[titolo] == True:
+            self.libri[titolo] = False
+            return "Restituzione effettuata con successo."
+        else:
+            return "Impossibile restituire il libro, in quanto non prestato in precedenza."
+        
+    def mostra_libri_disponibili(self) -> list:
+        if len(self.libri) != 0:
+            temp_list:list = []
+            for ki, vi in self.libri.items():
+                if vi == False:
+                    temp_list.append(ki)
+            return temp_list
+        else:
+            return "Errore, nessun libro disponibile."
+
+in_cucina_con_ciccio:Libro = Libro(titolo="In Cucina con Ciccio",
+                                      autore="Cicciogamer89")
+io_me_me_stesso:Libro = Libro(titolo="Io, me e me stesso",
+                              autore="Cicciogamer89")
+olimpiadi_ciccio:Libro = Libro(titolo="CiccioGamer e le Olimpiadi degli eSport",
+                               autore="Cicciogamer89")
+
+archiginnasio:Libreria = Libreria()
+archiginnasio.aggiungi_libro(in_cucina_con_ciccio)
+archiginnasio.aggiungi_libro(io_me_me_stesso)
+archiginnasio.aggiungi_libro(olimpiadi_ciccio)
+print(archiginnasio.mostra_libri_disponibili())
+print(archiginnasio.presta_libro("In Cucina con Ciccio"))
+print(archiginnasio.restituisci_libro("In Cucina con Ciccio"))
+print(archiginnasio.restituisci_libro("Io, me e me stesso"))
+print(archiginnasio.presta_libro("In Cucina con Ciccio"))
+print(archiginnasio.mostra_libri_disponibili())
 
 
 """
@@ -45,3 +101,47 @@ Classe:
 
     - search_movies_by_title(title): Trova tutti i film che contengono una certa parola nel titolo. Restituisce un elenco dei registi e dei rispettivi film che contengono la parola cercata o un messaggio di errore se nessun film contiene la parola cercata nel titolo.
 """
+
+class MovieCatalog:
+    def __init__(self, catalog:dict[str, list]=[]) -> None:
+        self.catalog = catalog
+
+    def add_movie(self, director_name, movies):
+        if isinstance(movies, list) == False:
+            self.catalog[director_name].append(movies)
+        else:
+            self.catalog[director_name].extend(movies)
+
+    def remove_movie(self, director_name, movie_name): 
+        if movie_name in self.catalog[director_name]:
+            self.catalog[director_name].remove(movie_name)
+        if len(self.catalog[director_name]) == 0:
+            del self.catalog[director_name]
+
+    def list_directors(self): 
+        if len(self.catalog) != 0:
+            temp_list:list = []
+            for i in self.catalog.keys():
+                temp_list.append(i)
+            return temp_list
+        else:
+            return "Errore, nessun regista disponibile."
+
+    def get_movies_by_director(self, director_name):
+        return self.catalog[director_name]
+    
+    def search_movies_by_title(self, title):
+        if len(self.catalog) != 0:
+            temp_list:list = []
+            for ki, vi in self.catalog.items():
+                if title in ki:
+                    temp_list.append(ki)
+                if title in vi:
+                    temp_list.append(vi)
+            if len(temp_list) == 0:
+                return "Nessuna corrispondenza trovata."
+            else:
+                return temp_list
+
+        else:
+            return "Errore, catalogo vuoto."
