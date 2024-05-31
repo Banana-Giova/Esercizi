@@ -1,110 +1,215 @@
-if False:
-    class Animal:
-        def __init__(self, specie:str, età:int) -> None:
-            self.specie = specie
-            self.età = età
+"""
+Exercise 1: Creating an Abstract Class with Abstract Methods
 
-        def __str__(self):
-            return f"{self.__class__.__name__}, specie={self.specie}, età={self.età}"
-
-    class Person(Animal):
-        def __init__(self, età: int, nome:str, 
-                    cognome:str, cf:str) -> None:
-            super().__init__("Homo Sapiens", età)
-            self.età = età
-            self.nome = nome
-            self.cognome = cognome
-            self.cf = cf
-
-        def __str__(self):
-            return super().__str__()\
-            + f", nome={self.nome}, cognome={self.cognome} "\
-            + f"cf={self.cf}"
-
-    class Student(Person):
-        def __init__(self, età: int, nome: str, cognome:str,
-                    cf: str, n_matricola:int) -> None:
-            super().__init__(età, nome, cognome, cf)
-            self.n_matricola = n_matricola
-        
-        def __str__(self):
-            return super().__str__()\
-            + f", n_matricola={self.n_matricola} "
-
-    class Cat(Animal):
-        def __init__(self, età: int, nome:str, 
-                    cat_id:str) -> None:
-            super().__init__("Felis Silvestris Catus", età)
-            self.nome = nome
-            self.cat_id = cat_id
-
-        def __str__(self):
-            return super().__str__()\
-            + f", nome={self.nome}, cat ID={self.cat_id}"
-
-    class Rabbit(Animal):
-        def __init__(self, età: int, nome:str, 
-                    rab_id:str) -> None:
-            super().__init__("Oryctolagus Cuniculus", età)
-            self.nome = nome
-            self.rab_id = rab_id
-
-        def __str__(self):
-            return super().__str__()\
-            + f", nome={self.nome}, rab ID={self.rab_id}"
-
-
-
-    giovanni:Student = Student(nome="Giovanni",
-                            cognome="di Giuseppe",
-                            età=21,
-                            cf="F1TT1Z10",
-                            n_matricola=420)
-
-    print(giovanni)
-
-    isa:Cat = Cat(nome="Isa",
-                età=5,
-                cat_id="M3G451UM")
-
-    print(isa)
-
-
+Create an abstract class Shape with an abstract method area 
+and another abstract method perimeter. 
+Then, create two subclasses Circle and Rectangle 
+that implement the area and perimeter methods.
+"""
 
 from abc import ABC, abstractmethod
+from math import pi
 
-class AbcAnimal(ABC):
+class Shape(ABC):
 
     @abstractmethod
-    def verso(self):
+    def area():
         pass
 
-class Cat(AbcAnimal):
+    def perimeter():
+        pass
 
-    def __init__(self, name) -> None:
+class Rectangle(Shape):
+    def __init__(self, base:float, height:float) -> None:
         super().__init__()
+        self.base = base
+        self.height = height
 
-        self.name = name
-
-    def verso(self):
-        print("eeEH")
-
-    def movimento(self):
-        print("Il gatto è veloce")
-
-isa:Cat = Cat(name="Isa")
-isa.verso()
-
-
-
-class Dog(AbcAnimal):
-
-    def __init__(self, name) -> None:
+    def area(self):
+        return self.base * self.height
+    
+    def perimeter(self):
+        return 2*(self.base + self.height)
+    
+class Circle(Shape):
+    def __init__(self, ray:float) -> None:
         super().__init__()
+        self.ray = ray
 
+    def area(self):
+        return pi*self.ray**2
+    
+    def perimeter(self):
+        return 2*pi*self.ray
+    
+rectus:Rectangle = Rectangle(base=34, height=22)
+circus:Circle = Circle(ray=16)
+
+if False:
+    print(rectus.area())
+    print(rectus.perimeter())
+    print(circus.area())
+    print(circus.perimeter())
+
+"""
+Exercise 2: Implementing Static Methods
+
+Create a class MathOperations with a static method add that takes two numbers 
+and returns their sum, and another static method multiply that takes two numbers 
+and returns their product.
+"""
+
+class MathOperations:
+
+    def sum(x:float, y:float):
+        return x+y
+    
+    def mult(x:float, y:float):
+        return x*y
+
+if False:
+    print(MathOperations.sum(21, 19))
+    print(MathOperations.mult(21, 19))
+
+"""
+Exercise 3: Library Management System 
+
+Create a Book class containing the following attributes: title, author, isbn
+The book class must contains the following methods:
+
+    __str__ method to return a string representation of the book.
+
+    @classmethod from_string(cls, book_str) to create a Book instance 
+    from a string in the format "title, author, isbn". 
+    It means that you must use the class reference cls 
+    to create a new object of the Book class using a string.
+"""
+
+class Book:
+    def __init__(self, isbn:str, title:str, author:str, 
+                is_borrowed:bool=False) -> None:
+        self.isbn = isbn
+        self.title = title
+        self.author = author
+        self.is_borrowed = is_borrowed
+
+    def borrow(self):
+        if self.is_borrowed == False:
+            self.is_borrowed = True
+        else:
+            raise ValueError("Book is already borrowed")
+
+    def return_book(self):
+        if self.is_borrowed == True:
+            self.is_borrowed = False
+        else:
+            raise ValueError("Book not borrowed by this member")
+        
+    def __str__(self):
+        return f"Title: {self.title}, Author: {self.author} "\
+            +  f"ISBN: {self.isbn}"
+
+class Member:
+    def __init__(self, member_id:str, name:str, 
+                 borrowed_books:list=[]) -> None:
+        self.member_id = member_id
         self.name = name
+        self.borrowed_books = borrowed_books
 
-    def verso(self):
-        print("WOFF")
+    def borrow_book(self, book) -> None:
+        if book.is_borrowed == False:
+            self.borrowed_books.append(book.title)
+        else:
+            raise ValueError("Book is already borrowed")
 
-ariel:Dog = Dog(name="Ariel")
+    def return_book(self, book) -> None:
+        if book.title in self.borrowed_books:
+            self.borrowed_books.remove(book.title)
+        else:
+            raise ValueError("Book not borrowed by this member")
+
+    def __str__(self):
+        return f"Name: {self.name}, Member ID: {self.member_id} "\
+            +  f"Borrowed Books: {self.borrowed_books}"
+
+class Library:
+    total_books:int = 0
+
+    def __init__(self) -> None:
+        self.books = {}
+        self.members = {}
+
+    def add_book(self, book:Book):    
+        self.books[book.isbn] = book
+        Library.total_books += 1
+
+    def remove_book(self, book:Book):    
+        del self.books[book.isbn]
+        Library.total_books -= 1
+
+    def register_member(self, member:Member): 
+        self.members[member.member_id] = member
+    
+    def borrow_book(self, member:Member, book:Book):
+        member_id = member.member_id
+        isbn = book.isbn
+        if member_id in self.members.keys() and isbn in self.books.keys():
+            self.members[member_id].borrow_book(self.books[isbn])
+            self.books[isbn].borrow()
+        elif member_id not in self.members.keys():
+            raise ValueError("Member not found")
+        elif isbn not in self.books.keys():
+            raise ValueError("Book not found")
+
+    def return_book(self, member:Member, book:Book):
+        member_id = member.member_id
+        isbn = book.isbn
+        if member_id in self.members.keys() and isbn in self.books.keys():
+            self.members[member_id].return_book(self.books[isbn])
+            self.books[isbn].return_book()
+        elif member_id not in self.members.keys():
+            raise ValueError("Member not found")
+        elif isbn not in self.books.keys():
+            raise ValueError("Book not found")
+
+    def __str__(self) -> list[Book]:
+        to_print:str = "- Books\n"
+        for i in self.books.values():
+            to_print += i.__str__() + "\n"
+        to_print += "\n- Members\n"
+        for i in self.members.values():
+            to_print += i.__str__() + "\n"
+        return to_print
+
+
+
+giancarlo:Member = Member(name="Giancarlo",
+                          member_id="C4RL")
+gianpiero:Member = Member(name="Gianpiero",
+                          member_id="P13R")
+
+principles:Book = Book(title="Principles",
+                       author="Ray Dalio",
+                       isbn="1501124021")
+sotto_le_cuffie:Book = Book(title="Sotto le Cuffie",
+                       author="Favij",
+                       isbn="8891802697")
+steppenwolf:Book = Book(title="The Steppenwolf",
+                       author="Herman Hesse",
+                       isbn="1324036818")
+
+archiginnasio:Library = Library()
+archiginnasio.register_member(giancarlo)
+archiginnasio.register_member(gianpiero)
+archiginnasio.add_book(principles)
+archiginnasio.add_book(sotto_le_cuffie)
+archiginnasio.add_book(steppenwolf)
+print(archiginnasio)
+archiginnasio.borrow_book(giancarlo, steppenwolf)
+archiginnasio.borrow_book(giancarlo, sotto_le_cuffie)
+archiginnasio.borrow_book(giancarlo, principles)
+print(archiginnasio)
+archiginnasio.return_book(giancarlo, sotto_le_cuffie)
+archiginnasio.borrow_book(gianpiero, sotto_le_cuffie)
+archiginnasio.return_book(gianpiero, steppenwolf)
+print(archiginnasio)
