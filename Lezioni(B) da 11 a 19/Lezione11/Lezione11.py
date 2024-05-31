@@ -108,7 +108,7 @@ Test case:
 
 """
 
-if False:
+if True:
     class Prodotto:
         def __init__(self, nome:str, quantità:int) -> None:
             self.nome = nome
