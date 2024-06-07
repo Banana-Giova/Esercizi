@@ -92,6 +92,7 @@ class Media:
 
         return to_print
 
+
 class Film(Media):
     def __init__(self, title: str, reviews: list[int]) -> None:
         super().__init__(title, reviews)
