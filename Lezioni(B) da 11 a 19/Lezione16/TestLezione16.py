@@ -123,14 +123,44 @@ class Moto(Veicolo):
 #Esercizio 4
 
 class Specie:
-    def __init__(self, nome:str, popolazione:int,
+    def __init__(self, popolazione:int,
                  tasso_crescita:float) -> None:
-        self.nome = nome
+        self.nome = ''
         self.popolazione = popolazione
         self.tasso_crescita = tasso_crescita
 
     def cresci(self):
         self.popolazione *= (1.00+(self.tasso_crescita/100))
+        round(self.popolazione)
 
-    def anni_per_superare(self, altra_specie:'Specie') -> int:
-        pass
+    def anni_per_superare(self, altra_specie:'Specie') -> str:
+        potenza_a:int = self.popolazione
+        potenza_b:int = altra_specie.popolazione
+        anni:int = 1
+        while potenza_a < potenza_b:
+            potenza_a *= (1.00+(self.tasso_crescita/100))
+            potenza_b *= (1.00+(altra_specie.tasso_crescita/100))
+            anni += 1
+            if anni > 999:
+                return "Over 9000"
+
+        return anni
+    
+    def getDensita(self, area_kmq:float) -> str:
+        denso:int = self.popolazione
+        anni:int = 1
+        while denso/(area_kmq/10) < 1:
+            anni += 1
+            denso *= (1.00+(self.tasso_crescita/100))
+
+        return anni
+    
+class BufaloKlingon(Specie):
+    def __init__(self, popolazione: int, tasso_crescita: float) -> None:
+        super().__init__(popolazione, tasso_crescita)
+        self.nome = "Bufalo Klingon"
+
+class Elefante(Specie):
+    def __init__(self, popolazione: int, tasso_crescita: float) -> None:
+        super().__init__(popolazione, tasso_crescita)
+        self.nome = "Elefante"
