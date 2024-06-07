@@ -15,13 +15,13 @@ class Zoo:
         if len(self.zoo_keepers) > 0:
           for keeper in self.zoo_keepers:
               print(f"\nZooKeeper(name={keeper.name}, "\
-                    f"surname={keeper.surname}, id={keeper.id})")
+                + f"surname={keeper.surname}, id={keeper.id})")
             
         print("\nFences:")
         if len(self.fences) > 0:
           for fence in self.fences:
                 print(f"\nFence(area={fence.area}, "\
-                    f"temperature={fence.temperature}, habitat={fence.habitat})")
+                + f"temperature={fence.temperature}, habitat={fence.habitat})")
             
                 if len(fence.animals) != 0:
                     print("\nwith animals:")
@@ -68,10 +68,21 @@ class Animal:
         self.height = height
         self.width = width
         self.preferred_habitat = preferred_habitat
-        self.health:float = round(100*(1/age), 3)
         self.fence = None
-        self.area = height*width
+        try:
+            self.health:float = round(100*(1/age), 3)
+        except Exception:
+            self.health:float = 0.0
+        try:
+            self.area = height*width
+        except Exception:
+            self.area = 0
 
+    def __str__(self) -> str:
+        return f"Animal(name={self.name}, "\
+             + f"species={self.species}, age={self.age}), "\
+             + f"height={self.height}, width={self.width}, "\
+             + f"preferred_habitat={self.preferred_habitat}"
 
 
 
@@ -90,7 +101,20 @@ class Fence:
         self.temperature = temperature
         self.habitat = habitat
         self.animals = []
-        self.remaining_area = area
+        self.og_area = area
+
+    def __str__(self):
+        to_print:str = ''
+        to_print += f"Fence(area={self.area}, "\
+                  + f"temperature={self.temperature}, habitat={self.habitat})"
+            
+        if len(self.animals) != 0:
+            to_print += "\nwith animals:"
+
+            for animal in self.animals:
+                to_print += str(animal)
+                
+        return to_print
 
 
 
@@ -105,11 +129,11 @@ class ZooKeeper:
     def add_animal(self, animal:Animal, fence:Fence) -> None:
 
         if animal.preferred_habitat == fence.habitat\
-        and (animal.height*animal.width) <= fence.remaining_area\
+        and (animal.height*animal.width) <= fence.area\
         and animal.fence == None:
             
             fence.animals.append(animal)
-            fence.remaining_area -= animal.area
+            fence.area -= animal.area
             animal.fence = fence
                 
 
@@ -117,7 +141,7 @@ class ZooKeeper:
 
         if animal in fence.animals:
             fence.animals.remove(animal)
-            fence.remaining_area += animal.area
+            fence.area += animal.area
             animal.fence = None
 
 
@@ -126,20 +150,19 @@ class ZooKeeper:
         try:
             if animal.fence != None:
                 try:
-                    temp_area:float = animal.fence.remaining_area\
+                    temp_area:float = animal.fence.area\
                                     - ((animal.area*1.04)-animal.area)
                 except ZeroDivisionError:
                     temp_area:float = 0.0
                 
                 if temp_area >= 0:
-                    animal.fence.remaining_area -= (animal.area*1.04)-animal.area
-                    round(animal.fence.remaining_area, 3)
+                    animal_old_area = animal.area
                     animal.height *= 1.02
                     animal.width *= 1.02
+                    animal.area = animal.height * animal.width
+                    animal.fence.area -= animal.area - animal_old_area
                     animal.health *= 1.01
                     round(animal.health, 3)
-                    round(animal.height, 3)
-                    round(animal.width, 3)
         except Exception:
             pass
 
@@ -147,9 +170,13 @@ class ZooKeeper:
     def clean(self, fence:Fence) -> float:
         
         time_clean:float = 0.0
-        if fence.remaining_area == 0:
+        if fence.area == 0 or fence.area == None:
             return fence.area
         else:
-            time_clean = round((fence.area - fence.remaining_area)\
-                               /fence.remaining_area, 3)
+            time_clean = round((fence.og_area - fence.area)\
+                               /fence.area, 3)
             return time_clean
+        
+    def __str__(self):
+        return f"ZooKeeper(name={self.name}, "\
+             + f"surname={self.surname}, id={self.id})"
