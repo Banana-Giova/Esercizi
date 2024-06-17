@@ -1,4 +1,4 @@
-from persona import Persona
+from sistema_ospedaliero.persona import Persona
 
 class Dottore(Persona):
     def __init__(self, first_name: str, last_name: str,
@@ -10,7 +10,7 @@ class Dottore(Persona):
         else:
             print("La specializzazione inserita non è una stringa!")
             self._specialization = None
-        if isinstance(parcel, str):
+        if isinstance(parcel, float):
             self._parcel = parcel
         else:
             print("La parcella inserita non è un float!")
@@ -24,7 +24,7 @@ class Dottore(Persona):
             self._specialization = None
 
     def setParcel(self, parcel:float) -> None:
-        if isinstance(parcel, str):
+        if isinstance(parcel, float):
             self._parcel = parcel
         else:
             print("La parcella inserita non è un float!")

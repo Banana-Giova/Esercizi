@@ -1,5 +1,5 @@
-from dottore import Dottore
-from paziente import Paziente
+from sistema_ospedaliero.dottore import Dottore
+from sistema_ospedaliero.paziente import Paziente
 
 class Fattura:
     def __init__(self, patients:list[Paziente], doctor:Dottore) -> None:
@@ -32,9 +32,11 @@ class Fattura:
             + f"è stato aggiunto il paziente {newPatient._idCode}")
 
     def removePatient(self, idCode:str) -> None:
+        target = ''
         for i in self._patients:
-            if i._idCode == idCode:
-                target = i
+            if isinstance(i, Paziente):
+                if i._idCode == idCode:
+                    target = i
         self._patients.remove(target)
         self.getSalary()
         print(f"Dalla lista del Dottor {self._doctor._last_name} "

@@ -24,10 +24,10 @@ class TestDottore(unittest.TestCase):
         self.assertEqual(4774.0, self.dottor_carlo._parcel, "The specialization is wrong!")
 
     def test_validity1(self):
-        self.assertEqual(f"Il dottor {self._first_name} {self._last_name} è valido!", \
+        self.assertEqual(f"Il dottor {self.dottor_carlo._first_name} {self.dottor_carlo._last_name} è valido!", \
                          self.dottor_carlo.isAValidDoctor(), "isAValidDoctor is wrong!")
         
     def test_validity2(self):
         self.dottor_carlo.setAge(3)
-        self.assertEqual(f"Il dottor {self._first_name} {self._last_name} non è valido!", \
+        self.assertEqual(f"Il dottor {self.dottor_carlo._first_name} {self.dottor_carlo._last_name} non è valido!", \
                          self.dottor_carlo.isAValidDoctor(), "isAValidDoctor is wrong!")
