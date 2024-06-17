@@ -34,10 +34,11 @@ class Fattura:
     def removePatient(self, idCode:str) -> None:
         target = ''
         for i in self._patients:
-            if isinstance(i, Paziente):
+            if isinstance(i, Paziente) == True:
                 if i._idCode == idCode:
                     target = i
-        self._patients.remove(target)
+        if target != '':
+            self._patients.remove(target)
         self.getSalary()
         print(f"Dalla lista del Dottor {self._doctor._last_name} "
             + f"è stato rimosso il paziente {idCode}")

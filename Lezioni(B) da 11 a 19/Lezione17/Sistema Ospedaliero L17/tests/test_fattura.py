@@ -22,10 +22,10 @@ class TestPaziente(unittest.TestCase):
 
     def test_simon(self):
         self.counterdoc = Dottore(first_name="Raniero",
-                               last_name="Sombrero",
-                               specialization="Magia",
-                               parcel=12.5)
-        self.assertEqual(self.counterdoc, self.facts._doctor, "The doctor is wrong!")
+                                  last_name="Sombrero",
+                                  specialization="Magia",
+                                  parcel=12.5)
+        self.assertEqual(self.counterdoc.getSpecialization(), self.facts._doctor.getSpecialization(), "The doctor is wrong!")
     
     def test_fattorino(self):
         self.assertEqual((len(self.facts._patients)), self.facts.getFatture(), "The bills is wrong!")
