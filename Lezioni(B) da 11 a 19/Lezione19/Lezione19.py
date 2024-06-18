@@ -11,9 +11,13 @@ def mergeSort(listing:list[int] | list[float]) -> list:
             if first_half[fi] < second_half[si]:
                 new_listing.append(first_half[fi])
                 fi += 1
+                if fi > (len(first_half)-1):
+                    new_listing.append(second_half[si])
             else:
                 new_listing.append(second_half[si])
                 si += 1
+                if si > (len(second_half)-1):
+                    new_listing.append(first_half[fi])
     else:
         return listing
     
