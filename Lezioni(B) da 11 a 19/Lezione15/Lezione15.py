@@ -1,51 +1,68 @@
-with open('data/Badassium.txt') as gargarozz:
-    print(gargarozz.readline())
-
 """
-In alternativa si può usare
-|
-V
+Esercizio 1
 
-try:
-    print("Sono nel try")
-except:
-    print("Sono nel'Except")
-finally:
-    print("Sono nel finally")
+Crea un context manager usando una classe
+
+Definisci una classe FileManager che implementa un context manager 
+che gestisce le risorse dei file.
+
+Implementa appropriatamente la funzione __init__, 
+__enter__ e la funzione  __exit__
+
+Esempio di funzionamento:
+
+ Il context manager deve permettere di aprire il file, 
+ effettuare operazioni e chiudere la risorsa aperta.
+
+ with FileManager('example.txt', 'w') as f:
+     f.write('Hello, world!')
 """
 
-class DatabaseConnection:
-    def __init__(self, db_name) -> None:
-        self.db_name = db_name
-        self.connection = None
+class ContextManager:
+    def __init__(self, file_name:str, mode:str) -> None:
+        
+        self.file_name = file_name
+        self.mode = mode
 
     def __enter__(self):
-        self.db.connect()
-        return self.db
+        print("Resource acquired")
+        self.file_wrapper = open(self.file_name, self.mode)
 
     def __exit__(self, exc_type, exc_value, traceback):
-        if exc_type is not None:
-            self.db.rollback()
-        else:
-            self.db.commt()
+        print(f"Exception type: {exc_type}")
+        print(f"Exception value: {exc_value}")
+        print(f"Traceback: {traceback}")
+        self.file_wrapper.close()
+        print("Resource stored")
 
-        self.db.disconnect()
-        return False
+"""
+Esercizio 2
 
-    def connect(self):
-        self.connection = f"Connection to the database: {self.db_name}"
-        print(self.connection)
+Crea un context manager che permette di calcolare 
+il tempo che viene impiegato ad eseguire le istruzioni che si trovano nel with
 
-    def disconnect(self):
-        print(f"Disconnection to the database: {self.db_name}")
-        self.connection = None
+with Timer():
 
-    def commit(self):
-        print("Committing transaction")
+     time.sleep(1)
 
-    def rollback(self):
-        print("Rolling back transaction")
+ time elapsed: 1.00000
 
-    def execute_query(self, query):
-        print("Executing query")
-        return f"Results of {query}"
+ in questo esempio il tempo passato non sarà mai uguale a 1
+"""
+import time
+
+class Timer:
+
+    def __enter__(self):
+        
+        self.time = time.time()
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        print(f"Exception type: {exc_type}")
+        print(f"Exception value: {exc_value}")
+        print(f"Traceback: {traceback}")
+        print(f"Time elapsed: {time.time() - self.time}")
+
+with Timer():
+
+    time.sleep(1)
