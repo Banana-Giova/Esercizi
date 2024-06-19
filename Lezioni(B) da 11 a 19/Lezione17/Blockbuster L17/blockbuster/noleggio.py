@@ -1,4 +1,4 @@
-from movie_genre import *
+from blockbuster.movie_genre import *
 
 class Noleggio:
     def __init__(self, films_list:list["Film"], ) -> None:
@@ -6,7 +6,7 @@ class Noleggio:
         self.rented_film = {}
 
     def isAvaible(self, film:"Film") -> bool:
-        if film not in self.films_list:
+        if film in self.films_list:
             print(f"Il film scelto è disponibile; {film._title}")
             return True
         else:
@@ -21,6 +21,8 @@ class Noleggio:
                 self.rented_film[clientID] = []
             self.rented_film[clientID].append(film)
             print(f"Il cliente ha noleggiato {film._title}")
+        else:
+            raise ValueError
 
     def giveBack(self, film:"Film", clientID:str,
                  days:int) -> None:

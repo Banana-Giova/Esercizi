@@ -1,4 +1,4 @@
-from film import Film
+from blockbuster.film import Film
 
 class Azione(Film):
     def __init__(self, id: int, title: str, 
