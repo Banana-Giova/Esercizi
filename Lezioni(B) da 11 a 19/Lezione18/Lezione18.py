@@ -67,8 +67,8 @@ def calculon():
 """
 Esercizio 2
 
-Personalized math library: 
--Create a Python library that provides functions for handling fractions, 
+- Personalized math library: 
+Create a Python library that provides functions for handling fractions, 
 with built-in error handling. The library must include functions 
 for the following operations:
 

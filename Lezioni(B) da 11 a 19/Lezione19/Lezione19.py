@@ -64,7 +64,6 @@ def bubble_sort_v2(x: list[int]):
         if ho_fatto_swap:
             break
 
-
 if __name__ == "__main__":
     
     import random
