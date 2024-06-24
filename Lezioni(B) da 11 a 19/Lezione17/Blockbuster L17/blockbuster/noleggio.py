@@ -34,9 +34,13 @@ class Noleggio:
                   f"{film._title} di {tot_penale}!")
             
     def printMovies(self) -> str:
+        output:str = ''
         for i in self.films_list:
-            print(f"{i._title} - {i._genere}")
+            output += (f"{i._title} - {i._genere}\n")
+        return output
 
     def printRentMovies(self, clientID:str) -> str:
+        output:str = ''
         for i in self.rented_film[clientID]:
-            print(f"{i._title} - {i._genere}")
+            output += (f"{i._title} - {i._genere}\n")
+        return output
