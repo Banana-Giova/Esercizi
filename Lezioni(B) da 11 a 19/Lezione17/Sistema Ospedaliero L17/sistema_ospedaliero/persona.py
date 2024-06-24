@@ -1,4 +1,4 @@
-class Persona:
+class Persona: 
     def __init__(self, first_name:str, last_name:str) -> None:
         
         if isinstance(first_name, str):

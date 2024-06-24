@@ -26,3 +26,6 @@ class TestPersona(unittest.TestCase):
     def test_age(self): 
         self.paolo.setAge(3)
         self.assertEqual(3, self.paolo._age, "The age is wrong!")
+
+if __name__ == '__main__':
+    unittest.main()

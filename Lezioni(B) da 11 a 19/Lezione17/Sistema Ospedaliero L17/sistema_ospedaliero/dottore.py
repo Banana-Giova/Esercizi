@@ -1,4 +1,4 @@
-from sistema_ospedaliero.persona import Persona
+from sistema_ospedaliero.persona import Persona 
 
 class Dottore(Persona):
     def __init__(self, first_name: str, last_name: str,

@@ -31,3 +31,6 @@ class TestDottore(unittest.TestCase):
         self.dottor_carlo.setAge(3)
         self.assertEqual(f"Il dottor {self.dottor_carlo._first_name} {self.dottor_carlo._last_name} non è valido!", \
                          self.dottor_carlo.isAValidDoctor(), "isAValidDoctor is wrong!")
+        
+if __name__ == '__main__':
+    unittest.main()

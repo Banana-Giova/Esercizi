@@ -9,3 +9,6 @@ class TestPaziente(unittest.TestCase):
         
     def test_id(self):
         self.assertEqual("G3RRY", self.gerry._idCode, "The id is wrong!")
+
+if __name__ == '__main__':
+    unittest.main()

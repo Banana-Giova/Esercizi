@@ -42,4 +42,4 @@ class TestPaziente(unittest.TestCase):
         self.assertEqual(4, self.facts.getFatture(), "The number of patients is too high!")
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main() 

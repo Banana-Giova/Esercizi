@@ -47,4 +47,7 @@ class TestFilm(unittest.TestCase):
         self.assertEqual(False, flag, "The film was rented, even if it should've been possible!")
 
     def test_giveback1(self):
+        self.noleggio 
+
+    def test_giveback2(self):
         self.noleggio

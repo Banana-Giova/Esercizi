@@ -1,5 +1,5 @@
 from sistema_ospedaliero.dottore import Dottore
-from sistema_ospedaliero.paziente import Paziente
+from sistema_ospedaliero.paziente import Paziente 
 
 class Fattura:
     def __init__(self, patients:list[Paziente], doctor:Dottore) -> None:
