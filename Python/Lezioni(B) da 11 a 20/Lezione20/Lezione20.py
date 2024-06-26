@@ -58,25 +58,35 @@ Numero della carta: 6543210987654321
 
 class Pagamento:
     def __init__(self) -> None:
-        self.pagamento:float = 0
+        self.importo:float = 0
 
-    def get(self):
-        return self.pagamento
+    def getImporto(self):
+        return self.importo
     
-    def set(self, new_pagamento:float):
-        self.pagamento = round(new_pagamento, 2)
+    def setImporto(self, new_importo:float):
+        self.importo = round(new_importo, 2)
 
     def dettagliPagamento(self) -> str:
-        return f"Pagamento di €{self.pagamento}"
+        return f"Pagamento di €{self.importo}"
     
 class PagamentoContanti(Pagamento):
     def __init__(self, importo:float) -> None:
         super().__init__()
 
-        self.importo = importo
+        self.importo = self.setImporto(importo)
 
     def dettagliPagamento(self) -> str:
         return super().dettagliPagamento() + "effettuato con contanti"
     
     def inPezziDa(self):
         pass
+
+class PagamentoCartaDiCredito(Pagamento):
+    def __init__(self, importo:float, titolare_carta:str, 
+                 data_di_scadenza:str, numero_carta:int) -> None:
+        super().__init__()
+
+        self.importo = self.setImporto(importo)
+
+    def dettagliPagamento(self) -> str:
+        return super().dettagliPagamento() + "effettuato con la carta di credito"
