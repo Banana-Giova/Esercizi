@@ -54,3 +54,18 @@ if False:
             break
         else:
             print("Invalid choice, type 'Y' or 'n'.")
+
+
+"---------------------------------------------------------------------"
+import time
+
+class Timer:
+    
+    def __enter__(self, average:int):
+        self.time = time.time()
+        self.average = average
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        self.elapsed = time.time() - self.time
+        print(f"{self.elapsed/self.average}")
+        print(f"Total time elapsed: {self.elapsed}")
