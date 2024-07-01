@@ -257,3 +257,84 @@ Ecco un Triangolo avente base 4 ed altezza 4!
 * * * *
 L'area di questo triangolo vale: 8.0
 """
+
+import abc
+from abc import ABC
+
+class Forma(ABC):
+    def __init__(self, nome:str) -> None:
+        super().__init__()
+
+        self.nome = nome
+
+    def getArea(self):
+        pass
+
+    def render(self):
+        pass
+
+class Quadrato(Forma):
+    def __init__(self, nome: str, lato:int) -> None:
+        super().__init__(nome)
+
+        self.lato = lato
+
+    def getArea(self):
+        return self.lato**2
+    
+    def render(self):
+        output:str = ''
+        for i in range(self.lato):
+            if i == 0 or i == self.lato-1:
+                output += ("* "*self.lato + "\n")
+            else:
+                output += ("*" + "  "*(self.lato-2) + " *\n")
+        return output
+    
+class Rettangolo(Forma):
+    def __init__(self, nome: str, lato_mag:int, lato_min:int) -> None:
+        super().__init__(nome)
+
+        self.lato_mag = lato_mag
+        self.lato_min = lato_min
+
+    def getArea(self):
+        return self.lato_mag*self.lato_min
+    
+    def render(self):
+        output:str = ''
+        for i in range(self.lato_min):
+            if i == 0 or i == self.lato_min-1:
+                output += ("* "*self.lato_mag + "\n")
+            else:
+                output += ("*" + "  "*(self.lato_mag-2) + " *\n")
+        return output
+    
+class Triangolo(Forma):
+    def __init__(self, nome: str, lato_mag:int, lato_min:int) -> None:
+        super().__init__(nome)
+
+        self.lato_mag = lato_mag
+        self.lato_min = lato_min
+
+    def getArea(self):
+        return (self.lato_mag*self.lato_min)/2
+    
+    def render(self):
+        output:str = ''
+        for i in range(self.lato_min):
+            if i == 0:
+                output += ("*\n")
+            elif i == self.lato_min-1:
+                output += ("* "*self.lato_mag + "\n")
+            else:
+                output += ("*"+("  "*(i*2))+"*\n")
+
+        return output
+
+quack:Quadrato = Quadrato(nome="Peppe", lato=8)
+print(quack.render())
+rack:Rettangolo = Rettangolo(nome="Olenzio", lato_mag=12, lato_min=8)
+print(rack.render())
+track:Triangolo = Triangolo(nome="Tramezzino", lato_mag=9, lato_min=6)
+print(track.render())
