@@ -322,13 +322,13 @@ class Triangolo(Forma):
     
     def render(self):
         output:str = ''
-        for i in range(self.lato_min):
+        for i in range(self.lato_mag):
             if i == 0:
                 output += ("*\n")
-            elif i == self.lato_min-1:
-                output += ("* "*self.lato_mag + "\n")
+            elif i == self.lato_mag-1:
+                output += ("* "*self.lato_min + "\n")
             else:
-                output += ("*"+("  "*(i*2))+"*\n")
+                output += ("* "+(" "*(i-1))+"*\n")
 
         return output
 
@@ -336,5 +336,5 @@ quack:Quadrato = Quadrato(nome="Peppe", lato=8)
 print(quack.render())
 rack:Rettangolo = Rettangolo(nome="Olenzio", lato_mag=12, lato_min=8)
 print(rack.render())
-track:Triangolo = Triangolo(nome="Tramezzino", lato_mag=9, lato_min=6)
+track:Triangolo = Triangolo(nome="Tramezzino", lato_mag=10, lato_min=6)
 print(track.render())
