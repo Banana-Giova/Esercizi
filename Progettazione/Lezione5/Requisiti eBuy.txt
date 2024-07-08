@@ -1,0 +1,62 @@
+1. Utenti
+    - Nome Scelto: Stringa (univoco)
+    - Data di Registrazione: Data
+    - Affidabilità: Metodo
+        ( m(1-z)/5 )
+    
+    1.1.1. Utenti Privati:
+        - Dati Privati: Dati
+
+    1.1.2. Venditori Professionali:
+        - URL Vetrina Online: Stringa Secondo Standard
+        - Popolarità: Metodo
+            ( se Acquirenti < 50 = Bassa, 
+            se 50 <= Acquirenti <= 300 = Media,
+            se Acquirenti > 300 = Alta )
+
+
+2. Oggetti in Vendita:
+    - Descrizione: Stringa
+    - Metodi di Pagamento Accettati: {Bonifico, Carta di Credito}
+    - Venditore: {Utente Privato, Venditore Professionale}
+    
+    2.1. Oggetti Nuovi:
+        - Garanzia: Intero >= 2
+
+    2.2 Oggetti Usati:
+        - Garanzia: Intero >= 1, opzionale
+        - Condizioni: {Da Sistemare, Discreto, Buono, Ottimo}
+        
+
+3. Annunci/Post:
+    - Utente che Pubblica: [Utente]
+    
+    3.1. Asta:
+        - Prezzo Iniziale: Reale > 0
+        - Ammontare dei Singoli Rialzi: Reale > 0
+        - Istante di Scadenza dell'Asta: DataOra
+        - Bid Aggudicatario: Calcolabile come [...]
+
+    3.2. Compralo Subito:
+        - Prezzo di Vendita: Reale > 0
+        - Utente Compratore: [Utente Privato]
+
+
+4. Offerte/Bid:
+    - Istante di Proposizione: DataOra
+    - Utente Offerente/Bidder: [Utente Privato]
+    - Prezzo Proposto: Metodo
+        ( Ultimo Prezzo Proposto + Ammontare dei Singoli Rialzi )
+
+
+5. Categoria:
+    - Nome: Stringa (univoca)
+    - Sottocategoria: [Categoria], opzionale
+    - Sopracategoria: [Categoria], opzionale
+
+
+6. Feedback:
+    - Post: [Annuncio/Post]
+    - Utente: [Utente Privato]
+    - Giudizio: 0 >= Intero >= 5
+    - Commento Testuale: Stringa, opzionale
