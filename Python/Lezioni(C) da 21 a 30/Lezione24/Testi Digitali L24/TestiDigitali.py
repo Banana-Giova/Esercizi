@@ -1,6 +1,4 @@
 """
-# Testi Digitali
-
 Si definisca una classe Documento che contenga una variabile 
 di tipo stringa chiamata testo e che memorizza qualsiasi 
 contenuto testuale per il documento.
@@ -53,3 +51,54 @@ class Documento:
 
     def isInText(self, word:str) -> bool:
         return word in self.testo
+
+
+
+class Email(Documento):
+    def __init__(self, testo: str, destinatario:str,
+                 mittente:str, titolo_messaggio:str) -> None:
+        super().__init__(testo)
+
+        self.destinatario = destinatario
+        self.mittente = mittente
+        self.titolo_messaggio = titolo_messaggio
+
+
+    def getDestinatario(self) -> str:
+        return self.destinatario
+    
+    def setDestinatario(self, new_destinatario:str) -> None:
+        self.destinatario = new_destinatario
+
+    def getMittente(self) -> str:
+        return self.mittente
+    
+    def setMittente(self, new_mittente:str) -> None:
+        self.mittente = new_mittente
+
+    def getTitoloMessaggio(self) -> str:
+        return self.titolo_messaggio
+    
+    def setTitoloMessaggio(self, new_titolo_messaggio:str) -> None:
+        self.titolo_messaggio = new_titolo_messaggio
+
+
+    def getText(self) -> str:
+        output:str = f"Da: {self.mittente}, A: {self.destinatario}\n"\
+                   + f"Titolo: {self.titolo_messaggio}\nMessaggio: {self.testo}"
+        return output
+        
+    def writeToFile(self, path:str):
+        with open(path, 'w') as file:
+            file.write(self.getText())
+
+    
+
+class File(Documento):
+    def __init__(self, testo: str, percorso:str) -> None:
+        super().__init__(testo)
+
+        self.percorso = percorso
+
+    def getText(self) -> str:
+        output:str = f"Percorso: {self.percorso}\nContenuto: {self.testo}"
