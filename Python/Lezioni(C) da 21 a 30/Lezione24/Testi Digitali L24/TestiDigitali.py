@@ -95,10 +95,22 @@ class Email(Documento):
     
 
 class File(Documento):
-    def __init__(self, testo: str, percorso:str) -> None:
+    def __init__(self, percorso:str, testo:str='') -> None:
         super().__init__(testo)
 
         self.percorso = percorso
+        with open(self.percorso, 'r') as reader:
+            self.testo:str = reader.readlines()
+
+    def setText(self) -> None:
+        with open(self.percorso, 'r') as reader:
+            self.testo:str = reader.read()
 
     def getText(self) -> str:
+        self.setText()
         output:str = f"Percorso: {self.percorso}\nContenuto: {self.testo}"
+        return output
+
+    def leggiTestoDaFile(self) -> str:
+        self.setText()
+        return self.testo
