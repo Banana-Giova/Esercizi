@@ -102,15 +102,15 @@ class File(Documento):
         with open(self.percorso, 'r') as reader:
             self.testo:str = reader.readlines()
 
-    def setText(self) -> None:
+    def setSelfText(self) -> None:
         with open(self.percorso, 'r') as reader:
             self.testo:str = reader.read()
 
     def getText(self) -> str:
-        self.setText()
+        self.setSelfText()
         output:str = f"Percorso: {self.percorso}\nContenuto: {self.testo}"
         return output
 
     def leggiTestoDaFile(self) -> str:
-        self.setText()
+        self.setSelfText()
         return self.testo
