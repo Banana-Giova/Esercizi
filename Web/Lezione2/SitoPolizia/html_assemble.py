@@ -59,7 +59,7 @@ with open('home.html', 'a') as html_file:
     for i in range(cards):
         html_file.write(
             """
-                <div class="col-sm-3 mb-10 mb-sm-0 mt-4"">
+                <div class="col-sm-3 mb-10 mb-sm-0 mt-4">
                   <div class="card" style="width: 18rem;">
                     <img src="data/VadeRicercato.png" class="card-img-top" alt="darth-pic" width="400" height="280">
                       <div class="card-body">
