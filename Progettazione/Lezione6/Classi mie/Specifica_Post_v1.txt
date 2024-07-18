@@ -1,0 +1,28 @@
+Specifica classe PostCompraSubito
+
+acquirente(): UtentePrivato
+
+    pre:
+        - "this" deve essere coinvolto ad un oggetto
+          "UtentePrivato" tramite link d'assoc. "acquista"
+          - (esiste u:UtentePrivato tale che (u, this):acquista)
+
+    post:
+        - Sia U l'oggetto "UtentePrivato" che coinvolge
+          "this" tramite link d'assoc. "acquista"
+          - (result è tale che: (result, this):acquista)
+
+
+
+Specifica classe PostAsta
+
+acquirente(): UtentePrivato
+
+    pre:
+        - this.scadenza < adesso
+          - (this.bid_aggiudicatario():Bid)
+
+    post:
+        - Sia U l'oggetto "UtentePrivato" che coinvolge
+          l'oggetto "Bid" ritornato da this.bid_aggiudicatario()
+          tramite link d'assoc. "bidder"

@@ -1,0 +1,8 @@
+Specifica classe Utente
+
+
+feedback_ricevuti(): Feedback  [0..*]
+	pre: nessuna
+	post: 
+		- Sia P l'insieme di tutte le istanze p:PostOggetto tali che (this, p):vende;
+		- result è l'insieme di tutte le istanze f:Feedback tali che esiste (f,p):riguarda per qualche p:P.

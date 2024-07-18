@@ -1,0 +1,16 @@
+Specifica classe Bid
+
+
+
+=== Operazioni === 
+
+prezzo_asta(): Reale >= 0
+	pre: nessuna
+	post: 
+		- Sia a:Asta tale che (this,a):bid_asta.
+		
+		- Sia 'n' il numero di oggetti b:Bid che soddisfano le seguenti due condizioni:
+			- (b, a): bid_asta
+			- b.istante < this.istante.
+		
+		result = a.prezzo_iniziale + a.rialzo * n

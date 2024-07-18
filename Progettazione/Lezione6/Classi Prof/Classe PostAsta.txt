@@ -1,0 +1,18 @@
+Specifica classe PostAsta
+
+bid_aggiudicatario(): Bid
+	pre: 
+		this.scadenza < adesso
+
+	post:
+		Sia result:Bid tale che:
+			- (result,this): bid_asta
+			- non esiste alcun b:Bid tale che:
+				- (b,this): bid_asta
+				- b.istante > result.istante
+
+prezzo_finale(): Reale >= 0
+	pre:
+		this.scadenza < adesso
+	post: 
+		result = this.bid_aggiudicatario().prezzo_asta()
