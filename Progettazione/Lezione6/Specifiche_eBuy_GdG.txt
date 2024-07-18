@@ -1,0 +1,71 @@
+Utente.feedback_ricevuti(inizio : Data, fine : Data) : Feedback [0..*]
+
+    post-condizioni:
+        • il valore del risultato ("result")  è definito come segue:
+            • sia LF la lista di tutti gli oggetti "Feedback" che sono 
+              associati a degli oggetti "PostOggetto" che sono associati 
+              all'oggetto in invocazione (this) tramite un link di assoc. 
+              "vende", tra "inizio" e "fine";
+            • result = LF
+
+PostAsta.bid_aggiudicatario() : Bid[0..1]
+
+    pre-condizioni:
+        • il valore di "scadenza" deve essere superato;
+
+    post-condizioni:
+        • il valore del risultato ("result") è definito come segue:
+            • sia BA l'oggetto "Bid" associato all'oggetto in invocazione 
+              (this), che ha il valore "istante" più avanti nel tempo;
+            • se non ci sono oggetti "Bid" associati all'oggetto in
+              invocazione (this), BA = NULL;
+            • result = BA
+
+PostAsta.prezzo_finale() : Reale >= 0
+
+    pre-condizioni:
+        • il valore di "scadenza" deve essere superato;
+
+    post-condizioni:
+        • il valore del risultato ("result") è definito come segue:
+            • sia P il valore ritornato dall'operazione prezzo_asta() 
+              dell'oggetto "Bid" ritornato dall'operazione 
+              bid_aggiudicatario() dell'oggetto in invocazione (this);
+            • se l'operazione bid_aggiudicatario() dell'oggetto in 
+              invocazione (this) ritorna NULL, P = 0; 
+            • result = P
+
+
+
+EXTRA
+
+Utente.affidabilità() : Reale 0..1
+
+    post-condizioni:
+        • l'operazione non modifica il livello estensionale
+        • il valore del risultato ("result")  è definito come segue:
+            • sia M la media dei valori dell'attributo "voto" di tutti 
+              gli oggetti "Feedback" presenti nella lista ritornata
+              dall'operazione feedback_ricevuti() dell'oggetto in 
+              invocazione (this);
+            • se la lista ritornata dall'operazione feedback_ricevuti() 
+              dell'oggetto in invocazione (this) è vuota, M = 0;
+            • sia Z il numero di volte che un valore inferiore a 3 è 
+              all'attributo "voto" di tutti gli oggetti "Feedback"
+              presenti nella lista ritornata dall'operazione 
+              feedback_ricevuti() dell'oggetto in invocazione (this);
+            • result = M(1 − Z)/5
+
+VenditoreProfessionale.popolarità() : {Bassa, Media, Alta}
+
+    post-condizioni:
+        • l’operazione non modifica il livello estensionale (gli oggetti)
+        • il valore del risultato (“result”) è definito come segue:
+            • sia U il numero degli oggetti "Utente Privato", che sono 
+              associati a degli oggetti "Post" tramite un link di assoc.
+              "post acquistati" o "bid degli utenti", mentre i suddetti
+              oggetti "Post" sono anche associati tramite un link di assoc.
+              "post vendita utente" all'oggetto "Venditore Professionale" 
+              di cui si sta calcolando "popolarità";
+            • se U è inferiore a 50 result = "Bassa", se U è tra 50 e 300,
+              result = "Media", se U è superiore a 300 result = "Alta"
