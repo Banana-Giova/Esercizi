@@ -1,0 +1,44 @@
+Specifica di Ricerca:
+
+    oggetti_categorie(C: Categoria [1..*]): PostOggetto [0..*]
+
+        pre-condizioni:
+            • nessuna;
+
+        post-condizioni:
+            • il valore del risultato ("result") è definito come segue:
+                • sia PO una lista di tutti gli oggetti "PostOggetto" 
+                  associati ad un oggetto in C;
+                • se non ci sono oggetti "Bid" associati all'oggetto C, 
+                  PO è una lista vuota;
+                • result = PO
+
+    radici(): Categoria [1..*]
+        
+        pre-condizioni:
+            • this deve essere associato almeno ad un'istanza
+              d'oggetto "Catgoria" tramite un link di assoc. "Madre";
+
+        post-condizioni:
+            • il valore del risultato ("result") è definito come segue:
+                • sia RES una lista vuota;
+                • sia RAD una funzione che verifica se l'oggetto "Categoria"
+                  associato all'oggetto argomento ARG tramite un link
+                  di assoc. "Madre" ha a sua volta un oggetto "Categoria"
+                  associato tramite un link di assoc. "Madre". Se è così
+                  la funzione ricomincia da capo prendendo come ARG questo 
+                  oggetto "Categoria", sennò sia tale oggetto inserito in RES;
+                • result = RES
+
+    utenti_senza_bid(inizio: DataOra, fine: DataOra): Privato [0..*]
+
+        pre-condizioni:
+            • nessuna;
+
+        post-condizioni:
+            • il valore del risultato ("result") è definito come segue:
+                • sia UP una lista di tutti gli oggetti "Privato" 
+                  associati ad almeno un oggetto "Bid" con un valore
+                  "istante" fra "inizio" e "fine";
+                • se non ci sono oggetti validi, UP è una lista vuota;
+                • result = UP
