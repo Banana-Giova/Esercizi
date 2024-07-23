@@ -484,7 +484,37 @@ anche il tipo di moto nella descrizione, nel formato
 """
 
 class Veicolo:
-    pass
+    def __init__(self, marca:str, modello:str, 
+                 anno:int) -> None:
+        self.marca = marca
+        self.modello = modello
+        self.anno = anno
+
+    def descrivi_veicolo(self):
+        print(f'Marca: {self.marca}, Modello: {self.modello}, Anno: {self.anno}')
+
+
+
+class Auto(Veicolo):
+    def __init__(self, marca: str, modello: str, 
+                 anno: int, numero_porte:int) -> None:
+        super().__init__(marca, modello, anno)
+        self.numero_porte = numero_porte
+
+    def descrivi_veicolo(self):
+        print(f'Marca: {self.marca}, Modello: {self.modello}, Anno: {self.anno}, Numero di porte: {self.numero_porte}')
+
+
+
+class Moto(Veicolo):
+    def __init__(self, marca: str, modello: str, 
+                 anno: int, tipo:str) -> None:
+        super().__init__(marca, modello, anno)
+        self.tipo = tipo
+
+    def descrivi_veicolo(self):
+        print(f'Marca: {self.marca}, Modello: {self.modello}, Anno: {self.anno}, Tipo: {self.tipo}')
+
 
 """
 Esercizio 10
@@ -571,10 +601,41 @@ Progettare un semplice sistema bancario con i seguenti requisiti:
 """
 
 class Account:
-    pass
+    def __init__(self, account_id:str) -> None:
+        self.account_id = account_id
+        self.balance = 0.0
+
+    def deposit(self, amount:float):
+        self.balance += amount
+
+    def get_balance(self):
+        return self.balance
+
+
 
 class Bank:
-    pass
+    def __init__(self) -> None:
+        self.accounts:dict[str, Account] = {}
+
+    def create_account(self, account_id:str):
+        new_account = Account(account_id=account_id)
+        if account_id not in self.accounts:
+            self.accounts[account_id] = new_account
+        else:
+            print('Account with this ID already exists')
+        return new_account
+    
+    def deposit(self, account_id:str, amount:float):
+        if account_id in self.accounts:
+            self.accounts[account_id].deposit(amount)
+        else:
+            print('Account not found')
+    
+    def get_balance(self, account_id:str):
+        if account_id in self.accounts:
+            return self.accounts[account_id].get_balance()
+        else:
+            print('Account not found')
 
 """
 Esercizio 14
@@ -612,14 +673,93 @@ Progettare un sistema di gestione della biblioteca con i seguenti requisiti:
             get_borrowed_books(member_id): list[Book] - restituisce la lista dei libri presi in prestito dal membro.
 """
 
-class Member:
-    pass
-
 class Book:
-    pass
+    def __init__(self, book_id:str, title:str,
+                 author:str) -> None:
+        self.book_id = book_id
+        self.title = title
+        self.author = author
+        self.is_borrowed = False
+
+    def borrow(self):
+        if not self.is_borrowed:
+            self.is_borrowed = True
+        
+    def return_book(self):
+        if self.is_borrowed:
+            self.is_borrowed = False
+
+
+
+class Member:
+    def __init__(self, member_id:str, name:str) -> None:
+        self.member_id = member_id
+        self.name = name
+        self.borrowed_books = []
+
+    def borrow_book(self, book:Book):
+        if not book.is_borrowed:
+            book.is_borrowed = True
+            self.borrowed_books.append(book)
+        else:
+            print('Book is already borrowed')
+        
+    def return_book(self, book:Book):
+        if book.is_borrowed\
+        and book in self.borrowed_books:
+            book.is_borrowed = False
+            self.borrowed_books.remove(book)
+        else:
+            print('Book not borrowed by this member')
+
+
 
 class Library:
-    pass
+    def __init__(self) -> None:
+        self.books:dict[str, Book] = {}
+        self.members:dict[str, Member] = {}
+
+    def add_book(self, book_id:str, title:str, author:str):
+        if book_id not in self.books:
+            self.books[book_id] = Book(
+                book_id=book_id,
+                title=title,
+                author=author
+            )
+
+    def register_member(self, member_id:str, name:str):
+        if member_id not in self.members:
+            self.members[member_id] = Member(
+                member_id=member_id,
+                name=name
+            )
+
+    def borrow_book(self, member_id:str, book_id:str):
+        if member_id in self.members\
+        and book_id in self.books:
+            self.members[member_id].borrow_book(self.books[book_id])
+        else:
+            if member_id not in self.members:
+                print('Member not found')
+            elif book_id not in self.books:
+                print('Book not found')
+
+    def return_book(self, member_id:str, book_id:str):
+        if member_id in self.members\
+        and book_id in self.books:
+            self.members[member_id].return_book(self.books[book_id])
+        else:
+            if member_id not in self.members:
+                print('Member not found')
+            elif book_id not in self.books:
+                print('Book not found')
+
+    def get_borrowed_books(self, member_id:str) -> list[Book]:
+        if member_id in self.members:
+            new_list:list = []
+            for i in self.members[member_id].borrowed_books:
+                new_list.append(i.title)
+            return new_list
 
 """
 Esercizio 15
