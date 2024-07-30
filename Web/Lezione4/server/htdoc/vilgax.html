@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,16 +71,71 @@
             <h3>Roma Sud</h3>
             <table class="stile1">
                 <tr>
-                    <td>Lasciate ogni speranza</td>
-                    <td>|</td>
+                    <td>Lasciate ogni speranza...</td>
                     <td>o voi che entrate</td>
                 </tr>
             </table>
             <br>
             <div>
-            <a href="https://eelslap.com/">
+            <a href="img/spider-gif.gif" target="_blank">
             <img src="img/vilgax_the_conqueror.png" alt="Vilgax" width="525.0" height="834.0">
             </a>
+            <h2>Ecco il nostro quartier genererale!</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3854.4274316741844!2d120.83055747605692!3d14.968959667950195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396ff0b5fac588d%3A0x10adbeb4ddb62d94!2sVilgax%20house!5e0!3m2!1sit!2sit!4v1722161140467!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <hr>
+            <h3>Da oggi offrire la tua anima a Vilgax è un gioco da ragazzi! Compila il form sottostante ed unisciti alle anime dannate!</h3>
+            <form action="/gestisciDatiForm" method="get">
+                <p>
+                    <label for="fname">Inserisci il tuo nome:</label><br>
+                    <input type="text" name="fname" size="20" maxlength="16" pattern="^[a-zA-Z\s]+$" required>
+                </p>
+                <p>
+                    <label for="fcognome">Inserisci il tuo cognome:</label><br>
+                    <input type="text" name="fcognome" maxlength="16" pattern="^[a-zA-Z\s]+$" required>
+                </p>
+                <p>
+                    <label for="fdate">Data di Nascita:</label><br>
+                    <input type="date" name="fdate" required>
+                </p>
+                <p>
+                    <label for="faddress">Inserisci il tuo indirizzo:</label><br>
+                    <input type="text" name="faddress" required>
+                </p>
+                <p>
+                    <label for="fsesso">Sesso:</label>
+                    <input type="radio" name="fsesso" required value="o">M
+                    <input type="radio" name="fsesso" required value="a">F
+                    <input type="radio" name="fsesso" required value="*">NB
+                    <input type="radio" name="fsesso" required value="*">Altro
+                    <input type="radio" name="fsesso" required value="o all'età di 47 anni">Termosifone
+                </p>
+                <p>
+                    <label for="fcity">Città di nascita:</label><br>
+                    <select name="fcity" required>
+                        <option value="Milano">Milano</option>
+                        <option value="Bari">Bari</option>
+                        <option value="Poggibonsi">Poggibonsi</option>
+                        <option value="Torino">Torino</option>
+                        <option value="Roma" selected>Roma</option>
+                        <option value="Paperino">Paperino</option>
+                        <option value="Firenze">Firenze</option>
+                        <option value="Genova">Genova</option>
+                        <option value="Rocca Cannuccia">Rocca Cannuccia</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="fcf">Inserisci il tuo Codice Fiscale:</label><br>
+                    <input type="text" name="fcf" pattern="^[A-Z]{6}[0-9]{2}[A-Z]{1}[0-9]{2}[A-Z]{1}[0-9}{3}[A-Z]{1}$" required>
+                </p>
+                <p>
+                    <label for="fmail">Inserisci la tua email:</label><br>
+                    <input type="email" name="fmail" required>
+                </p>
+                <input type="submit" value="Invia dati ed accetta l'eterna dannazione!">
+                <div>
+                    <br>
+                </div>
+            </form>
         </center>
     </div>
 </body>
