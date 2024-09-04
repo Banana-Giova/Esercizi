@@ -1,6 +1,7 @@
 import os
 import mmap
-import PyPDF2
+import PyPDF2 # type: ignore
+import shutil
 
 our_root = input("Inserisci la root directory >>> ")
 our_string = input("Inserisci la stringa da cercare >>> ")
@@ -55,10 +56,12 @@ def CercaStringaInFileContent(input_path:str,input_string:str):
     curr_string = input_string.casefold()
 
     if input_path.endswith(".pdf"):
+        print("Rilevato file PDF.")
         return CercaInFilePdf(input_path=input_path, 
                               input_string=input_string)
 
     if input_path.endswith(".txt"):
+        print("Rilevato file TXT.")
         return CercaInTextFile(input_path=input_path, 
                               input_string=input_string)
 
@@ -80,7 +83,17 @@ def CercaStringaInFileContent(input_path:str,input_string:str):
 def SalvaFile(curr_path, curr_filename, curr_outdir):
     os.makedirs(curr_outdir, exist_ok=True)
     new_file = curr_outdir + "/" + curr_filename
-    pass
+    while True:
+        copycat:str = "(copy)"
+        copycount:str = ""
+        if os.path.exists(new_file):
+            copycount += copycat
+            newer_file = os.path.splitext(new_file)
+            new_file = newer_file[0] + copycount + newer_file[1]
+        else:
+            break
+
+    shutil.copyfile(curr_path, new_file)
 
 
 #Execution
@@ -89,10 +102,14 @@ for root, dirs, files in os.walk(our_root):
     print(f"Directory corrente {0} contenente {1} subdir e {2} files")
     for filename in files:
         name_searcher = CercaStringaInFileName(filename,our_string)
-        if(name_searcher == True):
+        if name_searcher:
             print(f"Trovato file: {filename}")
             match_counter += 1
+            SalvaFile(root, filename, our_outdir)
         else:
             full_path = os.path.join(root, filename)
             content_searcher = CercaStringaInFileContent(full_path, our_string)
-            pass
+            if content_searcher:
+                print(f"Trovato: {filename}")
+                match_counter += 1
+                SalvaFile(root, filename, our_outdir)
