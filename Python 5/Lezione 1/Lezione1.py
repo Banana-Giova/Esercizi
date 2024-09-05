@@ -4,6 +4,10 @@ import PyPDF2 # type: ignore
 import shutil
 
 our_root = input("Inserisci la root directory >>> ")
+if not os.path.isdir(our_root):
+    print(f"Invalid directory! Current working directory: {os.curdir}\n")
+    print(f"List of directories in the current working directory:\n{os.listdir()}\n")
+    raise IsADirectoryError("This directory doesn't exist! The aforementioned directories are the one you can start choosing from!")
 our_string = input("Inserisci la stringa da cercare >>> ")
 our_outdir = input("Inserisci la directory di output >>> ")
 
@@ -113,3 +117,4 @@ for root, dirs, files in os.walk(our_root):
                 print(f"Trovato: {filename}")
                 match_counter += 1
                 SalvaFile(root, filename, our_outdir)
+
