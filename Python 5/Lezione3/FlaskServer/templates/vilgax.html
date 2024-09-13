@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href='img/vilgax_icon.png'>
+    <link rel="icon" href='/static/img/vilgax_icon.png'>
     <title>Vilgax Il Conquistatore</title>
-    <link rel="stylesheet" href="vilgax.css">
+    <link rel="stylesheet" href="/static/vilgax.css">
 </head>
 <body>
     <div>
@@ -23,7 +23,7 @@
             <br>
             <div>
             <a href="https://eelslap.com/">
-            <img src="img/vilgax_the_conqueror.png" alt="Vilgax" width="525.0" height="834.0">
+            <img src="/static/img/vilgax_the_conqueror.png" alt="Vilgax" width="525.0" height="834.0">
             </a>
             <hr>
             <h2>Offrendo la vostra anima a Vilgax, otterrete i seguenti benefici:</h2>
@@ -87,13 +87,15 @@
                 </table>
             <div>
             <h3>Offri oggi la tua anima a Vilgax!</h3>
-            <form>
+            <form action="login" method="get">
                 <label for="Nome">Nome:</label>
-                <input type="Nome" id="Sium" name="Nome">
+                <input type="Nome" id="nome" name="Nome">
                 <label for="Cognome">Cognome:</label>
-                <input type="Cognome" id="Bada" name="Cognome">
+                <input type="Cognome" id="cognome" name="Cognome">
+                <br>
+                <br>
+                <input type="submit" value="Sacrificati ora!">
             </form><br>
-            <button onClick="window.location.href='https://cat-bounce.com/';">Sacrifica la tua anima a Vilgax!</button>
         </p><br>
         </center>
     </div>
