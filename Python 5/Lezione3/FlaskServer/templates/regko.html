@@ -10,10 +10,30 @@
 
 <body>
     <center>
-        <h2>Sei già prenotato per Vilgax, non puoi sacrificare la tua anima due volte, ne hai solo una!</h2>
+        <h2>Bentornato {{ nome }} {{ cognome }}! Clicca l'emoticon avvilita e tormentata per accedere al tuo piccolo inferno personale e alle patatine {{ paprika }} paprika!</h2>
         <br>
-        <a href="/">
-        <img src="/static/img/Desperate-Emoji.png" alt="sad" width="825.0" height="434.0">
+        <a href="/static/img/skeleton-burning.gif" target="_blank">
+            <img src="/static/img/Desperate-Emoji.png" alt="sad" width="825.0" height="434.0">
         </a>
+        <hr>
+        <h4>{{ nome }} se vuoi lascia una recensione a Vilgax! Ci teniamo a migliorare i nostri sacrifici umani!</h4>
+        <div class="centred">
+            <form class="star-rating">
+            <input class="radio-input" type="radio" id="star5" name="star-input" value="5" />
+            <label class="radio-label" class for="star5" title="5 stars">5 stars</label>
+            
+            <input class="radio-input" type="radio" id="star4" name="star-input" value="4" />
+            <label class="radio-label" for="star4" title="4 stars">4 stars</label>
+            
+            <input class="radio-input" type="radio" id="star3" name="star-input" value="3" />
+            <label class="radio-label" for="star3" title="3 stars">3 stars</label>
+            
+            <input class="radio-input" type="radio" id="star2" name="star-input" value="2" />
+            <label class="radio-label" for="star2" title="2 stars">2 stars</label>
+            
+            <input class="radio-input" type="radio" id="star1" name="star-input" value="1" />
+            <label class="radio-label" for="star1" title="1 star">1 star</label>
+        </form> 
+        </div>
     </center>
 </body>
