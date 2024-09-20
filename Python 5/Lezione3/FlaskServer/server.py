@@ -1,12 +1,17 @@
 from flask import Flask, render_template, request
 import json
+import os.path
+import datetime
 api = Flask(__name__, static_url_path='/static')
 
 
 #main route
 @api.route('/', methods=['GET'])
 def vilgax():
-    return render_template('vilgax.html')
+    if os.path.exists('data/vittime.json'):
+        return render_template('vilgax.html')
+    else:
+        raise Exception('The file "vittime.json" has to be present in "data/" for the server to function!')
 
 
 #secondary routes
@@ -54,6 +59,29 @@ def login():
     with open('data/vittime.json', mode='w', encoding='utf-8') as f:
         f.write(json.dumps(vittime, indent=True))
     return render_template('regok.html', **context)
+
+
+#preghiere
+@api.route('/preghiere', methods=['GET'])
+def preghiere():
+    if os.path.exists('data/vittime.json'):
+        return render_template('preghiere.html')
+    else:
+        raise Exception('The file "preghiere.json" has to be present in "data/" for the server to function!')
+
+@api.route('/new_preghiera', methods=['POST'])
+def new_preghiera():
+    if request.method == 'POST':
+        titolo_preg = request.form['titolo_preg']
+        testo_preg = request.form['testo_preg']
+        istante_preg = datetime.datetime.now()
+    else:
+        return render_template('preghiere.html')
+
+
+@api.route('/lista_preghiere', methods=['GET'])
+def lista_preghiere():
+    pass
 
 
 #api run segment
