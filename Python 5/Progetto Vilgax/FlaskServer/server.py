@@ -124,11 +124,5 @@ def new_preghiera():
     return redirect('/preghiere')
 
 
-
-@api.route('/lista_preghiere', methods=['GET'])
-def lista_preghiere():
-    pass
-
-
 #api run segment
 api.run(host="0.0.0.0", port=8085)
