@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href='/static/img/vilgax_icon.png'>
-    <title>Vilgax Il Conquistatore</title>
-    <link rel="stylesheet" href="/static/vilgax.css">
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
     <div>
         <center>
         <h1>Sacrificate la vostra anima a Vilgax, il Conquistatore!</h1>
@@ -87,16 +80,16 @@
                 </table>
             <div>
             <h3>Offri oggi la tua anima a Vilgax o accedi al tuo piccolo inferno!</h3>
-            <form action="login" method="get">
+            <form action="login" method="POST">
                 <label for="Nome">Nome:</label>
-                <input type="Nome" id="nome" name="Nome">
+                <input type="Nome" id="nome" name="Nome" required>
                 <label for="Cognome">Cognome:</label>
-                <input type="Cognome" id="cognome" name="Cognome">
+                <input type="Cognome" id="cognome" name="Cognome" required>
                 <p>Patatine infernali con o senza paprika:</p>
                 <label for="Paprika">Con</label>
-                <input type="radio" id="con" name="Paprika" value="con">
+                <input type="radio" id="con" name="Paprika" value="con" required>
                 <label for="Paprika">Senza</label>
-                <input type="radio" id="senza" name="Paprika" value="senza">
+                <input type="radio" id="senza" name="Paprika" value="senza" required>
                 <br>
                 <br>
                 <input type="submit" value="Sacrificati ora!">
@@ -104,5 +97,4 @@
         </p><br>
         </center>
     </div>
-</body>
-</html>
+{% endblock %}

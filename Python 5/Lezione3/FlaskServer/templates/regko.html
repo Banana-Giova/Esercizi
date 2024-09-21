@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href='/static/img/vilgax_icon.png'>
-    <title>Vilgax Il Conquistatore</title>
-    <link rel="stylesheet" href="/static/vilgax.css">
-</head>
+{% extends 'base.html' %}
 
-<body>
+{% block content %}
     <center>
-        <h2>Bentornato {{ nome }} {{ cognome }}! Clicca l'emoticon avvilita e tormentata per accedere al tuo piccolo inferno personale e alle patatine {{ paprika }} paprika!</h2>
+        <h2>Salve {{ nome }} {{ cognome }}! Clicca l'emoticon avvilita e tormentata per accedere al tuo piccolo inferno personale e alle patatine {{ paprika }} paprika!</h2>
         <br>
         <a href="/static/img/skeleton-burning.gif" target="_blank">
             <img src="/static/img/Desperate-Emoji.png" alt="sad" width="825.0" height="434.0">
@@ -41,4 +33,4 @@
         </form> 
         </div>
     </center>
-</body>
+{% endblock %}
