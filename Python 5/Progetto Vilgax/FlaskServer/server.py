@@ -31,6 +31,13 @@ def samuele():
 @api.route('/ronaldo', methods=['GET'])
 def ronaldo():
     return render_template('2nd_routes/ronaldo.html')
+@api.route('/review_search')
+def review_search():
+    context = {
+        'searched': False,
+        'recensione': None
+    }
+    return render_template('review_search.html', **context)
 
 
 #registration
@@ -72,6 +79,33 @@ def login():
         f.write(json.dumps(vittime, indent=True))
     return render_template('regok.html', **context)
 
+@api.route('/get_info', methods=['POST'])
+def get_info():
+    if os.path.exists('data/recensioni.json'):
+        with open('data/recensioni.json') as f:
+            recensioni:dict = json.load(f)
+        if request.method == "POST":
+            cf = request.form["CF"]
+            text_review = request.form["text_review"]
+            stars = request.form["star-input"]
+        else:
+            return render_template('vilgax.html')
+        updated:bool = False
+        #if already made a review
+        if cf in recensioni:
+            updated = True
+            del recensioni[cf]
+            
+        recensioni[cf] = [text_review, stars]
+        context = {
+            'updated': updated
+        }
+        with open('data/recensioni.json', mode='w', encoding='utf-8') as f:
+            f.write(json.dumps(recensioni, indent=True))
+        return render_template('review_sent.html', **context)
+    else:
+        raise Exception('The file "recensioni.json" has to be present in "data/" for the server to function!')
+
 
 #preghiere
 @api.route('/preghiere', methods=['GET'])
@@ -101,6 +135,7 @@ def preghiere():
     else:
         raise Exception('The file "preghiere.json" has to be present in "data/" for the server to function!')
 
+#new_preghiera
 @api.route('/new_preghiera', methods=['POST'])
 def new_preghiera():
     if request.method == 'POST':
@@ -122,6 +157,34 @@ def new_preghiera():
     with open('data/preghiere.json', mode='w', encoding='utf-8') as f:
         f.write(json.dumps(preghiere, indent=True))
     return redirect('/preghiere')
+
+#list_reviews
+@api.route('/list_reviews', methods=['POST'])
+def list_reviews():
+    if os.path.exists('data/recensioni.json'):
+        if request.method == 'POST':
+            cf = request.form['CF']
+            print(cf)
+            with open('data/recensioni.json', mode='r') as f:
+                recensioni:dict = json.load(f)
+
+            if cf not in recensioni:
+                recensione = None
+                print("Non lo trovo!")
+            else:
+                recensione = recensioni[cf]
+                print("Trovato!")
+
+            context = {
+                'searched': True,
+                'recensione': recensione
+                }
+            return render_template('review_search.html', **context)
+        else:
+            return render_template('review_search.html')
+    else:
+        raise Exception('The file "recensioni.json" has to be present in "data/" for the server to function!')
+    
 
 
 #api run segment

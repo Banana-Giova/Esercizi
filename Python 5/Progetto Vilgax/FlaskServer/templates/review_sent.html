@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <center>
+        {% if updated == True %}
+            <h2>Complimenti! Hai aggiornato la tua recensione su Vilgax!</h2>
+        {% else %}
+            <h2>Complimenti! Hai inviato la tua recensione a Vilgax!</h2>
+        {% endif %}
+        <br>
+            <a href="/">
+        <img src="/static/img/Happy-Emoji.png" alt="happy" width="525.0" height="834.0">
+        </a>
+    </center>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <center>
+    <div>
+        <h3>Invia preghiere all'unica divinità che possiede la tua anima, Vilgax!</h3>
+        <hr>
+        <form action="list_reviews" method="POST">
+            <label for="cf">Codice Fiscale associato:</label>
+            <input type="text" id="cf" name="CF"><br><br>
+            <input type="submit" value="Cerca!">
+        </form><br>
+    </div>
+    <br><br>
+    <div>
+        {% if searched == True %}
+            {% if recensione != None %}
+            <h2>Recensioni trovata, eccola qui!</h2><br>
+                <table class="stile2">
+                    <tbody>
+                        <tr>
+                            <td class="column1">{{ recensione }}</td>
+                        </tr>
+                    <br>
+                    </tbody>
+                </table>
+            {% else %}
+                <h2>Spiacenti, nessuna recensione è associata a tale codice fiscale!</h2>
+            {% endif %}
+        {% endif %}
+    </div>
+    </center>
+{% endblock %}
