@@ -85,15 +85,39 @@ WHERE ( luogo_partenza.citta = 'Roma'
 --    Restituire: nome della compagnia, codici dei voli, 
 --    e aeroporti di partenza, scalo e arrivo.
 
-SELECT primo_volo.comp, primo_volo.codice, secondo_volo.codice,
-       aeroporto_partenza.nome, aeroporto_scalo.nome, aeroporto_arrivo.nome
-FROM ArrPart AS primo_volo, ArrPart AS secondo_volo, 
-     Aeroporto AS aeroporto_partenza, Aeroporto AS aeroporto_scalo, Aeroporto AS aeroporto_arrivo
-WHERE 
-
-
-
+SELECT primo_volo.comp AS compagnia, 
+       primo_volo.codice AS codice_volo_1, 
+       aeroporto_partenza.nome AS partenza_da,
+       aeroporto_scalo.nome AS scalo_a,
+       secondo_volo.codice AS codice_volo_2,
+       aeroporto_arrivo.nome AS arrivo_a
+FROM ArrPart primo_volo, 
+     ArrPart secondo_volo, 
+     Aeroporto aeroporto_partenza, 
+     Aeroporto aeroporto_scalo, 
+     Aeroporto aeroporto_arrivo,
+     LuogoAeroporto luogo_partenza,
+     LuogoAeroporto luogo_arrivo
+WHERE primo_volo.comp = secondo_volo.comp
+  AND luogo_partenza.citta = 'Roma'
+  AND luogo_partenza.aeroporto = aeroporto_partenza.codice
+  AND primo_volo.partenza = aeroporto_partenza.codice
+  AND primo_volo.arrivo = aeroporto_scalo.codice
+  AND secondo_volo.partenza = aeroporto_scalo.codice
+  AND secondo_volo.arrivo = aeroporto_arrivo.codice
+  AND luogo_arrivo.aeroporto = aeroporto_arrivo.codice
+  AND luogo_arrivo.citta = 'New York';
 
 --11. Quali sono le compagnie che hanno voli che partono 
 --    dall’aeroporto ‘FCO’, atterrano all’aeroporto ‘JFK’, 
 --    e di cui si conosce l’anno di fondazione?
+
+SELECT DISTINCT compagnia.nome AS nome_compagnia
+FROM ArrPart ap,
+     Compagnia compagnia
+WHERE ap.partenza = 'FCO'
+  AND ap.arrivo = 'JFK'
+  AND ap.comp = compagnia.nome
+  AND compagnia.annoFondaz IS NOT NULL;
+
+--Non scordarti 'IS'!
