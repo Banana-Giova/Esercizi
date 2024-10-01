@@ -48,7 +48,7 @@ pubblica, dunque quando si decripta è necessario avere solo quella.
 
 """
 (Step 3)
-
+Per cifrare un messaggio è necessario utilizzare la seguente funzione:
 """
 
 # Function to encrypt message
@@ -57,14 +57,38 @@ def encrypt_message(message, pub_key):
     encrypted_message = cipher.encrypt(message.encode("utf-8"))
     return base64.b64encode(encrypted_message).decode("utf-8")
 
+"""
+Questa funzione, prima la funzione 'new()' restituisce un oggetto
+cifrato 'cipher' creato utilizzando la chiave pubblica del nostro collega,
+in modo che possa decriptarla utilizzando appunto la chiave in suo possesso,
+poi il messaggio viene cifrato utilizzando l'oggetto 'cipher' appena cfeato e
+infine viene ritornato, in modo leggibile nell'encoding UTF-8.
+"""
+
+"""
+(Step 4)
+Per decifrare un messaggio proveniente da un collega è necessario
+utilizzare la seguente funzione:
+"""
+
 # Function to decrypt message
 def decrypt_message(encrypted_message, priv_key):
     cipher = PKCS1_OAEP.new(priv_key)
     decrypted_message = cipher.decrypt(base64.b64decode(encrypted_message))
     return decrypted_message.decode("utf-8")
 
+"""
+Questa funzione prima crea un altro oggetto 'cipher', ma questa volta
+utilizzando la coppia di chiavi pubbliche e private nostre, dato che il
+nostro collega ha encriptato il messaggio utiizzando la nostra chiave
+pubblica, poi si fa il processo inverso rispetto a quello fatto prima,
+decriptando il messaggio tramite l'appena creato 'cipher'.
+"""
 
-
+"""
+Ecco dei codici esempio.
+L'esercizio è stato eseguito con Michele Badimassoud e Danila Rahautsou.
+"""
 
 #Scambio messaggi con Danila
 sPubDanila = "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtPD3AuJx+It53p1IjvNp\n2UREYCzdrdjgYyvZ26c09siosd37kqE3XwnXvZ7xISI4hNYIdorwVs7q+xs+EKFr\nwPrAEj3GSKgBjkA/gesAnXaKzlf591rmrXzXq9YuKFngAO8vBZH+vuAq9fOsYBGj\ntbMiPQwXZBfgnshjT1zxDnqm3ER4GaDl1aMZ3+YkaI6DAZsuGTvUFyBFKWlssS+F\nQa21epOh3zpT67TdAcjwLHtnUgZHTVRoLxCT5Q+fG/x44UwXfpJhAywY1hVjlOQ3\nmEUvLx1/GBe8aEgoWmGe0s/X23Bqafheg2MqiEVk8+qUJschAXlWOSv7OIakLqm8\nQwIDAQAB\n-----END PUBLIC KEY-----"
