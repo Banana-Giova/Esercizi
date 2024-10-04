@@ -8,6 +8,7 @@ api = Flask(__name__)
 @api.route('/', methods=['GET', 'POST'])
 def index():
     sOper = request.json.get('test', 0)
+
     match int(sOper):
         case 1 | 4:
             data_name = 'vittime'
@@ -17,6 +18,7 @@ def index():
             data_name = 'recensioni'
         case _:
             abort(422)
+
     match int(sOper):
         case 1 | 2 | 3:
             with open(f'data/{data_name}.json', mode='r') as f:
@@ -24,8 +26,8 @@ def index():
                 return jsonify(sendata)
         case 4 | 5 | 6:
             redata = request.json.get('context', 0)
-            with open(f'data/{data_name}.json', mode='a', encoding='utf-8') as f:
-                f.write(json.dumps(redata, indent=True))
+            with open(f'data/{data_name}.json', mode='w', encoding='utf-8') as f:
+                json.dump(redata, f, indent=True)
             with open(f'data/{data_name}.json', mode='r') as f:
                 sendata:dict = json.load(f)
             return jsonify(sendata)
