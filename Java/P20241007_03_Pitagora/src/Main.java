@@ -28,10 +28,9 @@ public class Main {
 		double perit = c1+c2+ipo;
 		System.out.println("L'area del triangolo equivale a: "+ areat);
 		System.out.println("Il perimetro del triangolo equivale a: " + perit);
-		double ray = ipo*(3/4);
-		double areac = 2*Math.PI*ray;
-		double halfperic = Math.PI*ray;
-		double peric = halfperic * halfperic;
+		double ray = (ipo*3)/4;
+		double areac = Math.PI*(ray*ray);
+		double peric = 2*Math.PI*ray;
 		System.out.println("L'area del cerchio equivale a: "+ areac);
 		System.out.println("Il perimetro del cerchio equivale a: " + peric);
 	}
