@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, redirect # type: ignore
 import json
 import requests
 from models import Preghiera
-import os.path
 from datetime import date
 api = Flask(__name__, static_url_path='/static')
 
@@ -12,9 +11,9 @@ def fetchOrMod(fetch_num:int, context:dict={}) -> dict:
         data = { 'test': fetch_num,
                  'context': context }
 
-        url = 'http://127.0.0.1:1240/'
+        url = 'https://127.0.0.1:1240/'
         headers = { 'Content-Type': 'application/json' }
-        response = requests.post(url, data=json.dumps(data), headers=headers)
+        response = requests.post(url, data=json.dumps(data), headers=headers, verify=False)
         response.raise_for_status()
         #data = json.load((response.json()))
         output = response.json()
@@ -234,4 +233,4 @@ def list_reviews():
 
 #api run segment
 if __name__ == '__main__':
-    api.run(host="127.0.0.1", port=8085)
+    api.run(host="127.0.0.1", port=8085, ssl_context='adhoc')
