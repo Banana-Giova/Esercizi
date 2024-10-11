@@ -1,25 +1,12 @@
 
-public class Main {
+public class Triangolo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		/*Esercizio 2:
-		 * 
-		*Dato un triangolo rettangolo i cui cateti misurano 
-		**rispettivamente 45.3 e 67.2 metri:
-		*
-		*1) calcolare e stampare la lunghezza dell'ipotenusa
-		*2) calcolare e stampare la sua area
-		*3) calcolare e stampare il suo perimetro
-		*4) Infine stampare circonferenza e area di un cerchio 
-		*   di raggio pari ai 3/4 dell'ipotenusa.
-		*
-		*NB: In java per la radice quadrata utilizzare 
-		*Math.sqrt(x). Se Math viene mostrato sottolineato, 
-		*andare con il mouse su Math e selezionare la import 
-		*della libreria
-		*/
+		/*Esercizio 3:
+		 * Rielabora l'esercizio usando getter e setter
+
 		double c1 = 45.3;
 		double c2 = 67.2;
 		double ipo = Math.sqrt((c1*c1) + (c2*c2));
@@ -33,6 +20,9 @@ public class Main {
 		double peric = 2*Math.PI*ray;
 		System.out.println("L'area del cerchio equivale a: "+ areac);
 		System.out.println("Il perimetro del cerchio equivale a: " + peric);
+		*/
+		
+		
 	}
 
 }
