@@ -1,15 +1,24 @@
 --1. Quanti sono gli strutturati di ogni fascia?
 
-
+SELECT DISTINCT pers.posizione AS posizione,
+                COUNT(*) AS numero_strutturati
+FROM Persona pers
+WHERE TRUE
+GROUP BY pers.posizione;
 
 --2. Quanti sono gli strutturati con stipendio ≥ 40000?
 
-
+SELECT COUNT(*) AS numero_strutturati
+FROM Persona pers
+WHERE pers.stipendio >= 40000;
 
 --3. Quanti sono i progetti già finiti che superano il 
 --budget di 50000?
 
-
+SELECT COUNT(*) AS numero_progetti
+FROM Progetto prog
+WHERE prog.budget >= 50000
+  AND prog.fine < CURRENT_DATE;
 
 --4. Qual è la media, il massimo e il minimo delle ore 
 --delle attività relative al progetto ‘Pegasus’ ?
