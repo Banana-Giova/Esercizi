@@ -27,7 +27,9 @@ SELECT AVG(attprog.oreDurata) AS media_ore,
        MAX(attprog.oreDurata) AS massimo_ore,
        MIN(attprog.oreDurata) AS minimo_ore
 FROM AttivitaProgetto attprog
-WHERE TRUE;
+    JOIN Progetto prog
+        ON attprog.progetto = prog.id
+WHERE prog.nome = 'Pegasus';
 
 --5. Quali sono le medie, i massimi e i minimi delle ore 
 --giornaliere dedicate al progetto ‘Pegasus’ da ogni singolo docente?
@@ -40,7 +42,9 @@ SELECT pers.nome AS nome_docente,
 FROM AttivitaProgetto attprog
     JOIN Persona pers
         ON attprog.persona = pers.id
-WHERE TRUE
+    JOIN Progetto prog
+        ON attprog.progetto = prog.id
+WHERE prog.nome = 'Pegasus'
 GROUP BY pers.id;
 
 --6. Qual è il numero totale di ore dedicate alla 
@@ -48,11 +52,11 @@ GROUP BY pers.id;
 
 SELECT pers.nome AS nome_docente,
        pers.cognome AS cognome_docente,
-       SUM(attprog.oreDurata) AS totale_ore
-FROM AttivitaProgetto attprog
+       SUM(attnon.oreDurata) AS totale_ore
+FROM AttivitaNonProgettuale attnon
     JOIN Persona pers
-        ON attprog.persona = pers.id
-WHERE TRUE
+        ON attnon.persona = pers.id
+WHERE attnon.tipo = 'Didattica'
 GROUP BY pers.id;
 
 --7. Qual è la media, il massimo e il minimo degli 
@@ -73,7 +77,7 @@ SELECT pers.posizione AS posizione,
        MIN(pers.stipendio) AS minimo_stipendio
 FROM Persona pers
 WHERE TRUE
-GROUP BY pers.poszione;
+GROUP BY pers.posizione;
 
 --9. Quante ore ‘Ginevra Riva’ ha dedicato ad ogni progetto 
 --nel quale ha lavorato?
@@ -107,13 +111,25 @@ HAVING COUNT(attprog.persona) >= 2;
 --su più di un progetto?
 
 SELECT pers.nome AS nome_docente,
-       pers.cognome AS cognome_docente,
-       COUNT(attprog.persona) AS numero_di_progetti
+       pers.cognome AS cognome_docente
 FROM AttivitaProgetto attprog
     JOIN Persona pers
         ON attprog.persona = pers.id
     JOIN Progetto prog
         ON attprog.progetto = prog.id
-WHERE TRUE
+WHERE pers.posizione = 'Professore Associato'
 GROUP BY pers.id
 HAVING COUNT(attprog.persona) >= 2;
+
+--oppure
+
+SELECT pers.nome AS nome_docente,
+       pers.cognome AS cognome_docente
+FROM AttivitaProgetto attprog1
+    JOIN Persona pers
+        ON attprog1.persona = pers.id
+    JOIN AttivitaProgetto attprog2
+        ON attprog2.persona = pers.id
+WHERE attprog1.progetto <> attprog2.progetto
+  AND pers.posizione = 'Professore Associato'
+GROUP BY pers.id;
