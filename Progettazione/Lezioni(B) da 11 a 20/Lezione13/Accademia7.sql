@@ -29,12 +29,21 @@ GROUP BY pers.id;
 --con uno stipendio che differisce di al massimo una deviazione 
 --standard dalla media della loro categoria?
 
-/*WITH 
+WITH media_categoria AS (
+    SELECT AVG(pers.stipendio) AS media_stipendio,
+           STDDEV(pers.stipendio) AS deviazione_stipendio,
+           pers.posizione AS posizione_strutturato
+    FROM Persona pers
+    GROUP BY pers.posizione
+)
 SELECT pers.posizione AS posizione,
        COUNT(pers.id) AS numero
-FROM Persona pers
-WHERE TRUE
-GROUP BY pers.posizione;*/
+FROM Persona pers,
+     media_categoria
+WHERE pers.stipendio >= media_stipendio
+  AND pers.stipendio <= media_stipendio+deviazione_stipendio
+  AND pers.posizione = posizione_strutturato
+GROUP BY pers.posizione;
 
 --4. Chi sono gli strutturati che hanno lavorato 
 --almeno 20 ore complessive in attività progettuali? 
@@ -78,6 +87,7 @@ FROM Progetto prog
     JOIN AttivitaProgetto attprog
         ON prog.id = attprog.progetto
 WHERE attprog.tipo = 'Dimostrazione'
+  AND prog.fine < CURRENT_DATE
 GROUP BY prog.id;
 
 --7. Quali sono i professori ordinari che hanno fatto 
