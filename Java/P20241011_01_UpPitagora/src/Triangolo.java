@@ -1,7 +1,5 @@
 
 public class Triangolo {
-
-	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		/*Esercizio 3:
@@ -22,7 +20,47 @@ public class Triangolo {
 		System.out.println("Il perimetro del cerchio equivale a: " + peric);
 		*/
 		
+		private double cat1;
+		private double cat2;
+		private double hyp;
+		private double area;
+		private double perimetro;
 		
+		private void UpdateDependents() {
+			hyp = Math.sqrt(cat1*cat1+cat2*cat2);
+			area = (cat1*cat2)/2;
+			perimetro = cat1+cat2+hyp;
+		}
+		
+		public double getCat1() {
+			return cat1;
+		}
+		public void setCat1(double cat1) {
+			this.cat1 = cat1;
+			UpdateDependents();
+		}
+		public double getCat2() {
+			return cat2;
+		}
+		public void setCat2(double cat2) {
+			this.cat2 = cat2;
+			UpdateDependents();
+		}
+		public double getHyp() {
+			return hyp;
+		}
+		public double getArea() {
+			return area;
+		}
+		public double getPerimetro() {
+			return perimetro;
+		}
+		
+		public Triangolo(double cat1, double cat2) {
+			super();
+			this.cat1 = cat1;
+			this.cat2 = cat2;
+			
+			UpdateDependents();
+		}
 	}
-
-}
