@@ -11,9 +11,11 @@ def get_db_connection():
     conn = psycopg2.connect(
             host="localhost",
             database="flask_db",
-            user=os.environ['postgres'],
-            password=os.environ['postgres']
+            user='postgres',
+            password='postgres',
+            port='5432'
             )
+    conn.autocommit = True
     return conn
 
 def table_fetch(reqtab:str):
@@ -26,14 +28,30 @@ def table_fetch(reqtab:str):
     conn.close()
     return table
 
-def table_mod(reqtab:str, new_data:str):
-    pass
-
+def table_mod(sOper:str, new_query:dict):
+    conn = get_db_connection()
+    cur = conn.cursor()
+    try:
+        match int(sOper):
+            case 4:
+                for ki, vi in new_query.items():
+                    new_vi = vi.replace("'", "''")
+                    vi = new_vi
+                    pass
+                    
+                query:str = f"INSERT INTO Vittime (id, nome, cognome, paprika)\nVALUES\n"
+                query += f"('{new_query['id']}','{new_query['nome']}','{new_query['cognome']}','{new_query['paprika']}');"
+                cur.execute(query=query)
+    except Exception as e:
+        raise Exception(e)
+    finally:
+        cur.close()
+        conn.close()
 
 
 @api.route('/', methods=['GET', 'POST'])
 def index():
-    sOper = request.json.get('test', 0)
+    sOper = request.json.get('req_type', 0)
 
     match int(sOper):
         case 1 | 4:
@@ -53,9 +71,12 @@ def index():
         case 4 | 5 | 6:
             redata = request.json.get('context', 0)
             with open(f'data/{data_name}.json', mode='w', encoding='utf-8') as f:
-                json.dump(redata, f, indent=True)
+                json.dump(redata[data_name], f, indent=True)
             with open(f'data/{data_name}.json', mode='r') as f:
                 sendata:dict = json.load(f)
+
+            table_mod(sOper, redata['new_query'])
+
             return jsonify(sendata)
         case _:
             abort(422)

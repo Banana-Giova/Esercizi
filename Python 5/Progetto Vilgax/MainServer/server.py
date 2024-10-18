@@ -8,7 +8,7 @@ api = Flask(__name__, static_url_path='/static')
 #to fetch or mod a specific json
 def fetchOrMod(fetch_num:int, context:dict={}) -> dict:
     try:
-        data = { 'test': fetch_num,
+        data = { 'req_type': fetch_num,
                  'context': context }
 
         url = 'https://127.0.0.1:1240/'
@@ -114,18 +114,21 @@ def login():
         "paprika":paprika
         }
     
-    last_pk = 1
+    session_daemon(n=nome, c=cognome, p=paprika)
     for ki, vi in vittime.items():
     #if already a user
-        if int(ki) >= last_pk:
-            last_pk = int(ki)
         if vi[0] == nome and vi[1] == cognome and vi[2] == paprika:
-            session_daemon(n=nome, c=cognome, p=paprika)
             return render_template('regko.html', **context)
     
     #if not a user
-    vittime[str(last_pk+1)] = [nome, cognome, paprika]
-    fetched = fetchOrMod(4, vittime)
+    context["id"] = current_user
+    vittime[current_user] = [nome, cognome, paprika]
+    mod_context = {
+        'vittime':vittime,
+        'new_query':context
+    }
+    
+    fetched = fetchOrMod(4, mod_context)
     with open('data/vittime.json', mode='w', encoding='utf-8') as f:
         json.dump(fetched, f, indent=True)
     return render_template('regok.html', **context)
@@ -140,6 +143,10 @@ def get_info():
         stars = request.form["star-input"]
     else:
         return render_template('vilgax.html')
+    insert_recensione = {
+
+    }
+
     updated:bool = False
     #if already made a review
     if cf in recensioni:
@@ -150,6 +157,11 @@ def get_info():
     context = {
         'updated': updated
     }
+    fetch_context = {
+        'recensioni':recensioni,
+        'new_query':insert_recensione
+    }
+
     fetched = fetchOrMod(6, recensioni)
     with open('data/recensioni.json', mode='w', encoding='utf-8') as f:
         json.dump(fetched, f, indent=True)
