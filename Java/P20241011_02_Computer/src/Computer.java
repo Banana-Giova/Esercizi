@@ -9,6 +9,7 @@ public class Computer {
 	private double dimensioni;
 	private String produttore;
 	private int anno_produzione;
+	public static int num_pc;
 	
 	private void UpdateDependents() {
 		this.dimensioni = larghezza*altezza*profondita;
@@ -64,6 +65,14 @@ public class Computer {
 		return dimensioni;
 	}
 	
+	public void newPC() {
+		num_pc += 1;
+	}
+	
+	public int getPCnum() {
+		return num_pc;
+	}
+	
 	public Computer(double prezzo, double peso, double larghezza, 
 				    double altezza, double profondita, String produttore,
 			        int anno_produzione) {
@@ -77,6 +86,7 @@ public class Computer {
 		this.anno_produzione = anno_produzione;
 		
 		UpdateDependents();
+		newPC();
 	}
 	
 }
