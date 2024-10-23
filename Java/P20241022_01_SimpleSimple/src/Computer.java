@@ -1,3 +1,4 @@
+import java.math.BigDecimal;
 
 public class Computer {
 
@@ -10,6 +11,18 @@ public class Computer {
 	private String produttore;
 	private int anno_produzione;
 	public static int num_pc;
+	
+	@SuppressWarnings("deprecation")
+	private static double randomicTrunk(int numberofDecimals) {
+		while ( true ) {
+			double x = Math.random();
+		    double new_x = (new BigDecimal(String.valueOf(x)).setScale(numberofDecimals, BigDecimal.ROUND_CEILING)).doubleValue();
+		    if ( x != new_x ) {
+		    	break;
+		    }
+		}
+		return new_x;
+	}
 	
 	private void UpdateDependents() {
 		this.dimensioni = larghezza*altezza*profondita;
@@ -87,6 +100,14 @@ public class Computer {
 		
 		UpdateDependents();
 		newPC();
+	}
+	
+	public static Computer generaRandPC() {
+		return new Computer(
+				Math.random(), Math.random(), 
+				Math.random(), Math.random(), 
+				Math.random(), "Lenovo", 
+				(int) (Math.random() * 100));
 	}
 	
 }
