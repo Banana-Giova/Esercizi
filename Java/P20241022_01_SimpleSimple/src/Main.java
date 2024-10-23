@@ -29,7 +29,10 @@ public class Main {
 		objArray[9] = comp9;
 		
 		for (int i = 0; i<10; i++) {
-			System.out.println(objArray[i].getPrezzo());
+			System.out.println("┌────────────────────────┐");
+			System.out.println("│" + objArray[i].getPrezzo() + " ".repeat(17) + "│");
+			System.out.println("└────────────────────────┘");
+			
 		}
 	}
 

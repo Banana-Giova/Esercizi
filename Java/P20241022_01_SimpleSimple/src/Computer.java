@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Computer {
 
@@ -12,20 +13,24 @@ public class Computer {
 	private int anno_produzione;
 	public static int num_pc;
 	
-	@SuppressWarnings("deprecation")
 	private static double randomicTrunk(int numberofDecimals) {
+		double new_x;
 		while ( true ) {
-			double x = Math.random();
-		    double new_x = (new BigDecimal(String.valueOf(x)).setScale(numberofDecimals, BigDecimal.ROUND_CEILING)).doubleValue();
-		    if ( x != new_x ) {
-		    	break;
+		    BigDecimal x = new BigDecimal(Math.random());
+		    x = x.setScale(numberofDecimals, RoundingMode.FLOOR);
+		    new_x = x.doubleValue();
+		    int x_len = Double.toString(new_x).length();
+		    
+		    if ( x_len == 7 ) {
+		    	return new_x;
 		    }
 		}
-		return new_x;
 	}
 	
 	private void UpdateDependents() {
-		this.dimensioni = larghezza*altezza*profondita;
+	    BigDecimal dix = new BigDecimal(larghezza*altezza*profondita);
+	    dix = dix.setScale(5, RoundingMode.FLOOR);
+	    this.dimensioni = dix.doubleValue();
 	}
 	
 	public double getPrezzo() {
@@ -104,9 +109,9 @@ public class Computer {
 	
 	public static Computer generaRandPC() {
 		return new Computer(
-				Math.random(), Math.random(), 
-				Math.random(), Math.random(), 
-				Math.random(), "Lenovo", 
+				Computer.randomicTrunk(5), Computer.randomicTrunk(5), 
+				Computer.randomicTrunk(5), Computer.randomicTrunk(5), 
+				Computer.randomicTrunk(5), "Lenovo", 
 				(int) (Math.random() * 100));
 	}
 	
