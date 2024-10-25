@@ -13,17 +13,42 @@ public class Computer {
 	private int anno_produzione;
 	public static int num_pc;
 	
-	private static double randomicTrunk(int numberofDecimals) {
-		double new_x;
-		while ( true ) {
-		    BigDecimal x = new BigDecimal(Math.random());
-		    x = x.setScale(numberofDecimals, RoundingMode.FLOOR);
-		    new_x = x.doubleValue();
-		    int x_len = Double.toString(new_x).length();
-		    
-		    if ( x_len == 7 ) {
-		    	return new_x;
-		    }
+	private static int rangeRandint(int min, int max) {
+	    return (int) ((Math.random() * (max - min)) + min);
+	}
+	
+	static String[] produttori = {
+			"Lenovo", "Apple", "Dell", 
+			"Asus", "HP", "Razer",
+			"Acer", "NZXT"
+			};
+	
+	public int getAntiProduttore() {
+		return 11-(this.getProduttore()).length();
+	}
+	
+	public int getAntiLength(String nome) {
+		
+		if (nome == "prezzo") {
+			return 14-((Double.toString(this.prezzo)).length());
+		}
+		if (nome == "peso") {
+			return 16-((Double.toString(this.peso)).length());
+		}
+		if (nome == "larghezza") {
+			return 10-((Double.toString(this.larghezza)).length());
+		}
+		if (nome == "altezza") {
+			return 12-((Double.toString(this.altezza)).length());
+		}
+		if (nome == "profondita") {
+			return 9-((Double.toString(this.profondita)).length());
+		}
+		if (nome == "dimensioni") {
+			return 10-((Double.toString(this.dimensioni)).length());
+		}
+		else {
+			return -100;
 		}
 	}
 	
@@ -32,6 +57,7 @@ public class Computer {
 	    dix = dix.setScale(5, RoundingMode.FLOOR);
 	    this.dimensioni = dix.doubleValue();
 	}
+
 	
 	public double getPrezzo() {
 		return prezzo;
@@ -83,6 +109,11 @@ public class Computer {
 		return dimensioni;
 	}
 	
+	public String getPrintDimensioni() {
+		String dipsy = Double.toString(dimensioni);
+		return dipsy.substring(0, dipsy.length()-2);
+	}
+	
 	public void newPC() {
 		num_pc += 1;
 	}
@@ -109,10 +140,11 @@ public class Computer {
 	
 	public static Computer generaRandPC() {
 		return new Computer(
-				Computer.randomicTrunk(5), Computer.randomicTrunk(5), 
-				Computer.randomicTrunk(5), Computer.randomicTrunk(5), 
-				Computer.randomicTrunk(5), "Lenovo", 
-				(int) (Math.random() * 100));
+				Computer.rangeRandint(99, 9999)+0.99, Computer.rangeRandint(100, 5000), 
+				Computer.rangeRandint(20, 50), Computer.rangeRandint(10, 50), 
+				Computer.rangeRandint(1, 100), 
+				Computer.produttori[Computer.rangeRandint(0, 8)], 
+				Computer.rangeRandint(1995, 2024));
 	}
 	
 }

@@ -29,9 +29,17 @@ public class Main {
 		objArray[9] = comp9;
 		
 		for (int i = 0; i<10; i++) {
-			System.out.println("┌────────────────────────┐");
-			System.out.println("│" + objArray[i].getPrezzo() + " ".repeat(17) + "│");
-			System.out.println("└────────────────────────┘");
+			System.out.println("┌" + "─".repeat(24) + "┐");
+			System.out.println("│ " + "Info PC sul numero " + i + ":  │\n├" + "─".repeat(24) + "┤");
+			System.out.println("│ Prezzo:" + " ".repeat(objArray[i].getAntiLength("prezzo")) + objArray[i].getPrezzo() + "€ │");
+			System.out.println("│ Peso:" + " ".repeat(objArray[i].getAntiLength("peso")) + objArray[i].getPeso() + "g │");
+			System.out.println("│ Larghezza:" + " ".repeat(objArray[i].getAntiLength("larghezza")) + objArray[i].getLarghezza() + "cm │");
+			System.out.println("│ Altezza:" + " ".repeat(objArray[i].getAntiLength("altezza")) + objArray[i].getAltezza() + "cm │");
+			System.out.println("│ Profondità:" + " ".repeat(objArray[i].getAntiLength("profondita")) + objArray[i].getProfondita() + "cm │");
+			System.out.println("│ Dimensioni:" + " ".repeat(objArray[i].getAntiLength("dimensioni")) + objArray[i].getPrintDimensioni() + "cm³ │");
+			System.out.println("│ Produttore:" + " ".repeat(objArray[i].getAntiProduttore()) + objArray[i].getProduttore() + " │");
+			System.out.println("│ Anno Produzione:  " + objArray[i].getAnno_produzione() + " │");
+			System.out.println("└" + "─".repeat(24) + "┘");
 			
 		}
 	}
