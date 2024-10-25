@@ -144,7 +144,9 @@ def get_info():
     else:
         return render_template('vilgax.html')
     insert_recensione = {
-
+        'cf':cf,
+        'descrizione':text_review,
+        'voto':stars
     }
 
     updated:bool = False
@@ -157,12 +159,12 @@ def get_info():
     context = {
         'updated': updated
     }
-    fetch_context = {
+    mod_context = {
         'recensioni':recensioni,
         'new_query':insert_recensione
     }
 
-    fetched = fetchOrMod(6, recensioni)
+    fetched = fetchOrMod(6, mod_context)
     with open('data/recensioni.json', mode='w', encoding='utf-8') as f:
         json.dump(fetched, f, indent=True)
     return render_template('review_sent.html', **context)
@@ -174,7 +176,11 @@ def preghiere():
         preghiere:dict = json.load(f)
     if current_user not in preghiere:
         preghiere[current_user] = []
-    fetched = fetchOrMod(5, preghiere)
+    mod_context = {
+        'preghiere':preghiere,
+        'new_query':None
+    }
+    fetched = fetchOrMod(5, mod_context)
     with open('data/preghiere.json', mode='w', encoding='utf-8') as f:
         json.dump(fetched, f, indent=True)
 
@@ -184,13 +190,14 @@ def preghiere():
         "esaudite": []
     }
     for i in current_preghiere:
-        singola_preg = Preghiera(
-            titolo=i[0], testo=i[1], data=i[2]
-        )
-        if singola_preg.data >= current_day:
-            context["da_esaudire"].insert(0, singola_preg)
-        else:
-            context["esaudite"].insert(0, singola_preg)
+        if len(i) > 0:
+            singola_preg = Preghiera(
+                titolo=i[0], testo=i[1], data=i[2]
+            )
+            if singola_preg.data >= current_day:
+                context["da_esaudire"].insert(0, singola_preg)
+            else:
+                context["esaudite"].insert(0, singola_preg)
     return render_template('preghiere.html', **context)
 
 #new_preghiera
@@ -198,21 +205,34 @@ def preghiere():
 def new_preghiera():
     if request.method == 'POST':
         titolo_preg = request.form['titolo_preg']
-        print(titolo_preg)
         testo_preg = request.form['testo_preg']
-        print(testo_preg)
         istante_preg = int((str(date.today())).replace('-',''))
-        print(istante_preg)
     else:
         return render_template('preghiere.html')
+
     preghierina:list = [titolo_preg, testo_preg, istante_preg]
-    
+    insert_preghiera = {
+        'proprietario':current_user,
+        'titolo':titolo_preg,
+        'contenuto':testo_preg,
+        'data':istante_preg
+    }
+
     with open('data/preghiere.json', mode='r', encoding='utf-8') as f:
         preghiere:dict = json.load(f)
     if current_user not in preghiere:
         preghiere[current_user] = []
+
+    #titolo = UNIQUE
+    for i in preghiere[current_user]:
+        if titolo_preg in i:
+            return render_template('/come_osi.html')
     preghiere[current_user].append(preghierina)
-    fetched = fetchOrMod(5, preghiere)
+    mod_context = {
+        'preghiere':preghiere,
+        'new_query':insert_preghiera
+    }
+    fetched = fetchOrMod(5, mod_context)
     with open('data/preghiere.json', mode='w', encoding='utf-8') as f:
         json.dump(fetched, f, indent=True)
     return redirect('/preghiere')

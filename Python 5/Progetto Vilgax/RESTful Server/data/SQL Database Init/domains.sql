@@ -8,11 +8,13 @@ create domain PosInteger as integer check (value >= 0);
 
 create domain StringaM as varchar(100);
 
+create domain LongString as TEXT;
+
 -------------------------------------
 
 create table Recensioni (
   cf StringaM not null,
-  descrizione StringaM not null,
+  descrizione TEXT not null,
   voto Voto not null,
   primary key (cf)  
 );
