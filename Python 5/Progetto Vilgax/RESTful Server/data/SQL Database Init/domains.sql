@@ -13,10 +13,12 @@ create domain LongString as TEXT;
 -------------------------------------
 
 create table Recensioni (
-  cf StringaM not null,
+  id SERIAL,
+  proprietario StringaM not null,
   descrizione TEXT not null,
   voto Voto not null,
-  primary key (cf)  
+  primary key (id),
+  foreign key (proprietario) references Vittime(id)
 );
 
 create table Vittime (
@@ -30,7 +32,7 @@ create table Vittime (
 create table Preghiere (
   proprietario StringaM not null,
   titolo StringaM not null,
-  contenuto StringaM not null,
+  contenuto TEXT not null,
   data PosInteger not null,
   primary key (titolo),
   foreign key (proprietario) references Vittime(id)

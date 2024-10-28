@@ -1,9 +1,9 @@
-INSERT INTO Recensioni (cf, descrizione, voto)
+INSERT INTO Recensioni (id, proprietario, descrizione, voto)
 VALUES
-('P3PP3','Mi piace poco','2'),
-('SG4RR4P151','Vilgax mi padre','5'),
-('V1LG4X','Le patatine le fanno meglio a Tor Bella Monaca','1'),
-('B3NS0N','io volevo un pollo. UN POLLOOOOOOOOOOOOOOOO','4');
+(0, 'MarisaVolponiC','Mi piace poco','2'),
+(1, 'DanielonePietrosmusiC','Vilgax mi padre','5'),
+(2, 'MicheloneBadasiumS','Le patatine le fanno meglio a Tor Bella Monaca','1'),
+(3, 'RichardBensonC','io volevo un pollo. UN POLLOOOOOOOOOOOOOOOO','4');
 
 INSERT INTO Vittime (id, nome, cognome, paprika)
 VALUES

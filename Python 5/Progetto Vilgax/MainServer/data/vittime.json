@@ -1,4 +1,9 @@
 {
+ "Alessandro MochiOnoriC": [
+  "Alessandro Mochi",
+  "Onori",
+  "con"
+ ],
  "AlessandroSereniC": [
   "Alessandro",
   "Sereni",
@@ -17,6 +22,11 @@
  "JosephineSilverwolfC": [
   "Josephine",
   "Silverwolf",
+  "con"
+ ],
+ "LorenzoMaggiC": [
+  "Lorenzo",
+  "Maggi",
   "con"
  ],
  "LorenzoTrombiniS": [
@@ -43,5 +53,10 @@
   "Romeo",
   "Sgarrapisi",
   "con"
+ ],
+ "RomeoSgarrapisiS": [
+  "Romeo",
+  "Sgarrapisi",
+  "senza"
  ]
 }

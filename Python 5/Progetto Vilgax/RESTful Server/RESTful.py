@@ -55,14 +55,16 @@ def table_mod(sOper:str, new_query:dict):
             #recensioni
             case 6:
                 for ki, vi in new_query.items():
-                    new_query[ki] = vi.replace("'", "''")
+                    if not isinstance(vi, int):
+                        new_query[ki] = vi.replace("'", "''")
 
+                cur.execute(f"SELECT *\nFROM Recensioni\nWHERE proprietario = '{new_query['proprietario']}'")
                 check = cur.fetchall()
                 if len(check) != 0:
-                    cur.execute(f"UPDATE Recensioni\nSET descrizione='{new_query['descrizione']}',voto='{new_query['voto']}'\nWHERE cf='{new_query['cf']}'")
+                    cur.execute(f"UPDATE Recensioni\nSET descrizione='{new_query['descrizione']}',voto='{new_query['voto']}'\nWHERE proprietario='{new_query['proprietario']}'")
                 else:
-                    query:str = f"INSERT INTO Recensioni (cf, descrizione, voto)\nVALUES\n"
-                    query += f"('{new_query['cf']}','{new_query['descrizione']}','{new_query['voto']}');"
+                    query:str = f"INSERT INTO Recensioni (id, proprietario, descrizione, voto)\nVALUES\n"
+                    query += f"('{new_query['id']}','{new_query['proprietario']}','{new_query['descrizione']}','{new_query['voto']}');"
                     cur.execute(query=query)
 
             case _:

@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request, redirect # type: ignore
 import json
 import requests
-from models import Preghiera
+from models import *
 from datetime import date
+from collections import OrderedDict
 api = Flask(__name__, static_url_path='/static')
 
 #to fetch or mod a specific json
@@ -43,6 +44,25 @@ def fetchAll():
 @api.route('/', methods=['GET'])
 def vilgax():
     fetchAll()
+
+    #review list
+    with open('data/recensioni.json') as f:
+        recensioni:dict = json.load(f)
+    latest_reviews:dict[int,str] = {}
+    for ki, vi in recensioni.items():
+        if len(latest_reviews) == 5:
+            curr_min = min(list(latest_reviews.keys()))
+            if vi[0] > curr_min:
+                del latest_reviews[curr_min]
+        latest_reviews[vi[0]] = ki
+    ordered_reviews:dict = OrderedDict(sorted(latest_reviews.items()))
+    context:dict = {}
+    
+    temp_n = 1
+    for ki, vi in ordered_reviews.items():
+        context[temp_n] = recensioni[vi]
+        temp_n += 1
+
     return render_template('vilgax.html')
 
 #session daemon
@@ -138,24 +158,33 @@ def get_info():
     with open('data/recensioni.json') as f:
         recensioni:dict = json.load(f)
     if request.method == "POST":
-        cf = request.form["CF"]
+        proprietario = current_user
         text_review = request.form["text_review"]
         stars = request.form["star-input"]
     else:
         return render_template('vilgax.html')
+    
+    #id calculator
+    user_id:int = 0
+    for vi in recensioni.values():
+        if vi[0] > user_id:
+            user_id = vi[0]
+    user_id += 1
+
     insert_recensione = {
-        'cf':cf,
+        'id':user_id,
+        'proprietario':proprietario,
         'descrizione':text_review,
         'voto':stars
     }
 
     updated:bool = False
-    #if already made a review
-    if cf in recensioni:
+    #if user already made a review
+    if proprietario in recensioni:
         updated = True
-        del recensioni[cf]
+        del recensioni[proprietario]
         
-    recensioni[cf] = [text_review, stars]
+    recensioni[proprietario] = [user_id, text_review, stars]
     context = {
         'updated': updated
     }
