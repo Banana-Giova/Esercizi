@@ -3,3 +3,8 @@ class Preghiera:
         self.titolo = titolo
         self.testo = testo
         self.data = data
+
+class Recensione:
+    def __init__(self, testo:str, voto:int) -> None:
+        self.testo = testo
+        self.voto = voto
