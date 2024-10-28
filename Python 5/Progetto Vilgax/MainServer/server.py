@@ -6,6 +6,13 @@ from datetime import date
 from collections import OrderedDict
 api = Flask(__name__, static_url_path='/static')
 
+#to make a string of stars
+def supernova(num_voto:int):
+    output:str = ""
+    output += "★"*num_voto
+    output += "☆"*(5-num_voto)
+    return output
+
 #to fetch or mod a specific json
 def fetchOrMod(fetch_num:int, context:dict={}) -> dict:
     try:
@@ -56,14 +63,17 @@ def vilgax():
                 del latest_reviews[curr_min]
         latest_reviews[vi[0]] = ki
     ordered_reviews:dict = OrderedDict(sorted(latest_reviews.items()))
-    context:dict = {}
     
+    context:dict = {}
     temp_n = 1
     for ki, vi in ordered_reviews.items():
-        context[temp_n] = recensioni[vi]
+        context[f"review{temp_n}"] = Recensione(
+                                                testo=recensioni[vi][1],
+                                                voto=recensioni[vi][2]
+                                                )
         temp_n += 1
 
-    return render_template('vilgax.html')
+    return render_template('vilgax.html', **context)
 
 #session daemon
 def session_daemon(n:str, c:str, p:str):
@@ -279,7 +289,10 @@ def list_reviews():
             recensione = None
             print("Non lo trovo!")
         else:
-            recensione = recensioni[cf]
+            recensione = Recensione(
+                                    testo=recensioni[cf][1],
+                                    voto=recensioni[cf][2]
+                                    )
             print("Trovato!")
 
         context = {

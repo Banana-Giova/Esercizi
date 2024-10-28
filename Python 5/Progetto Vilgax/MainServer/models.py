@@ -5,6 +5,6 @@ class Preghiera:
         self.data = data
 
 class Recensione:
-    def __init__(self, testo:str, voto:int) -> None:
+    def __init__(self, testo:str, voto:str) -> None:
         self.testo = testo
         self.voto = voto
