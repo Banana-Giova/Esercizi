@@ -9,8 +9,8 @@ api = Flask(__name__, static_url_path='/static')
 #to make a string of stars
 def supernova(num_voto:int):
     output:str = ""
-    output += "★"*num_voto
-    output += "☆"*(5-num_voto)
+    output += ("★"*num_voto)
+    output += ("☆"*(5-num_voto))
     return output
 
 #to fetch or mod a specific json
@@ -55,6 +55,8 @@ def vilgax():
     #review list
     with open('data/recensioni.json') as f:
         recensioni:dict = json.load(f)
+    with open('data/vittime.json') as f:
+        vittime:dict = json.load(f)
     latest_reviews:dict[int,str] = {}
     for ki, vi in recensioni.items():
         if len(latest_reviews) == 5:
@@ -62,15 +64,18 @@ def vilgax():
             if vi[0] > curr_min:
                 del latest_reviews[curr_min]
         latest_reviews[vi[0]] = ki
-    ordered_reviews:dict = OrderedDict(sorted(latest_reviews.items()))
+    ordered_reviews:dict = OrderedDict(reversed(sorted(latest_reviews.items())))
     
     context:dict = {}
     temp_n = 1
     for ki, vi in ordered_reviews.items():
         context[f"review{temp_n}"] = Recensione(
-                                                testo=recensioni[vi][1],
-                                                voto=recensioni[vi][2]
-                                                )
+                                    id=vi,
+                                    nome=vittime[vi][0],
+                                    cognome=vittime[vi][1],
+                                    testo=recensioni[vi][1],
+                                    voto=supernova(int(recensioni[vi][2]))
+                                    )
         temp_n += 1
 
     return render_template('vilgax.html', **context)
@@ -284,14 +289,19 @@ def list_reviews():
         print(cf)
         with open('data/recensioni.json', mode='r') as f:
             recensioni:dict = json.load(f)
+        with open('data/vittime.json') as f:
+            vittime:dict = json.load(f)
 
         if cf not in recensioni:
             recensione = None
             print("Non lo trovo!")
         else:
             recensione = Recensione(
+                                    id=cf,
+                                    nome=vittime[cf][0],
+                                    cognome=vittime[cf][1],
                                     testo=recensioni[cf][1],
-                                    voto=recensioni[cf][2]
+                                    voto=supernova(int(recensioni[cf][2]))
                                     )
             print("Trovato!")
 

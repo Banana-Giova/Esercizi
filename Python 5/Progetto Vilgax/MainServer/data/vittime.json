@@ -9,6 +9,16 @@
   "Sereni",
   "con"
  ],
+ "AndreaPaddingtonC": [
+  "Andrea",
+  "Paddington",
+  "con"
+ ],
+ "CristianoRonaldoS": [
+  "Cristiano",
+  "Ronaldo",
+  "senza"
+ ],
  "DanielonePietrosmusiC": [
   "Danielone",
   "Pietrosmusi",
@@ -58,5 +68,10 @@
   "Romeo",
   "Sgarrapisi",
   "senza"
+ ],
+ "SamueleSgarrapisiC": [
+  "Samuele",
+  "Sgarrapisi",
+  "con"
  ]
 }

@@ -6,7 +6,7 @@
         <h3>Cerca con Vilgax! Inserisci il Codice Utente e verifica se la sua recensione è presente del nostro database!</h3>
         <hr>
         <form action="list_reviews" method="POST">
-            <label for="cf">Codice Utense associato:</label>
+            <label for="cf">Codice Utente associato:</label>
             <input type="text" id="cf" name="CF"><br><br>
             <input type="submit" value="Cerca!">
         </form><br>
@@ -19,8 +19,11 @@
                 <table class="stile2">
                     <tbody>
                         <tr>
-                            <td class="column1"> {{ recensione.testo }} </td>
-                            <td class="column2"> {{ recensione.voto }} </td>
+                            <td class="column1">{{ recensione.id }}</td>
+                            <td class="column2">{{ recensione.nome }}</td>
+                            <td class="column3">{{ recensione.cognome }}</td>
+                            <td class="column4">{{ recensione.testo }}</td>
+                            <td class="column5">{{ recensione.voto }}</td>
                         </tr>
                     <br>
                     </tbody>
