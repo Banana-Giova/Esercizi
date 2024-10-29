@@ -68,15 +68,27 @@ WHERE num.arrivi > average.total;
 --da aeroporti in Italia con una durata media inferiore alla 
 --durata media di tutti i voli in partenza da aeroporti in Italia?
 
-WITH mastino AS (
+WITH voli_di_compagnia AS (
     SELECT ap.comp AS compagnia,
-           COUNT()
+           AVG(volo.durataMinuti) AS durata_media
     FROM ArrPart ap
         JOIN LuogoAeroporto lurto
             ON ap.partenza = lurto.aeroporto
         JOIN Volo volo
             ON ap.codice = volo.codice
+    WHERE lurto.nazione = 'Italy'
+    GROUP BY ap.comp
+), tutti_voli AS (
+    SELECT AVG(volo.durataMinuti) AS durata_media
+    FROM ArrPart ap
+        JOIN LuogoAeroporto lurto
+            ON ap.partenza = lurto.aeroporto
+    WHERE lurto.nazione = 'Italy'
 )
+SELECT voli_di_compagnia.compagnia
+FROM voli_di_compagnia,
+     tutti_voli
+WHERE voli_di_compagnia.durata_media < tutti_voli.durata_media;
 
 --5. Quali sono le città i cui voli in arrivo hanno 
 --una durata media che differisce di più di una deviazione standard 
