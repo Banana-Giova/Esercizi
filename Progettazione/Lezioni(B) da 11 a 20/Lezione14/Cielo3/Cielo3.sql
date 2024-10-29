@@ -66,9 +66,11 @@ WHERE num.arrivi > average.total;
 
 --4. Quali sono le compagnie aeree che hanno voli in partenza 
 --da aeroporti in Italia con una durata media inferiore alla 
---durata  media di tutti i voli in partenza da aeroporti in Italia?
+--durata media di tutti i voli in partenza da aeroporti in Italia?
 
-
+WITH mastino AS (
+    
+)
 
 --5. Quali sono le città i cui voli in arrivo hanno 
 --una durata media che differisce di più di una deviazione standard 
