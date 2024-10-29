@@ -69,7 +69,13 @@ WHERE num.arrivi > average.total;
 --durata media di tutti i voli in partenza da aeroporti in Italia?
 
 WITH mastino AS (
-    
+    SELECT ap.comp AS compagnia,
+           COUNT()
+    FROM ArrPart ap
+        JOIN LuogoAeroporto lurto
+            ON ap.partenza = lurto.aeroporto
+        JOIN Volo volo
+            ON ap.codice = volo.codice
 )
 
 --5. Quali sono le città i cui voli in arrivo hanno 
