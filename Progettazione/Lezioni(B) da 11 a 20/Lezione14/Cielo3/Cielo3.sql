@@ -34,12 +34,11 @@ HAVING AVG(volo.durataMinuti) > AVG(all_voli.durata);
 --3. Quali sono le città dove il numero totale di voli in arrivo 
 --è maggiore del numero medio dei voli in arrivo per ogni città?
 
-WITH num AS (
+/*WITH num AS (
     SELECT COUNT(ap.arrivo) AS arrivi
     FROM ArrPart ap
         JOIN LuogoAeroporto lurto
             ON ap.arrivo = lurto.aeroporto
-    GROUP BY lurto.citta
 )
 SELECT lurto.citta AS citta
 FROM num,
@@ -47,7 +46,23 @@ FROM num,
     JOIN LuogoAeroporto lurto
         ON ap.arrivo = lurto.aeroporto
 GROUP BY lurto.citta
-HAVING COUNT(ap.arrivo) > AVG(num.arrivi);
+HAVING COUNT(ap.arrivo) > AVG(num.arrivi);*/
+
+WITH num AS (
+    SELECT lurto.citta AS citta,
+	       COUNT(ap.arrivo) AS arrivi
+    FROM ArrPart ap
+        JOIN LuogoAeroporto lurto
+            ON ap.arrivo = lurto.aeroporto
+    GROUP BY lurto.citta
+), average AS (
+	SELECT AVG(num.arrivi) AS total
+	FROM num
+)
+SELECT num.citta
+FROM num,
+	 average
+WHERE num.arrivi > average.total;
 
 --4. Quali sono le compagnie aeree che hanno voli in partenza 
 --da aeroporti in Italia con una durata media inferiore alla 
