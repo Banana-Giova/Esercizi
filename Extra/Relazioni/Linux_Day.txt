@@ -1,0 +1,40 @@
+Is Android secure?
+Originariamente non lo era, ora è più complessa.
+
+In Android le applicazioni sono scritte in Java o Kotlin (o C). Le applicazioni possono essere "reversate", ovvero studiate in un processo di reverse engineering, studiando il codice. Il codice ottenuto direttamente è "Smali" un assembly code usato per Android.
+
+Partendo dal codice della main activity, se presenti per esempio dei refusi di tool di debug. Con APKTool accediamo al codice sorgente, dal quale possiamo modificare potenzialmente qualsiasi cosa, basta sapere dove modificare.
+
+La firma degli APK serve a verificare ciò che potenzialmente è sicuro e ciò che non lo è, Play Protect invece è un antivirus nativo ad Android. 
+
+Gli altri antivirus, in quanto le applicazioni sono "chiuse dentro sandbox", verificano solo le firme ed hanno un effetto negativo, in quanto l'utente si sente sicuro, nonostante la sicurezza fornita sia minima. 
+
+
+In linea generale i malware hanno bisogno di permessi per fare danni. Ci sono vari modi per ottenerli. 
+1) Tapjacking: Creando interfacce in overlay che illudono l'utente a cliccare lo schermo qualcosa che non sembra ciò che è realmente. I permessi di accessibilità rompono il sandboxing e sono particolarmente pericolosi;
+2) AV Evasion: Di base il software non ha codice malevolo, dunque supera la sicurezza dell'antivirus, tuttavia il malware scarica in un secondo momento dopo lo scaricamento dell'app codice aggiuntivo malevolo;
+3) Repackaging: Scaricare roba crackata, che contiene di base malware
+
+Inoltre la firma degli APK è molto semplice, basta che il nome e il codice hash fra certificato e app siano corrispondenti.
+
+Seguire TuxFans su GitHub
+
+
+Tecniche di attacco alle reti WiFi e sistemi wireless con l’aiuto del Flipper Zero e di Kali Linux
+Molti attacchi di successo avvengono tramite ingegneria sociale. Le reti WiFi sono potenzialmente una debolezza: enter Flipper Zero. (il coso che sblocca le tesla) Tool di Pentesting per clonare i comandi radio, dunque i comandi wireless. È una minaccia per la sicurezza? No. È un giocattolo, che rende il pentesting più un cazzeggio.
+
+Per esempio, non è per niente in grado di penetrare una rete ben configurata, ma una rete non configurata correttamente, mentre può essere hackerata già da un PC di base, Flipper Zero da meno nell'occhio.
+
+Un bravo hacker con Kali Linux può sfruttare a proprio vantaggio qualunque rete Wifi. Ma divenirlo richiede impegno e dedizione. Flipper Zero è la via di mezzo, una divertente iniziazione, aumentando consapevolezza e competenza. Stimola la curiosità ed è un potente strumento didattico se usato bene, in quanto la cybersecurity richiede l'impiego di bravi hacker e utenti molto consapevoli.
+
+In alternativa c'è la Developer Board, richiede di installare Marauder su questa schedina in ESP32. È un tookit che, a linea di comando, ha molte opzioni preinstallate. Dagli scherzi al pentesting su reti WiFi.
+
+Il Flipper permette di rickrollare le persone. Ma anche attacchi che in scala maggiore sono più seri, come un Denial of Service, tramite Beacon Spam. (spammare Beacon di un WiFi, così che non è chiaro qual è il vero WiFi)
+
+Un altro attacco più serio del Flipper Zero è il DeAuth. L'attacco sfrutta una vulnerabilità nel protocollo WiFi che considera legittimi i pacchetti di deautenticazione. L'attaccante invia frame di deautenticazione contraffatti che formano la disconnessione dei dispositivi della rete, causando una temporanea perdita di connettività. 
+
+Infine c'è l'Evil Portal. Un finto sito presente nella rete WiFi locale, che può causare attacchi di sniffing. Dopo aver sniffato le password, esse possono essere crackate con HashCat.
+
+Un dispositivo simile è la BudUSB
+
+GrapheneOS
