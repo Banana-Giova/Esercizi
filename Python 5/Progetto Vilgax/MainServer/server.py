@@ -65,7 +65,7 @@ def vilgax():
                 del latest_reviews[curr_min]
         latest_reviews[vi[0]] = ki
     ordered_reviews:dict = OrderedDict(reversed(sorted(latest_reviews.items())))
-    
+
     context:dict = {}
     temp_n = 1
     for ki, vi in ordered_reviews.items():
@@ -86,7 +86,7 @@ def session_daemon(n:str, c:str, p:str):
         papritext:str = 'S'
     elif p == 'con':
         papritext = 'C'
-    
+
     global current_nome
     current_nome = n
     global current_cognome
@@ -148,13 +148,13 @@ def login():
         "cognome":cognome,
         "paprika":paprika
         }
-    
+
     session_daemon(n=nome, c=cognome, p=paprika)
     for ki, vi in vittime.items():
     #if already a user
         if vi[0] == nome and vi[1] == cognome and vi[2] == paprika:
             return render_template('regko.html', **context)
-    
+
     #if not a user
     context["id"] = current_user
     vittime[current_user] = [nome, cognome, paprika]
@@ -162,7 +162,7 @@ def login():
         'vittime':vittime,
         'new_query':context
     }
-    
+
     fetched = fetchOrMod(4, mod_context)
     with open('data/vittime.json', mode='w', encoding='utf-8') as f:
         json.dump(fetched, f, indent=True)
@@ -178,7 +178,7 @@ def get_info():
         stars = request.form["star-input"]
     else:
         return render_template('vilgax.html')
-    
+
     #id calculator
     user_id:int = 0
     for vi in recensioni.values():
@@ -198,7 +198,7 @@ def get_info():
     if proprietario in recensioni:
         updated = True
         del recensioni[proprietario]
-        
+
     recensioni[proprietario] = [user_id, text_review, stars]
     context = {
         'updated': updated
