@@ -83,6 +83,8 @@ WITH voli_di_compagnia AS (
     FROM ArrPart ap
         JOIN LuogoAeroporto lurto
             ON ap.partenza = lurto.aeroporto
+        JOIN Volo volo
+            ON ap.codice = volo.codice
     WHERE lurto.nazione = 'Italy'
 )
 SELECT voli_di_compagnia.compagnia
@@ -95,8 +97,37 @@ WHERE voli_di_compagnia.durata_media < tutti_voli.durata_media;
 --dalla durata media di tutti i voli? Restituire città e
 --durate medie dei voli in arrivo.
 
-
+WITH citta_e_durata_media AS (
+    SELECT lurto.citta AS curr_citta,
+           AVG(volo.durataMinuti) AS media_voli
+    FROM ArrPart ap
+        JOIN Volo volo
+            ON ap.codice = volo.codice
+        JOIN LuogoAeroporto lurto
+            ON ap.arrivo = lurto.aeroporto
+    GROUP BY lurto.citta
+), volante AS (
+    SELECT STDDEV(volo.durataMinuti) AS deviazione,
+           AVG(volo.durataMinuti) AS media
+    FROM Volo volo
+)
+SELECT cedm.curr_citta AS citta,
+       cedm.media_voli AS media_voli
+FROM citta_e_durata_media cedm,
+     volante vans
+WHERE cedm.media_voli > (vans.deviazione + vans.media)
+   OR cedm.media_voli < (vans.deviazione + vans.media);
 
 --6. Quali sono le nazioni che hanno il maggior numero di città 
 --dalle quali partono voli diretti in altre nazioni?
 
+SELECT lurto_part.nazione AS nazione,
+       COUNT(DISTINCT lurto_part.citta) AS numero_citta
+FROM ArrPart ap
+    JOIN LuogoAeroporto lurto_part
+        ON ap.partenza = lurto_part.aeroporto
+    JOIN LuogoAeroporto lurto_arr
+        ON ap.arrivo = lurto_arr.aeroporto
+WHERE lurto_part.nazione <> lurto_arr.nazione
+GROUP BY lurto_part.nazione
+ORDER BY numero_citta DESC;
