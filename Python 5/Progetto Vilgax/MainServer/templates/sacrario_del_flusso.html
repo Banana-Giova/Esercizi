@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <center>
+    <div>
+        <h3>Benvenuto adepto premium! Qui potrai interagire con il sacro flusso di coscienza: il database di Vilgax! Sii cauto...</h3>
+        <hr>
+        <form action="flusso_di_coscienza" method="POST">
+            <label for="query">Rituale d'interazione con il flusso:</label><br><br>
+            <textarea type="textarea" id="query" name="query" rows='6' cols='80' required></textarea><br><br>
+            <input type="submit" value="⍻⟟⎾⅁⍲🝍">
+        </form><br>
+    </div>
+    <br><br>
+    <div>
+        {% if elaborated == True %}
+            
+            {% if elab_query != None %}
+            <h2>Rituale eseguito correttamente, ecco cosa hai estratto dal flusso!</h2><br>
+                <table class="stile2">
+                    <tbody>
+                        <tr>
+                            <td class="column1">{{ elab_query }}</td>
+                        </tr>
+                    <br>
+                    </tbody>
+                </table>
+            {% else %}
+                <h2>Il rituale non ha ricevuto risposta...</h2>
+            {% endif %}
+
+        {% endif %}
+    </div>
+    </center>
+{% endblock %}

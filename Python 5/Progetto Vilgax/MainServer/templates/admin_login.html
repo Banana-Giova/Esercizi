@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <center>
+    <div>
+        <h3>Sei un adepto premium di Vilgax? Autenticati ed interagisci con il flusso di coscienza superiore: il database di Vilgax!</h3>
+        <hr>
+        <form action="logilgax" method="POST">
+            <label for="adminame">Nome Adepto:</label>
+            <input type="text" id="adminame" name="adminame"><br><br>
+            <label for="password">Parola d'Ordine:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Accedi">
+        </form><br>
+    </div>
+    </center>
+{% endblock %}

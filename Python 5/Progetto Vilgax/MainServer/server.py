@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect # type: ignore
 import json
+import os
 import requests
 from models import *
 from datetime import date
@@ -30,7 +31,6 @@ def fetchOrMod(fetch_num:int, context:dict={}) -> dict:
     except Exception as e:
         raise Exception(f"Error during Fetch Or Mod:\n{e}")
 
-
 #to fetch all jsons
 def fetchAll():
     try:
@@ -46,11 +46,26 @@ def fetchAll():
     except Exception as e:
         raise Exception(f"Error during Fetch All:\n{e}")
 
+#gemini function
+def gemini_spark(req_type:int, sQuery):
+    sModel = "gemini-1.5-pro-exp-0827"
+    base_url = "https://generativelanguage.googleapis.com/v1beta/models/" + sModel + ":generateContent?key="
+
+    sGoogleApiKey = "placeholder"
+    api_url = base_url + sGoogleApiKey
+
+    jsonDataRequest = {'contents': [{'parts': [{'text': sQuery}]}]}
+    response = requests.post(api_url, json=jsonDataRequest, verify=True)
+    response.raise_for_status()
+    output = response.json()
+    
+    return output
 
 #main route
 @api.route('/', methods=['GET'])
 def vilgax():
     fetchAll()
+    print(gemini_spark(1,"Di che colore era il cavallo bianco di Napoleone?"))
 
     #review list
     with open('data/recensioni.json') as f:
@@ -132,7 +147,55 @@ def review_search():
     }
     return render_template('review_search.html', **context)
 
-#registration
+#are you admin
+@api.route('/admin_login')
+def admin_login():
+    return render_template('admin_login.html')
+
+@api.route('/logilgax', methods=['POST'])
+def logilgax():
+    if request.method == "POST":
+        adminame = request.form["adminame"]
+        password = request.form["password"]
+    else:
+        return render_template('vilgax.html')
+    
+    global admin_flag
+    admin_flag = False
+    if adminame == "VilgaxLover"\
+    and password == "LorenzoFaggi-57":
+        admin_flag = True
+        return redirect('/admin_vilgax')
+    else:
+        return render_template('eresia.html')
+
+#you are admin
+@api.route('/admin_vilgax')
+def admin_vilgax():
+    if admin_flag != True:
+        return render_template('eresia.html')
+    else:
+        return render_template('sacrario_del_flusso.html')
+
+#flusso di coscienza - interazione database
+@api.route('/flusso_di_coscienza', methods=['POST'])
+def flusso_di_coscienza():
+    if request.method == 'POST':
+        query = request.form['query']
+
+        context = {'new_query': query}
+        elab_query = fetchOrMod(7, context)
+
+        context = {
+            'elaborated': True,
+            'elab_query': elab_query['elab_query']
+            }
+        
+        return render_template('sacrario_del_flusso.html', **context)
+    else:
+        return render_template('sacrario_del_flusso.html')
+
+#registration & login AIO
 @api.route('/login', methods=['POST'])
 def login():
     with open('data/vittime.json') as f:
@@ -167,6 +230,8 @@ def login():
     with open('data/vittime.json', mode='w', encoding='utf-8') as f:
         json.dump(fetched, f, indent=True)
     return render_template('regok.html', **context)
+
+
 
 @api.route('/get_info', methods=['POST'])
 def get_info():

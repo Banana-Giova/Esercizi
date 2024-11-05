@@ -66,6 +66,22 @@ def table_mod(sOper:str, new_query:dict):
                     query:str = f"INSERT INTO Recensioni (id, proprietario, descrizione, voto)\nVALUES\n"
                     query += f"('{new_query['id']}','{new_query['proprietario']}','{new_query['descrizione']}','{new_query['voto']}');"
                     cur.execute(query=query)
+            
+            #flusso di coscienza
+            case 7:
+                try:
+                    cur.execute(f"{new_query}")
+                    if 'SELECT' in new_query.upper():
+                        outflux = cur.fetchall()
+                    else:
+                        outflux = "Query eseguita con successo"
+                    output = {'elab_query': outflux}
+                except Exception:
+                    output = None
+                finally:
+                    cur.close()
+                    conn.close()
+                return output
 
             case _:
                 raise ConnectionRefusedError
@@ -87,6 +103,8 @@ def index():
             data_name = 'preghiere'
         case 3 | 6:
             data_name = 'recensioni'
+        case 7:
+            data_name = 'admin'
         case _:
             abort(422)
 
@@ -105,6 +123,13 @@ def index():
 
             table_mod(sOper, redata['new_query'])
             return jsonify(sendata)
+        
+        case 7:
+            redata = request.json.get('context', 0)
+            sendata = table_mod(7, redata['new_query'])
+            print(sendata)
+            return jsonify(sendata)
+        
         case _:
             abort(422)
 
