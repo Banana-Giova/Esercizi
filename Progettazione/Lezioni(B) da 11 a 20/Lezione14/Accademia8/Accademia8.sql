@@ -3,6 +3,36 @@
 --non avevano alcuna attività (progettuali o non progettuali)?
 
 
+SELECT DISTINCT p.id AS id,
+				p.nome AS nome,
+				p.cognome AS cognome
+FROM Persona p
+	FULL OUTER JOIN AttivitaProgetto attprog
+		ON p.id = attprog.persona
+	FULL OUTER JOIN AttivitaNonProgettuale attnon
+		ON p.id = attnon.persona
+	FULL OUTER JOIN Assenza asse
+		ON p.id = asse.persona
+WHERE asse.id IS NOT NULL
+	   AND attprog.id IS NULL
+	   AND attnon.id IS NULL
+GROUP BY p.id
+HAVING COUNT(attprog.id) = 0
+   AND COUNT(attnon.id) = 0
+UNION
+SELECT DISTINCT p.id AS id,
+				p.nome AS nome,
+				p.cognome AS cognome
+FROM Persona p
+	FULL OUTER JOIN AttivitaProgetto attprog
+		ON p.id = attprog.persona
+	FULL OUTER JOIN AttivitaNonProgettuale attnon
+		ON p.id = attnon.persona
+	FULL OUTER JOIN Assenza asse
+		ON p.id = asse.persona
+WHERE asse.id IS NULL
+  AND (attprog.id IS NOT NULL
+       OR attnon.id IS NOT NULL);
 
 --2. Quali sono le persone (id, nome e cognome) 
 --che non hanno mai partecipato ad alcun progetto 
