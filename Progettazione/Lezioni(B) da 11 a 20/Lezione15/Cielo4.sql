@@ -119,7 +119,7 @@ WHERE lurto.citta IN (
 --7. Quali sono gli aeroporti raggiungibili dall’aeroporto “JFK” 
 --tramite voli diretti e indiretti?
 
-SELECT ap.arrivo AS aeroporti
+SELECT DISTINCT ap.arrivo AS aeroporti
 FROM ArrPart ap
 WHERE ap.partenza = 'JFK'
    OR ap.partenza IN (
