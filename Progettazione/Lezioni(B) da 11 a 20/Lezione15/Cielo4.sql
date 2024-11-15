@@ -39,7 +39,7 @@ WHERE (part.comp = 'Apitalia' OR arr.comp = 'Apitalia')
 --tali che esistono voli tra A e B ed il numero
 --di voli da A a B è uguale al numero di voli da B ad A?
 
-
+ 
 
 --4. Quali sono le compagnie che hanno voli con durata media 
 --maggiore della durata media di tutte le compagnie?
@@ -106,13 +106,41 @@ WHERE lurto.citta IN (
 --7. Quali sono gli aeroporti raggiungibili dall’aeroporto “JFK” 
 --tramite voli diretti e indiretti?
 
-
+SELECT ap.arrivo AS aeroporti
+FROM ArrPart ap
+WHERE ap.partenza = 'JFK'
+   OR ap.partenza IN (
+    SELECT DISTINCT nest_ap.arrivo
+    FROM ArrPart nest_ap
+    WHERE nest_ap.partenza = 'JFK'
+);
 
 --8. Quali sono le città raggiungibili 
 --con voli diretti e indiretti partendo da Roma?
 
-
+SELECT DISTINCT lurto.citta AS citta
+FROM ArrPart ap
+    JOIN LuogoAeroporto lurto
+        ON ap.partenza = lurto.aeroporto
+WHERE lurto.citta = 'Roma'
+   OR ap.partenza IN (
+    SELECT DISTINCT nest_ap.arrivo
+    FROM ArrPart nest_ap
+        JOIN LuogoAeroporto nest_lurto
+            ON nest_ap.partenza = nest_lurto.aeroporto
+    WHERE nest_lurto.citta = 'Roma'
+);
 
 --9. Quali sono le città raggiungibili con esattamente 
 --uno scalo intermedo partendo dall’aeroporto “JFK”?
 
+SELECT DISTINCT lurto.citta
+FROM ArrPart ap
+    JOIN LuogoAeroporto lurto
+        ON ap.arrivo = lurto.aeroporto
+WHERE ap.partenza <> 'JFK'
+  AND ap.partenza IN (
+    SELECT nest_ap.arrivo
+    FROM ArrPart nest_ap
+    WHERE nest_ap.partenza = 'JFK'
+  );
