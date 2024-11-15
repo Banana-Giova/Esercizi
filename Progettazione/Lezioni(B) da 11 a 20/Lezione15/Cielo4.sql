@@ -39,7 +39,20 @@ WHERE (part.comp = 'Apitalia' OR arr.comp = 'Apitalia')
 --tali che esistono voli tra A e B ed il numero
 --di voli da A a B è uguale al numero di voli da B ad A?
 
- 
+WITH ab_ba AS (
+    SELECT ap.partenza rtenza,
+           ap.arrivo rrivo,
+           COUNT(*) as num_voli
+    FROM ArrPart ap
+    GROUP BY ap.partenza, ap.arrivo
+)
+SELECT abba1.rtenza AS partenza,
+       abba1.rrivo AS arrivo
+FROM ab_ba abba1,
+     ab_ba abba2
+WHERE abba1.rtenza = abba2.rrivo
+  AND abba1.rrivo = abba2.rtenza
+  AND abba1.num_voli = abba2.num_voli;
 
 --4. Quali sono le compagnie che hanno voli con durata media 
 --maggiore della durata media di tutte le compagnie?
