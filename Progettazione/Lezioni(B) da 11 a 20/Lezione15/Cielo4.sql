@@ -96,12 +96,11 @@ SELECT ap.codice AS codice,
 FROM ArrPart ap
     JOIN LuogoAeroporto lurto
         ON ap.partenza = lurto.aeroporto
-WHERE NOT EXISTS (
-        SELECT nest_place.aeroporto
-        FROM LuogoAeroporto nest_place
-        WHERE nest_place.aeroporto = lurto.aeroporto
-        GROUP BY nest_place.aeroporto
-        HAVING COUNT(nest_place.aeroporto) = 1
+WHERE lurto.citta IN (
+        SELECT nest_lurto.citta AS citta
+        FROM LuogoAeroporto nest_lurto
+        GROUP BY nest_lurto.citta
+        HAVING COUNT(nest_lurto.aeroporto) = 1
     );
 
 --7. Quali sono gli aeroporti raggiungibili dall’aeroporto “JFK” 
