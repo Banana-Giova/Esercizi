@@ -1,0 +1,103 @@
+1. Requisiti sugli utenti:
+    1.1. Nome (univoco)
+    1.2. Data Iscrizione
+
+2. Requisiti sui video:
+    2.1. Titolo (univoco)
+    2.2. Durata
+    2.3. Descrizione
+    2.4. Autore (v. req. 1)
+    2.5. File
+    2.6. Istante di caricamento
+    2.7. Categoria (univoca) (v. req. 3)
+    2.8. Tag (uno o piu') (v. req. 4)
+    2.9. Video a cui risponde (zero o uno) (v. req. 2)
+    2.10. Visualizzazioni (v. req. 6)
+    2.11. Stato di moderazione del video (censurato o no)
+
+3. Requisiti su categoria:
+    3.1. Nome (univoco)
+    3.2. Sopracategoria (zero o una) (v. req. 3)
+    3.3. Sottocategoria (zero o piu') (v. req. 3)
+
+4. Requisiti su tag:
+    4.1. Nome
+
+5. Requisiti su valutazione:
+    5.1. Utente valutante (v. req. 1)
+        (un utente deve aver visionato il video per poterlo valutare)
+        (non puo' essere l'autore del video valutato; v. req. 5.1)
+        (ogni utente puo' valutare un determinato video al piu' una volta)
+    5.2. Video valutato (v. req. 2)
+    5.3. Valore valutazione (da 0 a 5)
+
+6. Requisiti su visualizzazione:
+    6.1. Utente visualizzante (v. req. 1)
+        (un video censurato non puo' essere visualizzato)
+    6.2. Video visualizzato (v. req. 2)
+    6.3. Istante visualizzazione
+
+7. Requisiti su commento:
+    7.1. Utente commentante (v. req. 1)
+        (un utente deve aver visionato il video per poterlo commentare)
+    7.2. Video commentante (v. req. 2)
+    7.3. Testo commento
+    7.4. Istante commento
+
+8. Requisiti su playlist:
+    8.1. Nome
+    8.2. Autore (v. req. 1)
+    8.3. Istante creazione
+    8.4. Stato playlist (privata o pubblica)
+    8.5. Lista ordinata di video
+        (in questa lista non puo' essere inserito un video censurato)
+
+
+99. Requisiti degli use-case:
+    99.1. Gli utenti devono possono:
+        99.1.1. Registrarsi a TuTubbi
+        99.1.2. Ricercare video partendo da:
+            - Una categoria (v. req. 3);
+            - Un insieme di tag (v. req. 4);
+            - Un intero "v" fra 0 e 5.
+            Il sistema restituira' all'utente tutti i video (v. req. 2)
+            disponibili di quella categoria, con almeno uno
+            dei tag indicati e che abbiano almeno una
+            valutazione (v. req. 5) media di almeno "v".
+            (se un video non ha valutazioni verra' restituito lo stesso)
+            (un video e' censurato, non puo' essere restituito)
+
+    99.2. Gli utenti registrati devono poter:
+        99.2.1. Pubblicare video 
+            (l'utente deve fornire req. 2.1, 2.3, 2.5, 2.7, 2.8, 2.9)
+        99.2.2. Visualizzare un video
+            (l'utente non puo' visualizzare un video censurato)
+        99.2.3. Valutare un video
+            (l'utente deve fornire req. 5.2, 5.3)
+            (l'utente puo' valutare solo un video visualizzato)
+            (l'utente non puo' valutare un video censurato)
+        99.2.4. Commentare un video
+            (l'utente deve fornire req. 7.2, 7.3)
+            (l'utente puo' commentare solo un video visualizzato)
+            (l'utente non puo' commentare un video censurato)
+        99.2.5. Creare una playlist
+            (l'utente deve fornire req. 8.1, 8.4)
+        99.2.6. Aggiungere un video ad una playlist
+            (l'utente deve corrispondere all'autore[req. 8.2] della playlist)
+            (l'utente deve fornire il video[v. req. 2])
+                (il video non dev'essere censurato per poter essere aggiunto)
+        99.2.7. Rimuovi un video da una playlist
+            (l'utente deve corrispondere all'autore[req. 8.2] della playlist)
+            (l'utente deve fornire il video[v. req. 2])
+        99.2.8. Modificare l'ordine dei video in una playlist
+            (l'utente deve corrispondere all'autore[req. 8.2] della playlist)
+            (l'utente deve fornire il nuovo ordine numerico dei video)
+        99.2.9. Visualizzare una playlist
+            (una playlist privata puo' essere visualizzata da un utente
+             solo se l'utente visualizzante corrisponde all'autore[req. 8.2])
+        
+
+    99.3. La redazione deve poter:
+        99.3.1. Censurare un video
+            (la redazione deve fornire il video[v. req. 2] ed il motivo)
+            
