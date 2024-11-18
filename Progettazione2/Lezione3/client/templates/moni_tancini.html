@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <center>
+    <div>
+        <h1>Sacrificate la vostra anima a Moni Tancini, colui che è ventilato!</h1>
+        <p>
+            <br>
+            <div>
+            <a href="https://eelslap.com/">
+                <img src="/static/img/moni_tancini.png" alt="Vilgax" width="825.0" height="525.0">
+            </a><br>
+    <div>
+        <h3>Cerca con Moni Tancini! Seleziona il database ed inserisci la tabella richiesta!</h3>
+        <hr>
+        <form action="moni_tancini" method="POST">
+
+            <p>Database che vuoi consultare:</p>
+            <label for="req_db">Accademia</label>
+            <input type="radio" id="1" name="req_db" value="1" required>
+            <label for="req_db">Cielo</label>
+            <input type="radio" id="2" name="req_db" value="2" required><br><br>
+            <label for="req_tab">Nome tabella:</label>
+            <input type="text" id="req_tab" name="req_tab" required><br><br>
+            <input type="submit" value="Cerca!">
+        </form><br>
+    </div>
+    <br><br>
+    <div>
+        {% if requested == True %}
+            {% if query_torno != None %}
+            <h2>Tabella trovata, eccola qui!</h2><br>
+                <table class="stile2">
+                    <tbody>
+                        <tr>
+                            <td class="column1">{{ query_torno }}</td>
+                        </tr>
+                    <br>
+                    </tbody>
+                </table>
+            {% else %}
+                <h2>Spiacenti, nessuna tabella con tale nome esiste!</h2>
+            {% endif %}
+        {% endif %}
+    </div>
+    </center>
+{% endblock %}
