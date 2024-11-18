@@ -1,0 +1,27 @@
+Specifica Registrazione:
+
+    nuovo_utente(new_nome: varchar) -> Utente Registrato:
+        pre:
+            - Non esiste nessun Utente Registrato tale che 
+              u.nome = new_nome
+        post:
+            - Viene creato u:Utente tale che:
+                - u.nome = new_nome
+                - u.data_iscrizione = istante corrente
+        result = u
+
+Specifica Ricerca Video:
+
+    ricerca_video(cat:Categoria, 
+                  tags:Tag[1..*], 
+                  v:int[0..5]) -> Video[0..*]
+        pre:
+            - Nessuna.
+        post:
+            - Il risultato 'searched' e' l'insieme di 
+              tutti i vid:Video tali che:
+                - vid.Categoria = cat
+                - Almeno un Tag di vid.Tag e' contenuto nell'insieme tags
+                - vid.media_valutazioni() >= v
+                - vid non e' associato ad oggetti VideoCensurato
+        result = searched
