@@ -20,7 +20,8 @@
 5. Requisiti su Posto:
     5.1. id: SERIAL (PK)
     5.2. num_posto: NumPosto
-    5.3. sala: Sala (v. req. 4)
+    5.3. settore: StringaM
+    5.4. sala: Sala (v. req. 4)
 
 6. Requisiti su Spettacoli:
     6.1. id: SERIAL (PK)
