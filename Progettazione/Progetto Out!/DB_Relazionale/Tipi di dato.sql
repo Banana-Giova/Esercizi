@@ -27,12 +27,14 @@ CREATE TYPE NumPosto AS (
     colonna INTEGER
 );
 
-/*CREATE TABLE Posti (
+/*
+CREATE TABLE Posti (
     ID SERIAL PRIMARY KEY,
     Posto NumPosto NOT NULL,
     CONSTRAINT chk_fila CHECK ((Posto).fila > 0),
     CONSTRAINT chk_colonna CHECK ((Posto).colonna > 0)
-);*/
+);
+*/
 
 CREATE TYPE TipoSpettacolo AS ENUM(
     'Concerto',
