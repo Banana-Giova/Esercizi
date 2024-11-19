@@ -22,6 +22,18 @@ CREATE TYPE Indirizzo AS (
     CAP VARCHAR(10)
 );
 
+CREATE TYPE NumPosto AS (
+    fila INTEGER,
+    colonna INTEGER
+);
+
+/*CREATE TABLE Posti (
+    ID SERIAL PRIMARY KEY,
+    Posto NumPosto NOT NULL,
+    CONSTRAINT chk_fila CHECK ((Posto).fila > 0),
+    CONSTRAINT chk_colonna CHECK ((Posto).colonna > 0)
+);*/
+
 CREATE TYPE TipoSpettacolo AS ENUM(
     'Concerto',
     'Performance',
