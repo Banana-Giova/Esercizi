@@ -17,24 +17,22 @@
     4.2. sede: Sede (v. req. 1)
         (aggiungere operazione posti)
 
-5. Requisiti su Posti:
+5. Requisiti su Posto:
     5.1. id: SERIAL (PK)
-    5.2. numero_fila: IntMagZ
-    5.3. numero_colonna: IntMagZ
-    5.4. sala: Sala (v. req. 4)
+    5.2. num_posto: NumPosto
+    5.3. sala: Sala (v. req. 4)
 
 6. Requisiti su Spettacoli:
     6.1. id: SERIAL (PK)
     6.2. titolo: StringaM
-    6.3. tipo: TipoSpettacolo
-    6.4. genere: StringaM
-    6.5. data_ora: DATETIME
-    6.6. prezzo_pieno: Prezzo
-    6.7. prezzo_ridotto: Prezzo
-    6.8. posti_pieni_disp: IntEqZ
-    6.9. posti_ridotti_disp: IntEqZ
+    6.3. sala: Sala (v. req. 4)
+    6.4. tipo: TipoSpettacolo
+    6.5. genere: StringaM
+    6.6. data_ora: DATETIME
+    6.7. prezzo_pieno: Prezzo
+    6.8. prezzo_ridotto: Prezzo
         (aggiungere operazione artisti)
-        (aggiungere operazione aggiornamento posti)
+        (aggiungere operazione posti disponibili)
         --settori(?)
 
 7. Requisiti su Artista:
@@ -46,6 +44,13 @@
     8.2. nome: StringaM
     8.3. cognome: StringaM
 
+9. Requisiti su Prenotazione:
+    9.1. id: SERIAL (PK)
+    9.2. utente: Utente (v. req. 8)
+    9.3. posto_pren: NumPosto
+    9.4. spettacolo: Spettacolo (v. req. 6)
+    9.5. istante_pren: TIMESTAMP
+
 99. Requisiti degli use-case:
     99.1. Gli utenti devono poter:
         99.1.1. Iscriversi al servizio
@@ -54,12 +59,7 @@
               gia' presente nel database
     99.2. Gli utenti registrati devono poter:
         99.2.1. Prenotare uno o piu' posti per una data di uno spettacolo
-            - L'utente registrato deve fornire il numero (IntEqZ) di
-              posti con tariffa a prezzo pieno che vuole prenotare ed
-              il numero (IntEqZ) di posti con tariffa a prezzo ridotto
-              che vuole acquistare
-            - Il numero di posti pieni o ridotti richiesti non deve
-              superare rispettivamente req. 6.8, 6.9
+            - WIP {sium}
         99.2.2. Consultare una lista degli spettacoli di una certa
                 tipologia e genere, previsti in un certo giorno
             - L'utente registrato deve fornire req. 6.3, 6.4
