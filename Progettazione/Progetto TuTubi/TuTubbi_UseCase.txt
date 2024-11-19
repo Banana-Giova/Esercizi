@@ -39,4 +39,182 @@ Specifica Pubblicazione Video:
         vid_risp:Video[0..1]) -> Video: 
 
         pre:
-            - 
+            - Se vid_risp e' valorizzato:
+                Sia u:Utente l'oggetto associato all'attore che
+                ha invocato l'operazione.
+                    - vid_risp non deve essere associato ad u
+                    tramite un link "autore video"
+                    - vid_risp.istante_caricamento < istante corrente
+
+        post:
+            - Sia nvid una nuova istanza d'oggeto Video con:
+                - nvid.titolo = tit
+                - nvid.descrizione = descr
+                - nvid.file_video = file
+                - nvid.istante_caricamento = istante corrente
+                - Viene creato il link (cat,nvid):categoria video
+                - Per ogni oggetto Tag nell'insieme tags:
+                    - Sia s_tag l'istanza d'oggetto corrente
+                    - Viene creato il link (s_tag,nvid):tag video
+                - Se vid_risp e' valorizzato:
+                    - Viene creato un link (nvid,vid_risp):video risposta
+
+        result = nvid
+
+Specifica Visualizzazione Video:
+
+    visualizza_video(
+        vid:Video
+    ) -> Visualizzazione:
+        pre:
+            - vid non e' associato ad oggetti VideoCensurato
+        post:
+            - Sia u l'istanza d'oggetto Utente associata all'attore che
+            ha invocato l'operazione
+            - Sia vis una nuova istanza d'oggetto Visualizzazione tale che:
+                - vis.istante_view = istante corrente
+                - Viene creato un link (vis,u):view utente
+                - Viene creato un link (vis,vid):view video
+        
+    result = vis
+
+Specifica Valutazione:
+
+    valuta_video(
+        vid:Video,
+        val:Voto
+    ) -> Valutazione:
+        pre:
+            - Sia u l'istanza d'oggetto Utente associata all'attore
+              che ha invocato l'operazione.
+            - Non esiste un link (u,vid):autore video
+            - Esiste un'istanza d'oggetto vis:Visualizzazione tale che:
+                - Esiste un link (vis,u):view utente
+                - Esiste un link (vis,vid):view video
+                - vis.istante < istante corrente
+            - Non esiste un'istanza d'oggetto x_v:Valutazione tale che:
+                - Esiste un link (x_v,u):valutazione utente
+                - Esiste un link (x_v,vid):valutazione video
+            - vid non e' associato ad oggetti VideoCensurato
+        post:
+            - Sia v una nuova istanza d'oggetto Valutazione tale che:
+                - v.valore = val
+                - Viene creato un link (v,u):valutazione utente
+                - Viene creato un link (v,vid):valutazione video
+        
+        result = v
+
+Specifica Commento:
+
+    commenta_video(
+        vid:Video,
+        testo:varchar
+    ) -> Commento:
+        pre:
+            - Sia u l'istanza d'oggetto Utente associata all'attore
+              che ha invocato l'operazione.
+            - Esiste un'istanza d'oggetto vis:Visualizzazione tale che:
+                - Esiste un link (vis,u):view utente
+                - Esiste un link (vis,vid):view video
+                - vis.istante < istante corrente
+            - vid non e' associato ad oggetti VideoCensurato
+        post:
+            - Sia com una nuova istanza d'oggetto Commento tale che:
+                - com.testo = testo
+                - com.istante_commento = istante corrente
+                - Viene creato un link (com,u):commento utente
+                - Viene creato un link (com,vid):commento video
+
+        result = com
+
+Specifica Censura Video:
+
+    censura_video(
+        vid:Video,
+        ragione:varchar
+    ) -> VideoCensurato:
+        pre:
+            - vid non e' associato ad oggeti VideoCensurato
+            - vid.istante_caricamento < istante corrente
+        post:
+            - Sia vice una nuova istanza d'oggetto VideoCensurato tale che:
+                - vice.motivo = ragione
+                - vice.istante = istante corrente
+                - Viene creato un link (vice,vid):censura video
+        
+        result = vice
+
+Specifice Gestione Playlist:
+
+    crea_playlist(
+        nome:varchar,
+        tipo:TipoPlaylist
+    ) -> Playlist:
+        pre:
+            - Sia u l'istanza d'oggetto Utente associata all'attore
+              che ha invocato l'operazione.
+        post:
+            - Sia play un'istanza d'oggetto Playlist tale che:
+                - play.nome = nome
+                - play.istante_creazione = istante corrente
+                - Viene creato un link (u,play):playlist utente
+
+    aggiungi_a_playlist(
+        vid:Video,
+        play:Playlist,
+        pos:IntegerEqZ
+    ):
+        pre:
+            - Sia u l'istanza d'oggetto Utente associata all'attore
+              che ha invocato l'operazione.
+            - vid non deve avere link con oggetti VideoCensurato
+            - Deve esistere un link (u,play):playlist utente
+            - Se pos != 0:
+                - Non deve esistere un link video_in_playlist tale che:
+                    - video_in_playlist.numero_nella_playlist = pos
+
+        post:
+            - Se pos = 0:
+                - Sia max_pos l'attributo pos piu' grande fra tutti
+                  i link (play,vid)video_in_playlist
+                - pos = max_pos + 1
+            - Viene creato vip, un link (play,vid):video_in_playlist con
+              i seguenti attributi:
+                - video_in_playlist.numero_nella_playlist = pos
+
+    rimuovi_da_playlist(
+        ripos:IntegerMagZ,
+        play:Playlist
+    ):
+        pre:
+            - Sia u l'istanza d'oggetto Utente associata all'attore
+              che ha invocato l'operazione.
+            - Deve esistere un link (u,play):playlist utente
+            - Deve esistere un link video_in_playlist tale che:
+                - video_in_playlist.numero_nella_playlist = ripos
+        
+        post:
+            - Viene eliminato il link video_in_playlist tale che:
+                - video_in_playlist.numero_nella_playlist = ripos
+
+    ordina_playlist(
+        old_pos:IntegerMagZ,
+        new_pos:IntegerMagZ,
+        play:Playlist
+    ):
+        pre:
+            - Sia u l'istanza d'oggetto Utente associata all'attore
+              che ha invocato l'operazione.
+            - Deve esistere un link (u,play):playlist utente
+            - Deve esistere un link video_in_playlist tale che:
+                - video_in_playlist.numero_nella_playlist = old_pos
+
+        post:
+            - Sia pos_tino il link video_in_playlist tale che:
+                - video_in_playlist.numero_nella_playlist = old_pos
+            - Se esiste un link video_in_playlist tale che
+              video_in_playlist.numero_nella_playlist = new_pos:
+                - Sia tale link pos_tello
+            - pos_tello.numero_nella_playlist = 0
+            - pos_tino.numero_nella_playlist = new_pos
+            - pos_tello.numero_nella_playlist = old_pos

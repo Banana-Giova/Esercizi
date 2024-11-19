@@ -3,7 +3,8 @@
     1.2. Data Iscrizione
 
 2. Requisiti sui video:
-    2.1. Titolo (univoco)
+    2.0. Id:serial (univoco)
+    2.1. Titolo:varchar
     2.2. Durata
     2.3. Descrizione
     2.4. Autore (v. req. 1)
@@ -86,7 +87,7 @@
             (l'utente deve corrispondere all'autore[req. 8.2] della playlist)
             (l'utente deve fornire il video[v. req. 2])
                 (il video non dev'essere censurato per poter essere aggiunto)
-        99.2.7. Rimuovi un video da una playlist
+        99.2.7. Rimuovere un video da una playlist
             (l'utente deve corrispondere all'autore[req. 8.2] della playlist)
             (l'utente deve fornire il video[v. req. 2])
         99.2.8. Modificare l'ordine dei video in una playlist

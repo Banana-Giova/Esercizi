@@ -1,0 +1,15 @@
+CREATE DOMAIN IntMagZ AS Integer
+    CHECK (VALUE > 0);
+
+CREATE DOMAIN IntEqZ AS Integer
+    CHECK (VALUE >= 0);
+
+CREATE DOMAIN Voto AS Integer
+    CHECK (VALUE BETWEEN 0 AND 5);
+
+CREATE DOMAIN File AS bytea;
+
+--CREATE DOMAIN Reale0_5 AS NUMERIC(3,2)
+    CHECK (VALUE BETWEEN 0 AND 5)
+
+CREATE TipoPlaylist AS ENUM('Pubblica', 'Privata');
