@@ -60,12 +60,12 @@
             - Una categoria (v. req. 3);
             - Un insieme di tag (v. req. 4);
             - Un intero "v" fra 0 e 5.
-            Il sistema restituira' all'utente tutti i video (v. req. 2)
-            disponibili di quella categoria, con almeno uno
-            dei tag indicati e che abbiano almeno una
-            valutazione (v. req. 5) media di almeno "v".
-            (se un video non ha valutazioni verra' restituito lo stesso)
-            (un video e' censurato, non puo' essere restituito)
+              Il sistema restituira' all'utente tutti i video (v. req. 2)
+              disponibili di quella categoria, con almeno uno
+              dei tag indicati e che abbiano almeno una
+              valutazione (v. req. 5) media di almeno "v".
+              (se un video non ha valutazioni verra' restituito lo stesso)
+              (un video e' censurato, non puo' essere restituito)
 
     99.2. Gli utenti registrati devono poter:
         99.2.1. Pubblicare video 

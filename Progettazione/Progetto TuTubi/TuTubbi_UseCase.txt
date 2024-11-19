@@ -12,11 +12,13 @@ Specifica Registrazione:
 
 Specifica Ricerca Video:
 
-    ricerca_video(cat:Categoria, 
-                  tags:Tag[1..*], 
-                  v:int[0..5]) -> Video[0..*]
+    ricerca_video(
+        cat:Categoria,
+        tags:Tag[1..*],
+        v:int[0..5]) -> Video[0..*]:
+                  
         pre:
-            - Nessuna.
+            - Nessuna
         post:
             - Il risultato 'searched' e' l'insieme di 
               tutti i vid:Video tali che:
@@ -25,3 +27,16 @@ Specifica Ricerca Video:
                 - vid.media_valutazioni() >= v
                 - vid non e' associato ad oggetti VideoCensurato
         result = searched
+
+Specifica Pubblicazione Video:
+
+    pubblica_video(
+        tit:varchar,
+        descr:varchar,
+        file:File,
+        cat:Categoria,
+        tags:Tag[1..*],
+        vid_risp:Video[0..1]) -> Video: 
+
+        pre:
+            - 
