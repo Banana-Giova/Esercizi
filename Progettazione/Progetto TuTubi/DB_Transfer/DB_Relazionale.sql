@@ -22,9 +22,19 @@ VideoCensurato(
 )
 FOREIGN KEY (__video__) REFERENCES Video(__id__);
 
-Categoria(
-    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-);
+Categoria(__nome__:varchar, livello:IntegerGZ, 
+			super_nome*, super_livello*:varchar
+		)
+	unique: (nome, livello)
+	fk: (super_nome, super_livello) references Categoria(nome, livello) 
+			ON DELETE CASCADE ON UPDATE CASCADE
+
+	[V.Categoria.aciclico]
+	check: (super_nome IS NULL) = (super_livello IS NULL)
+	check: (livello = CASE
+						WHEN super_livello IS NULL THEN 1 
+						ELSE super_livello + 1 
+					  END);
 
 Tag(
     __nome__:varchar
