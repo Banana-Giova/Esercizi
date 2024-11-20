@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <center>
+        <h1> Benvenuto nell'unico ed inimitabile sito di Moni Tancini!</h1>
+        <div>
+            <h3>Per accedere completare il login sottostante.</h3>
+            <hr>
+            <form action="toni_logini" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Accedi">
+            </form><br>
+        </div>
+    </center>
+{% endblock %}

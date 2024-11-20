@@ -27,10 +27,10 @@ db_tables = {
 }
 
 insulti_costruttivi = {
-    1:'La tabella selezionata non esiste, si prega di inserirne una valida',
-    2:'Per piacere inserire una tabella valida',
+    1:'La tabella selezionata non esiste, si prega di inserirne una valida.',
+    2:'Per piacere inserire una tabella valida.',
     3:'Inserisci una tabella valida!',
-    4:'Hai rotto i c******i, inserisci una tabella valida o crasho il server'
+    4:'Hai rotto i c******i, inserisci una tabella valida o crasho il server.'
 }
 
 def get_db_connection(database:str):

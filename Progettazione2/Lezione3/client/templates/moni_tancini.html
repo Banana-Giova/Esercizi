@@ -29,12 +29,20 @@
     <div>
         {% if requested == True %}
             {% if query_torno != None %}
-            <h2>Tabella trovata, eccola qui!</h2><br>
-                <table class="stile2">
-                    <tbody>
-                        <tr>
-                            <td class="column1">{{ query_torno }}</td>
-                        </tr>
+                    {% if type == 'list' %}
+                        <h2>Tabella trovata, eccola qui!</h2><br>
+                            <table class="stile2">
+                                <tbody>
+                                    {% for row in query_torno %}
+                                    <tr>
+                                        <td class="column1">{{ row }}</td>
+                                    </tr>
+                                    {% endfor %}
+                    {% elif type == 'string' %}
+                        <h1>{{ query_torno }}</h1>
+                    {% else %}
+                        <h1> ERROR </h1>
+                    {% endif %}
                     <br>
                     </tbody>
                 </table>

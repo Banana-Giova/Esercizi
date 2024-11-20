@@ -19,10 +19,15 @@ def fetchOrMoni(context:dict={}) -> dict:
     except Exception as e:
         raise Exception(f"Error during Fetch Or Moni:\n{e}")
 
+"""@api.route('/', methods=['GET', 'POST'])
+def index():
+    render_template('index.html')"""
+
 @api.route('/', methods=['GET'])
 def toni_mancini():
     context = {
         'requested': False,
+        'type': None,
         'query_torno': None
     }
     return render_template('moni_tancini.html', **context)
@@ -40,8 +45,18 @@ def moni_tancini():
     }
 
     query_torno = fetchOrMoni(post_it)
+    #print(f"\n\n{isinstance(query_torno, str)}\n\n")
+    
+    if isinstance(query_torno, str):
+        query_type = 'string'
+    elif isinstance(query_torno, list):
+        query_type = 'list'
+    else:
+        raise TypeError("The REST Server returned an invalid type.")
+
     context = {
         'requested': True,
+        'type': query_type,
         'query_torno': query_torno
     }
     return render_template('moni_tancini.html', **context)
