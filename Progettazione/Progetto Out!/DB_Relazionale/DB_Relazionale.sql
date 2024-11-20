@@ -29,7 +29,7 @@ Posto(
    num_posto: NumPosto,
    settore: INTEGER
 )
-FOREIGN KEY (settore) REFERENCES Sttore(__id__);
+FOREIGN KEY (settore) REFERENCES Settore(__id__);
 
 Spettacolo(
     __id__: SERIAL PRIMARY KEY,
