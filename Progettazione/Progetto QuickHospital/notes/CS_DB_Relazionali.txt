@@ -671,6 +671,17 @@ Ok, ma come si fa un trigger?
 		  di piu' trigger, funzionalmente uguali, ma
 		  specifici per quella tabella
 
+	4. Ricontrolla tutto:
+		Checklist per i trigger
+
+		- La funzione è stata creata e testata?
+		- Il trigger è associato alla tabella corretta?
+		- La logica del trigger è chiara e documentata?
+		- Il comportamento del trigger (ad esempio, 
+		  BEFORE, AFTER, INSTEAD OF) è appropriato?
+		- Il file è idempotente (può essere rieseguito 
+		  senza errori)?
+
 
 TIPS:
 
