@@ -1,0 +1,638 @@
+- Decideremo la corrispondenza dei tipi di dati 
+  concettuali in domini SQL supportati 
+  dal DBMS;
+- Progetteremo lo schema relazionale della base 
+  dati tenendo conto di tutti i vincoli isolati 
+  in fase di analisi concettuale e dei requisiti 
+  di performance;
+- Progetteremo le specifiche realizzative delle 
+  operazioni di use-case e delle operazioni 
+  di classe.
+
+Cose da fare in ordine per ristrutturare un DB:
+    
+1. Ristrutturazione del diagramma UML delle classi
+    1.1. Eliminazione di attributi 
+         multivalore. Come?
+         Creando una nuova classe le cui istanze 
+         rappresentano i valori del tipo di dato 
+         effettivamente utilizzate nel livello 
+         degli oggetti e dei link.
+        - Un attributo multivalore, e' dunque
+          un attributo, valore nella casella 
+          sotto il nome della classe UML che
+          ha piu' di un valore, tipo: 
+            "email : Stringa [0..1]"
+        - In questo caso specifico andremo a
+          creare una classe IndirizzoEmail
+          con link "email" che ha come 
+          vincolo di molteplicita' quello
+          accanto a "Stringa", da una parte
+          e dall'altra 1..*.
+
+    1.2. Sostituzione dei tipi di dato concettuali 
+         con opportuni tipi supportati dal DBMS 
+         (tipi base o definiti dall’utente). Come?
+        - Tipi concettuali base: 
+          intero, reale, stringa, Data, Ora, DataOra 
+          => 
+          Hanno un immediato corrispettivo in SQL: 
+          integer, numeric, varchar(…), Date, Time, 
+          DateTime, TimeStamp
+        - Tipi concettuali specializzati: 
+          intero > 0, reale <= 0, x..y
+          => 
+          Definire nuovi tipi di dato supportati 
+          dal DBMS usando SQL: 
+            CREATE DOMAIN  
+                - Ricordare l'utilizzo di CHECK
+                  tipo con:
+                  numero_non_zero: intero >= 0
+                  =>
+                  CREATE DOMAIN IntMagZero AS Integer
+				  --DEFAULT 1
+                    CHECK (value >= 0)
+        - Tipi concettuali enumerativi:
+          {M,F}
+          => 
+          Definire nuovi tipi di dato supportati 
+          dal DBMS usando SQL: 
+            CREATE TYPE … AS ENUM
+                - Esempio:
+                  genere: {M,F}
+                  CREATE TYPE Genere AS ENUM ('M','F');
+        - Tipi concettuali composti: Indirizzo
+          => 
+          Definire nuovi tipi di dato supportati 
+          dal DBMS usando SQL: 
+            CREATE TYPE … AS (…)
+                - Esempio:
+                  indirizzo: Indirizzo
+                  =>
+                  CREATE TYPE Indirizzo (
+                      via varchar(100),
+                      civico integer
+                    )
+                    - NOT NULL non puo' essere
+                      specificato in TYPE in PGSQL
+                    - Per quello, crea dei domini
+                      aventi CHECK per i tipi
+                      che hanno bisogno di NOT NULL
+
+    1.3. Eliminazione delle generalizzazioni 
+         tra classi. Come?
+        • Relazioni is-a o generalizzazioni tra classi: 
+          scegliere il modo più opportuno di ristrutturare 
+          ogni singolo livello di ogni generalizzazione, 
+          scegliendo tra tre possibili approcci:
+            - Fusione di sottoclassi nelle loro superclassi
+                • In questo caso e' bene mettere per gli 
+                  attributi derivanti dalla sottocalsse una
+                  molteplicita' pari a [0..1]. Inoltre
+                  va aggiunto un tipo per indicare la
+                  sottoclasse che rappresenta la superclasse
+                  accorpata.
+                    - Esempio:
+                      Persona <= Studente
+                        diventa
+                      Persona (con attributo "tipo: TipoPersona")
+                • Eventualmente, seguito quest'ultimo passo,
+                  andrebbero rilassati anche i vincoli di
+                  molteplicita' minima presenti a [0..1].
+                • Per le sottoclassi disjoint/disgiunte ci sono
+                  altre procedure:
+                    - Se abbiamo Studente, che come attributo
+                      ha "matricola"
+                    - E abbiamo Docente, che come attributo
+                      ha "nascita"
+                    - Allora tipo:TipoPersona sara' costretta
+                      da un vincolo esterno
+                      • Vincoli esterni:
+                        Per ogni istanza p di Persona:
+                        1. p.tipo = 
+                          ‘Studente’ se e solo se p.matricola 
+                           è valorizzato
+                        2. p.tipo = 
+                          ‘Studente’ se e solo se p 
+                           è coinvolto in un link “iscritto”
+                        3. p.tipo = 
+                          ‘Docente’ se e solo se p.nascita 
+                           è valorizzato
+                        4. p.tipo = 
+                          ‘Docente’ se e solo se p 
+                           è coinvolto in un link “afferenza”
+                    - Un disjoint richiede che una classe
+                      possa scegliere solo un tipo o nessuno.
+                      In tal caso TipoPersona avra'
+                      'Persona', 'Studente' e 'Docente'
+                    - Un complete richiede che una classe
+                      DEBBA necessariamente scegliere un tipo.
+                      In tal caso avra' due attributi nuovi,
+                      anziche' il tipo:
+                      p.is_studente:boolean
+                      p.is_docente:boolean
+                        • In tal caso aggiungeremo come vincolo esterno
+                          p.is_docente = TRUE oppure p.is_studente = TRUE
+                          oppure p.is_docente = TRUE AND p.is_studente = TRUE
+                    - Un disjoint complete, sarebbe simile
+                      con i boolean del complete, i vincoli
+                      esterni di entrambi, ma nessuna
+                      possibilita' di avere entrambi i boolean
+                      veri allo stesso tempo.
+              
+            - Divisione delle superclassi in classi disgiunte
+                • 'Persona' in questo caso verrebbe smantellata,
+                  diventando solo 'Studente' e 'Docente' con allo
+                  loro interno gli attributi presi da 'Persona'.
+                • Ovviamente, cio' si puo' fare solo se la
+                  generalizzazione era Disjoint Complete
+                    - In tal caso il vincolo esterno sarebbe:
+                        1. non devono esistere s:Studente 
+                           e d:Docente tali che s.cf = d.cf
+            - Sostituzione di relazioni is-a con associazioni
+                • Qui lasciamo il diagramma funzionalmente uguale.
+                  La sottoclasse esiste e pure la superclasse.
+                  Cio' che cambia e' che non c'e' la generalizzazione,
+                  ma al posto suo le sottoclassi sono legate alla
+                  superclasse con un link d'associazione chiamato
+                  "is_a".
+                • Questo link sara' anche legato da un identificatore
+                    - In caso di disjoint il vincolo esterno sara':
+                        Disgiunzione: 
+                        non devono esistere p:Persona, s:Studente e d:Docente 
+                        tali che (s, p): s_isa_p e (d, p): d_isa_p
+                    - In caso di complete il vincolo esterno sara':
+                        Completezza: 
+                        per ogni p:Persona:
+                            • esiste s:Studente per cui: (s, p): s_isa_p
+                            • oppure esiste d:Docente per cui: (d, p): d_isa_p
+                    - Infine, in caso di disjoint complete ci saranno entrambi
+
+    1.4. Eliminazione delle generalizzazioni 
+         tra associazioni
+        • Relazioni is-a o generalizzazioni tra associazioni:
+            - Fusione di sotto-associazioni nelle loro 
+              super-associazioni, se opportuno a valle 
+              del passo precedente
+            - Aggiunta di vincoli esterni (che saranno 
+              opportunamente gestiti più avanti)
+                • Generalmente questa tipologia di generalizzazioni
+                  non sono particolarmente difficili da sostituire
+                  con attributi, e' solo importante fare caso ai
+                  vincoli esterni.
+
+    1.5. Definizione di un identificatore 
+         per ogni classe e selezione di un 
+         identificatore primario per ogni classe.
+         Come?
+        • Per ogni classe con identificatori concettuali, 
+          decidere se uno tra quelli disponibili è di qualità 
+          sufficiente per formare una chiave primaria: 
+          non deve essere troppo complesso. 
+          Eleggerlo a identificatore primario.
+            - Se c'erano sottoclassi e superclassi ora convertite
+              vanno aggiunti gli identificatori ai link
+              d'associazione.
+        • Per ogni classe senza identificatori concettuali, 
+          o per la quale non è stato scelto un identificatore 
+          primario al passo precedente, definire un 
+          identificatore artificiale,
+            - Vanno aggiunti anche identificatori
+              artificiali agli id creati artificialmente.
+            - Gli id si scrivono {id(n)} dove (n) e'
+              il numero di identificatore, se ce n'e'
+              piu' di uno.
+    
+2. Transizione da UML ristrutturato a diagramma
+   relazionale ed, infine, SQL. Come?
+   Anzitutto un esempio concreto:
+   Studente(matricola:integer, nome:varchar, genere:Genere)
+   Corso(nome:varchar, modalita*: Modalita)
+       =>
+   CREATE TABLE Studente (
+       matricola integer not null,
+       nome varchar not null,
+       genere Genere not null,
+       primary key (matricola)
+   );
+   CREATE TABLE Corso (
+       nome varchar not null,
+       modalita Modalita, --anche NULL per l'asterisco
+       primary key (nome)
+   );
+    • La Primary Key e' l'identificatore principale
+    • La Foreign Key e' l'identificatore utilizzato per indicare
+      un link ad un'altra classe. Spesso si utilizzano anche per
+      indicare delle tabelle create appositamente per i link
+      qualore fosse necesario.
+    • L'Altra Chiave, o UNIQUE, e' necessaria per le associazioni
+      rese in classi. Ci sara' una Foreign Key per indicare ognuna
+      delle due classi, una Primary Key delle due classi sara'
+      la Primary Key di questa tabella, l'altra sara' "Altra Chiave".
+        - Nota che possono essere usati piu' di due attributi
+		  per una chiave UNIQUE, come per una qualsiasi
+		  altra Primary o Foreign Key!
+
+    Relazioni delle associazioni in SQL:
+
+    - [1..1]/[1..*] => NOT NULL
+    - [0..1]/[0..*] => * (can be NULL)
+        - Per indicare NOT NULL sullo schema relazionale, basta
+        aggiungere un vincolo d'inclusione. Del tipo:
+
+                Student( __student_id__:integer, student_name:varchar(50))
+                    v. inclusione: Student(student_id) occorre in StudentCourses(student_id)
+
+                Course( __course_id__:integer, course_name:varchar(50))
+                    v. inclusione: Course(course_id) occorre in StudentCourses(course_id)
+
+                StudentCourses( __student_id__:integer, __course_id__:integer)
+                    foreign key: student_id references Student(student_id)
+                    foreign key: course_id references Course(course_id)
+
+        - Questo e' necessario nelle relazioni ManyToMany
+        - Nelle relazioni OneToMany si puo' procedere ad accorpare.
+        Ecco un esempio di accorpamento con [1..1]:
+
+            Prima:
+                Universita(nome:varchar)
+                Studente(cf:CodiceFiscale, nome:varchar, genere:Genere)
+                    v. inclusione: Studente(cf) occorre in iscritto(studente)
+                    —> foreign key: Studente(cf) references iscritto(studente)
+                iscritto(studente:CodiceFiscale, universita:varchar)
+                    foreign key: studente references Studente(cf)
+                    foreign key: universita references Universita(nome)
+            Dopo:
+                Universita(nome:varchar)
+                Studente(cf:CodiceFiscale, nome:varchar, genere:Genere, universita:varchar, iscritto_da:Date)
+                    foreign key: universita references Universita(nome)
+
+        - Per la relazione [0..1] basta togliere
+            v. inclusione: Studente(cf) occorre in iscritto(studente)
+            —> foreign key: Studente(cf) references iscritto(studente)
+        e mettere
+            v. ennupla: (universita is null) = (iscritto_da is null)
+
+        Vincolo di Inclusione:
+            - Verifica che un dato sia presente dentro una tabella
+              diversa da quella corrente
+        Vincolo di Ennupla:
+            - Verifica che una condizione sia vera dentro l'ennupla
+              corrente del tipo: 
+                (condizione1 IS NULL) = (condizione2 IS NULL)
+
+
+    Relationships in SQL refer to the associations or connections 
+    between tables in a relational database. These relationships 
+    are established using foreign keys, which are columns in a table 
+    that refer to the primary key in another table. Relationships 
+    help organize and structure data, allowing for efficient data 
+    retrieval and maintaining data integrity.
+
+    There are different types of relationships: 
+    one-to-one, one-to-many, many-to-many, and self-referencing.
+
+    1. One-to-One Relationship [0..1] <=> [0..1]
+    NECESSITA UNO UNIQUE
+
+        Definition: Each record in Table A is associated with one 
+                    and only one record in Table B, and vice versa.
+        Setup: Include a foreign key in one of the tables that 
+            references the primary key of the other table.
+        For example: Tables users and user_profiles, where each 
+                    user has a single corresponding profile.
+
+    Schema Relazionale:
+        User:( __user_id__:varchar, username:varchar(50))
+
+        UserProfile:(__profile_id__:integer, user_id:varchar, profile_data:varchar(225))
+            altra chiave: user_id
+            foreign key: (user_id) references User(user_id)
+
+    SQL:
+        CREATE TABLE users (
+            user_id INT PRIMARY KEY,
+            username VARCHAR(50));
+        CREATE TABLE user_profiles (
+            profile_id INT PRIMARY KEY,
+            user_id INT UNIQUE,
+            profile_data VARCHAR(255),
+            FOREIGN KEY (user_id) REFERENCES users(user_id));
+
+
+    2. One-to-Many Relationship [0..1] <=> [0..*]
+    NON NECESSITA UNO UNIQUE
+
+        Definition: Each record in Table A can be associated with 
+                    multiple records in Table B, but each record in 
+                    Table B is associated with only one record in Table A.
+        Setup: Include a foreign key in the "many" side table (Table B) 
+            that references the primary key of the "one" side table (Table A).
+        For example: Tables departments and employees, where each 
+                    department can have multiple employees, 
+                    but each employee belongs to one department.
+
+    Schema Relazionale:
+        Department:( __department_id__:integer, department_name:varchar(50))
+
+        UserProfile:( __employee_id__:integer, department_id:integer, employee_name:varchar(50))
+            foreign key: (department_id) references Department(department_id)
+
+    SQL:
+        CREATE TABLE departments (
+            department_id INT PRIMARY KEY,
+            department_name VARCHAR(50));
+        CREATE TABLE employees (
+            employee_id INT PRIMARY KEY,
+            employee_name VARCHAR(50),
+            department_id INT,
+            FOREIGN KEY (department_id) REFERENCES departments(department_id));
+
+    3. Many-to-Many Relationship [0..*] <=> [0..*]
+    NECESSITA UNA TABELLA
+
+        Definition: Each record in Table A can be associated with 
+                    multiple records in Table B, and vice versa.
+        Setup: Create an intermediate table (also known as a junction 
+            or linking table) that contains foreign keys 
+            referencing both related tables.
+        For example: Tables students and courses, where each student 
+                    can enroll in multiple courses, and each course 
+                    can have multiple students.
+
+    Schema Relazionale:
+        Student( __student_id__:integer, student_name:varchar(50))
+
+        Course( __course_id__:integer, course_name:varchar(50))
+
+        StudentCourses( __student_id__:integer, __course_id__:integer)
+            foreign key: student_id references Student(student_id)
+            foreign key: course_id references Course(course_id)
+
+    SQL:
+        CREATE TABLE students (
+            student_id INT PRIMARY KEY,
+            student_name VARCHAR(50));
+        CREATE TABLE courses (
+            course_id INT PRIMARY KEY,
+            course_name VARCHAR(50));
+        CREATE TABLE student_courses (
+            student_id INT,
+            course_id INT,
+            PRIMARY KEY (student_id, course_id),
+            FOREIGN KEY (student_id) REFERENCES students(student_id),
+            FOREIGN KEY (course_id) REFERENCES courses(course_id));
+
+    4. Self-Referencing Relationship (link verso se stesso)
+    PREGA IL SIGNORE
+
+        Definition: A table has a foreign key that 
+                    references its primary key.
+        Setup: Include a foreign key column in the same table 
+            that references its primary key.
+        For example: A table employees with a column manager_id 
+                    referencing the same table's employee_id.
+
+    Schema Relazionale:
+        Employee( __employee_id__:integer, employee_name:varchar(50), manager_id:integer)
+            foreign key: manager_id references Employee(employee_id)
+
+    SQL:
+        CREATE TABLE employees (
+            employee_id INT PRIMARY KEY,
+            employee_name VARCHAR(50),
+            manager_id INT,
+            FOREIGN KEY (manager_id) REFERENCES employees(employee_id));
+
+3. Vincoli e Trigger:
+
+Creazione di Tabelle: Vincoli di Chiave
+    • Vincoli di chiave primaria:
+      sql
+      Copia codice
+      create table Studente (
+          matricola integer not null,
+          nome varchar(100) not null,
+          cognome varchar(100) not null,
+          nascita date,
+          cf char(16) not null,
+          primary key (matricola),
+          unique (cf),
+          unique (cognome, nome, nascita)
+      );
+    • Alternativa per chiave primaria su un solo attributo:
+      sql
+      Copia codice
+      create table Studente (
+          matricola integer primary key,
+          ...
+          cf char(16) not null unique
+      );
+    • Ogni tabella può avere chiavi primarie o uniche 
+	  che identificano in modo univoco le righe.
+
+- Vincoli di Integrità Referenziale
+I vincoli di integrità referenziale sono utilizzati per 
+stabilire relazioni tra tabelle.
+    • Esempio con Officina e Veicolo:
+      sql
+      Copia codice
+      create table Officina (
+          nome varchar(100) not null,
+          indirizzo varchar(500) not null,
+          primary key (nome)
+      );
+      
+      create table Veicolo (
+          targa char(8) not null,
+          tipo varchar(50) not null,
+          primary key (targa)
+      );
+      
+      create table Riparazione (
+          officina varchar(100) not null,
+          codice integer not null,
+          veicolo char(8) not null,
+          primary key (officina, codice),
+          foreign key (officina) references Officina (nome),
+          foreign key (veicolo) references Veicolo (targa)
+      );
+    • Altri esempi di tabelle con vincoli referenziali:
+        ◦ RicambioRip (relazione tra ricambi e riparazioni):
+          sql
+          Copia codice
+          create table RicambioRip (
+              officina varchar(100) not null,
+              rip integer not null,
+              ricambio char(5) not null,
+              primary key (officina, rip, ricambio),
+              foreign key (officina, rip) references Riparazione (nome, codice),
+              foreign key (ricambio) references Ricambio (codice)
+          );
+
+Vincoli di integrità
+I vincoli di integrità nei database relazionali sono 
+strumenti fondamentali per garantire la coerenza 
+e la validità dei dati all'interno di un sistema. 
+Esistono diversi tipi di vincoli che possono essere 
+utilizzati per proteggere i dati:
+    1. Vincoli di chiave:
+        ◦ Primary key: 
+		  garantisce che ogni record in una tabella sia unico, 
+		  non permettendo valori duplicati per la chiave primaria.
+        ◦ Unique: 
+		  simile alla chiave primaria, 
+		  ma una colonna può essere vuota (NULL) in una riga.
+
+    2. Vincoli di dominio:
+        ◦ Check: 
+		  garantisce che i valori all'interno di una 
+		  colonna rispettino certe condizioni.
+        ◦ Not NULL: 
+		  impone che una colonna non possa contenere valori NULL.
+       Esempio di un vincolo di dominio con CHECK:
+       sql
+       Copia codice
+       create table Progetto (
+         nome varchar(100) not null,
+         inizio date not null,
+         fine date not null,
+         check (fine >= inizio)  -- vincolo di dominio
+       );
+    3. Vincoli di ennupla:
+        ◦ Un vincolo che impone condizioni sui valori 
+		  di più colonne in una singola riga. 
+		  Ad esempio, è possibile garantire che 
+		  la fine di un progetto non sia antecedente 
+		  alla data di inizio.
+       Esempio in SQL:
+       sql
+       Copia codice
+       create table WP (
+         nome varchar(100) not null,
+         progetto varchar(100) not null,
+         inizio date not null,
+         fine date not null,
+         primary key (nome),
+         foreign key (progetto) references Progetto(nome),
+         check (fine >= inizio)  -- vincolo di ennupla
+       );
+    4. Vincoli di chiave esterna (Foreign Key):
+        ◦ Garantisce che una colonna in una tabella 
+		  contenga solo valori che esistono 
+		  come chiavi primarie in un'altra tabella, 
+		  mantenendo l'integrità referenziale.
+       Esempio di una chiave esterna:
+       sql
+       Copia codice
+       create table WP (
+         nome varchar(100) not null,
+         progetto varchar(100) not null,
+         inizio date not null,
+         fine date not null,
+         primary key (nome),
+         foreign key (progetto) references Progetto(nome)
+       );
+
+Vincoli di integrità e transazioni
+	- Per gestire situazioni in cui l'integrità dei dati 
+	  deve essere garantita durante una transazione 
+	  complessa (ad esempio, inserimento in più tabelle),
+	  i vincoli possono essere dichiarati come deferrable, 
+	  il che consente di verificare i vincoli alla fine di 
+	  una transazione invece che immediatamente dopo ogni 
+	  operazione.
+
+	  Esempio di transazione con vincoli deferrable:
+		sql
+		Copia codice
+		begin transaction;
+		set constraints all deferred;
+
+		insert into Azienda (nome) values ('az');
+		insert into Impiegato (cf) values ('111');
+		insert into lavora (impiegato, azienda) values ('111', 'az');
+
+		commit;
+	In questo caso, il DBMS valuterà i vincoli solo al termine della transazione, consentendo operazioni che potrebbero violare i vincoli durante il loro svolgimento ma che sono corrette nel contesto della transazione completa.
+
+Vincoli complessi: Asserzioni e Trigger
+	Alcuni vincoli non possono essere espressi usando 
+	i vincoli standard SQL e necessitano di approcci 
+	più avanzati, come le asserzioni e i trigger.
+    • Asserzioni: forniscono un modo per esprimere 
+	  vincoli complessi che coinvolgono più tabelle, 
+	  ma non sono supportati dalla maggior parte dei DBMS.
+      Esempio di asserzione:
+
+		create assertion check_date_wp
+		check (
+			not exists (
+			select * from WP w, Progetto p
+			where w.progetto = p.nome
+			and (w.inizio < p.inizio or w.fine > p.fine)
+			)
+		);
+		• Trigger: sono utilizzati per eseguire operazioni 
+ 		  automaticamente quando si verificano determinati 
+ 		  eventi (inserimento, aggiornamento, cancellazione). 
+ 		  I trigger possono essere utilizzati per implementare 
+		  logiche di integrità più complesse, come la gestione 
+		  di vincoli di disgiunzione tra entità.
+      Esempio di trigger in PostgreSQL:
+
+		create trigger V_Persona_isa_disj_trigger_Studente
+		before insert or update on Studente
+		for each row
+		execute procedure V_Persona_isa_disj();
+
+Come funzionano i trigger in generale
+
+    Eventi che li attivano:
+    Un trigger si attiva quando si verifica un evento 
+    specifico su una tabella o vista. 
+    Gli eventi principali sono:
+        - INSERT: 
+          quando viene inserita una nuova riga.
+        - UPDATE: 
+          quando una riga esistente viene modificata.
+        - DELETE: 
+          quando una riga viene eliminata.
+        - TRUNCATE: 
+          quando una tabella viene svuotata 
+          (solo PostgreSQL supporta trigger per TRUNCATE).
+
+    Tempi di esecuzione:
+        - BEFORE: 
+          il trigger si attiva prima che l'operazione 
+          venga eseguita.
+        - AFTER: 
+          il trigger si attiva dopo che l'operazione 
+          è stata completata.
+        - INSTEAD OF: 
+          usato solo per le viste, sostituisce l'operazione 
+          originaria con quella definita dal trigger.
+
+    Funzione associata:
+        Un trigger esegue una funzione definita 
+        dall'utente (spesso chiamata "funzione trigger"). 
+        Questa funzione contiene la logica che deve 
+        essere eseguita quando il trigger si attiva.
+
+Livello di applicazione:
+    - Per riga (FOR EACH ROW): 
+      il trigger si attiva una volta per ogni riga 
+      interessata dall'operazione.
+    - Per istruzione (FOR EACH STATEMENT): 
+      il trigger si attiva una volta per l'intera istruzione, 
+      indipendentemente dal numero di righe coinvolte.
+
+
+
+TIPS:
+
+CF. Per scrivere il codice fiscale in SQL usa questo:
+    CREATE DOMAIN CF AS CHAR(16)
+    CHECK (
+        VALUE ~ '^[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z0-9]{4}[A-Z0-9]$'
+    )
