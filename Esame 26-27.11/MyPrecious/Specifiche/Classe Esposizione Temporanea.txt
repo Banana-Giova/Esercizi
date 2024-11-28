@@ -1,0 +1,5 @@
+Specifica classe Esposizione Temporanea
+
+[V.Esposizione_Temporanea.inizio_e_fine]
+    Non deve esistere alcun oggetto et:Esposizione_Temporanea, tale che:
+        - et.fine < et.inizio

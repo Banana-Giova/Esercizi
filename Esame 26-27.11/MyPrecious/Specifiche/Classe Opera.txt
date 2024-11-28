@@ -1,0 +1,6 @@
+Specifica classe Opera
+
+[V.Opera.inizio_e_fine]
+    Non deve esistere alcun oggetto o:Opera, tale che:
+        - o.fine_realizzazione è valorizzato
+        - o.fine_realizzazione < o.inizio_realizzazione

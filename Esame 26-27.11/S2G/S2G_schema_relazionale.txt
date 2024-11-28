@@ -1,0 +1,15 @@
+Utente( __cf:CF__, nome:StringaM, cognome:StringaM )
+
+Veicolo( __targa:Targa__ )
+
+Noleggio( __id:SERIAL__, utente:CF, veicolo:Targa, inizio:TIMESTAMP, is_terminato:BOOLEAN, fine:TIMESTAMP* )
+    fk: (utente) references Utente(__cf)
+    fk: (veicolo) references Veicolo(__targa)
+    CHECK (
+        WHEN is_terminato IS False
+            THEN fine IS NULL
+        ELSE fine > inizio
+    )
+
+Sinistro( __id:SERIAL__, istante:TIMESTAMP, veicolo:Targa )
+    fk: (veicolo) references Veicolo(__targa)

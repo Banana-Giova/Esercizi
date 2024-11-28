@@ -1,0 +1,111 @@
+1. Opere
+    1.1. Nome: Stringa
+    1.2. Categoria: Categoria (v. req. 7)
+    1.3. Autore: Autore (v. req. 2)
+    1.4. Inizio Realizzazione: Integer [0..1]
+        - Vincolo Esterno:
+            Se 1.4. non è valorizzato
+                1.4. = Ignoto
+    1.5. Fine Realizzazione: Integer [0..1]
+        - Vincolo Esterno:
+            Se 1.5. non è valorizzato
+                1.5. = Ignoto
+        - Vincolo Esterno:
+            Se 1.4. è valorizzato e 1.5. è valorizzato
+                1.5. > 1.4.
+    1.6. Tecnica: Stringa [0..1]
+    1.7. Correnti Artistiche: (v. req. 6)
+
+2. Autore
+    Può essere deceduto
+        - Generalizzazione is_a
+
+    2.1. Nome d'Arte: Stringa [0..1]
+    2.2. Nome: Stringa [0..1]
+    2.3. Cognome: Stringa [0..1]
+        - Vincolo Esterno:
+                2.1. o 2.2. e 2.3 è valorizzato
+    2.4. Luogo di Nascita: Stringa [0..1]
+        - Vincolo Esterno:
+            Se 2.4. non è valorizzato
+                2.4. è nullo
+    2.5. Data di Nascita: Data [0..1]
+        - Vincolo Esterno:
+            Se 2.5. non è valorizzato
+                2.5. è nullo
+    2.6. Opere Realizzate Proprietà del Museo: Opera (v. req. 1)
+    2.7. Artista deceduto
+        2.7.1. Data di Morte: Data
+            - Vincolo Esterno:
+                2.7.1. > 2.5.
+
+3. Esposizione
+    Può essere permanente o temporanea
+        - Generalizzazione disjoint complete
+    
+    3.1. Insieme di Opere: Opera (v. req. 1)
+    3.2. IF Temporanea
+         3.2.1. Inizio: DataOra
+         3.2.2. Fine: DataOra
+        - Vincolo Esterno
+            fine > inizio
+         3.2.3. Nome: Stringa
+         3.2.4. Prezzo d'Accesso: Reale >= 0
+
+4. Tariffa
+    4.1. Nome: Stringa
+    4.2. Prezzo Base: Reale >= 0
+
+5. Biglietto:
+    Può essere standard o extended access
+        - Generalizzazione is_a
+
+    5.1. Tariffa scelta: Tariffa (v. req. 4)
+    5.2. Istante di vendita: DataOra
+    5.3. Data di validità: DataOra
+    5.4. IF Standard
+         5.4.1. Accesso solo a esposizioni permanenti: (v. req. 3)
+    5.5. IF Extended Access 
+         5.5.1. Accesso alle esposizioni permanenti: (v. req. 3)
+            - Prezzo = Prezzo base della Tariffa
+         5.5.2. Accesso ad un insieme di espozioni temporanee: (v. req. 3.2)
+            - Prezzo = Operazione:
+                Sia sommato al prezzo base il prezzo della Tariffa
+                per ogni tariffa presente nell'insieme.
+
+6. Corrente Artistica
+    6.1. Nome: Stringa
+    6.2. Opere ad essa legata: Opera (v. req. 1)
+
+7. Categoria:
+    7.1. Nome: Stringa
+
+8. Tecnica:
+    8.1. Nome: Stringa
+
+Specifica delle operazioni:
+    99.1. I responsabili del patrimonio artistico
+          ed il management devono poter:
+        99.1.1. Inserire opere d'arte 
+        99.1.2. Rimuovere opere d'arte
+        99.1.3. Creazione di un'esposizione
+        99.1.4. Modifica di un'esposizione
+        99.1.5. Aggiungere un autore
+        99.1.6. Modificare un autore
+        99.1.7. Registrare la vendita di uno o più biglietti
+            - Di una certa tipologia
+            - Per una certa Data
+        99.1.8. Calcolare gli introiti totali per una
+                certa esposizione temporanea, in un dato periodo
+
+    - Specifica completa necessaria per i seguenti
+        99.1.9. Calcolare il prezzo di un biglietto extended access
+        99.1.10. Determinare, per un intervallo di tempo dato, 
+                 le correnti artistiche che hanno avuto
+                 il maggior numero di opere esposte in 
+                 esposizioni temporanee organizzate nel 
+                 periodo indicato
+        99.1.11. Dato un intervallo di date, calcolare 
+                 le esposizioni temporanee che non sono 
+                 mai state scelte in biglietti extended 
+                 access all’interno di quelle date

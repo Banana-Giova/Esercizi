@@ -1,0 +1,65 @@
+Specifica degli use-case delle Operazioni richieste
+
+[O.Biglietto_Extended_Access.calcola_prezzo]
+calcola_prezzo(
+    bea:Biglietto_Extended_Access
+): -> Reale >= 0
+pre:
+    - Sia "iet" l'insieme degli oggetti Esposizione Temporanea
+      associati a bea tramite un link temp_esp_bigl_ext
+    - Sia "tari" l'istanza d'oggetto Tariffa associata a
+      bea tramite un link (tari,bea):tari_biglietto
+post:
+    - prezzo_finale = 0
+    - Per ogni oggetto Esposizione Temporanea nell'insieme iet:
+        - Sia c_iet l'istanza di oggetto corrente
+        - prezzo_finale + c_iet.prezzo_accesso
+	- prezzo_finale + tari.prezzo_base
+result = prezzo_finale
+
+[O.Esposizione_Temporanea.stata_scelta]
+stata_scelta(
+    et:Esposizione_Temporanea,
+    inizio_intervallo: Data,
+    fine_intervallo: Data
+): -> Boolean
+pre:
+    - inizio_intervallo < fine_intervallo
+    - Sia "beas" l'insieme degli oggetti Biglietto_Extended_Access 
+      associati a et tramite un link temp_esp_bigl_ext
+post:
+    - flag = False
+    - Per ogni oggeto Biglietto_Extended_Access nell'insieme beas:
+        - Sia bea l'istanza d'oggetto corrente
+        - Se bea.istante_di_vendita >= inizio_intervallo e
+          bea.istante_di_vendita <= fine_intervallo:
+            - flag = True
+result = flag
+
+[O.esposizioni_ignorate]
+esposizioni_ignorate(
+    inizio_intervallo: Data,
+    fine_intervallo: Data
+): -> Esposizione_Temporanea[0..*]
+pre:
+    - inizio_intervallo < fine_intervallo
+post:
+    - Sia "ets" insieme di istanze d'oggetto Esposizione_Temporanea
+      che richiamando l'operazione
+      Esposizione_Temporanea.stata_scelta(inizio_intervallo=inizio_intervallo,fine_intervallo=fine_intervallo)
+      ritorna il valore booleano True
+result = ets
+
+[O.correnti_influenti]
+correnti_influenti(
+    inizio: Data,
+    fine: Data): Corrente_Artistica [1..*]
+pre:
+    - inizio < fine
+post:
+    - Sia "cors" insieme di oggetti "cor" con il maggior numero 
+      di link tra (cor,o):op_cor, dove o è un'istanza d'oggetto
+      Opera che ha un link (o,et):esp_opere dove et è un'istanza
+      d'oggetto Esposizione_Temporanea, in cui inizio >= et.inizio
+      e et.fine <= fine 
+result = cors

@@ -1,0 +1,5 @@
+Specifica classe Biglietto Standard
+
+[V.Biglietto_Standard.istante_valido]
+    Non deve esistere alcun oggetto bs:Biglietto_Standard, tale che:
+        - bs.istante_di_vendita > bs.data_di_validità

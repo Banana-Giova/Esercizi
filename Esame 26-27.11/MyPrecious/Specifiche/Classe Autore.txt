@@ -1,0 +1,7 @@
+Specifica classe Autore
+
+[V.Autore.nome_non_nullo]
+    Non deve esistere alcun oggetto a:Autore, tale che:
+        - a.nome_d_arte è nullo
+        - a.nome è nullo
+        - a.cognome è nullo

@@ -1,0 +1,6 @@
+Specifica classe Autore Deceduto
+
+[V.Autore_Deceduto.nascita_e_morte]
+    Non deve esistere alcun oggetto ad:Autore_Deceduto, tale che:
+        - ad.data_nascita è valorizzato
+        - ad.data_morte < ad.data_nascita
