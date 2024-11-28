@@ -1,0 +1,32 @@
+Se dopo aver installato nvm e node facendo
+        >>> nvm install node
+il comando
+        >>> node -v
+ritorna una versione di node vecchia quando chiudi
+il terminale e quando re-runni
+        >>> nvm install node
+ti torna su una versione già installata vuol dire
+che node si è buggato. Per risolvere segui queste istruzioni:
+
+
+
+1. Close the current terminals
+2. Open a terminal with the bugged version
+3. Run
+        >>> which node
+4. Copy the path printed on the terminal and modify the string
+   by removing the end of the string, which will 
+   something like be "/bin/node". The last folder in the string
+   has to be the bugged version of node
+5. Save the modified string
+        >>> my_path=[the modified string]
+6. Run
+        >>> nvm install node
+7. Run
+        >>> nvm alias default [your_version]
+   your_version = the version printed on the terminal
+                  after the previous step
+8. Run
+        >>> sudo rm $my_path -r
+9. Type in your password
+10. Enjoy!
