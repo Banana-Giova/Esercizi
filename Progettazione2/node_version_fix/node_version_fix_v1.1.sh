@@ -26,7 +26,7 @@ nvm install node
 post_long_node=$(which node)
 new_version=$(echo "$post_long_node" | grep -o 'v[0-9]\+\.[0-9]\+\.[0-9]\+')
 
-if [ "$old_version" != "$new_version" ]; then
+if [ "$old_version" != "$new_version" ] && [ "$pre_bnode" != "" ] ; then
     echo "Bugged node version detected, applying the fix..."
     nvm alias default "$new_version"
     rm "$pre_bnode" -r
