@@ -6,6 +6,7 @@ import types.*;
 public class Volo {
 	private String codice;
 	private Aereo aereo;
+	private CompagniaAerea comp;
 	private Aeroporto aero_partenza;
 	private Aeroporto aero_arrivo;
 	private LocalDateTime decollo;
@@ -24,7 +25,7 @@ public class Volo {
     }
 
     public Aereo getAereo() {
-	return aereo;
+	return this.aereo;
 	}
 	
 	private void setAereo(Aereo aereo) {
@@ -32,7 +33,7 @@ public class Volo {
 	}
 	
 	public Aeroporto getPartenza() {
-		return aero_partenza;
+		return this.aero_partenza;
 	}
 	
 	private void setPartenza(Aeroporto partenza) {
@@ -40,7 +41,7 @@ public class Volo {
 	}
 	
 	public Aeroporto getArrivo() {
-		return aero_arrivo;
+		return this.aero_arrivo;
 	}
 	
 	private void setArrivo(Aeroporto arrivo) {
@@ -48,7 +49,7 @@ public class Volo {
 	}
 	
 	public LocalDateTime getData_ora() {
-		return decollo;
+		return this.decollo;
 	}
 	
 	private void setData_ora(LocalDateTime data_ora) {
@@ -56,19 +57,27 @@ public class Volo {
 	}
 	
 	public String getCodice() {
-		return codice;
+		return this.codice;
 	}	
 	
 	public LocalDateTime getDecollo() {
-		return decollo;
+		return this.decollo;
 	}
 
 	private void setDecollo(LocalDateTime decollo) {
 		this.decollo = decollo;
 	}
+	
+	public LocalDateTime getAtterraggio() {
+		return this.atterraggio;
+	}
+
+	private void getAtterraggio(LocalDateTime atterraggio) {
+		this.atterraggio = atterraggio;
+	}
 
 	public StatoVolo getStato_volo() {
-		return stato_volo;
+		return this.stato_volo;
 	}
 
 	private void setStato_volo(String stato_volo) {
@@ -80,11 +89,12 @@ public class Volo {
     }
 	
 	public int getPosti_occupati() {
-		return posti_occupati;
+		return this.posti_occupati;
 	}
 	
 	public void setPosti_occupati(int posti_occupati) {
 		this.posti_occupati = posti_occupati;
+		this.update_posti_disponibili();
 	}
 	
 	public int getPosti_disponibili() {
@@ -118,12 +128,13 @@ public class Volo {
 		}
 	}
 	
-	public Volo (String codice, Aereo aereo, 
+	public Volo (String codice, Aereo aereo, CompagniaAerea comp,
 				 Aeroporto partenza, Aeroporto arrivo,
 				 int d_giorno, int d_mese, int d_anno, int d_ora, int d_minuti,
 				 int a_giorno, int a_mese, int a_anno, int a_ora, int a_minuti) {
 		this.codice = codice;
 		this.aereo = aereo;
+		this.comp = comp;
 		this.aero_partenza = partenza;
 		this.aero_arrivo = arrivo;
 		this.posti_disponibili = aereo.getPosti_totali();
@@ -138,6 +149,9 @@ public class Volo {
 			this.atterraggio = LocalDateTime.of(a_anno, a_mese, a_giorno, a_ora, a_minuti);
 		} else {
 			throw new IllegalArgumentException("L'orario e/o la data fornita per l'atterraggio non sono validi.");
+		}
+		if (this.atterraggio.isBefore(this.decollo)) {
+			throw new IllegalArgumentException("L'orario e/o la data fornita per l'atterraggio sono precedenti al decollo!");
 		}
 	}
 }

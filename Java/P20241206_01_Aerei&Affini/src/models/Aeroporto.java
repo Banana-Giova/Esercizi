@@ -1,10 +1,10 @@
 package models;
-
-import java.util.Map;
+import java.util.*;
 
 @SuppressWarnings("unused")
 public class Aeroporto {
 	private String codice;
+	private String nome;
 	private Map<String, Volo> partenze;
 	
 	public String getCodice() {
@@ -15,8 +15,18 @@ public class Aeroporto {
 		this.codice = codice;
 	}
 	
-	public Aeroporto (String codice) {
+	public String getNome() {
+		return nome;
+	}
+
+	private void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public Aeroporto (String codice, String nome) {
 		this.codice = codice;
+		this.nome = nome;
+		this.partenze = new HashMap<>();
 	}
 	
 	public void add_volo(Volo volo) {

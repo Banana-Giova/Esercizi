@@ -15,19 +15,25 @@ public class Prenotazione {
 	}
 	
 	public String getUtente() {
-		return utente;
+		return this.utente;
 	}
 	private void setUtente(String utente) {
 		this.utente = utente;
 	}
 	public String getCodice() {
-		return codice;
+		return this.codice;
 	}
 	private void setCodice(String codice) {
 		this.codice = codice;
 	}
+	public Volo getVolo() {
+		return this.volo;
+	}
+	private void setVolo(Volo volo) {
+		this.volo = volo;
+	}
 	public int getPosti_prenotati() {
-		return posti_prenotati;
+		return this.posti_prenotati;
 	}
 	public void setPosti_prenotati(int posti_prenotati) {
 		this.posti_prenotati = posti_prenotati;

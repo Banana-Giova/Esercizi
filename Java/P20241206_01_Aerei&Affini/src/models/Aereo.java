@@ -23,7 +23,7 @@ public class Aereo {
 		if (posti_totali > 0) {
 			this.posti_totali = posti_totali;
 		} else {
-			throw new IllegalArgumentException("I posti dell'aereo non possono essere meno di 0!");
+			throw new IllegalArgumentException("I posti dell'aereo non possono essere minori o uguali a 0!");
 		}
 	}
 }
