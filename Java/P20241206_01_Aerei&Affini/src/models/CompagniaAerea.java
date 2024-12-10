@@ -1,6 +1,8 @@
 package models;
 import java.util.*;
 
+import types.StatoVolo;
+
 @SuppressWarnings("unused")
 public class CompagniaAerea {
 	private String nome;
@@ -22,6 +24,14 @@ public class CompagniaAerea {
 	private void setNome(String nome) {
 		this.nome = nome;
 	}
+	
+    private static boolean isNotPartito(Volo volo) {
+        Set<StatoVolo> statiValidi = new HashSet<>();
+        statiValidi.add(StatoVolo.PIANIFICATO);
+        statiValidi.add(StatoVolo.IN_ATTESA);
+
+        return statiValidi.contains(volo.getStato_volo());
+    }
 	
 	public void crea_aereo(String codice, int posti) {
 		try {
@@ -58,7 +68,7 @@ public class CompagniaAerea {
 		}
 	}
 	
-	public void crea_volo(String codice, Aereo aereo, Aeroporto partenza, Aeroporto arrivo,
+	protected void crea_volo(String codice, Aereo aereo, Aeroporto partenza, Aeroporto arrivo,
 					 	  int d_giorno, int d_mese, int d_anno, int d_ora, int d_minuti,
 						  int a_giorno, int a_mese, int a_anno, int a_ora, int a_minuti) {
 		try {
@@ -76,12 +86,13 @@ public class CompagniaAerea {
 		}
 	}
 	
-	public void mostra_voli() {
+	protected void mostra_voli() {
 		if (this.lista_voli.size() > 0) {
+			System.out.println("Lista dei voli a seguire\nN.B.: Possono essere prenotati solo voli PIANIFICATI o IN ATTESA!\n-----\n");
 			for (Map.Entry<String, Volo> entry : this.lista_voli.entrySet()) {
 				String ki = entry.getKey();
 				Volo vi = entry.getValue();
-				System.out.println("Codice: " + ki + ", Aereo: " + vi.getAereo() +
+				System.out.println("\nCodice: " + ki + ", Aereo: " + vi.getAereo() +
 								   ", \nAeroporto di Partenza: " + vi.getPartenza().getNome() +
 								   ", Aeroporto di Arrivo: " + vi.getArrivo().getNome() +
 								   ", \nStato del Volo: " + vi.getStato_volo() +
@@ -94,7 +105,7 @@ public class CompagniaAerea {
 		}
 	}
 	
-	public void elimina_volo(String codice) {
+	protected void elimina_volo(String codice) {
 		if (lista_voli.containsKey(codice)) {
 			lista_voli.remove(codice);
 			System.out.printf("Il volo con codice %d è stato eliminato dalla lista con successo.", codice);
@@ -103,10 +114,12 @@ public class CompagniaAerea {
 		}
 	}
 	
-	public void prenota_volo(String utente, Aeroporto aeroporto,
+	protected void prenota_volo(String utente, Aeroporto aeroporto,
 							 Volo volo, int posti_richiesti) {
 		Prenotazione new_prenot = new Prenotazione(utente, posti_richiesti, volo);
-		if (volo.getPartenza() == aeroporto && !prenotazioni.containsKey(new_prenot.getCodice())) {
+		if (volo.getPartenza() == aeroporto 
+		&& !prenotazioni.containsKey(new_prenot.getCodice())
+		&& CompagniaAerea.isNotPartito(volo)) {
 			prenotazioni.put(new_prenot.getCodice(), new_prenot);
 			volo.prenota_posti(posti_richiesti);
 		} else {
@@ -114,7 +127,7 @@ public class CompagniaAerea {
 		}
 	}
 	
-	public void mostra_prenotazioni(String utente) {
+	protected void mostra_prenotazioni(String utente) {
 		boolean flag = false;
 		if (this.prenotazioni.size() > 0) {
 			for (Map.Entry<String, Prenotazione> entry : this.prenotazioni.entrySet()) {
@@ -131,13 +144,28 @@ public class CompagniaAerea {
 		}
 	}
 	
-	public void annulla_prenotazione(String utente, String codice) {
-		if (this.prenotazioni.containsKey(codice) && this.prenotazioni.get(codice).getUtente() == utente) {
+	protected void cancella_prenotazione(String utente, String codice) {
+		if (this.prenotazioni.containsKey(codice) 
+			&& this.prenotazioni.get(codice).getUtente() == utente) {
 			Prenotazione da_annullare = this.prenotazioni.get(codice);
-			da_annullare.getVolo().annulla_prenotazione(da_annullare.getPosti_prenotati());
-			this.prenotazioni.remove(codice);
+			if (CompagniaAerea.isNotPartito(da_annullare.getVolo())) {
+				da_annullare.getVolo().annulla_prenotazione(da_annullare.getPosti_prenotati());
+				this.prenotazioni.remove(codice);
+			} else {
+				throw new IllegalArgumentException("Il volo non è in uno stato annullabile, puoi annullare una prenotazione solo su un volo ancora non completato.");
+			}
 		} else {
 			throw new IllegalArgumentException("E' impossibile annullare la prenotazione.");
 		}
 	}
+	
+	protected void modificaStatoVolo(Volo volo, int request) {
+		if (this.lista_voli.containsKey(volo.getCodice())) {
+			volo.setStato_volo(request);
+		} else {
+			throw new IllegalArgumentException("Il volo fornito non fa parte dei voli della nostra compagnia.");
+		}
+	}
+	
+	
 }

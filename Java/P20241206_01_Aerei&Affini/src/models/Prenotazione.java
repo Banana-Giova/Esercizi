@@ -7,7 +7,7 @@ public class Prenotazione {
 	private int posti_prenotati;
 	private Volo volo;
 	
-	public Prenotazione(String utente, int posti_prenotati, Volo volo) {
+	protected Prenotazione(String utente, int posti_prenotati, Volo volo) {
 		this.utente = utente;
 		this.posti_prenotati = posti_prenotati;
 		this.volo = volo;
@@ -35,7 +35,7 @@ public class Prenotazione {
 	public int getPosti_prenotati() {
 		return this.posti_prenotati;
 	}
-	public void setPosti_prenotati(int posti_prenotati) {
+	protected void setPosti_prenotati(int posti_prenotati) {
 		this.posti_prenotati = posti_prenotati;
 	}
 }

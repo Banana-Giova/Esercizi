@@ -45,4 +45,8 @@ public class Aeroporto {
 		}
 	}
 	
+	public void modificaStatoVolo(CompagniaAerea comp, Volo volo, int request) {
+		comp.modificaStatoVolo(volo, request);
+	}
+	
 }

@@ -44,5 +44,48 @@ public class Agenzia {
 		} else {
 			throw new IllegalArgumentException("La compagnia fornita non è presente nella lista delle compagnie di questa agenzia.");
 		}
-	}	
+	}
+	
+	public void prenota_volo(String nome_comp, String utente, Aeroporto aeroporto,
+							 Volo volo, int posti_richiesti) {
+		if (this.lista_compagnie.containsKey(nome_comp)) {
+			try {
+				this.lista_compagnie.get(nome_comp).prenota_volo(utente, aeroporto, volo, posti_richiesti);
+			} catch(Exception e) {
+				throw new IllegalArgumentException(e);
+			}
+		} else {
+			throw new IllegalArgumentException("La compagnia fornita non è presente nella lista delle compagnie di questa agenzia.");
+		}
+	}
+	
+	public void mostra_prenotazioni(String nome_comp, String utente) {
+		if (this.lista_compagnie.containsKey(nome_comp)) {
+			try {
+				this.lista_compagnie.get(nome_comp).mostra_prenotazioni(utente);;
+			} catch(Exception e) {
+				throw new IllegalArgumentException(e);
+			}
+		} else {
+			throw new IllegalArgumentException("La compagnia fornita non è presente nella lista delle compagnie di questa agenzia.");
+		}
+	}
+	
+	public void cancella_prenotazione(String nome_comp, String utente, String codice) {
+		if (this.lista_compagnie.containsKey(nome_comp)) {
+			try {
+				this.lista_compagnie.get(nome_comp).cancella_prenotazione(utente, codice);
+			} catch(Exception e) {
+				throw new IllegalArgumentException(e);
+			}
+		} else {
+			throw new IllegalArgumentException("La compagnia fornita non è presente nella lista delle compagnie di questa agenzia.");
+		}
+	}
+	
+	
+	
+	
+	
+	
 }

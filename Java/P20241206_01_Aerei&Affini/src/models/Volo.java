@@ -76,12 +76,40 @@ public class Volo {
 		this.atterraggio = atterraggio;
 	}
 
-	public StatoVolo getStato_volo() {
+	protected StatoVolo getStato_volo() {
 		return this.stato_volo;
 	}
 
-	private void setStato_volo(String stato_volo) {
-		this.stato_volo = StatoVolo.valueOf(stato_volo);
+	public void setStato_volo(int request) {
+		switch(request) {
+			case 1:
+				this.stato_volo = StatoVolo.PIANIFICATO;
+				break;
+			case 2:
+				this.stato_volo = StatoVolo.IN_ATTESA;
+				break;
+			case 3:
+				this.stato_volo = StatoVolo.IMBARCO;
+				break;
+			case 4:
+				this.stato_volo = StatoVolo.IN_VOLO;
+				break;
+			case 5:
+				this.stato_volo = StatoVolo.IN_RITARDO;
+				break;
+			case 6:
+				this.stato_volo = StatoVolo.ANNULLATO;
+				break;
+			case 7:
+				this.stato_volo = StatoVolo.ATTERRATO;
+				break;
+			case 8:
+				this.stato_volo = StatoVolo.PRONTO_PER_PARTIRE;
+				break;
+			case 9:
+				this.stato_volo = StatoVolo.COMPLETATO;
+				break;
+		}
 	}
 
 	public static boolean isValidTime(int ora, int minuti) {
@@ -92,7 +120,7 @@ public class Volo {
 		return this.posti_occupati;
 	}
 	
-	public void setPosti_occupati(int posti_occupati) {
+	protected void setPosti_occupati(int posti_occupati) {
 		this.posti_occupati = posti_occupati;
 		this.update_posti_disponibili();
 	}
@@ -106,7 +134,7 @@ public class Volo {
 		this.posti_disponibili = this.aereo.getPosti_totali() - this.posti_occupati;
 	}
 	
-	public void prenota_posti(int numero_posti) {
+	protected void prenota_posti(int numero_posti) {
 		int post_prenotazione = this.posti_occupati + numero_posti;
 		if (post_prenotazione < this.aereo.getPosti_totali()) {
 			this.setPosti_occupati(post_prenotazione);
@@ -117,7 +145,7 @@ public class Volo {
 		}
 	}
 	
-	public void annulla_prenotazione(int numero_posti) {
+	protected void annulla_prenotazione(int numero_posti) {
 		int post_prenotazione = this.posti_occupati - numero_posti;
 		if (post_prenotazione > 0 ) {
 			this.setPosti_occupati(post_prenotazione);
@@ -128,7 +156,7 @@ public class Volo {
 		}
 	}
 	
-	public Volo (String codice, Aereo aereo, CompagniaAerea comp,
+	protected Volo (String codice, Aereo aereo, CompagniaAerea comp,
 				 Aeroporto partenza, Aeroporto arrivo,
 				 int d_giorno, int d_mese, int d_anno, int d_ora, int d_minuti,
 				 int a_giorno, int a_mese, int a_anno, int a_ora, int a_minuti) {
