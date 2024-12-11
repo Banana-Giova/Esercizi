@@ -160,6 +160,7 @@ public class Volo {
 				 Aeroporto partenza, Aeroporto arrivo,
 				 int d_giorno, int d_mese, int d_anno, int d_ora, int d_minuti,
 				 int a_giorno, int a_mese, int a_anno, int a_ora, int a_minuti) {
+		super();
 		this.codice = codice;
 		this.aereo = aereo;
 		this.comp = comp;

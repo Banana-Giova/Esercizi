@@ -11,6 +11,7 @@ public class CompagniaAerea {
 	private Map<String, Prenotazione> prenotazioni;
 	
 	public CompagniaAerea(String nome) {
+		super();
 		this.nome = nome;
 		this.lista_aerei = new HashMap<>();
 		this.lista_voli = new HashMap<>();

@@ -8,6 +8,7 @@ public class Agenzia {
 	private Map<String, CompagniaAerea> lista_compagnie;
 	
 	public Agenzia(String nome) {
+		super();
 		this.nome = nome;
 		this.lista_compagnie = new HashMap<>();
 	}

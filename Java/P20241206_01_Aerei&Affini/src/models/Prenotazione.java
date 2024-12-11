@@ -8,6 +8,7 @@ public class Prenotazione {
 	private Volo volo;
 	
 	protected Prenotazione(String utente, int posti_prenotati, Volo volo) {
+		super();
 		this.utente = utente;
 		this.posti_prenotati = posti_prenotati;
 		this.volo = volo;

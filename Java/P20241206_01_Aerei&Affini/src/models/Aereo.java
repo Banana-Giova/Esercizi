@@ -19,6 +19,7 @@ public class Aereo {
 	}
 	
 	public Aereo (String codice, int posti_totali) {
+		super();
 		this.codice = codice;
 		if (posti_totali > 0) {
 			this.posti_totali = posti_totali;

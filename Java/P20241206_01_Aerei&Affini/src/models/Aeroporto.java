@@ -24,6 +24,7 @@ public class Aeroporto {
 	}
 	
 	public Aeroporto (String codice, String nome) {
+		super();
 		this.codice = codice;
 		this.nome = nome;
 		this.partenze = new HashMap<>();
