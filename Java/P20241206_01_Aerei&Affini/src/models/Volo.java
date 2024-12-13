@@ -25,8 +25,12 @@ public class Volo {
     }
 
     public Aereo getAereo() {
-	return this.aereo;
+    	return this.aereo;
 	}
+    
+    public CompagniaAerea getComp() {
+    	return this.comp;
+    }
 	
 	private void setAereo(Aereo aereo) {
 		this.aereo = aereo;

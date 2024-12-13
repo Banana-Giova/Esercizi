@@ -20,9 +20,14 @@ public class Agenzia {
 		this.nome = nome;
 	}
 	
+	private static void successo() {
+		System.out.println("Operazione effettuata con successo!");
+	}
+	
 	public void add_compagnia(CompagniaAerea compagnia) {
 		if (!this.lista_compagnie.containsKey(compagnia.getNome())) {
 			this.lista_compagnie.put(compagnia.getNome(), compagnia);
+			successo();
 		} else {
 			throw new IllegalArgumentException("La compagnia fornita è già presente nella lista delle compagnie di questa agenzia.");
 		}
@@ -42,6 +47,7 @@ public class Agenzia {
 	public void remove_compagnia(String nome_comp) {
 		if (this.lista_compagnie.containsKey(nome_comp)) {
 			this.lista_compagnie.remove(nome_comp);
+			successo();
 		} else {
 			throw new IllegalArgumentException("La compagnia fornita non è presente nella lista delle compagnie di questa agenzia.");
 		}
@@ -52,6 +58,7 @@ public class Agenzia {
 		if (this.lista_compagnie.containsKey(nome_comp)) {
 			try {
 				this.lista_compagnie.get(nome_comp).prenota_volo(utente, aeroporto, volo, posti_richiesti);
+				successo();
 			} catch(Exception e) {
 				throw new IllegalArgumentException(e);
 			}
@@ -76,6 +83,7 @@ public class Agenzia {
 		if (this.lista_compagnie.containsKey(nome_comp)) {
 			try {
 				this.lista_compagnie.get(nome_comp).cancella_prenotazione(utente, codice);
+				successo();
 			} catch(Exception e) {
 				throw new IllegalArgumentException(e);
 			}
