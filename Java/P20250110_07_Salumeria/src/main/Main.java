@@ -7,5 +7,4 @@ public class Main {
 		Bancone salumeria = new Bancone();
 		salumeria.salumeria_aperta();
 	}
-
 }
