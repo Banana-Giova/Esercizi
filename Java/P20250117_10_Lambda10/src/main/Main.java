@@ -1,4 +1,5 @@
 package main;
+
 import java.util.*;
 
 public class Main {
@@ -10,16 +11,16 @@ public class Main {
 				lista.get(i);
 				output += lista.get(i);
 			}
-			return (output/lista.size());
+			return (output / lista.size());
 		};
-        ArrayList<Integer> myLista = new ArrayList<Integer>() {
-            {
-                add(3);
-                add(5);
-                add(7);
-            }
-        };
-        System.out.println(calme.calcola(myLista));
+		ArrayList<Integer> myLista = new ArrayList<Integer>() {
+			{
+				add(3);
+				add(5);
+				add(7);
+			}
+		};
+		System.out.println(calme.calcola(myLista));
 	}
 
 }

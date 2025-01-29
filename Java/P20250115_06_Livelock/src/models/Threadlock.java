@@ -3,16 +3,16 @@ package models;
 public class Threadlock extends Thread {
 	private Threadlock thread;
 	private String id;
-	
+
 	public Threadlock(Threadlock thread, String id) {
 		this.thread = thread;
 		this.id = id;
 	}
-	
+
 	private void test() {
 		System.out.println("Niente livelock!");
 	}
-	
+
 	@Override
 	public void run() {
 		while (true) {

@@ -1,4 +1,5 @@
 package main;
+
 import java.util.*;
 
 public class Main {
@@ -12,14 +13,14 @@ public class Main {
 			}
 			return output;
 		};
-        ArrayList<Integer> myLista = new ArrayList<Integer>() {
-            {
-                add(3);
-                add(5);
-                add(7);
-            }
-        };
-        System.out.println(concas.sommatore(myLista));
+		ArrayList<Integer> myLista = new ArrayList<Integer>() {
+			{
+				add(3);
+				add(5);
+				add(7);
+			}
+		};
+		System.out.println(concas.sommatore(myLista));
 	}
 
 }

@@ -1,12 +1,13 @@
 package main;
-import models.*; 
+
+import models.*;
 import java.util.*;
 
 public class Main {
 
 	public static void main(String[] args) {
 		TrovaUtente truant = (lista_utenti) -> {
-			ArrayList<Utente> output = new ArrayList<Utente>();			
+			ArrayList<Utente> output = new ArrayList<Utente>();
 			for (Utente curr_user : lista_utenti) {
 				if ((curr_user.getEta() > 40) && curr_user.getResidenza().equals("Roma")) {
 					output.add(curr_user);
@@ -28,15 +29,12 @@ public class Main {
 				add(new Utente("Benedetto", "Satini", 38, "Roma", "test"));
 			}
 		};
-        List<Utente> valid_users = truant.trovautente(utenti);
-        Utente curr_user = null;
-        for (int i = 0; i < valid_users.size(); i++) {
-        	curr_user = valid_users.get(i);
-        	System.out.println(curr_user.getNome() + ", " +
-        					   curr_user.getCognome() + ", " +
-        					   curr_user.getEta() + ", " +
-        					   curr_user.getResidenza() + ", " +
-        					   curr_user.getTest() + "\n");
-        }
+		List<Utente> valid_users = truant.trovautente(utenti);
+		Utente curr_user = null;
+		for (int i = 0; i < valid_users.size(); i++) {
+			curr_user = valid_users.get(i);
+			System.out.println(curr_user.getNome() + ", " + curr_user.getCognome() + ", " + curr_user.getEta() + ", "
+					+ curr_user.getResidenza() + ", " + curr_user.getTest() + "\n");
+		}
 	}
 }

@@ -1,6 +1,6 @@
 @FunctionalInterface
 interface Calcolatore {
 
-    int calcola(int a, int b);
+	int calcola(int a, int b);
 
 }
