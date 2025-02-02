@@ -23,6 +23,13 @@
         <version>2.20.0</version>
     </dependency>
   </dependencies>
+  
+    <!-- Log4j JSON-encoding support -->
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-layout-template-json</artifactId>
+      <scope>runtime</scope>
+    </dependency>
 
   <build>
     <sourceDirectory>src</sourceDirectory>

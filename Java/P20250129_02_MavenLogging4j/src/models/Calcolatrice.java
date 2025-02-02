@@ -28,4 +28,7 @@ public class Calcolatrice {
         log4jlogger.info("Divisione eseguita: {} : {} = {}", a, b, risultato);
         return risultato;
 	}
+	public static void main(String[] args) {
+		log4jlogger.info("Ciao non sto esplodendo");
+	}
 }

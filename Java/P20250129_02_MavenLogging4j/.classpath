@@ -18,8 +18,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/user/Scrivania/VSCodeProjects/Esercizi/Java/P20241203_01_JarLibrary/internal_jars/jackson-annotations-2.17.1.jar"/>
-	<classpathentry kind="lib" path="/home/user/Scaricati/log4j-api-2.3.2.jar"/>
-	<classpathentry kind="lib" path="/home/user/Scaricati/log4j-core-2.3.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
