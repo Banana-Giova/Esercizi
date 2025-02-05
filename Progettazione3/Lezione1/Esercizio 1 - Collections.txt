@@ -1,0 +1,24 @@
+Implementare un programma che gestisca una collezione di studenti utilizzando una struttura dati appropriata. Il programma deve permettere di:
+
+Inserire un nuovo studente.
+Cercare un studente.
+Cancellare un studente.
+
+Specifiche:
+
+La collezione deve permettere di mantenere l’ordine di inserimento degli elementi.
+La collezione deve evitare duplicati.
+La collezione deve permettere di associare ogni elemento a una chiave univoca (ad esempio, un ID studente).
+
+--------------------
+
+Studente
+
+{
+	"id": 1,
+	"matricola": 2203434
+	"CF": "FGGLRN02L16H501H",
+	"nome": "Lorenzo",
+	"cognome: "Faggi",
+	"datadinascita: 20020707
+}

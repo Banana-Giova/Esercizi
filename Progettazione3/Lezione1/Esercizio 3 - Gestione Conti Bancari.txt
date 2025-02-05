@@ -1,0 +1,54 @@
+Gestione conti bancari
+---
+Creare un software stand alone, con interfaccia da console quindi, per gestire i conti bancari dei clienti, che verrà utilizzato dagli impiegati di Banca.
+Il software deve gestire i conti corrente di tutti i suoi clienti e attualmente possiede una anagrafica interna di 10 clienti. Ogni cliente è identificato dal suo numero di conto, univoco.
+L'applicazione deve permettere di:
+	1.	visualizzare i dati dell'anagrafica cliente, scegliendo dall'elenco clienti (esisterà quindi una lista clienti); i dati sono: numero conto, cognome, nome e indirizzo
+	2.	effettuare una ricerca per numero conto o per cognome (notare che in quest'ultimo caso, può essere che esistano più clienti con lo stesso cognome). A valle della ricerca, il software deve visualizzare direttamente i dati del cliente (vedi punto 1) se il risultato ritorna una sola entry; diversamente, il software deve permettere all'utente (impiegato di Banca) di selezionare il cliente di cui visualizzare i dati (vedi punto 1 sempre)
+	3.	effettuare un accredito per conto del cliente, può essere fatto in contanti o tramite assegno; nel primo caso, l'importo massimo è di 2.000 € e nel secondo, invece, è di 10.000 €
+	4.	effettuare un prelievo di contanti per il cliente; considerare il massimo importo di 1.000 € per un prelievo giornaliero e considerare un limite di 5.000 € mensili
+	5.	chiudere il conto corrente, considerando una spesa di chiusura conto di 35 € e che l'eventuale importo residuo, qualora sia inferiore a 6.000 € può essere prelevato in contanti e consegnato al cliente. Se l'importo residuo supera tale cifra, invece, richiedere al cliente un IBAN per il bonifico (per il bonifico verrà usato un altro software, non da implementare in questa sede).
+
+--------------------------------
+
+Cliente	
+{
+    "id": 1,
+    "cognome": "Faggi",
+    "nome": "Lorenzo",
+    "CF": "FGGLRN02L16H501H",
+    "indirizzo": {
+        "citta": "Roma",
+        "tipo_via": "Via",
+        "nome_via": "Selinunte",
+        "numero_civico": 47,
+        "complesso": "Palazzo A",
+        "scala": "B",
+        "piano": 4,
+        "cap": "00175"
+        },
+    "conti": [
+        ObjectId(contobancario)
+    ]
+}
+
+ContoBancario
+{
+    "id": 1,
+    "numero_conto": "IT60X0542811101000000123456",
+    "saldo": 200,
+    "istante":169903392,
+    "chiuso": false,
+    "intestatari": [
+        ObjectId(cliente)    
+        ]
+}
+
+Movimento
+{
+    "id": 1,
+    "conto_assegnato": ObjectId(conto),
+    "istante": 170032102,
+    "quantitativo": 20,
+    "tipo": "Accredito via assegno"        
+}
