@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>P20250206_01_ThreadJson</groupId>
+    <artifactId>P20250206_01_ThreadJson</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <!-- Dipendenze -->
+    <dependencies>
+        <!-- Dipendenza per Jackson Databind (serializzazione/deserializzazione JSON) -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.18.2</version> <!-- Usa la versione più recente disponibile -->
+        </dependency>
+
+        <!-- Dipendenza per Jackson Core -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.18.2</version> <!-- Usa la versione più recente disponibile -->
+        </dependency>
+
+        <!-- Dipendenza per Jackson Annotations -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.18.2</version> <!-- Usa la versione più recente disponibile -->
+        </dependency>
+    </dependencies>
+
+    <!-- Configurazione di Maven Compiler Plugin -->
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <release>21</release> <!-- Assicurati che la versione di Java sia corretta -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
