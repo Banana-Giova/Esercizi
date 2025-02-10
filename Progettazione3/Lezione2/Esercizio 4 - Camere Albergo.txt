@@ -22,10 +22,11 @@ L'applicazione deve essere in grado di:
 CameraAlbergo
 
 {
-    "id": 1,
+    "_id": 1,
     "numero_camera": 23,
     "posti_letto": 3,
     "status": "Libera"
+    //Si potrebbero aggiungere il numero di occupanti
 }
 
 -
@@ -33,7 +34,7 @@ CameraAlbergo
 Cliente
 
 {
-    "id": 1,
+    "_id": 1,
     "cognome": "Faggi",
     "nome": "Lorenzo",
     "CF": "FGGLRN02L16H501H",
@@ -45,7 +46,7 @@ Cliente
 Prenotazione
 
 {
-    "id": 1,
+    "_id": 1,
     "istante_pren": 1664996800,
     "durata": {
         "inizio": 1675200000
@@ -53,5 +54,5 @@ Prenotazione
     },
     "clienti_prenotanti": [ObjectId(cliente), ObjectId(cliente)],
     "camere_prenotate": [ObjectId(cameraalbergo), ObjectId(cameraalbergo)]
-    
+    //Si potrebbe anche utilizzare una lista di dizionari
 }
