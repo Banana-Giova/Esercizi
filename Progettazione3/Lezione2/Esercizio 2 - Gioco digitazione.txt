@@ -1,0 +1,26 @@
+Creare un metodo che simuli un gioco di digitazione parole.
+Il metodo accetta 2 array di stringhe, una con le parole digitate dall'utente 
+ed 1 con le parole di controllo (cioè quelle digitate in modo corretto).
+
+Il metodo deve ritornare un altro array, di booleani, contenente true per 
+ogni parola digitata correttamente dall'utente e false per ogni parola errata.
+
+Utilizzare il metodo in un main e sempre lì, stampare il numero di risposte 
+giuste rispetto alle totali, nel formato giuste/totali.
+
+e.g.:
+	input utente	["ciao", "aldo", "cobo", "costo"]
+	input controllo	["ciao", "caldo", "covo", "costo"]
+	
+	output metodo	[true, false, false, true]
+	output main		2/4
+
+--------------------
+
+Digitazione
+
+{
+	"id": 1,
+	"user_input": ["ciao", "aldo", "cobo", "costo"],
+    "check_input": ["ciao", "caldo", "covo", "costo"]
+}

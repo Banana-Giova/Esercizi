@@ -1,0 +1,57 @@
+Creare un applicazione da console, per gestire le camere di un albergo. 
+Queste ultime hanno un numero ed un determinato numero di posti massimo (da 1 a 4) 
+e ovviamente lo status (libera/occupata).
+La camera può essere occupata anche da meno persone rispetto al numero massimo 
+ma non, chiaramente, da un numero maggiore di ospiti.
+
+L'applicazione deve essere in grado di:
+1) visualizzare la capienza totale dell'albergo (quante persone in tutto 
+   puo' ospitare) e quante persone sono ospitate nell'albergo;
+2) visualizzare se la camera, il cui identificativo e' inserito da input, 
+   e' libera o occupata. Se la camera non esiste emettere la segnalazione di errore;
+3) visualizzare il numero di camere da 1, da 2, da 3 e da 4 posti letto;
+4) gestire una prenotazione: inserito in input il numero X di persone da ospitare, 
+   cercare, se esiste, una camera libera che possa ospitare tutte le persone, 
+   occupandola. Altrimenti mostrare una segnalazione di avviso
+	4a) prevedere un miglioramento all'algoritmo di prenotazione: 
+        se le persone non entrano tutte in un'unica stanza, dividerle in più stanze. 
+        Se anche così non si riesce a trovare posto per tutti, mostrare un avviso. 
+
+--------------------
+
+CameraAlbergo
+
+{
+    "id": 1,
+    "numero_camera": 23,
+    "posti_letto": 3,
+    "status": "Libera"
+}
+
+-
+
+Cliente
+
+{
+    "id": 1,
+    "cognome": "Faggi",
+    "nome": "Lorenzo",
+    "CF": "FGGLRN02L16H501H",
+    "camera_assegnata": ObjectId(cameraalbergo)
+}
+
+-
+
+Prenotazione
+
+{
+    "id": 1,
+    "istante_pren": 1664996800,
+    "durata": {
+        "inizio": 1675200000
+        "fine": 1675996800
+    },
+    "clienti_prenotanti": [ObjectId(cliente), ObjectId(cliente)],
+    "camere_prenotate": [ObjectId(cameraalbergo), ObjectId(cameraalbergo)]
+    
+}
