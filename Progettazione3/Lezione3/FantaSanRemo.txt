@@ -1,0 +1,69 @@
+FantaSanremo Cloud è la piattaforma definitiva per gestire 
+a livello nazionale il gioco. 
+Crea la tua squadra, scegli i tuoi cantanti 
+(5 titolari e 2 riserve) e il tuo capitano, 
+sfruttando i tuoi 100 baudi.
+
+----------------------------
+
+
+Utente
+{
+    "_id": 1,
+    "username": "PeppeBrescia",
+    "password": "CrotoneNucleare5",
+    "squadre": [
+        ObjectId(squadrafs)
+    ]
+}
+
+Cantante
+{
+    "_id": 1,
+    "nome_in_arte": "Guè Pequeno",
+    "nome": "Guendalino",
+    "cognome": "Pacini",
+    "componenti_gruppo_extra": [
+        "Shablo",
+        "Joshua",
+        "Tormento"
+    ],
+    "prezzo": 15,
+    "punti": 7,
+    "bonus": 10,
+    "malus": -4
+}
+
+SquadraFS
+{
+    "_id": 1,
+    "lega": ObjectId(lega),
+    "baudi_disponibili": 100,
+    "proprietario": ObjectId(utente),
+    "capitano": ObjectId(cantante),
+    "titolari": {
+        "titolare1": ObjectId(cantante),
+        "titolare2": ObjectId(cantante),
+        "titolare3": ObjectId(cantante),
+        "titolare4": ObjectId(cantante),
+        "titolare5": ObjectId(cantante)
+        },
+    "riserve":
+        {
+        "riserva1": ObjectId(cantante),
+        "riserva2": ObjectId(cantante)
+        }
+}
+
+Lega
+{
+    "_id": 1,
+    "nome": "LegaSud",
+    "squadre_iscritte": [
+        ObjectId(squadrafs),
+        ObjectId(squadrafs),
+        ObjectId(squadrafs)
+    ] //Non specifico gli utenti partecipanti alla lega dato
+      //che quest'informazione è facilmente ricavabile, dato che
+      //ogni squadra ha un proprietario
+}
