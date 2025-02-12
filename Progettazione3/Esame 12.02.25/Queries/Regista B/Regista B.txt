@@ -1,0 +1,6 @@
+Tutti i film aventi Charles Chaplin come regista
+
+-----
+
+Query:
+    { directors: { $in: ["Charles Chaplin"] } }

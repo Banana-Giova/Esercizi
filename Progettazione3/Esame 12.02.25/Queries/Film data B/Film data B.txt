@@ -1,0 +1,6 @@
+Tutti i film precedenti al 1920
+
+-----
+
+Query:
+    { year: { $lt: 1920 } }

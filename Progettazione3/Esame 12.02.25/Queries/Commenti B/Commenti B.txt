@@ -1,0 +1,10 @@
+Tutti i commenti del film "The Informer" del 1935, 
+nella collection relativa (comments)
+
+-----
+
+First Query:
+    { title: "The Informer" }
+
+Second Query:
+    { movie_id: ObjectId('573a1392f29313caabcda896')}

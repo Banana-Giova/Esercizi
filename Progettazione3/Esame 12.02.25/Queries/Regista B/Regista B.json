@@ -1,0 +1,515 @@
+[{
+  "_id": {
+    "$oid": "573a1391f29313caabcd7a34"
+  },
+  "plot": "A kept woman runs into her one-time fiancè and finds herself torn between love and comfort.",
+  "genres": [
+    "Drama",
+    "Romance"
+  ],
+  "runtime": 78,
+  "rated": "TV-PG",
+  "cast": [
+    "Edna Purviance",
+    "Clarence Geldart",
+    "Carl Miller",
+    "Lydia Knott"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BZjJiMTU2NGQtNWRkNi00ZjExLWExMTUtMmNkNTU0NzRlMTA3XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SY1000_SX677_AL_.jpg",
+  "title": "A Woman of Paris: A Drama of Fate",
+  "fullplot": "Marie St. Clair believes she has been jilted by her artist fiance Jean when he fails to meet her at the railway station. She goes off to Paris alone. A year later, mistress of wealthy Pierre Revel, she meets Jean again. Misinterpreting events she bounces back and forth between apparent security and true love.",
+  "countries": [
+    "USA"
+  ],
+  "released": {
+    "$date": {
+      "$numberLong": "-1456704000000"
+    }
+  },
+  "directors": [
+    "Charles Chaplin"
+  ],
+  "writers": [
+    "Charles Chaplin"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 0,
+    "text": "1 win."
+  },
+  "lastupdated": "2015-09-02 00:22:09.303000000",
+  "year": 1923,
+  "imdb": {
+    "rating": 7.1,
+    "votes": 3179,
+    "id": 14624
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.7,
+      "numReviews": 886,
+      "meter": 78
+    },
+    "dvd": {
+      "$date": "2004-03-02T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 7.4,
+      "numReviews": 11,
+      "meter": 91
+    },
+    "lastUpdated": {
+      "$date": "2015-08-23T18:34:44.000Z"
+    },
+    "rotten": 1,
+    "production": "Criterion Collection",
+    "fresh": 10
+  }
+},
+{
+  "_id": {
+    "$oid": "573a1391f29313caabcd9600"
+  },
+  "plot": "With the aid of a wealthy erratic tippler, a dewy-eyed tramp who has fallen in love with a sightless flower girl accumulates money to be able to help her medically.",
+  "genres": [
+    "Comedy",
+    "Drama",
+    "Romance"
+  ],
+  "runtime": 87,
+  "rated": "PASSED",
+  "cast": [
+    "Virginia Cherrill",
+    "Florence Lee",
+    "Harry Myers",
+    "Al Ernest Garcia"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BY2I4MmM1N2EtM2YzOS00OWUzLTkzYzctNDc5NDg2N2IyODJmXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_SX677_AL_.jpg",
+  "title": "City Lights",
+  "fullplot": "A tramp falls in love with a beautiful blind girl. Her family is in financial trouble. The tramp's on-and-off friendship with a wealthy man allows him to be the girl's benefactor and suitor.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": {
+      "$numberLong": "-1225152000000"
+    }
+  },
+  "directors": [
+    "Charles Chaplin"
+  ],
+  "writers": [
+    "Charles Chaplin"
+  ],
+  "awards": {
+    "wins": 3,
+    "nominations": 0,
+    "text": "3 wins."
+  },
+  "lastupdated": "2015-09-06 00:10:05.493000000",
+  "year": 1931,
+  "imdb": {
+    "rating": 8.6,
+    "votes": 93912,
+    "id": 21749
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4.4,
+      "numReviews": 26133,
+      "meter": 96
+    },
+    "dvd": {
+      "$date": "2000-02-08T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 9,
+      "numReviews": 42,
+      "meter": 98
+    },
+    "lastUpdated": {
+      "$date": "2015-09-14T17:11:11.000Z"
+    },
+    "rotten": 1,
+    "production": "Twentieth Century Fox Home Entertainment",
+    "fresh": 41
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a1392f29313caabcdae3d"
+  },
+  "fullplot": "Chaplins last 'silent' film, filled with sound effects, was made when everyone else was making talkies. Charlie turns against modern society, the machine age, (The use of sound in films ?) and progress. Firstly we see him frantically trying to keep up with a production line, tightening bolts. He is selected for an experiment with an automatic feeding machine, but various mishaps leads his boss to believe he has gone mad, and Charlie is sent to a mental hospital... When he gets out, he is mistaken for a communist while waving a red flag, sent to jail, foils a jailbreak, and is let out again. We follow Charlie through many more escapades before the film is out.",
+  "imdb": {
+    "rating": 8.6,
+    "votes": 123603,
+    "id": 27977
+  },
+  "year": 1936,
+  "plot": "The Tramp struggles to live in modern industrial society with the help of a young homeless woman.",
+  "genres": [
+    "Comedy",
+    "Drama"
+  ],
+  "rated": "G",
+  "metacritic": 96,
+  "title": "Modern Times",
+  "lastupdated": "2015-09-04 00:06:38.867000000",
+  "languages": [
+    "English"
+  ],
+  "writers": [
+    "Charles Chaplin"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.kino.com/moderntimes",
+    "viewer": {
+      "rating": 4.3,
+      "numReviews": 38942,
+      "meter": 95
+    },
+    "dvd": {
+      "$date": "2010-08-23T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 9,
+      "numReviews": 53,
+      "meter": 100
+    },
+    "lastUpdated": {
+      "$date": "2015-09-14T17:11:14.000Z"
+    },
+    "consensus": "A slapstick skewering of industrialized America, Modern Times is as politically incisive as it is laugh-out-loud hilarious.",
+    "rotten": 0,
+    "production": "United Artists",
+    "fresh": 53
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BYjJiZjMzYzktNjU0NS00OTkxLWEwYzItYzdhYWJjN2QzMTRlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 1,
+  "released": {
+    "$date": {
+      "$numberLong": "-1068249600000"
+    }
+  },
+  "awards": {
+    "wins": 3,
+    "nominations": 1,
+    "text": "3 wins & 1 nomination."
+  },
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Charles Chaplin",
+    "Paulette Goddard",
+    "Henry Bergman",
+    "Tiny Sandford"
+  ],
+  "directors": [
+    "Charles Chaplin"
+  ],
+  "runtime": 87
+},
+{
+  "_id": {
+    "$oid": "573a1393f29313caabcdc030"
+  },
+  "plot": "Dictator Adenoid Hynkel tries to expand his empire while a poor Jewish barber tries to avoid persecution from Hynkel's regime.",
+  "genres": [
+    "Comedy",
+    "Drama",
+    "War"
+  ],
+  "runtime": 125,
+  "rated": "APPROVED",
+  "cast": [
+    "Charles Chaplin",
+    "Jack Oakie",
+    "Reginald Gardiner",
+    "Henry Daniell"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMmExYWJjNTktNGUyZS00ODhmLTkxYzAtNWIzOGEyMGNiMmUwXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Great Dictator",
+  "fullplot": "Twenty years after the end of WWI in which the nation of Tomainia was on the losing side, Adenoid Hynkel has risen to power as the ruthless dictator of the country. He believes in a pure Aryan state, and the decimation of the Jews. This situation is unknown to a simple Jewish-Tomainian barber who has since been hospitalized the result of a WWI battle. Upon his release, the barber, who had been suffering from memory loss about the war, is shown the new persecuted life of the Jews by many living in the Jewish ghetto, including a washerwoman named Hannah, with whom he begins a relationship. The barber is ultimately spared such persecution by Commander Schultz, who he saved in that WWI battle. The lives of all Jews in Tomainia are eventually spared with a policy shift by Hynkel himself, who is doing so for ulterior motives. But those motives include a want for world domination, starting with the invasion of neighboring Osterlich, which may be threatened by Benzino Napaloni, the dictator of neighboring Bacteria. Ultimately Schultz, who has turned traitor against Hynkel's regime, and the barber, may be able to join forces to take control of the situation, they using Schultz's inside knowledge of the workings of the regime and the barber's uncanny resemblance to one of those in power.",
+  "languages": [
+    "English",
+    "Esperanto"
+  ],
+  "released": {
+    "$date": {
+      "$numberLong": "-909532800000"
+    }
+  },
+  "directors": [
+    "Charles Chaplin"
+  ],
+  "writers": [
+    "Charles Chaplin"
+  ],
+  "awards": {
+    "wins": 10,
+    "nominations": 1,
+    "text": "Nominated for 5 Oscars. Another 5 wins & 1 nomination."
+  },
+  "lastupdated": "2015-09-14 09:47:08.293000000",
+  "year": 1940,
+  "imdb": {
+    "rating": 8.5,
+    "votes": 119966,
+    "id": 32553
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4.2,
+      "numReviews": 42912,
+      "meter": 95
+    },
+    "dvd": {
+      "$date": "2010-05-10T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 8.8,
+      "numReviews": 37,
+      "meter": 92
+    },
+    "lastUpdated": {
+      "$date": "2015-09-16T19:41:26.000Z"
+    },
+    "rotten": 3,
+    "production": "Criterion Collection",
+    "fresh": 34
+  }
+},
+{
+  "_id": {
+    "$oid": "573a1394f29313caabcdf016"
+  },
+  "plot": "A fading comedian and a suicidally despondent ballet dancer must look to each other to find meaning and hope in their lives.",
+  "genres": [
+    "Drama",
+    "Music"
+  ],
+  "runtime": 137,
+  "rated": "APPROVED",
+  "cast": [
+    "Charles Chaplin",
+    "Claire Bloom",
+    "Nigel Bruce",
+    "Buster Keaton"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BZTg2NmZmM2EtYmFjMi00MGI5LTg3MjItMWEzYzk4ZDgyODA1XkEyXkFqcGdeQXVyMDI2NDg0NQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Limelight",
+  "fullplot": "Chaplin's final American film tells the story of a fading music hall comedian's effort to help a despondent ballet dancer learn both to walk and feel confident about life again. The highlight of the film is the classic duet with Chaplin's only real artistic film comedy rival, Buster Keaton.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": {
+      "$numberLong": "-541987200000"
+    }
+  },
+  "directors": [
+    "Charles Chaplin"
+  ],
+  "writers": [
+    "Charles Chaplin (original story and screenplay)"
+  ],
+  "awards": {
+    "wins": 7,
+    "nominations": 2,
+    "text": "Won 1 Oscar. Another 6 wins & 2 nominations."
+  },
+  "lastupdated": "2015-09-14 09:47:11.813000000",
+  "year": 1952,
+  "imdb": {
+    "rating": 8.1,
+    "votes": 12113,
+    "id": 44837
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4.1,
+      "numReviews": 7108,
+      "meter": 91
+    },
+    "dvd": {
+      "$date": "2011-03-28T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 7.9,
+      "numReviews": 29,
+      "meter": 97
+    },
+    "lastUpdated": {
+      "$date": "2015-08-25T18:45:20.000Z"
+    },
+    "rotten": 1,
+    "production": "Criterion Collection",
+    "fresh": 28
+  }
+},
+{
+  "_id": {
+    "$oid": "573a1394f29313caabce0657"
+  },
+  "plot": "A recently-deposed European monarch seeks shelter in New York City, where he becomes an accidental television celebrity and is later wrongly accused of being a Communist.",
+  "genres": [
+    "Comedy",
+    "Drama"
+  ],
+  "runtime": 105,
+  "rated": "G",
+  "cast": [
+    "Charles Chaplin",
+    "Maxine Audley",
+    "Jerry Desmonde",
+    "Oliver Johnston"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BOWIzMWY4ZDgtNjFhNi00YmM4LThjODEtYWE0MWE4MTEzOTVkXkEyXkFqcGdeQXVyMDI2NDg0NQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "A King in New York",
+  "fullplot": "Due to a revolution in his country, King Shahdov comes to New York - almost broke. To get some money he goes to TV, making commercials and meets the child from communist parents. Due to this he is suddenly a suspected as a communist himself and has to face one of McCarthy's hearings.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": {
+      "$numberLong": "-388281600000"
+    }
+  },
+  "directors": [
+    "Charles Chaplin"
+  ],
+  "writers": [
+    "Charles Chaplin"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-09-05 00:36:25.893000000",
+  "year": 1957,
+  "imdb": {
+    "rating": 7.3,
+    "votes": 5024,
+    "id": 50598
+  },
+  "countries": [
+    "UK"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.6,
+      "numReviews": 1986,
+      "meter": 73
+    },
+    "dvd": {
+      "$date": "2004-03-02T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 7.2,
+      "numReviews": 10,
+      "meter": 80
+    },
+    "lastUpdated": {
+      "$date": "2015-08-15T18:41:28.000Z"
+    },
+    "rotten": 2,
+    "production": "Criterion Collection",
+    "fresh": 8
+  }
+},
+{
+  "_id": {
+    "$oid": "573a1395f29313caabce3011"
+  },
+  "plot": "In Hong Kong, the wealthy Ogden Mears is traveling in a transatlantic and is near to be assigned Saudi Arabia Ambassador and is divorcing from his wife Martha. His friend Harvey and he are ...",
+  "genres": [
+    "Comedy",
+    "Romance"
+  ],
+  "runtime": 120,
+  "rated": "G",
+  "cast": [
+    "Marlon Brando",
+    "Sophia Loren",
+    "Sydney Chaplin",
+    "Tippi Hedren"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BODQ0NjM3OGMtYzhmOC00NzA1LTg1ODgtMjkzMDcwZDVlZjZkXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SY1000_SX677_AL_.jpg",
+  "title": "A Countess from Hong Kong",
+  "fullplot": "In Hong Kong, the wealthy Ogden Mears is traveling in a transatlantic and is near to be assigned Saudi Arabia Ambassador and is divorcing from his wife Martha. His friend Harvey and he are invited by their old friend Clark to go to a nightclub with three aristocratic Russian refugees on their last night. Ogden drinks too much and spends the night with Countess Natascha. On the next morning, while sailing back home, Ogdeb finds Natascha hidden in his cabin wearing a ball gown and with no documents. The stowaway explains that she wants to go to the United States and Ogden is worried with his career. But Harvey convinces him to help Natascha. Ogden falls in love with Natascha and together with Harvey, they plot a fake marriage of Natascha with his valet Hudson. But things get complicated when immigration requests her documents and Martha arrives on board.",
+  "languages": [
+    "English",
+    "French"
+  ],
+  "released": {
+    "$date": {
+      "$numberLong": "-88387200000"
+    }
+  },
+  "directors": [
+    "Charles Chaplin"
+  ],
+  "writers": [
+    "Charles Chaplin (original screenplay)"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 0,
+    "text": "1 win."
+  },
+  "lastupdated": "2015-08-14 00:33:54.333000000",
+  "year": 1967,
+  "imdb": {
+    "rating": 6,
+    "votes": 3544,
+    "id": 61523
+  },
+  "countries": [
+    "UK"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.1,
+      "numReviews": 670,
+      "meter": 43
+    },
+    "dvd": {
+      "$date": "2003-02-04T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 5.1,
+      "numReviews": 5,
+      "meter": 60
+    },
+    "lastUpdated": {
+      "$date": "2015-08-26T18:33:32.000Z"
+    },
+    "rotten": 2,
+    "production": "Universal Pictures",
+    "fresh": 3
+  }
+}]

@@ -1,0 +1,6 @@
+Tutti i film che hanno vinto meno di 1 premio e genere Short
+
+-----
+
+Query:
+    { $and: [ {"awards.wins": { $lt: 1 }, genres: { $in: ["Short"] }} ] }

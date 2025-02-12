@@ -1,0 +1,6 @@
+Tutti i film con valutazione < 3
+
+-----
+
+Query:
+    { "imdb.rating": { $lt: 3 } }

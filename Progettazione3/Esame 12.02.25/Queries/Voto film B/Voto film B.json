@@ -1,0 +1,4871 @@
+[{
+  "_id": {
+    "$oid": "573a1395f29313caabce108e"
+  },
+  "plot": "With the aid of Merlin, Santa Claus must defeat the evil machinations of the devil Pitch to ruin Xmas.",
+  "genres": [
+    "Family",
+    "Fantasy"
+  ],
+  "runtime": 94,
+  "cast": [
+    "Josè Elèas Moreno",
+    "Cesèreo Quezadas 'Pulgarcito'",
+    "Josè Luis Aguirre 'Trotsky'",
+    "Armando Arriola"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BNmJmODcyMTEtOWU5ZC00OWVkLTk1ZTMtNGIzZGZkY2E5NjBmXkEyXkFqcGdeQXVyMDU5NjMyNg@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Santa Claus",
+  "fullplot": "Santa Claus, high above the North Pole in his cloud-borne castle equipped with more surveillance devices than the Impossible Mission Force, prepares to deliver presents on Christmas night. Santa is especially interested in helping Lupita, the daughter of a poor family who wants nothing more than a doll; and a young boy whose parents are so wealthy they never spend any time with him (Santa fixes this by feeding them Pan-Galactic Gargle Blasters). However, the Devil will have none of this and sends his minion, Pitch, to foil Santa's plans. Pitch in turn recruits three Naughty Boys to help him set traps for Santa.",
+  "languages": [
+    "Spanish"
+  ],
+  "released": {
+    "$date": {
+      "$numberLong": "-291945600000"
+    }
+  },
+  "directors": [
+    "Renè Cardona"
+  ],
+  "writers": [
+    "Adolfo Torres Portillo (story)",
+    "Renè Cardona (story)",
+    "Adolfo Torres Portillo (adaptation)",
+    "Renè Cardona (adaptation)"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 0,
+    "text": "1 win."
+  },
+  "lastupdated": "2015-06-05 00:40:34.993000000",
+  "year": 1959,
+  "imdb": {
+    "rating": 2.4,
+    "votes": 3401,
+    "id": 53241
+  },
+  "countries": [
+    "Mexico"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.7,
+      "numReviews": 2306,
+      "meter": 25
+    },
+    "dvd": {
+      "$date": "2004-10-05T00:00:00.000Z"
+    },
+    "website": "http://www.vcientertainment.com/Film-Categories?keyword=SANTA%20C&product_id=450",
+    "lastUpdated": {
+      "$date": "2015-09-13T09:57:42.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a1397f29313caabce64c4"
+  },
+  "plot": "Corporate smuggling of South American killer bees into the United States results in huge swarms terrorizing the northern hemisphere. A small team of scientists work desperately to destroy ...",
+  "genres": [
+    "Horror",
+    "Sci-Fi",
+    "Thriller"
+  ],
+  "runtime": 83,
+  "rated": "PG",
+  "cast": [
+    "John Saxon",
+    "Angel Tompkins",
+    "John Carradine",
+    "Claudio Brook"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BZGFkZmI0YTEtNGQ4Yi00NmRmLWE5MGYtMzM3NTZkM2U0M2I5XkEyXkFqcGdeQXVyMTQ2MjQyNDc@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Bees",
+  "fullplot": "Corporate smuggling of South American killer bees into the United States results in huge swarms terrorizing the northern hemisphere. A small team of scientists work desperately to destroy the threat, but the bees soon mutate into a super-intelligent species that threatens the world.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1978-11-01T00:00:00.000Z"
+  },
+  "directors": [
+    "Alfredo Zacarèas"
+  ],
+  "writers": [
+    "Alfredo Zacarèas (original story)"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 0,
+    "text": "1 win."
+  },
+  "lastupdated": "2015-09-11 00:02:21.310000000",
+  "year": 1978,
+  "imdb": {
+    "rating": 2.9,
+    "votes": 485,
+    "id": 75620
+  },
+  "countries": [
+    "Mexico",
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.7,
+      "numReviews": 267,
+      "meter": 9
+    },
+    "dvd": {
+      "$date": "2013-09-17T00:00:00.000Z"
+    },
+    "production": "MVD Entertainment Group",
+    "lastUpdated": {
+      "$date": "2015-08-18T19:25:48.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a1397f29313caabce6ab9"
+  },
+  "plot": "Corporate smuggling of South American killer bees into the United States results in huge swarms terrorizing the northern hemisphere. A small team of scientists work desperately to destroy ...",
+  "genres": [
+    "Horror",
+    "Sci-Fi",
+    "Thriller"
+  ],
+  "runtime": 83,
+  "rated": "PG",
+  "cast": [
+    "John Saxon",
+    "Angel Tompkins",
+    "John Carradine",
+    "Claudio Brook"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BZGFkZmI0YTEtNGQ4Yi00NmRmLWE5MGYtMzM3NTZkM2U0M2I5XkEyXkFqcGdeQXVyMTQ2MjQyNDc@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Bees",
+  "fullplot": "Corporate smuggling of South American killer bees into the United States results in huge swarms terrorizing the northern hemisphere. A small team of scientists work desperately to destroy the threat, but the bees soon mutate into a super-intelligent species that threatens the world.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1978-11-01T00:00:00.000Z"
+  },
+  "directors": [
+    "Alfredo Zacarèas"
+  ],
+  "writers": [
+    "Alfredo Zacarèas (original story)"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 0,
+    "text": "1 win."
+  },
+  "lastupdated": "2015-09-12 03:25:55.930000000",
+  "year": 1978,
+  "imdb": {
+    "rating": 2.9,
+    "votes": 485,
+    "id": 75620
+  },
+  "countries": [
+    "Mexico",
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.7,
+      "numReviews": 267,
+      "meter": 9
+    },
+    "dvd": {
+      "$date": "2013-09-17T00:00:00.000Z"
+    },
+    "production": "MVD Entertainment Group",
+    "lastUpdated": {
+      "$date": "2015-08-18T19:25:48.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a1397f29313caabce8b94"
+  },
+  "plot": "A young screenwriter allows others to exploit her in the hopes of \"making it\" in Hollywood.",
+  "genres": [
+    "Drama"
+  ],
+  "runtime": 92,
+  "rated": "R",
+  "cast": [
+    "Pia Zadora",
+    "Lloyd Bochner",
+    "Bibi Besch",
+    "Joseph Cali"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMzNhZWFjMjAtODM5ZC00NTlkLTgwMjQtNjBkYjhhNTk1OGNmXkEyXkFqcGdeQXVyMjA0MzYwMDY@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Lonely Lady",
+  "fullplot": "Jerilee Randall, a simple schoolgirl living in San Fernando, dreams of becoming a famous writer. While at a party, she meets the son of a famous screenwriter. The son invites her over to his house; she accepts. They drive away with some other people, and that night, she is assaulted by one of the son's friends with a garden hose. The \"friend\" is interrupted in his assault by screenwriter Walter Thornton, who arrives in time to save her from an even more disgusting fate. Walter's rescue of Jerilee begins a friendship between the two, and before you know it, the two fall in love. They marry. Their marriage falls apart when Jerilee's script rewrites actually improve one of Walter's screenplays and he feels one-upped. Jerilee then goes through affair after sordid affair in her attempt to write her own screenplay and get it produced.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1983-09-30T00:00:00.000Z"
+  },
+  "directors": [
+    "Peter Sasdy"
+  ],
+  "writers": [
+    "Harold Robbins (novel)",
+    "Ellen Shepard (adaptation)",
+    "John Kershaw",
+    "Shawn Randall"
+  ],
+  "awards": {
+    "wins": 6,
+    "nominations": 8,
+    "text": "6 wins & 8 nominations."
+  },
+  "lastupdated": "2015-08-21 01:00:23.187000000",
+  "year": 1983,
+  "imdb": {
+    "rating": 2.5,
+    "votes": 717,
+    "id": 85863
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.3,
+      "numReviews": 235,
+      "meter": 24
+    },
+    "critic": {
+      "rating": 1.3,
+      "numReviews": 11,
+      "meter": 0
+    },
+    "lastUpdated": {
+      "$date": "2015-09-11T18:15:20.000Z"
+    },
+    "rotten": 11,
+    "production": "Universal",
+    "fresh": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "573a1398f29313caabce9010"
+  },
+  "plot": "Follows the tale of a young woman's sexual awakening and subsequent journey around the world in pursuit of her ideal lover. Encounters include an Arabian sheik and a Spanish bullfighter. ...",
+  "genres": [
+    "Comedy",
+    "Romance"
+  ],
+  "runtime": 105,
+  "rated": "R",
+  "cast": [
+    "Bo Derek",
+    "George Kennedy",
+    "Andrea Occhipinti",
+    "Ana Obregèn"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BZjNjYTgwMjgtM2FmYS00MjQ4LWJiNzItMDQzZjcyMDM5YTIxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Bolero",
+  "fullplot": "Follows the tale of a young woman's sexual awakening and subsequent journey around the world in pursuit of her ideal lover. Encounters include an Arabian sheik and a Spanish bullfighter. Her friend and butler accompany her and help to arrange her couplings. Moderate nudity and soft-porn.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1984-08-31T00:00:00.000Z"
+  },
+  "directors": [
+    "John Derek"
+  ],
+  "writers": [
+    "John Derek"
+  ],
+  "awards": {
+    "wins": 6,
+    "nominations": 5,
+    "text": "6 wins & 5 nominations."
+  },
+  "lastupdated": "2015-08-22 00:42:21.750000000",
+  "year": 1984,
+  "imdb": {
+    "rating": 2.7,
+    "votes": 3941,
+    "id": 86987
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a1398f29313caabce9716"
+  },
+  "plot": "A series of teenage gangs struggle against each other in a not-so-distant future. Eventually they united against an evil corporation, as represented by evil CEO Robby Benson who wants to control everything.",
+  "genres": [
+    "Sci-Fi",
+    "Action",
+    "Drama"
+  ],
+  "runtime": 86,
+  "rated": "PG-13",
+  "cast": [
+    "John Stockwell",
+    "Darrell Larson",
+    "Rae Dawn Chong",
+    "James Earl Jones"
+  ],
+  "num_mflix_comments": 1,
+  "title": "City Limits",
+  "fullplot": "Years after a mysterious plague has wiped out most of the adult population, the surviving children have grown up to form violent motorcycle gangs. Young Lee, tired of life on the farm, goes out in search of adventure and soon winds up in the middle of a war between a pair of rival gangs. Soon after Lee proves his worth and is accepted into one of the gangs, however, a new threat appears in the form of the evil Sunya Corporation, which wants to utilise the gangs for their own purposes. Can Lee lead his new-found friends to safety?",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1985-09-01T00:00:00.000Z"
+  },
+  "directors": [
+    "Aaron Lipstadt"
+  ],
+  "writers": [
+    "Aaron Lipstadt (story)",
+    "Don Keith Opper",
+    "James Reigle (story)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-09-06 01:01:31.243000000",
+  "year": 1984,
+  "imdb": {
+    "rating": 2.1,
+    "votes": 867,
+    "id": 88925
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a1398f29313caabcea27f"
+  },
+  "plot": "Glendon Wasey is a fortune hunter looking for a fast track out of China. Gloria Tatlock is a missionary nurse seeking the curing powers of opium for her patients. Fate sets them on a hectic...",
+  "genres": [
+    "Adventure",
+    "Crime",
+    "Drama"
+  ],
+  "runtime": 97,
+  "rated": "PG-13",
+  "cast": [
+    "Sean Penn",
+    "Madonna",
+    "Paul Freeman",
+    "Richard Griffiths"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNzAwMDQ5OV5BMl5BanBnXkFtZTcwMjUxMTE3NA@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Shanghai Surprise",
+  "fullplot": "Glendon Wasey is a fortune hunter looking for a fast track out of China. Gloria Tatlock is a missionary nurse seeking the curing powers of opium for her patients. Fate sets them on a hectic, exotic, and even romantic quest for stolen drugs. But they are up against every thug and smuggler in Shangai.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1986-08-29T00:00:00.000Z"
+  },
+  "directors": [
+    "Jim Goddard"
+  ],
+  "writers": [
+    "John Kohn (screenplay)",
+    "Robert Bentley (screenplay)",
+    "Tony Kenrick (from the novel \"Faraday's Flowers\")"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 6,
+    "text": "1 win & 6 nominations."
+  },
+  "lastupdated": "2015-08-26 00:35:44.620000000",
+  "year": 1986,
+  "imdb": {
+    "rating": 2.9,
+    "votes": 3895,
+    "id": 91934
+  },
+  "countries": [
+    "UK"
+  ],
+  "type": "movie",
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a1398f29313caabcea6be"
+  },
+  "plot": "Dogdger must confront the struggles of life as he is visited by the Garbage Pail Kids and intimidated by some older bullies.",
+  "genres": [
+    "Adventure",
+    "Musical",
+    "Comedy"
+  ],
+  "runtime": 100,
+  "rated": "PG",
+  "cast": [
+    "Phil Fondacaro",
+    "Anthony Newley",
+    "Mackenzie Astin",
+    "Katie Barberi"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTgzMzEwMzY5Nl5BMl5BanBnXkFtZTgwMzczNjkwMzE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Garbage Pail Kids Movie",
+  "fullplot": "Seven disgusting kids but nevertheless of interesting personality are being made of the green mud coming out of garbage can. Once alive their master gives them rules to obey although they think that life is funnier without following stupid regulations like no television or no candy. Naturally this will cause some conflicts.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1987-08-22T00:00:00.000Z"
+  },
+  "directors": [
+    "Rod Amateau"
+  ],
+  "writers": [
+    "Linda Palmer",
+    "Rod Amateau"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 4,
+    "text": "4 nominations."
+  },
+  "lastupdated": "2015-08-16 00:39:30.213000000",
+  "year": 1987,
+  "imdb": {
+    "rating": 2.7,
+    "votes": 5420,
+    "id": 93072
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.4,
+      "numReviews": 8453,
+      "meter": 28
+    },
+    "dvd": {
+      "$date": "2005-07-12T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 1.9,
+      "numReviews": 11,
+      "meter": 0
+    },
+    "lastUpdated": {
+      "$date": "2015-08-08T18:49:40.000Z"
+    },
+    "rotten": 11,
+    "production": "Atlantic",
+    "fresh": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "573a1398f29313caabcea798"
+  },
+  "plot": "Chief Brody's widow believes that her family is deliberately being targeted by another shark in search of revenge.",
+  "genres": [
+    "Horror"
+  ],
+  "runtime": 89,
+  "rated": "PG-13",
+  "cast": [
+    "Lorraine Gary",
+    "Lance Guest",
+    "Mario Van Peebles",
+    "Karen Young"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BNGI1MTAxMWItOTE0OC00ZDhkLWE3Y2EtNjFiZmQ4NjQ1NGNkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Jaws: The Revenge",
+  "fullplot": "Ellen Brody still lives in the island resort town of Amity, and her sons Sean and Michael don't work at Sea World anymore, and some time ago, Ellen's husband Martin Brody died of a heart attack that happened because he was afraid of sharks. Sean is now a deputy in Amity. One night, during the Christmas season, Sean is called to untangle a log from a buoy, and when Sean goes to the buoy, he's killed by a great white shark. After hearing about this, Michael, who is studying to be a marine biologist, visits Amity with his wife Carla and his 5-year-old daughter Thea. Wanting to get away from Amity and spend Christmas with Michael, Carla, and Thea, Ellen goes with them to their house in the Bahamas on an airplane whose pilot is Hoagie Newcombe, and Hoagie starts falling for Ellen. Michael's friend Jake, who is also studying to be a marine biologist, lives next door to Michael. Sometime later, while Michael and Jake are out at sea, their boat is attacked by the shark that killed Sean. Michael and Jake try to tag the shark so they can keep track of it. Sometime later, while Thea and some of her friends are on a banana boat, a yellow boat shaped like a banana, the shark attacks the banana boat and kills a woman, leaving Thea in shock, but it looks like Thea will be okay. Carla is mad at Michael for not telling her that the shark is in the waters of the Bahamas. Michael and Jake didn't mention the shark, because they didn't want to upset Ellen and mess up her visit. Ellen believes that the shark is after her family and that it was trying to kill Thea instead of the woman it killed, so Ellen takes Michael's boat out to sea on a single-minded mission to find the shark and kill it while Michael, Hoagie, and Jake try to find Ellen because they're afraid the shark will kill Ellen before Ellen can kill the shark.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1987-07-17T00:00:00.000Z"
+  },
+  "directors": [
+    "Joseph Sargent"
+  ],
+  "writers": [
+    "Peter Benchley (characters)",
+    "Michael De Guzman"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 7,
+    "text": "1 win & 7 nominations."
+  },
+  "lastupdated": "2015-09-02 00:26:43.180000000",
+  "year": 1987,
+  "imdb": {
+    "rating": 2.8,
+    "votes": 28725,
+    "id": 93300
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.4,
+      "numReviews": 87968,
+      "meter": 14
+    },
+    "dvd": {
+      "$date": "1999-01-15T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2,
+      "numReviews": 32,
+      "meter": 0
+    },
+    "lastUpdated": {
+      "$date": "2015-09-12T17:32:03.000Z"
+    },
+    "consensus": "Illogical, tension-free, and filled with cut-rate special effects, Jaws 4 - The Revenge is a sorry chapter in a once-proud franchise.",
+    "rotten": 32,
+    "production": "Universal Pictures",
+    "fresh": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "573a1398f29313caabcea7fe"
+  },
+  "plot": "A secret agent is called out of retirement to save the world from an evil genius.",
+  "genres": [
+    "Action",
+    "Comedy",
+    "Sci-Fi"
+  ],
+  "runtime": 85,
+  "rated": "PG",
+  "cast": [
+    "Bill Cosby",
+    "Tom Courtenay",
+    "Joe Don Baker",
+    "Moses Gunn"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BNzNjMzM0YTAtNDE0MS00OGJlLTlkN2QtMzJkYjhjNTYyNTkzL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjE5MjUyOTM@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Leonard Part 6",
+  "fullplot": "The CIA asks for ex-spy Leonard's help in stopping an evil force that is brainwashing small animals into killing people. Leonard, however, has his own problems to deal with: winning back his ex-wife.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1987-12-18T00:00:00.000Z"
+  },
+  "directors": [
+    "Paul Weiland"
+  ],
+  "writers": [
+    "Bill Cosby (story)",
+    "Jonathan Reynolds"
+  ],
+  "awards": {
+    "wins": 3,
+    "nominations": 4,
+    "text": "3 wins & 4 nominations."
+  },
+  "lastupdated": "2015-09-13 00:23:58.490000000",
+  "year": 1987,
+  "imdb": {
+    "rating": 2.2,
+    "votes": 6806,
+    "id": 93405
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 1.9,
+      "numReviews": 2538,
+      "meter": 21
+    },
+    "dvd": {
+      "$date": "2005-04-26T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 1.9,
+      "numReviews": 11,
+      "meter": 9
+    },
+    "lastUpdated": {
+      "$date": "2015-08-24T18:50:28.000Z"
+    },
+    "rotten": 10,
+    "production": "Sony Pictures Home Entertainment",
+    "fresh": 1
+  }
+},
+{
+  "_id": {
+    "$oid": "573a1398f29313caabcebf6b"
+  },
+  "plot": "Elderly Scott kills himself after a heart attack wrecks his body, but then comes back as a ghost and convinces his loving young hot wife Kate to pick and kill a young man in order for Scott to possess his body and be with her again.",
+  "genres": [
+    "Comedy",
+    "Crime",
+    "Fantasy"
+  ],
+  "runtime": 90,
+  "rated": "R",
+  "cast": [
+    "Bo Derek",
+    "Anthony Quinn",
+    "Don Murray",
+    "Julie Newmar"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BYWVlMWEwNTktN2Y3Zi00ZDEyLWI0YWYtOWZjMmY1MWFjMGI2XkEyXkFqcGdeQXVyNjExODE1MDc@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Ghosts Can't Do It",
+  "fullplot": "Scott and Kate are married and very much in love with each other. Scott is more than 60 years old, while Kate is at least thirty years younger. When Scott dies, his soul cannot get peace and he becomes a ghost only Kate can see and speak with. Scott wants to return to life, and him and Kate hatch a plan to let a young man drown so that Scott can take over his body. Also, Kate must handle Scott's company's business deal that involves Donald Trump as well as the mob.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1990-06-01T00:00:00.000Z"
+  },
+  "directors": [
+    "John Derek"
+  ],
+  "writers": [
+    "John Derek"
+  ],
+  "awards": {
+    "wins": 4,
+    "nominations": 6,
+    "text": "4 wins & 6 nominations."
+  },
+  "lastupdated": "2015-08-16 00:28:33.587000000",
+  "year": 1989,
+  "imdb": {
+    "rating": 2.2,
+    "votes": 1848,
+    "id": 99656
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.3,
+      "numReviews": 410,
+      "meter": 15
+    },
+    "dvd": {
+      "$date": "1990-10-17T00:00:00.000Z"
+    },
+    "production": "Sony Pictures Home Entertainment",
+    "lastUpdated": {
+      "$date": "2015-08-02T18:57:16.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a1399f29313caabcec333"
+  },
+  "plot": "Four teenagers are killed in a car accident. Two of the teenagers refuse to go with \"The Grim Reaper\" and a race between life and death ensues!",
+  "genres": [
+    "Fantasy",
+    "Horror"
+  ],
+  "runtime": 94,
+  "rated": "R",
+  "cast": [
+    "Joe Estevez",
+    "Vivian Schilling",
+    "Gregg Thomsen",
+    "Robert Z'Dar"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTI3MTg2NTk5Nl5BMl5BanBnXkFtZTcwNDk2MzAyMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Soultaker",
+  "fullplot": "Mysterious unseen men in black (angels?) collect the souls of the recently dead. When four teenagers \"die\" in a car wreck, one of these beings (\"The Man\") is sent to retrieve their souls. However, the teens are disembodied and realize their predicament. They flee. The movie revolves around them being picked off one by one, The Man's infatuation with one of the teenagers (who was apparently his lover in a past life), and the efforts of the teens to reunite their souls with their hospitalized bodies.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1990-10-26T00:00:00.000Z"
+  },
+  "directors": [
+    "Michael Rissi"
+  ],
+  "writers": [
+    "Vivian Schilling (story)",
+    "Eric Parkinson (story)",
+    "Vivian Schilling (screenplay)"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 0,
+    "text": "1 win."
+  },
+  "lastupdated": "2015-09-13 00:37:11.007000000",
+  "year": 1990,
+  "imdb": {
+    "rating": 2.2,
+    "votes": 3080,
+    "id": 100665
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.5,
+      "numReviews": 49,
+      "meter": 33
+    },
+    "dvd": {
+      "$date": "2004-04-20T00:00:00.000Z"
+    },
+    "lastUpdated": {
+      "$date": "2015-08-16T18:13:22.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a1399f29313caabcec6cd"
+  },
+  "plot": "A rap-oriented remake of \"The Wild One\", with heavy emphasis on the fact that rap star Vanilla Ice has assumed the Marlon Brando role.",
+  "genres": [
+    "Comedy",
+    "Music",
+    "Romance"
+  ],
+  "runtime": 91,
+  "rated": "PG",
+  "cast": [
+    "Naomi Campbell",
+    "Vanilla Ice",
+    "Deezer D",
+    "Kevin Hicks"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BNzU4Mzg3MjYtNmNiNS00Y2Q5LWFlMTYtMWUzOTVmMjhmZmM2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Cool as Ice",
+  "fullplot": "The old teen rebel saga is updated for the rap crowd, unfortunately rapper Vanilla Ice is the teen. Ice shows up on a neon-yellow motorcycle which gets everyone's attention, including the female honor student who has never had a rebellious bone in her body.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1991-10-18T00:00:00.000Z"
+  },
+  "directors": [
+    "David Kellogg"
+  ],
+  "writers": [
+    "David Stenn"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 7,
+    "text": "1 win & 7 nominations."
+  },
+  "lastupdated": "2015-09-06 00:22:28.993000000",
+  "year": 1991,
+  "imdb": {
+    "rating": 2.8,
+    "votes": 7390,
+    "id": 101615
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.5,
+      "numReviews": 4483,
+      "meter": 42
+    },
+    "dvd": {
+      "$date": "1991-12-19T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2.4,
+      "numReviews": 13,
+      "meter": 8
+    },
+    "lastUpdated": {
+      "$date": "2015-09-11T18:01:27.000Z"
+    },
+    "rotten": 12,
+    "production": "Universal Pictures",
+    "fresh": 1
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a1399f29313caabcee441"
+  },
+  "plot": "Brash NYC policeman Officer Gunther Toody is partnered with stiff, by-the-book Officer Francis Muldoon to protect an important mafia witness prior to testifying against orgainzed crime in ...",
+  "genres": [
+    "Comedy"
+  ],
+  "runtime": 89,
+  "rated": "PG-13",
+  "cast": [
+    "David Johansen",
+    "John C. McGinley",
+    "Fran Drescher",
+    "Nipsey Russell"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BNmE1YzZmNzgtYjI2NC00MjI2LTk3MWItODMwZjBlOTU0YWY5XkEyXkFqcGdeQXVyNjE5MjUyOTM@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Car 54, Where Are You?",
+  "fullplot": "Brash NYC policeman Officer Gunther Toody is partnered with stiff, by-the-book Officer Francis Muldoon to protect an important mafia witness prior to testifying against orgainzed crime in Brooklyn, all the while dealing with their personal lives, overbearing spouses, common criminals, arms dealers, and their officious boss Captain Anderson.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1994-01-28T00:00:00.000Z"
+  },
+  "directors": [
+    "Bill Fishman"
+  ],
+  "writers": [
+    "Nat Hiken (television series)",
+    "Erik Tarloff (story)",
+    "Erik Tarloff (screenplay)",
+    "Ebbe Roe Smith (screenplay)",
+    "Peter McCarthy (screenplay)",
+    "Peter Crabbe (screenplay)"
+  ],
+  "awards": {
+    "wins": 2,
+    "nominations": 2,
+    "text": "2 wins & 2 nominations."
+  },
+  "lastupdated": "2015-08-23 00:49:32.313000000",
+  "year": 1994,
+  "imdb": {
+    "rating": 2.4,
+    "votes": 3774,
+    "id": 109376
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.2,
+      "numReviews": 5807,
+      "meter": 10
+    },
+    "dvd": {
+      "$date": "2003-12-02T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 1.8,
+      "numReviews": 14,
+      "meter": 0
+    },
+    "lastUpdated": {
+      "$date": "2015-09-13T09:52:39.000Z"
+    },
+    "rotten": 14,
+    "production": "Orion Home Video",
+    "fresh": 0
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a1399f29313caabcee74d"
+  },
+  "plot": "The comedic misadventures of a person of indeterminable gender.",
+  "genres": [
+    "Comedy"
+  ],
+  "runtime": 77,
+  "rated": "PG-13",
+  "cast": [
+    "Julia Sweeney",
+    "Dave Foley",
+    "Charles Rocket",
+    "Kathy Griffin"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BM2VhMjI0NDQtZWRjMS00ZWY4LTk2MmItZTY4MzE4M2ZmOTQ3L2ltYWdlXkEyXkFqcGdeQXVyNjE5MjUyOTM@._V1_SY1000_SX677_AL_.jpg",
+  "title": "It's Pat",
+  "fullplot": "Pat Riley, an obnoxious busybody of undeterminable sex, meets and falls in love with Chris, a sensitive, caring person also of undeterminable sex. Their relationship suffers because Pat's a lout, and cannot decide on a direction for its life. Meanwhile, Pat's neighbor Kyle falls further and further into obsession with Pat, fascinated by its indeterminate sexuality.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1994-08-26T00:00:00.000Z"
+  },
+  "directors": [
+    "Adam Bernstein"
+  ],
+  "writers": [
+    "Julia Sweeney (characters)",
+    "Jim Emerson",
+    "Stephen Hibbert",
+    "Julia Sweeney"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 7,
+    "text": "1 win & 7 nominations."
+  },
+  "lastupdated": "2015-09-10 17:25:23.227000000",
+  "year": 1994,
+  "imdb": {
+    "rating": 2.7,
+    "votes": 8160,
+    "id": 110169
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2,
+      "numReviews": 7678,
+      "meter": 26
+    },
+    "dvd": {
+      "$date": "2003-09-02T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2.2,
+      "numReviews": 11,
+      "meter": 0
+    },
+    "lastUpdated": {
+      "$date": "2015-09-10T17:25:24.000Z"
+    },
+    "rotten": 11,
+    "production": "Buena Vista",
+    "fresh": 0
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a139af29313caabcef84d"
+  },
+  "plot": "In an alternate futuristic society, a tough female police detective is paired with a talking dinosaur to find the killer of dinosaurs and other prehistoric animals leading them to a mad scientist bent on creating a new Armageddon.",
+  "genres": [
+    "Action",
+    "Comedy",
+    "Family"
+  ],
+  "runtime": 92,
+  "rated": "PG",
+  "cast": [
+    "Whoopi Goldberg",
+    "Armin Mueller-Stahl",
+    "Juliet Landau",
+    "Bud Cort"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMGE2MDBhODctN2JhMy00NGRjLWFlZjAtNjk5MGUwNTBmMzJlXkEyXkFqcGdeQXVyMTQ2MjQyNDc@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Theodore Rex",
+  "fullplot": "In a future town a female police detective (Whoopi Goldberg) has to colaborate with Theodore Rex, a genetically generated Tyrannosaurus Rex, in order to investigate the murder of another dinosaure.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1995-12-14T00:00:00.000Z"
+  },
+  "directors": [
+    "Jonathan R. Betuel"
+  ],
+  "writers": [
+    "Jonathan R. Betuel"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 1,
+    "text": "1 win & 1 nomination."
+  },
+  "lastupdated": "2015-09-13 00:38:44.200000000",
+  "year": 1995,
+  "imdb": {
+    "rating": 2.4,
+    "votes": 2734,
+    "id": 114658
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2,
+      "numReviews": 3274,
+      "meter": 20
+    },
+    "dvd": {
+      "$date": "2003-07-08T00:00:00.000Z"
+    },
+    "production": "New Line Cinema",
+    "lastUpdated": {
+      "$date": "2015-09-11T17:17:53.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a139af29313caabcefe18"
+  },
+  "plot": "A trained chimpanzee plays third base for a minor-league baseball team.",
+  "genres": [
+    "Comedy",
+    "Family",
+    "Sport"
+  ],
+  "runtime": 94,
+  "rated": "PG",
+  "cast": [
+    "Matt LeBlanc",
+    "Gene Ross",
+    "Paul Hewitt",
+    "Sage Allen"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BZDZjZmEyOGEtNDliOS00M2EwLWEwN2UtYzdkYzNhZTRlYjE1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Ed",
+  "fullplot": "Farm boy Jack Cooper is drafted into the minor league Santa Rosa Rockets as a pitcher because of his rocket arm. He being drafted is despite he not having organized baseball experience at any level. He is nicknamed \"Deuce\" by his fellow players as the two finger signal is the catcher's sign to throw a curve ball, Coop's favorite and most killer pitch. But in the early going, Coop demonstrates that he chokes under pressure as throwing his famous curve ball usually results in an out-of-the-park home run. Kirby, the son of the team owner, purchases a chimpanzee as the team mascot, who the team members name Ed Sullivan. The coach, Chubb, \"decides\" that Ed will room with Coop, a move not without ulterior motives. Ed ends up being an overgrown kid in mentality, which makes him a pain for Coop to manage, leading to one misadventure after another for the pair. Ed not only is a fan of baseball, but has a rocket arm of his own. As such, Chubb also decides to use Ed as a player at third base, a move which galvanizes the team on their march toward the pennant. But when something happens to Ed, Coop has to try to save him, his friend and roommate, which may jeopardize his major league prospects. Through it all, Coop begins a romance with his next door neighbor, single mom Lydia, whose precocious adolescent daughter Lizzie, who along with Ed, seems know what's better for Lydia and Coop than they do.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1996-03-15T00:00:00.000Z"
+  },
+  "directors": [
+    "Bill Couturiè"
+  ],
+  "writers": [
+    "Ken Richards (story)",
+    "Janus Cercone (story)",
+    "David M. Evans (screenplay)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 3,
+    "text": "3 nominations."
+  },
+  "lastupdated": "2015-09-06 00:07:16.180000000",
+  "year": 1996,
+  "imdb": {
+    "rating": 2.6,
+    "votes": 6743,
+    "id": 116165
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.3,
+      "numReviews": 9295,
+      "meter": 22
+    },
+    "dvd": {
+      "$date": "2003-07-01T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 1.8,
+      "numReviews": 16,
+      "meter": 0
+    },
+    "lastUpdated": {
+      "$date": "2015-09-11T18:30:59.000Z"
+    },
+    "rotten": 16,
+    "production": "MCA Universal Home Video",
+    "fresh": 0
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a139af29313caabcf0097"
+  },
+  "plot": "Jobe is resuscitated by Jonathan Walker. He wants Jobe to create a special computer chip that would connect all the computers in the world into one network, which Walker would control and ...",
+  "genres": [
+    "Action",
+    "Sci-Fi",
+    "Thriller"
+  ],
+  "runtime": 93,
+  "rated": "PG-13",
+  "cast": [
+    "Patrick Bergin",
+    "Matt Frewer",
+    "Austin O'Brien",
+    "Ely Pouget"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BZGI0ZDZhOGUtZDZiOS00NWE2LThjNzQtYzI3ZGFjODUwZjlkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Lawnmower Man 2: Beyond Cyberspace",
+  "fullplot": "Jobe is resuscitated by Jonathan Walker. He wants Jobe to create a special computer chip that would connect all the computers in the world into one network, which Walker would control and use. But what Walker doesn't realize is a group of teenage hackers are on to him and out to stop his plan.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1996-01-12T00:00:00.000Z"
+  },
+  "directors": [
+    "Farhad Mann"
+  ],
+  "writers": [
+    "Farhad Mann (story)",
+    "Michael Miner (story)",
+    "Farhad Mann (screenplay)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-09-01 01:05:21.710000000",
+  "year": 1996,
+  "imdb": {
+    "rating": 2.3,
+    "votes": 7619,
+    "id": 116839
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.1,
+      "numReviews": 7188,
+      "meter": 12
+    },
+    "dvd": {
+      "$date": "2003-10-07T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2.8,
+      "numReviews": 9,
+      "meter": 11
+    },
+    "lastUpdated": {
+      "$date": "2015-07-27T18:26:18.000Z"
+    },
+    "rotten": 8,
+    "production": "New Line Home Entertainment",
+    "fresh": 1
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a139af29313caabcf0704"
+  },
+  "plot": "Three young boys, Rocky, Colt and Tum Tum together with their neighbor girl, computer whiz Amanda are visiting Mega Mountain amusement park when it is invaded by an army of ninjas led by ...",
+  "genres": [
+    "Action",
+    "Adventure",
+    "Comedy"
+  ],
+  "runtime": 93,
+  "rated": "PG",
+  "cast": [
+    "Hulk Hogan",
+    "Loni Anderson",
+    "Jim Varney",
+    "Mathew Botuchis"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BY2IzOTc2OWEtYTEwYy00ZTk5LWIxZWYtNDc3ZjM4MTZkODk4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_SX677_AL_.jpg",
+  "title": "3 Ninjas: High Noon at Mega Mountain",
+  "fullplot": "Three young boys, Rocky, Colt and Tum Tum together with their neighbor girl, computer whiz Amanda are visiting Mega Mountain amusement park when it is invaded by an army of ninjas led by evil Medusa, who wants to take over the park and hold the owners for ransom. Kids and retired TV star Dave Dragon, who made his farewell appearance at the park at the time the ninjas appeared, have to break Medusa's vicious plans.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1998-06-18T00:00:00.000Z"
+  },
+  "directors": [
+    "Sean McNamara"
+  ],
+  "writers": [
+    "Sean McNamara",
+    "Jeff Phillips"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-27 00:11:50.510000000",
+  "year": 1998,
+  "imdb": {
+    "rating": 2.7,
+    "votes": 8711,
+    "id": 118539
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.5,
+      "numReviews": 76064,
+      "meter": 29
+    },
+    "dvd": {
+      "$date": "2001-10-02T00:00:00.000Z"
+    },
+    "production": "Sony Pictures Home Entertainment",
+    "lastUpdated": {
+      "$date": "2015-08-15T18:08:06.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a139af29313caabcf0718"
+  },
+  "fullplot": "Billie Frank is a shy, young multiracial girl who is sent away by her alcoholic mother at a very early age. At an orphanage, she befriends Louise and Roxanne. Flash forward to 1983. Billie and her friends are spotted by a record producer, Timothy Walker, who wants them to sing backup for his latest pop-music discovery. But when super DJ Julian Dice hears Billie's incredible voice, he makes a shady deal with Timothy to get her out of that dead-end situation. Soon, Billie and Dice are making hits inside the studio, and falling in love outside of it. Eventually, the pressure of her newfound celebrity puts too heavy a strain on Billie, forcing her to decide what it is she really wants from Dice, and what she wants for herself.",
+  "imdb": {
+    "rating": 2.1,
+    "votes": 18840,
+    "id": 118589
+  },
+  "year": 2001,
+  "plot": "A young singer dates a disc jockey who helps her get into the music business, but their relationship become complicated as she ascends to super stardom.",
+  "genres": [
+    "Drama",
+    "Music",
+    "Romance"
+  ],
+  "rated": "PG-13",
+  "metacritic": 14,
+  "title": "Glitter",
+  "lastupdated": "2015-08-21 00:47:31.610000000",
+  "languages": [
+    "English"
+  ],
+  "writers": [
+    "Cheryl L. West (story)",
+    "Kate Lanier (screenplay)"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://216.133.243.94",
+    "viewer": {
+      "rating": 2.1,
+      "numReviews": 44284,
+      "meter": 45
+    },
+    "dvd": {
+      "$date": "2002-01-15T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2.8,
+      "numReviews": 87,
+      "meter": 7
+    },
+    "boxOffice": "$3.9M",
+    "consensus": "Glitter is a hodgepodge of movie cliches and bad acting that's sure to generate unintentional laughs. Unfortunately, the movie is not bad enough to be good.",
+    "rotten": 81,
+    "production": "20th Century Fox",
+    "lastUpdated": {
+      "$date": "2015-09-10T18:37:03.000Z"
+    },
+    "fresh": 6
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BMGJkN2IxNTYtZDE1OS00MWJhLWFhNzItNTZkMjM4OGUzMTE2L2ltYWdlXkEyXkFqcGdeQXVyNTg3MTc4ODY@._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 0,
+  "released": {
+    "$date": "2001-09-21T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 1,
+    "nominations": 8,
+    "text": "1 win & 8 nominations."
+  },
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Mariah Carey",
+    "Max Beesley",
+    "Da Brat",
+    "Tia Texada"
+  ],
+  "directors": [
+    "Vondie Curtis-Hall"
+  ],
+  "runtime": 104
+},
+{
+  "_id": {
+    "$oid": "573a139af29313caabcf0804"
+  },
+  "plot": "A surfer becomes the head of a major company.",
+  "genres": [
+    "Comedy"
+  ],
+  "runtime": 95,
+  "rated": "PG-13",
+  "cast": [
+    "Scott 'Carrot Top' Thompson",
+    "Courtney Thorne-Smith",
+    "Larry Miller",
+    "Raquel Welch"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BNjUxMDAyMzUyNV5BMl5BanBnXkFtZTcwNDE4MTMyMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Chairman of the Board",
+  "fullplot": "A surfer and inventor Edison is chosen by his roommates to raise rent with his outrageous (and absurd) inventions. There's no luck in job interviews until he meets billionaire Armand McMillan, who likes him, and leaves his company after his death to Edison. Edison has a lot of success with his inventions while the company's competitors do all they can to destroy him.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1998-03-13T00:00:00.000Z"
+  },
+  "directors": [
+    "Alex Zamm"
+  ],
+  "writers": [
+    "Al Septien (story)",
+    "Turi Meyer (story)",
+    "Al Septien (screenplay)",
+    "Turi Meyer (screenplay)",
+    "Alex Zamm (screenplay)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "2 nominations."
+  },
+  "lastupdated": "2015-08-05 01:20:46.523000000",
+  "year": 1998,
+  "imdb": {
+    "rating": 2.3,
+    "votes": 4908,
+    "id": 118836
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 1.9,
+      "numReviews": 3609,
+      "meter": 18
+    },
+    "dvd": {
+      "$date": "1998-07-14T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2.2,
+      "numReviews": 8,
+      "meter": 13
+    },
+    "lastUpdated": {
+      "$date": "2015-07-16T18:50:49.000Z"
+    },
+    "rotten": 7,
+    "production": "Trimark",
+    "fresh": 1
+  }
+},
+{
+  "_id": {
+    "$oid": "573a139af29313caabcf0d06"
+  },
+  "plot": "John Henry Irons designs weapons for the military. When his project to create weapons that harmlessly neutralize soldiers is sabotaged, he leaves in disgust. When he sees gangs are using ...",
+  "genres": [
+    "Action",
+    "Crime",
+    "Sci-Fi"
+  ],
+  "runtime": 97,
+  "rated": "PG-13",
+  "cast": [
+    "Shaquille O'Neal",
+    "Annabeth Gish",
+    "Judd Nelson",
+    "Richard Roundtree"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BODI1YzMxMjQtMzllYi00ZjFmLWI2MjQtNDMzNDJjZjQ4Y2UyXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Steel",
+  "fullplot": "John Henry Irons designs weapons for the military. When his project to create weapons that harmlessly neutralize soldiers is sabotaged, he leaves in disgust. When he sees gangs are using his weapons on the street, he uses his brains and his Uncle Joe's junkyard know-how to fight back, becoming a real man of \"steel.\"",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1997-08-15T00:00:00.000Z"
+  },
+  "directors": [
+    "Kenneth Johnson"
+  ],
+  "writers": [
+    "Louise Simonson (comic book series)",
+    "Jon Bogdanove (comic book series)",
+    "Kenneth Johnson"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-09-05 00:48:33.790000000",
+  "year": 1997,
+  "imdb": {
+    "rating": 2.7,
+    "votes": 8134,
+    "id": 120207
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 1.8,
+      "numReviews": 6945,
+      "meter": 16
+    },
+    "dvd": {
+      "$date": "1998-02-17T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 3,
+      "numReviews": 25,
+      "meter": 12
+    },
+    "lastUpdated": {
+      "$date": "2015-09-10T18:25:19.000Z"
+    },
+    "consensus": "Steel is a badly-acted movie that indulges not only in superhero cliches, but also the sappy TV-movie-of-the-week ones.",
+    "rotten": 22,
+    "production": "Warner Home Video",
+    "fresh": 3
+  }
+},
+{
+  "_id": {
+    "$oid": "573a139af29313caabcf0e67"
+  },
+  "plot": "Mom and dad dump son Cody, daughter Abby, her best friend Marcella and a baby on the farm with Grandpa and Grandma. Purple dinosaur Barney soon appears to entertain kids, and when a large ...",
+  "genres": [
+    "Adventure",
+    "Family"
+  ],
+  "runtime": 76,
+  "rated": "G",
+  "cast": [
+    "Alan Fawcett",
+    "Jane Wheeler",
+    "Kyla Pratt",
+    "Diana Rice"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BNDc5MTYxMzEyNl5BMl5BanBnXkFtZTcwMjQ4NjQyMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Barney's Great Adventure",
+  "fullplot": "Mom and dad dump son Cody, daughter Abby, her best friend Marcella and a baby on the farm with Grandpa and Grandma. Purple dinosaur Barney soon appears to entertain kids, and when a large colorful egg deposited on a farm by a shooting star is accidentally carted off, Barney and kids start their chase for it.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1998-04-03T00:00:00.000Z"
+  },
+  "directors": [
+    "Steve Gomer"
+  ],
+  "writers": [
+    "Stephen White (story)",
+    "Sheryl Leach (story)",
+    "Dennis DeShazer (story)",
+    "Stephen White"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "2 nominations."
+  },
+  "lastupdated": "2015-08-11 00:31:36.513000000",
+  "year": 1998,
+  "imdb": {
+    "rating": 2.8,
+    "votes": 2672,
+    "id": 120598
+  },
+  "countries": [
+    "Canada",
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.8,
+      "numReviews": 1504,
+      "meter": 80
+    },
+    "dvd": {
+      "$date": "2004-03-09T00:00:00.000Z"
+    },
+    "production": "Lyrick",
+    "lastUpdated": {
+      "$date": "2015-07-28T18:35:42.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a139cf29313caabcf6bbf"
+  },
+  "plot": "An inventor comes up with a time machine, but must prevent its abuse at the hands of an evil C.E.O.",
+  "genres": [
+    "Sci-Fi"
+  ],
+  "runtime": 89,
+  "rated": "PG-13",
+  "cast": [
+    "Matthew Bruch",
+    "Bonnie Pritchard",
+    "Peter Harrington",
+    "George Woodard"
+  ],
+  "num_mflix_comments": 0,
+  "title": "Time Chasers",
+  "fullplot": "Nick creates a time machine out of an airplane and a Commodore-64, and shows it to his friends by taking them 50 years into the future. Nick sells the technology to Gen-Corp, a high-tech firm run by J.K. Robertson, whose office is in the mezzanine of a shopping mall. Robertson, however, turns out to be Evil, and uses the time machine to plunder the future. With the lives of himself and his friends at stake, Nick needs to use his time machine to travel a week back in time and convince himself not to give the demo to Robertson.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1994-03-17T00:00:00.000Z"
+  },
+  "directors": [
+    "David Giancola"
+  ],
+  "writers": [
+    "David Giancola"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 0,
+    "text": "1 win."
+  },
+  "lastupdated": "2015-09-04 00:40:20.897000000",
+  "year": 1994,
+  "imdb": {
+    "rating": 2.3,
+    "votes": 2444,
+    "id": 145529
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.1,
+      "numReviews": 782,
+      "meter": 19
+    },
+    "lastUpdated": {
+      "$date": "2015-07-20T18:11:13.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a139ff29313caabd000f6"
+  },
+  "fullplot": "In the year 3000, humanity is no match for the Psychlos, a greedy, manipulative race on a quest for ultimate profit. Led by the seductive and powerful Terl, the Psychlos are stripping Earth of its resources, using the broken remnants of humanity as slaves. What is left of the human race has reverted to a primitive state, believing the invaders to be demons and technology to be evil. After humanity has all but given up any hope of freeing themselves from alien oppression, a young man named Tyler decides to leave his desolate home high in the Rocky Mountains to discover the truth, whereupon he is captured and enslaved. It is then that he decides to fight back, leading his fellow man in one final struggle for freedom.",
+  "imdb": {
+    "rating": 2.4,
+    "votes": 62491,
+    "id": 185183
+  },
+  "year": 2000,
+  "plot": "After enslavement & near extermination by an alien race in the year 3000, humanity begins to fight back.",
+  "genres": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "rated": "PG-13",
+  "metacritic": 9,
+  "title": "Battlefield Earth",
+  "lastupdated": "2015-08-22 00:46:38.017000000",
+  "languages": [
+    "English"
+  ],
+  "writers": [
+    "Corey Mandell (screenplay)",
+    "J.D. Shapiro (screenplay)",
+    "L. Ron Hubbard (novel)"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.battlefieldearth.net",
+    "viewer": {
+      "rating": 1.6,
+      "numReviews": 53847,
+      "meter": 11
+    },
+    "dvd": {
+      "$date": "2001-01-16T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2.3,
+      "numReviews": 148,
+      "meter": 3
+    },
+    "lastUpdated": {
+      "$date": "2015-08-30T20:10:27.000Z"
+    },
+    "consensus": "Ugly, campy, and poorly acted, Battlefield Earth is a stunningly misguided, aggressively bad sci-fi folly.",
+    "rotten": 144,
+    "production": "Warner Bros. Pictures",
+    "fresh": 4
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTg0Njk2OTM3OF5BMl5BanBnXkFtZTYwNTAyMzc3._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 2,
+  "released": {
+    "$date": "2000-05-12T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 10,
+    "nominations": 2,
+    "text": "10 wins & 2 nominations."
+  },
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "John Travolta",
+    "Barry Pepper",
+    "Forest Whitaker",
+    "Kim Coates"
+  ],
+  "directors": [
+    "Roger Christian"
+  ],
+  "runtime": 118
+},
+{
+  "_id": {
+    "$oid": "573a13a0f29313caabd036d6"
+  },
+  "plot": "An entire nation's destiny lies in the hands of one man.",
+  "genres": [
+    "Adventure",
+    "Biography",
+    "Drama"
+  ],
+  "runtime": 120,
+  "rated": "R",
+  "cast": [
+    "Christopher Lambert",
+    "Klaus Maria Brandauer",
+    "Max von Sydow",
+    "Inès Sastre"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTcyMjgxMjcwNV5BMl5BanBnXkFtZTcwOTkxMDAyMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Gaul",
+  "fullplot": "Young Vercingetorix came of age in 60 B.C., as soldiers of the Roman Empire ran roughshod over Gaul and his father was captured and executed by Romans. A wise and philosophical druid, Guttuart, tells the angry Vercingetorix that he should seek justice by winning freedom for Gaul from the Romans. As an adult, Vercingetorix becomes a brave and insightful warrior, and at first joins forces with the charismatic Julius Caesar. But in time Vercingetorix is betrayed by the great leader, and soon he raises an army of his own to defeat Caesar and bring Guttuart's prophesy to life.",
+  "languages": [
+    "French",
+    "English"
+  ],
+  "released": {
+    "$date": "2001-01-24T00:00:00.000Z"
+  },
+  "directors": [
+    "Jacques Dorfmann"
+  ],
+  "writers": [
+    "Jacques Dorfmann (screenplay)",
+    "Jacques Dorfmann (story)",
+    "Rospo Pallenberg (screenplay)",
+    "Norman Spinrad (screenplay)",
+    "Anne de Leseleuc (story)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-22 00:40:07.813000000",
+  "year": 2001,
+  "imdb": {
+    "rating": 2.7,
+    "votes": 4371,
+    "id": 199481
+  },
+  "countries": [
+    "France",
+    "Canada",
+    "Belgium"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2,
+      "numReviews": 2436,
+      "meter": 14
+    },
+    "dvd": {
+      "$date": "2001-12-11T00:00:00.000Z"
+    },
+    "production": "Sony Pictures Home Entertainment",
+    "lastUpdated": {
+      "$date": "2015-07-28T18:51:54.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13a0f29313caabd03d79"
+  },
+  "plot": "A series of comedic short films guaranteed to offend.",
+  "genres": [
+    "Comedy"
+  ],
+  "runtime": 88,
+  "rated": "R",
+  "cast": [
+    "Barbara Snellenburg",
+    "Rebekah Chaney",
+    "Gloria Sperling",
+    "Chris Watson"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTU5MjY3OTE4MV5BMl5BanBnXkFtZTYwOTMwMzg5._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Underground Comedy Movie",
+  "fullplot": "A series of comedic short films guaranteed to offend.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1999-05-14T00:00:00.000Z"
+  },
+  "directors": [
+    "Vince Offer"
+  ],
+  "writers": [
+    "Vince Offer",
+    "Dante (writer of Sushi mama)"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 0,
+    "text": "1 win."
+  },
+  "lastupdated": "2015-08-14 01:28:20.443000000",
+  "year": 1999,
+  "imdb": {
+    "rating": 2.5,
+    "votes": 2345,
+    "id": 201290
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.vcientertainment.com/Film-Categories?product_id=116",
+    "viewer": {
+      "rating": 2.2,
+      "numReviews": 1223,
+      "meter": 18
+    },
+    "dvd": {
+      "$date": "2004-09-28T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2.9,
+      "numReviews": 6,
+      "meter": 33
+    },
+    "lastUpdated": {
+      "$date": "2015-09-15T19:00:49.000Z"
+    },
+    "rotten": 4,
+    "production": "VCI Entertainment",
+    "fresh": 2
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13a3f29313caabd0e8eb"
+  },
+  "plot": "The big thing in 2005 is a violent sport which can have some pretty serious consequences... like dying.",
+  "genres": [
+    "Action",
+    "Sci-Fi",
+    "Sport"
+  ],
+  "runtime": 98,
+  "metacritic": 14,
+  "rated": "R",
+  "cast": [
+    "Chris Klein",
+    "Jean Reno",
+    "LL Cool J",
+    "Rebecca Romijn"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMjA3OTk4NDE1OV5BMl5BanBnXkFtZTcwODAyOTY2NA@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Rollerball",
+  "fullplot": "Johnathan Cross, a lover of extreme sports, is recruited by Alexi Petrovich to star in his sportive invention, Rollerball. Johnathan accepts and learns the ropes of Rollerball: The players are on Rollerblades, trying to bring a heavy metal ball into a high goal. Also, there are motorcyclists around to bring momentum to the players. Oh yes, and there are no rules in the game. During his skyrocketing career, Johnathan has to experience what Alexi has found out: Blood brings more viewing pleasure to the audience. So, Alexi starts to bribe members of the different teams to cause more trouble than necessary on the field, and the viewers love it. Only a little later, Johnathan's life is already in extreme danger as well as those of his friends and teammates. In a final game, Johnathan and his team have to fight for mere survival against their real opponent - their boss Alexi Petrovich.",
+  "languages": [
+    "English",
+    "Russian",
+    "French",
+    "Arabic",
+    "Korean",
+    "German",
+    "Japanese"
+  ],
+  "released": {
+    "$date": "2002-02-08T00:00:00.000Z"
+  },
+  "directors": [
+    "John McTiernan"
+  ],
+  "writers": [
+    "William Harrison (short story \"Roller Ball Murder\")",
+    "William Harrison",
+    "Larry Ferguson (screenplay)",
+    "John Pogue (screenplay)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "2 nominations."
+  },
+  "lastupdated": "2015-08-22 00:57:43.517000000",
+  "year": 2002,
+  "imdb": {
+    "rating": 2.9,
+    "votes": 21493,
+    "id": 246894
+  },
+  "countries": [
+    "USA",
+    "Germany",
+    "Japan"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.rollerball.com",
+    "viewer": {
+      "rating": 2.1,
+      "numReviews": 36751,
+      "meter": 14
+    },
+    "dvd": {
+      "$date": "2006-01-10T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2.6,
+      "numReviews": 117,
+      "meter": 3
+    },
+    "boxOffice": "$18.9M",
+    "consensus": "Removing the social critique of the original, this updated version of Rollerball is violent, confusing, and choppy. Klein makes for a bland hero.",
+    "rotten": 113,
+    "production": "MGM/UA Distribution Company",
+    "lastUpdated": {
+      "$date": "2015-09-12T19:42:08.000Z"
+    },
+    "fresh": 4
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13a4f29313caabd122b1"
+  },
+  "plot": "Corporate smuggling of South American killer bees into the United States results in huge swarms terrorizing the northern hemisphere. A small team of scientists work desperately to destroy ...",
+  "genres": [
+    "Horror",
+    "Sci-Fi",
+    "Thriller"
+  ],
+  "runtime": 83,
+  "rated": "PG",
+  "cast": [
+    "John Saxon",
+    "Angel Tompkins",
+    "John Carradine",
+    "Claudio Brook"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BZGFkZmI0YTEtNGQ4Yi00NmRmLWE5MGYtMzM3NTZkM2U0M2I5XkEyXkFqcGdeQXVyMTQ2MjQyNDc@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Bees",
+  "fullplot": "Corporate smuggling of South American killer bees into the United States results in huge swarms terrorizing the northern hemisphere. A small team of scientists work desperately to destroy the threat, but the bees soon mutate into a super-intelligent species that threatens the world.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1978-11-01T00:00:00.000Z"
+  },
+  "directors": [
+    "Alfredo Zacarèas"
+  ],
+  "writers": [
+    "Alfredo Zacarèas (original story)"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 0,
+    "text": "1 win."
+  },
+  "lastupdated": "2015-08-30 23:59:12.543000000",
+  "year": 1978,
+  "imdb": {
+    "rating": 2.9,
+    "votes": 484,
+    "id": 75620
+  },
+  "countries": [
+    "Mexico",
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.7,
+      "numReviews": 267,
+      "meter": 9
+    },
+    "dvd": {
+      "$date": "2013-09-17T00:00:00.000Z"
+    },
+    "production": "MVD Entertainment Group",
+    "lastUpdated": {
+      "$date": "2015-08-18T19:25:48.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13a5f29313caabd14377"
+  },
+  "fullplot": "In this high-adventure sequel the baby geniuses find themselves at the center of a nefarious scheme led by powerful media mogul Bill Biscane. Joining the babies in their battle against evil is a legendary baby named Kahuna. Part ultra-cool spy, part superhero, Kahuna joins babies Archie, Finkleman, Alex and Rosita in a race against time to stop the villainous Biscane from using his state-of-the-art satellite system to control the minds of the world's population.",
+  "imdb": {
+    "rating": 1.9,
+    "votes": 23802,
+    "id": 270846
+  },
+  "year": 2004,
+  "plot": "A group of smart-talking toddlers find themselves at the center of a media mogul's experiment to crack the code to baby talk. The toddlers must race against time for the sake of babies everywhere.",
+  "genres": [
+    "Comedy",
+    "Family",
+    "Sci-Fi"
+  ],
+  "rated": "PG",
+  "metacritic": 9,
+  "title": "Superbabies: Baby Geniuses 2",
+  "lastupdated": "2015-09-15 03:59:20.790000000",
+  "languages": [
+    "English"
+  ],
+  "writers": [
+    "Steven Paul (story)",
+    "Gregory Poppen (screenplay)"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.sonypictures.com/movies/superbabiesbabygeniuses2/index.html",
+    "viewer": {
+      "rating": 2,
+      "numReviews": 6978,
+      "meter": 20
+    },
+    "dvd": {
+      "$date": "2005-01-04T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2.2,
+      "numReviews": 45,
+      "meter": 0
+    },
+    "boxOffice": "$9.0M",
+    "consensus": "A startling lack of taste pervades Superbabies, a sequel offering further proof that bad jokes still aren't funny when coming from the mouths of babes.",
+    "rotten": 45,
+    "production": "Sony",
+    "lastUpdated": {
+      "$date": "2015-09-11T18:35:27.000Z"
+    },
+    "fresh": 0
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BNjY4NjM3MjQ2OF5BMl5BanBnXkFtZTcwOTc3NzYyMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 1,
+  "released": {
+    "$date": "2004-08-27T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 0,
+    "nominations": 4,
+    "text": "4 nominations."
+  },
+  "countries": [
+    "Germany",
+    "UK",
+    "USA"
+  ],
+  "cast": [
+    "Jon Voight",
+    "Scott Baio",
+    "Vanessa Angel",
+    "Skyler Shaye"
+  ],
+  "directors": [
+    "Bob Clark"
+  ],
+  "runtime": 88
+},
+{
+  "_id": {
+    "$oid": "573a13a7f29313caabd1b0d8"
+  },
+  "fullplot": "Gigli, a lowly and inept hitman, is assigned a job by the mob to kidnap an intellectually disabled brother of a California district attorney. Gigli abducts the brother from his mental hospital and holds him hostage in his apartment. Ricki, a \"lesbian assassin\", is sent to oversee Gigli's job and make sure he doesn't screw it up. Comedic high jinks ensue as the two go on the lam and start to fall in love.",
+  "imdb": {
+    "rating": 2.3,
+    "votes": 40105,
+    "id": 299930
+  },
+  "year": 2003,
+  "plot": "The violent story about how a criminal lesbian, a tough-guy hit-man with a heart of gold, and a mentally challenged man came to be best friends through a hostage.",
+  "genres": [
+    "Comedy",
+    "Crime",
+    "Romance"
+  ],
+  "rated": "R",
+  "metacritic": 18,
+  "title": "Gigli",
+  "lastupdated": "2015-08-16 00:01:30.150000000",
+  "languages": [
+    "English"
+  ],
+  "writers": [
+    "Martin Brest"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 1.7,
+      "numReviews": 78,
+      "meter": 0
+    },
+    "dvd": {
+      "$date": "2005-01-25T00:00:00.000Z"
+    },
+    "lastUpdated": {
+      "$date": "2015-08-14T18:35:33.000Z"
+    }
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTE5MTYxMDg5NV5BMl5BanBnXkFtZTYwNjc5MzQ3._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 0,
+  "released": {
+    "$date": "2003-08-01T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 7,
+    "nominations": 6,
+    "text": "7 wins & 6 nominations."
+  },
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Ben Affleck",
+    "Terry Camilleri",
+    "David Backus",
+    "Lenny Venito"
+  ],
+  "directors": [
+    "Martin Brest"
+  ],
+  "runtime": 121
+},
+{
+  "_id": {
+    "$oid": "573a13a9f29313caabd1f353"
+  },
+  "plot": "A group of college students go to a rave on a mysterious island, but get trapped there because it's taken over by blood-feasting zombies.",
+  "genres": [
+    "Action",
+    "Horror"
+  ],
+  "runtime": 90,
+  "metacritic": 15,
+  "rated": "R",
+  "cast": [
+    "Jonathan Cherry",
+    "Tyron Leitso",
+    "Clint Howard",
+    "Ona Grauer"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BNzlmNTFlN2QtM2IxZi00NDc0LTgyMTQtNDNjNTBmODQzZDVjXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_SX677_AL_.jpg",
+  "title": "House of the Dead",
+  "fullplot": "This film is a prequel to all of the The House of the Dead video games. Set on an island off the coast, a techno rave party attracts a diverse group of college coeds and a Coast Guard officer. Soon, they discover that their X-laced escapades are to be interrupted by zombies and monsters that attack them on the ground, from the air, and in the sea, ruled by an evil entity in the House of the Dead...",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2003-10-10T00:00:00.000Z"
+  },
+  "directors": [
+    "Uwe Boll"
+  ],
+  "writers": [
+    "Mark A. Altman (story)",
+    "Dan Bates (story)",
+    "Dave Parker (screenplay)",
+    "Mark A. Altman (screenplay)"
+  ],
+  "awards": {
+    "wins": 2,
+    "nominations": 0,
+    "text": "2 wins."
+  },
+  "lastupdated": "2015-09-02 00:47:03.303000000",
+  "year": 2003,
+  "imdb": {
+    "rating": 2,
+    "votes": 30951,
+    "id": 317676
+  },
+  "countries": [
+    "Germany",
+    "Canada",
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.house-of-the-dead.com/",
+    "viewer": {
+      "rating": 1.9,
+      "numReviews": 46880,
+      "meter": 10
+    },
+    "dvd": {
+      "$date": "2004-01-27T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 1.9,
+      "numReviews": 57,
+      "meter": 4
+    },
+    "boxOffice": "$10.2M",
+    "consensus": "A grungy, disjointed, mostly brainless mess of a film, House of the Dead is nonetheless loaded with unintentional laughs.",
+    "rotten": 55,
+    "production": "Artisan",
+    "lastUpdated": {
+      "$date": "2015-08-15T18:23:20.000Z"
+    },
+    "fresh": 2
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13abf29313caabd24430"
+  },
+  "fullplot": "Spring break in Miami is the scene. It's where surf-drenched guys cruise girls in bikinis and raucous parties rule day and night. It's the perfect time and place for three young women from Texas and a trio of college guys from Pennsylvania to find adventure and maybe even fall in love. In a Texas dive bar, Kelly is singing her heart out to a few local yokels when her best friends Kaya and Alexa try and tempt her away for some fun in the Florida sun. It's an easy sell--even for the cautious Kelly - and the three head for Miami. Making their way to the same destination is the \"Pennsylvania Posse\": college students Justin, Brandon, and Eddie. Justin and Brandon are smooth-talking party promoters, while Eddie's primed to meet Lizzie, the cyber dream girl he's been e-mailing for months. Miami Beach, beating with a rhythm all its own, is teeming with beautiful people. Kelly's friends are drawn into the beachside fun, while Kelly tentatively navigates a sea of strangers. When her eyes meet Justin's, everything changes--in an instant. While Kaya and Alexa are content to survey the parade of eye candy, Kelly's now only interested in the guy with the irresistible smile. The feeling is mutual, and Justin's on fire. But as luck would have it, he loses Kelly's number--and boy-crazy Alexa has already set her sights on Justin. She will stop at nothing--even betraying a friend--to nab Justin as her own. Will true love win out for the star-crossed Justin and Kelly?",
+  "imdb": {
+    "rating": 2.1,
+    "votes": 23312,
+    "id": 339034
+  },
+  "year": 2003,
+  "plot": "A waitress from Texas and a college student from Pennsylvania meet during spring break in Fort Lauderdale, Florida and come together through their shared love of singing.",
+  "genres": [
+    "Comedy",
+    "Musical",
+    "Romance"
+  ],
+  "rated": "PG",
+  "metacritic": 14,
+  "title": "From Justin to Kelly",
+  "lastupdated": "2015-09-12 00:19:17.130000000",
+  "languages": [
+    "English"
+  ],
+  "writers": [
+    "Kim Fuller"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.fromjustintokelly.com/",
+    "viewer": {
+      "rating": 2.1,
+      "numReviews": 52916,
+      "meter": 37
+    },
+    "dvd": {
+      "$date": "2003-08-26T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2.7,
+      "numReviews": 63,
+      "meter": 10
+    },
+    "boxOffice": "$4.6M",
+    "consensus": "A notorious stinker, From Justin To Kelly features banal songs, a witless plot, and non-existent chemistry between its American Idol-sanctioned leads.",
+    "rotten": 57,
+    "production": "20th Century Fox",
+    "lastUpdated": {
+      "$date": "2015-09-03T18:42:15.000Z"
+    },
+    "fresh": 6
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTM1MjI1MDMwMl5BMl5BanBnXkFtZTYwNzk3Njk5._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 0,
+  "released": {
+    "$date": "2003-06-20T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 2,
+    "nominations": 11,
+    "text": "2 wins & 11 nominations."
+  },
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Kelly Clarkson",
+    "Justin Guarini",
+    "Katherine Bailess",
+    "Anika Noni Rose"
+  ],
+  "directors": [
+    "Robert Iscove"
+  ],
+  "runtime": 81
+},
+{
+  "_id": {
+    "$oid": "573a13acf29313caabd28e0d"
+  },
+  "plot": "A computer chip salesman dates a software designer in a virtual reality program.",
+  "genres": [
+    "Romance",
+    "Sci-Fi"
+  ],
+  "runtime": 90,
+  "title": "Julie and Jack",
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTM0NDIwMzA0MV5BMl5BanBnXkFtZTcwMDUyNzUyMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "countries": [
+    "USA"
+  ],
+  "fullplot": "Jack Livingston is looking for true love. He is a successful computer chip salesman for STELLAchip Corporation in high-tech Silicon Valley. With a suggestion from his best friend, Mark Stevens, he reluctantly subscribes to an Internet dating service, CupidMatchmaker.net where he meets Julie Romanov, a beautiful genius computer software developer. Jack falls madly in love with Julie. Julie and Jack begin an intense and passionate affair. With Julie, Jack has found his soulmate. And love is forever. But this seemingly perfect love is more than he had visioned. And so Jack's love for Julie is put to the ultimate test!",
+  "languages": [
+    "English"
+  ],
+  "cast": [
+    "Jenn Gotzon",
+    "Tippi Hedren",
+    "Justin Kunkle",
+    "Patsy van Ettinger"
+  ],
+  "directors": [
+    "James Nguyen"
+  ],
+  "writers": [
+    "James Nguyen (screenplay)",
+    "James Nguyen (original story)",
+    "Joe Bright"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 0,
+    "text": "1 win."
+  },
+  "lastupdated": "2015-02-07 07:09:36.620000000",
+  "year": 2003,
+  "imdb": {
+    "rating": 2.5,
+    "votes": 194,
+    "id": 358551
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2,
+      "numReviews": 74,
+      "meter": 15
+    },
+    "dvd": {
+      "$date": "2006-06-20T00:00:00.000Z"
+    },
+    "lastUpdated": {
+      "$date": "2015-08-17T19:12:06.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13acf29313caabd2970e"
+  },
+  "plot": "Sixteen American college students drink, flirt, fight and canoodle during their Spring Break vacation in Cancun, Mexico.",
+  "genres": [
+    "Documentary"
+  ],
+  "runtime": 96,
+  "metacritic": 34,
+  "rated": "R",
+  "cast": [
+    "Benjamin Fletcher",
+    "Nicole Frilot",
+    "Roxanne Frilot",
+    "David Ingber"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTk1NDA0ODUyOF5BMl5BanBnXkFtZTYwMzI4NTA3._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Real Cancun",
+  "fullplot": "After a nationwide casting search including college campuses across the country--Arizona State University, University of Oklahoma, University of Vermont, University of Wisconsin at Madison, University of Georgia, Texas Tech, Boston University and Washington State University--the filmmakers cast a unique collection of real people ready to explore reality's barriers beyond the limits of television, while on the ultimate Spring Break vacation, with surprising results. Designed to be the first true reality feature film, six camera crews followed the cast--made up of 16 American college students--and filmed their exploits as they immersed and indulged in the Spring Break revelry of Cancun, Mexico. Filmed 24 hours a day over the course of a week in March 2003, the movie was shot on location and reveals the students' exploits through interviews and planned group activities, as well as through their own spontaneous adventures.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2003-04-25T00:00:00.000Z"
+  },
+  "directors": [
+    "Rick de Oliveira"
+  ],
+  "writers": [
+    "Brian Caldirola"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 3,
+    "text": "3 nominations."
+  },
+  "lastupdated": "2015-08-09 00:53:50.350000000",
+  "year": 2003,
+  "imdb": {
+    "rating": 2.7,
+    "votes": 3600,
+    "id": 360916
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.therealcancun.com",
+    "viewer": {
+      "rating": 2.2,
+      "numReviews": 4921,
+      "meter": 28
+    },
+    "dvd": {
+      "$date": "2003-07-01T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 4.2,
+      "numReviews": 88,
+      "meter": 35
+    },
+    "boxOffice": "$3.7M",
+    "consensus": "The footage is predictable and rather tame, and most of the people are uninteresting.",
+    "rotten": 57,
+    "production": "New Line Cinema",
+    "lastUpdated": {
+      "$date": "2015-07-28T18:51:10.000Z"
+    },
+    "fresh": 31
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13adf29313caabd29bb2"
+  },
+  "plot": "Tim Avery, an aspiring cartoonist, finds himself in a predicament when his dog stumbles upon the mask of Loki. Then after conceiving an infant son \"born of the mask\", he discovers just how looney child raising can be.",
+  "genres": [
+    "Adventure",
+    "Comedy",
+    "Family"
+  ],
+  "runtime": 94,
+  "metacritic": 20,
+  "rated": "PG",
+  "cast": [
+    "Jamie Kennedy",
+    "Alan Cumming",
+    "Liam Falconer",
+    "Ryan Falconer"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTI3Mjg5NjI3OV5BMl5BanBnXkFtZTcwNDkwODcyMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Son of the Mask",
+  "lastupdated": "2015-09-17 01:39:05.810000000",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2005-02-18T00:00:00.000Z"
+  },
+  "directors": [
+    "Lawrence Guterman"
+  ],
+  "writers": [
+    "Lance Khazei"
+  ],
+  "awards": {
+    "wins": 2,
+    "nominations": 7,
+    "text": "2 wins & 7 nominations."
+  },
+  "year": 2005,
+  "imdb": {
+    "rating": 2.1,
+    "votes": 37267,
+    "id": 362165
+  },
+  "countries": [
+    "USA",
+    "Germany"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.sonofthemask.com/",
+    "viewer": {
+      "rating": 2,
+      "numReviews": 38383,
+      "meter": 16
+    },
+    "dvd": {
+      "$date": "2005-05-17T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2.8,
+      "numReviews": 104,
+      "meter": 6
+    },
+    "boxOffice": "$17.0M",
+    "consensus": "Overly frantic, painfully unfunny, and sorely missing the presence of Jim Carrey.",
+    "rotten": 98,
+    "production": "New Line Cinema",
+    "lastUpdated": {
+      "$date": "2015-09-03T18:04:46.000Z"
+    },
+    "fresh": 6
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13adf29313caabd2b003"
+  },
+  "plot": "A holiday to the South Pacific turns awry, when Cousin Eddie's family and a tour guide are shipwrecked on an island.",
+  "genres": [
+    "Comedy"
+  ],
+  "runtime": 83,
+  "rated": "TV-14",
+  "cast": [
+    "Kate Bradley Simmons",
+    "Jake Thomas",
+    "Randy Quaid",
+    "Fred Willard"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BZWVmZDlmMWUtNDczNy00ZWY3LWE4YWQtZTViYmMzYWNlYzllXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Christmas Vacation 2: Cousin Eddie's Island Adventure",
+  "fullplot": "Though Eddie's fired right at Christmastime, his boss sends him and his family on a South Pacific vacation, hoping Eddie won't sue him after being bitten by a lab monkey. When the Tuttle family winds up trapped on a tropical island, however, Eddie manages to provide for everyone and prove himself a real man.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2003-12-20T00:00:00.000Z"
+  },
+  "directors": [
+    "Nick Marck"
+  ],
+  "writers": [
+    "Matty Simmons"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-05 00:33:49.537000000",
+  "year": 2003,
+  "imdb": {
+    "rating": 2.7,
+    "votes": 2418,
+    "id": 367623
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a13adf29313caabd2b5f7"
+  },
+  "plot": "Based on the video game, Alone in the Dark focuses on Edward Carnby, a detective of the paranormal, who slowly unravels a mysterious events with deadly results.",
+  "genres": [
+    "Horror",
+    "Sci-Fi"
+  ],
+  "runtime": 96,
+  "metacritic": 9,
+  "rated": "R",
+  "cast": [
+    "Christian Slater",
+    "Tara Reid",
+    "Stephen Dorff",
+    "Frank C. Turner"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTIxNDI5ODY2MF5BMl5BanBnXkFtZTcwNzQ1NzcyMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Alone in the Dark",
+  "fullplot": "Edward Carnby, detective of the paranormal, unexplained and supernatural, investigates a mystery (the recent death of a friend) with clues leading to \"Shadow Island\" that brings him face to face with bizarre horrors that prove both psychologically disturbing and lethal, as he discovers that evil demons worshiped by an ancient culture called the Abskani are planning on coming back to life in the 21st century to once again take over the world... and only he and a young genius anthropologist with an incredible memory (and his ex-girlfriend), Aline Cedrac, stand in their way, at a gateway to hell. Standing in Carnby's way, however, is the impact that a brief encounter with an evil spirit called the Queen had upon his mind, as he slowly finds himself overpowered by the forces of darkness as they eat away at his very sanity...",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2005-01-28T00:00:00.000Z"
+  },
+  "directors": [
+    "Uwe Boll"
+  ],
+  "writers": [
+    "Elan Mastai",
+    "Michael Roesch",
+    "Peter Scheerer"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 2,
+    "text": "1 win & 2 nominations."
+  },
+  "lastupdated": "2015-08-18 00:27:14.453000000",
+  "year": 2005,
+  "imdb": {
+    "rating": 2.3,
+    "votes": 36301,
+    "id": 369226
+  },
+  "countries": [
+    "Canada",
+    "Germany",
+    "USA"
+  ],
+  "type": "movie",
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13aef29313caabd2eadc"
+  },
+  "plot": "In the 18th century, a vampire escapes from the freak show she once participated in and teams up with a group of vampire slayers to kill the man who raped her mother.",
+  "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+  ],
+  "runtime": 95,
+  "metacritic": 18,
+  "rated": "R",
+  "cast": [
+    "Kristanna Loken",
+    "Michael Madsen",
+    "Matthew Davis",
+    "Will Sanderson"
+  ],
+  "num_mflix_comments": 2,
+  "poster": "https://m.media-amazon.com/images/M/MV5BZDE2YWFjZTctNWQyZS00ZjRjLWJiNjUtY2Y4NjNmMTg2MjI1XkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SY1000_SX677_AL_.jpg",
+  "title": "BloodRayne",
+  "fullplot": "In the Eighteenth Century, Rayne is the half-human half-vampire Dhampir and the lead attraction in a carnival's freak-show in Romania. When she escapes, she meets a fortuneteller that tells that her mother was raped by the king of the vampires Kagan and she decides to destroy her father. In her journey for revenge, she meets Vladimir and Sebastian, the leaders of the fortress of vampire hunters Brimstone, and she joins their society. She seeks for powerful talismans to defeat Kagan, while the skilled warriors Vladimir and Sebastian train her to face the forces of Kagan and her human side falls in love with Sebastian.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2006-01-06T00:00:00.000Z"
+  },
+  "directors": [
+    "Uwe Boll"
+  ],
+  "writers": [
+    "Guinevere Turner"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 6,
+    "text": "6 nominations."
+  },
+  "lastupdated": "2015-09-02 00:44:43.710000000",
+  "year": 2005,
+  "imdb": {
+    "rating": 2.8,
+    "votes": 29732,
+    "id": 383222
+  },
+  "countries": [
+    "USA",
+    "Germany"
+  ],
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a13b4f29313caabd40f7f"
+  },
+  "plot": "Seeking to offer his son the satisfying summer camp experience that eluded him as a child, the operator of a neighborhood daycare center opens his own camp, only to face financial hardship and stiff competition from a rival camp.",
+  "genres": [
+    "Comedy",
+    "Family"
+  ],
+  "runtime": 93,
+  "metacritic": 13,
+  "rated": "PG",
+  "cast": [
+    "Cuba Gooding Jr.",
+    "Lochlyn Munro",
+    "Richard Gant",
+    "Tamala Jones"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTM1NTUyMTExMF5BMl5BanBnXkFtZTcwNzk0MDI1MQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Daddy Day Camp",
+  "fullplot": "DADDY DAY CARE pals Charlie and Phil are back in this hilarious, all-new adventure: DADDY DAY CAMP! When the dads expand their childcare magic to underdog Camp Driftwood, they discover that teamwork, combined with some down-right crazy antics, is the right mix to give the kids an unforgettable camp experience!",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2007-08-08T00:00:00.000Z"
+  },
+  "directors": [
+    "Fred Savage"
+  ],
+  "writers": [
+    "Geoff Rodkey (screenplay)",
+    "J. David Stem (screenplay)",
+    "David N. Weiss (screenplay)",
+    "Geoff Rodkey (story)",
+    "Joel Cohen (story)",
+    "Alec Sokolow (story)",
+    "Geoff Rodkey (characters)"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 5,
+    "text": "1 win & 5 nominations."
+  },
+  "lastupdated": "2015-09-16 13:02:23.617000000",
+  "year": 2007,
+  "imdb": {
+    "rating": 2.8,
+    "votes": 11683,
+    "id": 462244
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.sonypictures.com/movies/daddydaycamp/",
+    "viewer": {
+      "rating": 2.8,
+      "numReviews": 160214,
+      "meter": 38
+    },
+    "dvd": {
+      "$date": "2008-01-29T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2.3,
+      "numReviews": 80,
+      "meter": 1
+    },
+    "boxOffice": "$13.2M",
+    "consensus": "A mirthless, fairly desperate family film, Daddy Day Camp relies too heavily on bodily functions for comedic effect, resulting in plenty of cheap gags but no laughs.",
+    "rotten": 79,
+    "production": "Sony Pictures",
+    "lastUpdated": {
+      "$date": "2015-08-21T18:18:23.000Z"
+    },
+    "fresh": 1
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13b4f29313caabd415e6"
+  },
+  "plot": "In a lonely road in Wucaipa, something attacks the driver of a car and her blind friend Tammy. They have a car accident; Tammy survives and is sent to the Wucaipa General Hospital. ...",
+  "genres": [
+    "Horror",
+    "Sci-Fi"
+  ],
+  "runtime": 89,
+  "rated": "R",
+  "cast": [
+    "Scott Aaronson",
+    "Brian Lloyd",
+    "Sarah McGuire",
+    "Brianna Berman"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BNTg1MjUwMzM2OF5BMl5BanBnXkFtZTcwMzUyOTIzMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Candy Stripers",
+  "fullplot": "In a lonely road in Wucaipa, something attacks the driver of a car and her blind friend Tammy. They have a car accident; Tammy survives and is sent to the Wucaipa General Hospital. Meanwhile, a high school basketball team fights with the opponents in the square and the captain Matt with a broken leg, and his injured friends Joey and Brian are sent to the same hospital. Tammy is near death and asks the candy striper nurse Janine to kiss her. While kissing as a gesture of sympathy, an alien invades the mouth of Janine and infects her; she infects others nurses, clerks, doctors and patients, initiating an exponential virus outbreak in the hospital. Joey's sister Cherie that has a crush on Matt stays with them in the hospital. When Joey is infected by a hot nurse during the night, he has webbing on the face and rush, and Matt asks Cherie to call his girlfriend Krystal to help them to leave the hospital. But the place is under quarantine and the candy stripers need sugar to procreate a breed of alien.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2006-06-27T00:00:00.000Z"
+  },
+  "directors": [
+    "Kate Robbins"
+  ],
+  "writers": [
+    "Jill Garson",
+    "Kate Robbins"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 0,
+    "text": "1 win."
+  },
+  "lastupdated": "2015-08-15 01:02:21.973000000",
+  "year": 2006,
+  "imdb": {
+    "rating": 2.9,
+    "votes": 1062,
+    "id": 463935
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.5,
+      "numReviews": 1412,
+      "meter": 21
+    },
+    "dvd": {
+      "$date": "2006-06-27T00:00:00.000Z"
+    },
+    "production": "Crackle Movies",
+    "lastUpdated": {
+      "$date": "2015-08-20T18:57:15.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13b4f29313caabd41ecd"
+  },
+  "plot": "Spoof of romantic comedies which focuses on a man, his crush, his parents, and her father.",
+  "genres": [
+    "Comedy",
+    "Romance"
+  ],
+  "runtime": 83,
+  "metacritic": 11,
+  "rated": "PG-13",
+  "cast": [
+    "Alyson Hannigan",
+    "Adam Campbell",
+    "Sophie Monk",
+    "Eddie Griffin"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTM0ODY1MDI2NV5BMl5BanBnXkFtZTcwMDQyMDIzMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Date Movie",
+  "fullplot": "Julia Jones is unhappy. She's overweight, spends forever working at her fathers diner, and believes she will always be lonely. This is until she meets Grant Fockyerdoder. Before they can have their dream wedding, they must meet each others parents and survive the scheming Andy.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2006-02-17T00:00:00.000Z"
+  },
+  "directors": [
+    "Aaron Seltzer",
+    "Jason Friedberg"
+  ],
+  "writers": [
+    "Jason Friedberg",
+    "Aaron Seltzer"
+  ],
+  "awards": {
+    "wins": 2,
+    "nominations": 0,
+    "text": "2 wins."
+  },
+  "lastupdated": "2015-08-24 00:02:00.120000000",
+  "year": 2006,
+  "imdb": {
+    "rating": 2.7,
+    "votes": 48000,
+    "id": 466342
+  },
+  "countries": [
+    "USA",
+    "Switzerland"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.datemoviethemovie.com/",
+    "viewer": {
+      "rating": 2.8,
+      "numReviews": 513922,
+      "meter": 34
+    },
+    "dvd": {
+      "$date": "2006-05-30T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2.5,
+      "numReviews": 84,
+      "meter": 7
+    },
+    "boxOffice": "$48.5M",
+    "consensus": "In an attempt to parody rom-com cliches, Date Movie ultimately makes a mockery of itself, with juvenile toilet humor and empty pop culture references.",
+    "rotten": 78,
+    "production": "20th Century Fox",
+    "lastUpdated": {
+      "$date": "2015-09-15T18:39:28.000Z"
+    },
+    "fresh": 6
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13b6f29313caabd477fa"
+  },
+  "plot": "With the help of his uncle, a man travels to the future to try and bring his girlfriend back to life.",
+  "genres": [
+    "Action",
+    "Adventure",
+    "Drama"
+  ],
+  "runtime": 180,
+  "cast": [
+    "Harman Baweja",
+    "Priyanka Chopra",
+    "Boman Irani",
+    "Archana Puran Singh"
+  ],
+  "num_mflix_comments": 0,
+  "title": "Love Story 2050",
+  "fullplot": "Tells the story about Karan, a young, spirited, sporty boy who lives life off the rules and Sana, a young petite, shy girl who lives life by the rules. This develops into a magical love story. Karan's uncle, Dr. Yatinder Khanna's much developed time machine finally works. Sana expresses her wish to travel ahead in time to Mumbai in the future. We land in Mumbai 2050 in the time machine... along with Uncle Yatinder, Rahul and Thea (Sana's younger brother and sister). Flying cars, 200 storey buildings, robots and sky rails have changed the very face of Mumbai. Through a series of twists and turns, the time traveler Karan finds himself separating from his love. QT, a friendly femme robot and Boo, a small robotic teddy bear play their distinct roles in bringing their love story together but soon find themselves under the threat of the demi-god of the future, Dr. Hoshi. Will Karan be able to overcome the threat of Dr. Hoshi and win his love and travel back in time?",
+  "languages": [
+    "Hindi"
+  ],
+  "released": {
+    "$date": "2008-07-04T00:00:00.000Z"
+  },
+  "directors": [
+    "Harry Baweja"
+  ],
+  "writers": [
+    "Harry Baweja (story)",
+    "Bhavani Iyer (additional screenplay)",
+    "Mayur Puri (dialogue)",
+    "Karan Razdan (additional screenplay)",
+    "Prem Soni (additional screenplay)",
+    "Suparn Verma (additional screenplay)"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 0,
+    "text": "1 win."
+  },
+  "lastupdated": "2015-08-23 00:22:04.750000000",
+  "year": 2008,
+  "imdb": {
+    "rating": 2.7,
+    "votes": 1687,
+    "id": 490170
+  },
+  "countries": [
+    "Australia",
+    "India"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.5,
+      "numReviews": 2337,
+      "meter": 23
+    },
+    "dvd": {
+      "$date": "2008-10-07T00:00:00.000Z"
+    },
+    "production": "BIGFlix",
+    "lastUpdated": {
+      "$date": "2015-08-15T18:48:14.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13b8f29313caabd4b94b"
+  },
+  "plot": "When a rap mogul from Atlanta tries to join a conservative country club in the Carolinas he runs into fierce opposition from the board President- but it's nothing that he and his entourage can't handle.",
+  "genres": [
+    "Comedy",
+    "Sport"
+  ],
+  "runtime": 93,
+  "metacritic": 18,
+  "rated": "PG-13",
+  "cast": [
+    "Mick Partridge",
+    "Big Boi",
+    "Faizon Love",
+    "Sherri Shepherd"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTY1MDQwMTYxNF5BMl5BanBnXkFtZTcwMTAwOTM1MQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Who's Your Caddy?",
+  "fullplot": "When a rap mogul from Atlanta tries to join a conservative country club in the Carolinas he runs into fierce opposition from the board President- but it's nothing that he and his entourage can't handle.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2007-07-27T00:00:00.000Z"
+  },
+  "directors": [
+    "Don Michael Paul"
+  ],
+  "writers": [
+    "Don Michael Paul",
+    "Bradley Allenstein",
+    "Robert Henny"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 1,
+    "text": "1 win & 1 nomination."
+  },
+  "lastupdated": "2015-08-29 00:28:44.203000000",
+  "year": 2007,
+  "imdb": {
+    "rating": 2,
+    "votes": 13668,
+    "id": 785077
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.whosyourcaddythemovie.com/",
+    "viewer": {
+      "rating": 3.3,
+      "numReviews": 40947,
+      "meter": 58
+    },
+    "dvd": {
+      "$date": "2007-11-27T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2.4,
+      "numReviews": 35,
+      "meter": 6
+    },
+    "boxOffice": "$5.5M",
+    "consensus": "A juvenile, uninspired retread of Caddyshack, Who's Your Caddy? is unoriginal, unfunny, and just plain forgettable.",
+    "rotten": 33,
+    "production": "Dimension Films",
+    "lastUpdated": {
+      "$date": "2015-08-15T18:32:12.000Z"
+    },
+    "fresh": 2
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13b8f29313caabd4c74a"
+  },
+  "fullplot": "Four troubled orphans from four separate movie scenarios who are bound together in a wacky chocolate factory after receiving golden tickets to go on an 'epic adventure.' After they escape from the clutches of a very scary Willy Wonka they discover the magical world of 'Gnarnia' through an enchanted wardrobe. There they must seek the help of a randy lion, a hoard of mutants from the x academy, students of witchcraft and wizardry, funky swash-buckling pirates and a mischievous beaver to defeat the evil white bitch!",
+  "imdb": {
+    "rating": 2.3,
+    "votes": 85325,
+    "id": 799949
+  },
+  "year": 2007,
+  "plot": "A comedic satire of films that are large in scope, reputation and popularity",
+  "genres": [
+    "Adventure",
+    "Comedy"
+  ],
+  "rated": "PG-13",
+  "metacritic": 17,
+  "title": "Epic Movie",
+  "lastupdated": "2015-09-04 00:22:34.133000000",
+  "languages": [
+    "English"
+  ],
+  "writers": [
+    "Jason Friedberg",
+    "Aaron Seltzer"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.myspace.com/EpicMovie",
+    "viewer": {
+      "rating": 2.4,
+      "numReviews": 560191,
+      "meter": 29
+    },
+    "dvd": {
+      "$date": "2007-05-22T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2.3,
+      "numReviews": 64,
+      "meter": 2
+    },
+    "boxOffice": "$39.7M",
+    "consensus": "A crude comedy with nothing new or insightful to say about the subjects it satirizes.",
+    "rotten": 63,
+    "production": "20th Century Fox",
+    "lastUpdated": {
+      "$date": "2015-09-17T17:32:33.000Z"
+    },
+    "fresh": 1
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTA3NDM5ODU3NzleQTJeQWpwZ15BbWU3MDgyMjgyNDE@._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 3,
+  "released": {
+    "$date": "2007-01-26T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 2,
+    "nominations": 3,
+    "text": "2 wins & 3 nominations."
+  },
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Kal Penn",
+    "Adam Campbell",
+    "Jennifer Coolidge",
+    "Jayma Mays"
+  ],
+  "directors": [
+    "Jason Friedberg",
+    "Aaron Seltzer"
+  ],
+  "runtime": 86
+},
+{
+  "_id": {
+    "$oid": "573a13b8f29313caabd4cb4e"
+  },
+  "fullplot": "Four best friends start high school. Each one is unique and likes their own thing. When Meredith, the most popular girl, sees this she automatically knows they are trouble. Eventually though Cloe joins the soccer team and hangs out with them, Sasha joins the cheer leading squad and hangs out with the cheerleaders, Jade is part of the math club so she hangs out with them, and Yasmin is left all alone. After years of not talking to each other Jade and Yasmin speak a few words in the restroom but Yasmin doesn't have the courage to tell Jade she misses her. Then the four girls are reunited when they are sent to detention for causing a food fight. After the girls are reunited they find out they are not invited to a huge party given by Meredith Then Cloe finds out that her mom got a job serving food at the party. They are forced to work for Meredith Then at the party Meredith decides to expose Yasmins secret which is her dancing and singing with a face mask. Then Yasmins friend(who she has a crush on) starts doing a dance and then everybody joins in and Meredith is humiliated. When Meredith accidentally gets thrown into the pool she calls the four best friends \"bratz.\" The girls then decide to be part of the talent show to win a scholarship. Meredith is always the one who wins but the \"bratz\" are prepared to take her down. But when Meredith finds she threatens Yasmin by telling her that if she continued preparing for the show she would expose her friends secrets. Yasmin decides to call everything off. At the end the girls still do the talent show and they tell everybody there secrets who turn out not to be so bad. The girls win and they each end up with their crushes. The girls decide to give Cloe the scholarship. The movie ends with the girls walking down a red carpet.",
+  "imdb": {
+    "rating": 2.7,
+    "votes": 14048,
+    "id": 804452
+  },
+  "year": 2007,
+  "plot": "During their first year of high school, four best girlfriends face off against the domineering student body president who wants to split them up into different social cliques.",
+  "genres": [
+    "Comedy",
+    "Family",
+    "Music"
+  ],
+  "rated": "PG",
+  "metacritic": 21,
+  "title": "Bratz",
+  "lastupdated": "2015-09-07 00:52:47.810000000",
+  "languages": [
+    "English",
+    "Spanish"
+  ],
+  "writers": [
+    "Susan Estelle Jansen (screenplay)",
+    "Adam De La Peèa (story)",
+    "David Eilenberg (story)"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.thebratzfilm.com",
+    "viewer": {
+      "rating": 3,
+      "numReviews": 49026,
+      "meter": 46
+    },
+    "dvd": {
+      "$date": "2007-11-27T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 3,
+      "numReviews": 77,
+      "meter": 9
+    },
+    "boxOffice": "$9.9M",
+    "consensus": "Full of mixed messages and dubious role-models, Bratz is too shallow even for its intended audience.",
+    "rotten": 70,
+    "production": "Lions Gate Films",
+    "lastUpdated": {
+      "$date": "2015-08-20T19:29:10.000Z"
+    },
+    "fresh": 7
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTUxNDIwNjQ3OV5BMl5BanBnXkFtZTcwMjMzNjM1MQ@@._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 0,
+  "released": {
+    "$date": "2007-08-03T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 0,
+    "nominations": 5,
+    "text": "5 nominations."
+  },
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Logan Browning",
+    "Janel Parrish",
+    "Nathalia Ramos",
+    "Skyler Shaye"
+  ],
+  "directors": [
+    "Sean McNamara"
+  ],
+  "runtime": 110
+},
+{
+  "_id": {
+    "$oid": "573a13b8f29313caabd4cb69"
+  },
+  "plot": "Nate moves to L.A. to track down Cristabel, the woman he's been in love with since childhood, only to discover that his plan to woo her only has one hurdle to overcome: what to do with June, Cristabel's ever-present, not-so-hot best friend? What's even more complicating is Nate's growing feelings for June, whose true beauty starts to emerge.",
+  "genres": [
+    "Comedy",
+    "Romance"
+  ],
+  "runtime": 91,
+  "metacritic": 7,
+  "rated": "PG-13",
+  "cast": [
+    "Paris Hilton",
+    "Joel David Moore",
+    "Christine Lakin",
+    "Johann Urb"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTA2NDc1ODUxNDZeQTJeQWpwZ15BbWU3MDQ1MjM1NTE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Hottie & the Nottie",
+  "fullplot": "Nate moves to L.A. to track down Cristabel, the woman he's been in love with since childhood, only to discover that his plan to woo her only has one hurdle to overcome: what to do with June, Cristabel's ever-present, not-so-hot best friend? What's even more complicating is Nate's growing feelings for June, whose true beauty starts to emerge.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2008-02-21T00:00:00.000Z"
+  },
+  "directors": [
+    "Tom Putnam"
+  ],
+  "writers": [
+    "Heidi Ferrer"
+  ],
+  "awards": {
+    "wins": 4,
+    "nominations": 4,
+    "text": "4 wins & 4 nominations."
+  },
+  "lastupdated": "2015-09-07 00:02:31.210000000",
+  "year": 2008,
+  "imdb": {
+    "rating": 1.9,
+    "votes": 32639,
+    "id": 804492
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.thehottieandthenottie.com",
+    "viewer": {
+      "rating": 2.6,
+      "numReviews": 12777,
+      "meter": 31
+    },
+    "dvd": {
+      "$date": "2008-05-06T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2.4,
+      "numReviews": 67,
+      "meter": 4
+    },
+    "lastUpdated": {
+      "$date": "2015-09-14T18:13:26.000Z"
+    },
+    "consensus": "The Hottie and the Nottie is a crass, predictable, and ineptly staged gross-out comedy that serves little purpose beyond existing as another monument to Paris Hilton's vanity.",
+    "rotten": 64,
+    "production": "Regent Releasing",
+    "fresh": 3
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13bef29313caabd5c90a"
+  },
+  "fullplot": "The heroic Spartan king Leonidas, armed with nothing but leather underwear and a cape, leads a ragtag bunch of 13 Spartan misfit warriors to defend their homeland against thousands of invading Persians whom include the Ghost Rider, Rocky Balboa, the Autobots, and an ugly hunchbacked Paris Hilton and a shaved-head Brittany Spears.",
+  "imdb": {
+    "rating": 2.7,
+    "votes": 83874,
+    "id": 1073498
+  },
+  "year": 2008,
+  "plot": "The heroic Spartan king Leonidas, armed with nothing but leather underwear and a cape, leads a ragtag bunch of 13 Spartan misfit warriors to defend their homeland against thousands of ...",
+  "genres": [
+    "Comedy"
+  ],
+  "rated": "PG-13",
+  "metacritic": 9,
+  "title": "Meet the Spartans",
+  "lastupdated": "2015-08-22 00:15:40.077000000",
+  "languages": [
+    "English"
+  ],
+  "writers": [
+    "Jason Friedberg",
+    "Aaron Seltzer"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.meetthespartans.com",
+    "viewer": {
+      "rating": 2.3,
+      "numReviews": 245291,
+      "meter": 25
+    },
+    "dvd": {
+      "$date": "2008-06-03T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 1.9,
+      "numReviews": 48,
+      "meter": 2
+    },
+    "boxOffice": "$38.2M",
+    "consensus": "A tired, unfunny, offensive waste of time, Meet the Spartans scrapes the bottom of the cinematic barrel.",
+    "rotten": 47,
+    "production": "20th Century Fox",
+    "lastUpdated": {
+      "$date": "2015-08-23T19:13:16.000Z"
+    },
+    "fresh": 1
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMDE3NDQwMF5BMl5BanBnXkFtZTcwMjA0MzU1MQ@@._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 0,
+  "released": {
+    "$date": "2008-01-25T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 0,
+    "nominations": 5,
+    "text": "5 nominations."
+  },
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Sean Maguire",
+    "Carmen Electra",
+    "Ken Davitian",
+    "Kevin Sorbo"
+  ],
+  "directors": [
+    "Jason Friedberg",
+    "Aaron Seltzer"
+  ],
+  "runtime": 86
+},
+{
+  "_id": {
+    "$oid": "573a13bff29313caabd5e024"
+  },
+  "plot": "The young warrior Son Goku sets out on a quest, racing against time and the vengeful King Piccolo, to collect a set of seven magical orbs that will grant their wielder unlimited power.",
+  "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+  ],
+  "runtime": 85,
+  "metacritic": 45,
+  "rated": "PG",
+  "cast": [
+    "Justin Chatwin",
+    "Yun-Fat Chow",
+    "Emmy Rossum",
+    "Jamie Chung"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTYzNDM0ODQxMF5BMl5BanBnXkFtZTcwOTMyMzMzMg@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Dragonball: Evolution",
+  "fullplot": "The story begins with Goku, who seeks out upon his adoptive grandfather Grandpa Gohan's dying request to find the great Master Roshi and gather all seven Dragon Balls. Of which he has one, in order to prevent the evil Lord Piccolo from succeeding in his desire to use the Dragon Balls to take over the world. And Goku's quest is to obtain the mystical Dragonballs before Piccolo does.",
+  "languages": [
+    "English",
+    "Japanese",
+    "Hindi"
+  ],
+  "released": {
+    "$date": "2009-04-10T00:00:00.000Z"
+  },
+  "directors": [
+    "James Wong"
+  ],
+  "writers": [
+    "Ben Ramsey (screenplay)",
+    "Akira Toriyama (novel)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-20 00:53:31.517000000",
+  "year": 2009,
+  "imdb": {
+    "rating": 2.8,
+    "votes": 51618,
+    "id": 1098327
+  },
+  "countries": [
+    "USA",
+    "Hong Kong",
+    "UK"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.4,
+      "numReviews": 209530,
+      "meter": 20
+    },
+    "dvd": {
+      "$date": "2009-07-28T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 3.4,
+      "numReviews": 57,
+      "meter": 14
+    },
+    "boxOffice": "$9.4M",
+    "consensus": "Executed with little panache or invention, Dragonball Evolution lacks the magic that made the books upon which it was based a cult sensation.",
+    "rotten": 49,
+    "production": "20th Century Fox",
+    "lastUpdated": {
+      "$date": "2015-08-17T18:10:02.000Z"
+    },
+    "fresh": 8
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13bff29313caabd5f5b5"
+  },
+  "fullplot": "A 3-D concert film of the 2007 Hannah Montana/Miley Cyrus tour.",
+  "imdb": {
+    "rating": 2.3,
+    "votes": 8132,
+    "id": 1127884
+  },
+  "year": 2008,
+  "plot": "A 3-D concert film of the 2007 Hannah Montana/Miley Cyrus tour.",
+  "genres": [
+    "Documentary",
+    "Music"
+  ],
+  "rated": "G",
+  "metacritic": 59,
+  "title": "Hannah Montana & Miley Cyrus: Best of Both Worlds Concert",
+  "lastupdated": "2015-08-24 00:50:06.917000000",
+  "languages": [
+    "English"
+  ],
+  "writers": [
+    "Michael Poryes (character based on the series created by)",
+    "Rich Correll (character based on the series created by)",
+    "Barry O'Brien (character based on the series created by)"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.Disney.com/HannahMontana3D",
+    "viewer": {
+      "rating": 3.4,
+      "numReviews": 88863,
+      "meter": 68
+    },
+    "dvd": {
+      "$date": "2008-08-19T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 6,
+      "numReviews": 43,
+      "meter": 72
+    },
+    "boxOffice": "$65.1M",
+    "consensus": "This high-energy concert film should please Cyrus' rabid pre-teen fan base -- and may come as a pleasant surprise for parents.",
+    "rotten": 12,
+    "production": "Walt Disney Studios",
+    "lastUpdated": {
+      "$date": "2015-09-17T17:35:06.000Z"
+    },
+    "fresh": 31
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTI4NDIwODE4Ml5BMl5BanBnXkFtZTYwNTI5Nzc4._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 0,
+  "released": {
+    "$date": "2008-02-01T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 1,
+    "nominations": 0,
+    "text": "1 win."
+  },
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Miley Cyrus",
+    "The Jonas Brothers",
+    "Kenny Ortega",
+    "Billy Ray Cyrus"
+  ],
+  "directors": [
+    "Bruce Hendricks"
+  ],
+  "runtime": 74
+},
+{
+  "_id": {
+    "$oid": "573a13bff29313caabd60297"
+  },
+  "plot": "The young warrior Son Goku sets out on a quest, racing against time and the vengeful King Piccolo, to collect a set of seven magical orbs that will grant their wielder unlimited power.",
+  "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+  ],
+  "runtime": 85,
+  "metacritic": 45,
+  "rated": "PG",
+  "cast": [
+    "Justin Chatwin",
+    "Yun-Fat Chow",
+    "Emmy Rossum",
+    "Jamie Chung"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTYzNDM0ODQxMF5BMl5BanBnXkFtZTcwOTMyMzMzMg@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Dragonball: Evolution",
+  "fullplot": "The story begins with Goku, who seeks out upon his adoptive grandfather Grandpa Gohan's dying request to find the great Master Roshi and gather all seven Dragon Balls. Of which he has one, in order to prevent the evil Lord Piccolo from succeeding in his desire to use the Dragon Balls to take over the world. And Goku's quest is to obtain the mystical Dragonballs before Piccolo does.",
+  "languages": [
+    "English",
+    "Japanese",
+    "Hindi"
+  ],
+  "released": {
+    "$date": "2009-04-10T00:00:00.000Z"
+  },
+  "directors": [
+    "James Wong"
+  ],
+  "writers": [
+    "Ben Ramsey (screenplay)",
+    "Akira Toriyama (novel)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-09-02 22:58:21.227000000",
+  "year": 2009,
+  "imdb": {
+    "rating": 2.8,
+    "votes": 51894,
+    "id": 1098327
+  },
+  "countries": [
+    "USA",
+    "Hong Kong",
+    "UK"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.4,
+      "numReviews": 209530,
+      "meter": 20
+    },
+    "dvd": {
+      "$date": "2009-07-28T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 3.4,
+      "numReviews": 57,
+      "meter": 14
+    },
+    "boxOffice": "$9.4M",
+    "consensus": "Executed with little panache or invention, Dragonball Evolution lacks the magic that made the books upon which it was based a cult sensation.",
+    "rotten": 49,
+    "production": "20th Century Fox",
+    "lastUpdated": {
+      "$date": "2015-08-17T18:10:02.000Z"
+    },
+    "fresh": 8
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13c0f29313caabd60dfe"
+  },
+  "plot": "An innocent woman, Claire Scully is drawn into a terrorist plot to kill people through the mail using a deadly strain of TB.",
+  "genres": [
+    "Thriller"
+  ],
+  "runtime": 120,
+  "rated": "PG-13",
+  "cast": [
+    "Kristen Dalton",
+    "Sal Rendino",
+    "Kevin Interdonato",
+    "Nicole Haddad"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTU1OTUzNzcyOV5BMl5BanBnXkFtZTgwMTg3MjIwMDE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "A Dangerous Place",
+  "fullplot": "An innocent woman, Claire Scully is drawn into a terrorist plot to kill people through the mail using a deadly strain of TB.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2012-03-24T00:00:00.000Z"
+  },
+  "directors": [
+    "Gregory J. Corrado"
+  ],
+  "writers": [
+    "Gregory J. Corrado"
+  ],
+  "awards": {
+    "wins": 3,
+    "nominations": 1,
+    "text": "3 wins & 1 nomination."
+  },
+  "lastupdated": "2015-09-07 00:56:54.427000000",
+  "year": 2012,
+  "imdb": {
+    "rating": 2.8,
+    "votes": 268,
+    "id": 1155588
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 1.2,
+      "numReviews": 5,
+      "meter": 0
+    },
+    "dvd": {
+      "$date": "2013-01-08T00:00:00.000Z"
+    },
+    "production": "Corrado Schoner Production",
+    "lastUpdated": {
+      "$date": "2015-09-12T17:26:09.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13c1f29313caabd64786"
+  },
+  "plot": "A heart felt tale about a boy and his dog who set out to solve the death of the young boy's father.",
+  "genres": [
+    "Adventure",
+    "Family"
+  ],
+  "runtime": 90,
+  "rated": "PG",
+  "title": "Cop Dog",
+  "num_mflix_comments": 2,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTc2NTkxNDkyOV5BMl5BanBnXkFtZTgwMDIxMzcwMzE@._V1_SY1000_SX677_AL_.jpg",
+  "countries": [
+    "USA"
+  ],
+  "fullplot": "A heart felt tale about a boy and his dog who set out to solve the death of the young boy's father.",
+  "languages": [
+    "English"
+  ],
+  "cast": [
+    "Billy Unger",
+    "Stephanie Michels",
+    "Cassi Thomson",
+    "Kuma"
+  ],
+  "directors": [
+    "John Murlowski"
+  ],
+  "writers": [
+    "Steven Palmer Peterson (screenplay)"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 0,
+    "text": "1 win."
+  },
+  "lastupdated": "2015-09-03 00:30:13.663000000",
+  "year": 2008,
+  "imdb": {
+    "rating": 2.7,
+    "votes": 324,
+    "id": 1209380
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.1,
+      "numReviews": 98,
+      "meter": 23
+    },
+    "dvd": {
+      "$date": "2010-08-03T00:00:00.000Z"
+    },
+    "production": "Maple Island Films",
+    "lastUpdated": {
+      "$date": "2015-09-13T17:35:20.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13c1f29313caabd64b87"
+  },
+  "fullplot": "Will, Lisa, and two of their friends attempt to flee man-made and natural disasters and encounter Batman, Hancock, The Hulk, Indiana Jones, Hannah Montana, Michael Jackson, Beowulf, the Love Guru, Iron Man, rabid chipmunks amongst others in their seemingly vain efforts to seek help and shelter from unknown threats.",
+  "imdb": {
+    "rating": 1.9,
+    "votes": 71382,
+    "id": 1213644
+  },
+  "year": 2008,
+  "plot": "Over the course of one evening, an unsuspecting group of twenty-somethings find themselves bombarded by a series of natural disasters and catastrophic events.",
+  "genres": [
+    "Comedy"
+  ],
+  "rated": "PG-13",
+  "metacritic": 15,
+  "title": "Disaster Movie",
+  "lastupdated": "2015-09-07 00:21:55.677000000",
+  "languages": [
+    "English"
+  ],
+  "writers": [
+    "Jason Friedberg",
+    "Aaron Seltzer"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://disastermovie.net/",
+    "viewer": {
+      "rating": 2.2,
+      "numReviews": 128557,
+      "meter": 19
+    },
+    "dvd": {
+      "$date": "2009-01-06T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 1.8,
+      "numReviews": 70,
+      "meter": 1
+    },
+    "boxOffice": "$14.2M",
+    "consensus": "Returning to their seemingly bottomless well of flatulence humor, racial stereotypes, and stale pop culture gags, Jason Friedberg and Aaron Seltzer have produced what is arguably their worst Movie yet.",
+    "rotten": 69,
+    "production": "Lionsgate",
+    "lastUpdated": {
+      "$date": "2015-08-26T18:02:48.000Z"
+    },
+    "fresh": 1
+  },
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTIzMDQyNDgwNl5BMl5BanBnXkFtZTcwMDA0MTc3MQ@@._V1_SY1000_SX677_AL_.jpg",
+  "num_mflix_comments": 2,
+  "released": {
+    "$date": "2008-08-29T00:00:00.000Z"
+  },
+  "awards": {
+    "wins": 0,
+    "nominations": 6,
+    "text": "6 nominations."
+  },
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Matt Lanter",
+    "Vanessa Lachey",
+    "Gary 'G. Thang' Johnson",
+    "Nicole Parker"
+  ],
+  "directors": [
+    "Jason Friedberg",
+    "Aaron Seltzer"
+  ],
+  "runtime": 87
+},
+{
+  "_id": {
+    "$oid": "573a13c1f29313caabd65b71"
+  },
+  "plot": "A 3-D concert film of the 2008 Jonas Brothers \"Burning Up\" concert tour, as well as documentary footage on the lives of the three brothers.",
+  "genres": [
+    "Documentary",
+    "Music"
+  ],
+  "runtime": 76,
+  "metacritic": 45,
+  "cast": [
+    "Kevin Jonas",
+    "Joe Jonas",
+    "Nick Jonas",
+    "John Taylor"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTU4OTM2OTM3Ml5BMl5BanBnXkFtZTcwODg4MzQyMg@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Jonas Brothers: The 3D Concert Experience",
+  "fullplot": "A 3-D concert film of the 2008 Jonas Brothers \"Burning Up\" concert tour, as well as documentary footage on the lives of the three brothers.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2009-02-27T00:00:00.000Z"
+  },
+  "directors": [
+    "Bruce Hendricks"
+  ],
+  "rated": "G",
+  "awards": {
+    "wins": 1,
+    "nominations": 4,
+    "text": "1 win & 4 nominations."
+  },
+  "lastupdated": "2015-09-07 00:19:58.057000000",
+  "year": 2009,
+  "imdb": {
+    "rating": 2.1,
+    "votes": 17108,
+    "id": 1229827
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://Disney.com/JonasBrothers3D",
+    "viewer": {
+      "rating": 3.3,
+      "numReviews": 204983,
+      "meter": 76
+    },
+    "dvd": {
+      "$date": "2009-06-30T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 4.3,
+      "numReviews": 76,
+      "meter": 24
+    },
+    "boxOffice": "$19.0M",
+    "consensus": "Jonas Brothers: The 3-D Concert Experience should please the brothers' adoring followers, but for non-converts, this concert film is largely flat and unenlightening.",
+    "rotten": 58,
+    "production": "IMAX/Walt Disney Pictures",
+    "lastUpdated": {
+      "$date": "2015-09-13T09:57:27.000Z"
+    },
+    "fresh": 18
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13c2f29313caabd682d2"
+  },
+  "plot": "The German U-Boat, U-234, from the Port of Kiel is trading cargo with the Japanese. USS Seaviper must locate and stop this dangerous exchange. The Captain of USS Seaviper must go ashore to ...",
+  "genres": [
+    "Action",
+    "Drama",
+    "War"
+  ],
+  "runtime": 102,
+  "cast": [
+    "Tim Large",
+    "Jeremy King",
+    "Robb Maus",
+    "Steve Roth"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMjIzNDIwOTYzNV5BMl5BanBnXkFtZTcwOTAwNTQ5OA@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "USS Seaviper",
+  "fullplot": "The German U-Boat, U-234, from the Port of Kiel is trading cargo with the Japanese. USS Seaviper must locate and stop this dangerous exchange. The Captain of USS Seaviper must go ashore to conduct reconnaissance on an island near Sumatra, but the ship is left in the hands of Mister Cutter, after the Executive Officer is injured in battle. A conflict between Cutter and the Chief of the Boat puts the submarine in jeopardy. Seaviper is trapped below the surface, with decreasing oxygen, and a Japanese destroyer hunting them from above. Damage to the boat also leave her survival in question. They must fight the Japanese destroyer and get the information about U-235 back to Pearl Harbor.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2012-05-28T00:00:00.000Z"
+  },
+  "directors": [
+    "Ralph A. Villani"
+  ],
+  "writers": [
+    "Lynanne Rockhill"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 1,
+    "text": "1 win & 1 nomination."
+  },
+  "lastupdated": "2015-08-25 00:03:50.430000000",
+  "year": 2012,
+  "imdb": {
+    "rating": 2.5,
+    "votes": 769,
+    "id": 1274596
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a13c4f29313caabd6c62b"
+  },
+  "plot": "Five ambitious cousins set out on a family reunion during the dead of winter. The purpose of the retreat is to secure their inheritance, a fortune that dates back many generations.",
+  "genres": [
+    "Thriller"
+  ],
+  "runtime": 90,
+  "cast": [
+    "Rochelle Aytes",
+    "Golden Brooks",
+    "Janae Burney",
+    "Keith David"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMjI3ODEyNjYwOF5BMl5BanBnXkFtZTcwMzYwNTY0NA@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Inheritance",
+  "fullplot": "Five ambitious cousins set out on a family reunion during the dead of winter. The purpose of the retreat is to secure their inheritance, a fortune that dates back many generations.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2011-04-12T00:00:00.000Z"
+  },
+  "directors": [
+    "Robert O'Hara"
+  ],
+  "writers": [
+    "Robert O'Hara"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 0,
+    "text": "1 win."
+  },
+  "lastupdated": "2015-09-01 00:29:08.693000000",
+  "year": 2011,
+  "imdb": {
+    "rating": 2.8,
+    "votes": 674,
+    "id": 1342115
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.4,
+      "numReviews": 163,
+      "meter": 5
+    },
+    "dvd": {
+      "$date": "2011-04-12T00:00:00.000Z"
+    },
+    "production": "Duly Noted Inc.",
+    "lastUpdated": {
+      "$date": "2015-09-01T19:28:54.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13c9f29313caabd7aa29"
+  },
+  "plot": "Space Chimps 2: Zartog Strikes Back follows Comet, the cool techno chimp who longs to be taken seriously as a full-fledged space chimp. Comet journeys to the fantastical Planet Malgor and ...",
+  "genres": [
+    "Animation",
+    "Family",
+    "Sci-Fi"
+  ],
+  "runtime": 76,
+  "rated": "PG",
+  "cast": [
+    "Tom Kenny",
+    "Zack Shada",
+    "Patrick Warburton",
+    "Cheryl Hines"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BNjRjYWY3MTUtODNkNC00MjE2LWEyYTEtY2JhMDM1YTUzY2VhXkEyXkFqcGdeQXVyMzk1MjY5Njc@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Space Chimps 2: Zartog Strikes Back",
+  "fullplot": "Space Chimps 2: Zartog Strikes Back follows Comet, the cool techno chimp who longs to be taken seriously as a full-fledged space chimp. Comet journeys to the fantastical Planet Malgor and bonds with the adorable alien Kilowatt, living out his ultimate fantasy. However, it's time for Comet to prove himself when the feared alien ruler Zartog takes over Mission Control! Comet must show he has the right stuff, and join fellow chimps Ham, Luna and Titan, to save the day.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2010-05-28T00:00:00.000Z"
+  },
+  "directors": [
+    "John H. Williams"
+  ],
+  "writers": [
+    "Robert Moreland"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-26 00:21:32.510000000",
+  "year": 2010,
+  "imdb": {
+    "rating": 2.7,
+    "votes": 1207,
+    "id": 1537481
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.spacechimps2.com/index_small.html",
+    "viewer": {
+      "rating": 2.5,
+      "numReviews": 10162,
+      "meter": 32
+    },
+    "dvd": {
+      "$date": "2010-10-05T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 2.3,
+      "numReviews": 8,
+      "meter": 0
+    },
+    "lastUpdated": {
+      "$date": "2015-09-01T18:51:53.000Z"
+    },
+    "rotten": 8,
+    "production": "20th Century Fox",
+    "fresh": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13caf29313caabd7dac7"
+  },
+  "plot": "Posing as a movie producer, a conman attempts to trick an entire village into helping him rob a treasure-laden train.",
+  "genres": [
+    "Comedy",
+    "Crime",
+    "Drama"
+  ],
+  "runtime": 135,
+  "cast": [
+    "Salman Khan",
+    "Akshay Kumar",
+    "Katrina Kaif",
+    "Anil Kapoor"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BNTk1NTM5NDYwNl5BMl5BanBnXkFtZTcwMDI2MTYxNA@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Khan the Con",
+  "fullplot": "A stylish Tabrez Khan (Akshay Kumar) is depicted as Tees Maar Khan, a smart conman. He proclaims himself as semi-Robin Hood, who steals from the rich but does not give it to the poor. His life revolves around robbery and frequent visits to jail. Hired by a robbers' duo, the Johari brothers (Rajiv and Raghu), he plans to rob a train full of treasures, thus making it the greatest phenomenon in his life. On his way, he encounters an Oscar-obsessed film star (Akshaye Khanna), a seductive-and-desiring-to-be-a-superstar-some-day girlfriend (Katrina Kaif) and to accompany him in this heist, an entire village. What follows is a brain-less comedy that heralds the Tees Maar Khan's journey through mystics of the robbery.",
+  "languages": [
+    "Hindi"
+  ],
+  "released": {
+    "$date": "2010-12-24T00:00:00.000Z"
+  },
+  "directors": [
+    "Farah Khan"
+  ],
+  "writers": [
+    "Vishal Dadlani (lyrics)",
+    "Anvita Dutt Guptan (lyrics)",
+    "Ashmith Kunder (screenplay)",
+    "Shirish Kunder (dialogue)",
+    "Shirish Kunder (screenplay)",
+    "Shirish Kunder (story)"
+  ],
+  "awards": {
+    "wins": 2,
+    "nominations": 2,
+    "text": "2 wins & 2 nominations."
+  },
+  "lastupdated": "2015-09-03 01:13:09.147000000",
+  "year": 2010,
+  "imdb": {
+    "rating": 2.5,
+    "votes": 7521,
+    "id": 1572311
+  },
+  "countries": [
+    "India"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.teesmaarkhan-thefilm.com/",
+    "viewer": {
+      "rating": 2,
+      "numReviews": 1984,
+      "meter": 18
+    },
+    "dvd": {
+      "$date": "2011-02-22T00:00:00.000Z"
+    },
+    "boxOffice": "$1.1M",
+    "production": "UTV Communications",
+    "lastUpdated": {
+      "$date": "2015-09-13T17:05:22.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13cef29313caabd86e82"
+  },
+  "plot": "A chronicle of the events that led to the founding of the Chinese Communist Party.",
+  "genres": [
+    "Drama",
+    "History"
+  ],
+  "runtime": 124,
+  "metacritic": 29,
+  "cast": [
+    "Bingbing Fan",
+    "Daniel Wu",
+    "Yun-Fat Chow",
+    "John Woo"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BM2RkMDRjYWYtMGY1Ni00OTFhLWFjMjUtNDA1NjFkY2ZmMWQzXkEyXkFqcGdeQXVyNzI1NzMxNzM@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Beginning of the Great Revival",
+  "fullplot": "A chronicle of the events that led to the founding of the Chinese Communist Party.",
+  "languages": [
+    "Mandarin",
+    "Japanese",
+    "French",
+    "Russian",
+    "English"
+  ],
+  "released": {
+    "$date": "2011-06-24T00:00:00.000Z"
+  },
+  "directors": [
+    "Sanping Han",
+    "Jianxin Huang"
+  ],
+  "writers": [
+    "Zhe Dong",
+    "Jung Li Guong",
+    "Xin Huang"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 4,
+    "text": "1 win & 4 nominations."
+  },
+  "lastupdated": "2015-07-24 00:33:46.383000000",
+  "year": 2011,
+  "imdb": {
+    "rating": 2.4,
+    "votes": 5158,
+    "id": 1699513
+  },
+  "countries": [
+    "China"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.chinalionentertainment.com/movie/coming/118/view/nowshow",
+    "viewer": {
+      "rating": 2.4,
+      "numReviews": 269,
+      "meter": 30
+    },
+    "critic": {
+      "rating": 4.5,
+      "numReviews": 8,
+      "meter": 25
+    },
+    "boxOffice": "$0.2M",
+    "rotten": 6,
+    "production": "China Lion Film",
+    "lastUpdated": {
+      "$date": "2015-08-17T19:06:22.000Z"
+    },
+    "fresh": 2
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13cef29313caabd8709c"
+  },
+  "plot": "Follows Justin Bieber with some footage of performances from his 2010 concert tour.",
+  "genres": [
+    "Documentary",
+    "Music"
+  ],
+  "runtime": 105,
+  "metacritic": 52,
+  "cast": [
+    "Justin Bieber",
+    "Boys II Men",
+    "Miley Cyrus",
+    "Sean Kingston"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTY0NDQzMjIzOF5BMl5BanBnXkFtZTcwNDk2NzczNA@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Justin Bieber: Never Say Never",
+  "fullplot": "The camera follows Justin Bieber (1994- ) during the ten days leading up to his August, 2010, sold-out show at Madison Square Garden. Footage of these ten days of concerts, rehearsals, and down time with boyhood friends, his mom, and his entourage is inter-cut with home movies, old photos, and interviews showing a musical prodigy who loves to perform, comes to the attention of an Atlanta agent via YouTube, impresses Usher, and rockets to international stardom soon after his 15th birthday. His manager emphasizes the importance of social media and of Justin's work ethic and personality in making him a star; the camera emphasizes Bieber's look. His mom and grandparents shine.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2011-02-11T00:00:00.000Z"
+  },
+  "directors": [
+    "Jon M. Chu"
+  ],
+  "rated": "G",
+  "awards": {
+    "wins": 2,
+    "nominations": 6,
+    "text": "2 wins & 6 nominations."
+  },
+  "lastupdated": "2015-08-23 00:33:04.327000000",
+  "year": 2011,
+  "imdb": {
+    "rating": 1.6,
+    "votes": 73548,
+    "id": 1702443
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.JustinBieberNeverSayNever.com",
+    "viewer": {
+      "rating": 3.5,
+      "numReviews": 61961,
+      "meter": 65
+    },
+    "dvd": {
+      "$date": "2011-05-13T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 5.8,
+      "numReviews": 102,
+      "meter": 64
+    },
+    "boxOffice": "$73.0M",
+    "consensus": "As a tour documentary, it's rather uninspired -- but as a 3D glimpse of a building pop culture phenomenon, Never Say Never is undeniably entertaining.",
+    "rotten": 37,
+    "production": "Paramount Pictures",
+    "lastUpdated": {
+      "$date": "2015-08-18T19:05:06.000Z"
+    },
+    "fresh": 65
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13d0f29313caabd8af00"
+  },
+  "plot": "In this comedy film, a computer tablet full of the world's most hilariously offensive apps breaks through the borders of political correctness, stirring up cultural anarchy.",
+  "genres": [
+    "Comedy"
+  ],
+  "runtime": 83,
+  "metacritic": 1,
+  "rated": "R",
+  "cast": [
+    "Rob Schneider",
+    "Michelle Rodriguez",
+    "Adrien Brody",
+    "Lindsay Lohan"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTQ3NzAyMDUyOF5BMl5BanBnXkFtZTcwMDMzMDM5OA@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "InAPPropriate Comedy",
+  "fullplot": "In this comedy film, a computer tablet full of the world's most hilariously offensive apps breaks through the borders of political correctness, stirring up cultural anarchy.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2014-07-17T00:00:00.000Z"
+  },
+  "directors": [
+    "Vince Offer"
+  ],
+  "writers": [
+    "Ken Pringle",
+    "Ari Shaffir",
+    "Vince Offer",
+    "Adrien Brody (additional dialogue written by)",
+    "Christina Pazsitzky (additional dialogue written by)",
+    "John Ryan Jr. (additional dialogue written by)",
+    "Dante (additional dialogue written by)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "2 nominations."
+  },
+  "lastupdated": "2015-09-01 00:59:40.647000000",
+  "year": 2013,
+  "imdb": {
+    "rating": 2.9,
+    "votes": 2961,
+    "id": 1754811
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://inappropriatecomedy.com/",
+    "viewer": {
+      "rating": 2,
+      "numReviews": 3082,
+      "meter": 24
+    },
+    "dvd": {
+      "$date": "2013-12-31T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 1.1,
+      "numReviews": 5,
+      "meter": 0
+    },
+    "boxOffice": "$0.2M",
+    "rotten": 5,
+    "production": "Freestyle Releasing",
+    "lastUpdated": {
+      "$date": "2015-08-23T16:21:56.000Z"
+    },
+    "fresh": 0
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13d4f29313caabd98b77"
+  },
+  "plot": "A documentary that chronicles Sarah Palin's pre-political life; her tenure as Governor of Alaska, and her time spent as John McCain's running mate.",
+  "genres": [
+    "Documentary",
+    "Biography"
+  ],
+  "countries": [
+    "USA"
+  ],
+  "metacritic": 32,
+  "rated": "PG-13",
+  "cast": [
+    "Pamela Anderson",
+    "Mark Ballas",
+    "Roseanne Barr",
+    "Joy Behar"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BNDk0Njg2NDE3MV5BMl5BanBnXkFtZTcwNDc4MTg4NQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Undefeated",
+  "fullplot": "A documentary that chronicles Sarah Palin's pre-political life; her tenure as Governor of Alaska, and her time spent as John McCain's running mate.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2011-07-15T00:00:00.000Z"
+  },
+  "directors": [
+    "Stephen K. Bannon"
+  ],
+  "writers": [
+    "Stephen K. Bannon",
+    "Sarah Palin (inspired by the book \"Going Rogue: An American Life\")"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-09-15 03:47:31.020000000",
+  "year": 2011,
+  "imdb": {
+    "rating": 2.3,
+    "votes": 1731,
+    "id": 1961604
+  },
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.theUndefeatedMovie.com",
+    "viewer": {
+      "rating": 2.2,
+      "numReviews": 2345,
+      "meter": 38
+    },
+    "critic": {
+      "rating": 3,
+      "numReviews": 15,
+      "meter": 0
+    },
+    "boxOffice": "$0.1M",
+    "rotten": 15,
+    "production": "Arc Entertainment",
+    "lastUpdated": {
+      "$date": "2015-08-19T18:45:20.000Z"
+    },
+    "fresh": 0
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13dbf29313caabdae320"
+  },
+  "plot": "\"The Formula\" is the story of Quinn (Baker) and Graham (played by Iowa Native Mike Schminke), two engineering students who discover a mathematical formula to pick up women with ease. Quinn ...",
+  "genres": [
+    "Comedy",
+    "Romance"
+  ],
+  "runtime": 90,
+  "cast": [
+    "Brandon Baker",
+    "Mike Schminke",
+    "Sasha Jackson",
+    "Reginald VelJohnson"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BNzE5MjQyOTI1OV5BMl5BanBnXkFtZTgwMDA3NzY1MTE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Formula",
+  "fullplot": "\"The Formula\" is the story of Quinn (Baker) and Graham (played by Iowa Native Mike Schminke), two engineering students who discover a mathematical formula to pick up women with ease. Quinn is a hopeless romantic who falls head over heels for a young student teacher. Graham is a chauvinistic womanizer who thinks the key to finding the woman of his dreams is by wooing as many as possible. As \"The Formula\" follows Quinn and Graham from one date to the next, they discover that there is no shortcut to finding true love.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2014-04-15T00:00:00.000Z"
+  },
+  "directors": [
+    "Thomas Beecher",
+    "Joe Clarke"
+  ],
+  "writers": [
+    "Thomas Beecher (story)",
+    "Joe Clarke (story)",
+    "Joe Clarke",
+    "Joe Clarke"
+  ],
+  "awards": {
+    "wins": 1,
+    "nominations": 0,
+    "text": "1 win."
+  },
+  "lastupdated": "2015-09-07 00:07:01.937000000",
+  "year": 2014,
+  "imdb": {
+    "rating": 2.8,
+    "votes": 505,
+    "id": 2328490
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 1.5,
+      "numReviews": 24,
+      "meter": 14
+    },
+    "dvd": {
+      "$date": "2014-04-15T00:00:00.000Z"
+    },
+    "website": "http://level33entertainment.com/NewReleases.html",
+    "production": "Level 33 Entertainment/Millenium Media",
+    "lastUpdated": {
+      "$date": "2015-08-17T19:31:11.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13ddf29313caabdb4225"
+  },
+  "plot": "After inheriting a house from the family she never knew, Samantha Harris (Trin Miller) and three friends head to rural Sader Ridge to inspect the property. Soon after arriving, Sam begins ...",
+  "genres": [
+    "Horror",
+    "Thriller"
+  ],
+  "runtime": 82,
+  "cast": [
+    "Brandon Anthony",
+    "Carson Holden",
+    "D'Angelo Midili",
+    "Trin Miller"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMjAwODExMDU5Ml5BMl5BanBnXkFtZTgwMzM0Nzc2MDE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Invoking",
+  "fullplot": "After inheriting a house from the family she never knew, Samantha Harris (Trin Miller) and three friends head to rural Sader Ridge to inspect the property. Soon after arriving, Sam begins to experience horrific visions of savage brutality and unspeakable evil. Plagued by the sinister forces closing in around her, Sam descends into a waking nightmare when the demons from her past refuse to stay buried any longer.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2014-11-27T00:00:00.000Z"
+  },
+  "directors": [
+    "Jeremy Berg"
+  ],
+  "writers": [
+    "Jeremy Berg",
+    "Jeremy Berg (story)",
+    "Matt Medisch (story)",
+    "John Portanova"
+  ],
+  "awards": {
+    "wins": 2,
+    "nominations": 1,
+    "text": "2 wins & 1 nomination."
+  },
+  "lastupdated": "2015-08-29 00:15:38.670000000",
+  "year": 2013,
+  "imdb": {
+    "rating": 2.9,
+    "votes": 740,
+    "id": 2435514
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 1.8,
+      "numReviews": 106,
+      "meter": 12
+    },
+    "dvd": {
+      "$date": "2014-02-17T00:00:00.000Z"
+    },
+    "lastUpdated": {
+      "$date": "2015-09-17T20:05:37.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13def29313caabdb6756"
+  },
+  "plot": "Below the streets of New York is a dark and dangerous world hidden in the shadows of abandoned subway tunnels and miles of forgotten infrastructure. When a young documentary filmmaker goes ...",
+  "genres": [
+    "Thriller"
+  ],
+  "runtime": 91,
+  "cast": [
+    "Danny Trejo",
+    "Kinga Philipps",
+    "Frank Krueger",
+    "John Hennigan"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMjM1MDc5MjY3Nl5BMl5BanBnXkFtZTgwNTA4OTYxMjE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "20 Ft Below: The Darkness Descending",
+  "fullplot": "Below the streets of New York is a dark and dangerous world hidden in the shadows of abandoned subway tunnels and miles of forgotten infrastructure. When a young documentary filmmaker goes into these tunnels to uncover the unseen stories of the people living below our feet, she finds out that there is more to be afraid of than the dark. A mysterious figure, living beyond the reach of the law, has declared war on the outside world that threatens to tear apart the fragile underground society living in the tunnels and maybe even the city above it.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2014-03-18T00:00:00.000Z"
+  },
+  "directors": [
+    "Marc Clebanoff"
+  ],
+  "writers": [
+    "Frank Krueger"
+  ],
+  "awards": {
+    "wins": 3,
+    "nominations": 6,
+    "text": "3 wins & 6 nominations."
+  },
+  "lastupdated": "2015-08-21 00:31:25.047000000",
+  "year": 2014,
+  "imdb": {
+    "rating": 2.7,
+    "votes": 403,
+    "id": 2516610
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 1,
+      "numReviews": 3,
+      "meter": 0
+    },
+    "dvd": {
+      "$date": "2014-03-18T00:00:00.000Z"
+    },
+    "production": "Odyssey Motion Pictures",
+    "lastUpdated": {
+      "$date": "2015-09-16T19:02:51.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13dff29313caabdb7408"
+  },
+  "plot": "Starship One - the most powerful warship in the Federation, capable of destroying entire worlds. When the order is given to destroy the Earth, Flight Lieutenant John Worthy mutineers Starship One and takes on the might of the Federation.",
+  "genres": [
+    "Action",
+    "Sci-Fi"
+  ],
+  "runtime": 91,
+  "cast": [
+    "Darren Jacobs",
+    "Emii",
+    "Brooke Lewis",
+    "Claudia Wells"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BNTQ4NTk3MzkxOV5BMl5BanBnXkFtZTgwOTk2Mjg1MjE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Starship: Rising",
+  "fullplot": "Starship One... the most powerful prototype warship in the Federation, capable of destroying entire worlds. Two empires at war: the corrupt Federation, and the oppressive Terra Nostra. Entire planets are being wiped out. When the order is given to destroy the Earth, Federation Flight Lieutenant John Worthy kills his superior officer and mutineers Starship One. Demanding that both sides make peace, he becomes the target of both sides of the war. Worthy is pursued across the galaxy by General Gustav, an infamous military commander who brings the entire Federation fleet down upon Worthy and his Starship. After a number of intense battles, and suffering heavy vessel damage, Worthy aligns himself with an underground rebellion. He is entrusted with vessel upgrades and a robot army he needs to bring down both sides of the war. Joining with other disgruntled Federation military personnel, and Jolli, a beautiful gun-toting star pilot, Worthy wages war, but is halted when General Gustav holds his family hostage. Worthy risks losing all that is dear to him, to end the terrible war, and discovers a forbidden truth that will shake the foundations of the entire galaxy.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2014-08-21T00:00:00.000Z"
+  },
+  "directors": [
+    "Neil Johnson"
+  ],
+  "writers": [
+    "Neil Johnson"
+  ],
+  "awards": {
+    "wins": 5,
+    "nominations": 1,
+    "text": "5 wins & 1 nomination."
+  },
+  "lastupdated": "2015-09-17 02:00:52.033000000",
+  "year": 2014,
+  "imdb": {
+    "rating": 2.1,
+    "votes": 567,
+    "id": 2547942
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 0,
+      "numReviews": 0
+    },
+    "website": "http://thanharathiranga.com/",
+    "lastUpdated": {
+      "$date": "2015-08-07T20:02:08.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13dff29313caabdb83a3"
+  },
+  "plot": "Jeremy, a local police officer leads a life of a confusing past, spending his current time searching for his kidnapper as a child. After other children begin missing, Jeremy pieces together...",
+  "genres": [
+    "Action",
+    "Horror",
+    "Thriller"
+  ],
+  "runtime": 82,
+  "cast": [
+    "Jay Dobyns",
+    "Paul Ferm",
+    "Andrew Ferrick",
+    "Darin Foltz"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTAzMDQxNzg2MDJeQTJeQWpwZ15BbWU4MDMzMDEwODEx._V1_SY1000_SX677_AL_.jpg",
+  "title": "Krampus: The Christmas Devil",
+  "fullplot": "Jeremy, a local police officer leads a life of a confusing past, spending his current time searching for his kidnapper as a child. After other children begin missing, Jeremy pieces together the truth and realizes that his childhood kidnapper could be a creature of ancient yuletide lore, Krampus, who is the brother of St. Nick, and punisher of children who perform acts of unspeakable evil without repercussion. Can Jeremy kill Krampus and prevent more missing children?",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2013-08-17T00:00:00.000Z"
+  },
+  "directors": [
+    "Jason Hull"
+  ],
+  "writers": [
+    "Jason Hull"
+  ],
+  "awards": {
+    "wins": 4,
+    "nominations": 6,
+    "text": "4 wins & 6 nominations."
+  },
+  "lastupdated": "2015-09-02 00:23:37.960000000",
+  "year": 2013,
+  "imdb": {
+    "rating": 2,
+    "votes": 347,
+    "id": 2578608
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 0,
+      "numReviews": 0
+    },
+    "dvd": {
+      "$date": "2014-06-10T00:00:00.000Z"
+    },
+    "lastUpdated": {
+      "$date": "2015-04-08T18:40:47.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13e7f29313caabdc8b22"
+  },
+  "plot": "A backstage and on-stage look at Justin Bieber during his rise to super stardom.",
+  "genres": [
+    "Documentary",
+    "Music"
+  ],
+  "runtime": 92,
+  "metacritic": 39,
+  "rated": "PG",
+  "cast": [
+    "Justin Bieber",
+    "Scooter Braun",
+    "Ryan Good",
+    "Usher Raymond"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMjgzMDgxNjU1Ml5BMl5BanBnXkFtZTgwMDc3NTI2MDE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Justin Bieber's Believe",
+  "fullplot": "A backstage and on-stage look at Justin Bieber during his rise to super stardom.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2013-12-25T00:00:00.000Z"
+  },
+  "directors": [
+    "Jon M. Chu"
+  ],
+  "writers": [
+    "Sarah Landman"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-25 00:58:14.853000000",
+  "year": 2013,
+  "imdb": {
+    "rating": 1.6,
+    "votes": 16511,
+    "id": 3165608
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13f2f29313caabdddbbc"
+  },
+  "countries": [
+    "China"
+  ],
+  "genres": [
+    "Drama",
+    "Romance"
+  ],
+  "cast": [
+    "Mi Yang",
+    "Chen-tung Ko",
+    "Amber Kuo",
+    "Haden Kuo"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTc4Njk2MjkwOF5BMl5BanBnXkFtZTgwMTYxMTcyMjE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Tiny Times 3.0",
+  "lastupdated": "2015-09-15 05:39:27.137000000",
+  "languages": [
+    "Mandarin"
+  ],
+  "released": {
+    "$date": "2014-07-17T00:00:00.000Z"
+  },
+  "directors": [
+    "Jinming Guo"
+  ],
+  "writers": [
+    "Jinming Guo"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "year": 2014,
+  "imdb": {
+    "rating": 2.9,
+    "votes": 400,
+    "id": 3861006
+  },
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a13f4f29313caabde0c23"
+  },
+  "plot": "Kirk is enjoying the annual Christmas party extravaganza thrown by his sister until he realizes he needs to help out Christian, his brother-in-law who has a bad case of the bah-humbugs. ...",
+  "genres": [
+    "Comedy",
+    "Family"
+  ],
+  "runtime": 80,
+  "metacritic": 18,
+  "rated": "PG",
+  "cast": [
+    "Kirk Cameron",
+    "Darren Doane",
+    "Bridgette Cameron",
+    "David Shannon"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTc3MTc3Njc5MV5BMl5BanBnXkFtZTgwNzU3NDE4MjE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Saving Christmas",
+  "fullplot": "Kirk is enjoying the annual Christmas party extravaganza thrown by his sister until he realizes he needs to help out Christian, his brother-in-law who has a bad case of the bah-humbugs. Kirk's fresh look at Christmas provides Christians the chance to see Christ is where He has always been: at the center of our Christmas celebrations and traditions.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2014-11-14T00:00:00.000Z"
+  },
+  "directors": [
+    "Darren Doane"
+  ],
+  "writers": [
+    "Darren Doane",
+    "Cheston Hervey"
+  ],
+  "awards": {
+    "wins": 4,
+    "nominations": 2,
+    "text": "4 wins & 2 nominations."
+  },
+  "lastupdated": "2015-08-16 00:12:45.527000000",
+  "year": 2014,
+  "imdb": {
+    "rating": 1.6,
+    "votes": 9744,
+    "id": 4009460
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "num_mflix_comments": 0
+}]

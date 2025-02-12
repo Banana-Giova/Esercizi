@@ -1,0 +1,177 @@
+Game Heaven è la destinazione definitiva per gli appassionati 
+di videogiochi. 
+
+Esplora un'ampia collezione di videogiochi su tutte le piattaforme, 
+dai classici titoli retrò alle ultime uscite. 
+
+Rimani aggiornato con le novità sui giochi, 
+le recensioni e le prossime uscite di giochi. 
+
+Con consigli personalizzati e recensioni degli utenti, 
+trovare il tuo prossimo gioco preferito 
+non è mai stato così facile. 
+
+Game Heaven offre anche offerte e sconti esclusivi 
+per i membri fedeli. 
+Che tu sia un giocatore occasionale o un giocatore accanito, 
+Game Heaven è la tua app di riferimento per tutto ciò 
+che riguarda i giochi.
+
+----------------------------------
+
+Utente
+{
+    "_id": 1,
+    "username": "PinoTheGamer",
+    "password": "MortalKombat226",
+    "istante_iscrizione": 1663996800,
+    "saldo": 19.98,
+    "membro_fedele": true,
+    "newsletter": true,
+    "indirizzo": {
+        "citta": "Roma",
+        "tipo_via": "Via",
+        "nome_via": "Selinunte",
+        "numero_civico": 47,
+        "complesso": "Palazzo A",
+        "scala": "B",
+        "piano": 4,
+        "cap": "00175"
+    }
+}
+
+Gioco
+{
+    "_id": 1,
+    "titolo": "Super Mario Sunshine",
+    "piattaforma": [
+        ObjectId(piattaforma),
+        ObjectId(piattaforma)
+    ],
+    "data_uscita": 2002-07-19, //date
+    "sviluppo": "Nintendo",
+    "produzione": [
+        "Shigeru Miyamoto",
+        "Takashi Tezuka"
+    ],
+    "genere": [
+        "Platform",
+        "Avventura"
+    ],
+    "versione": "Edizione Limitata",
+    "pegi": "3",
+    "retrò": false,           //un gioco classificato retrò
+    "ultima_uscita": false,   //o ultima uscita, verrà inserito
+    "recensioni": [           //nelle ricerche pertinenti a tali parametri
+        ObjectId(recensione), //Anche se si potrebbe ricavare questo
+        ObjectId(recensione), //parametro dalla data di uscita
+        ObjectId(recensione)  //il boolean facilita la ricerca
+    ],
+    "vendita_copia_fisica": {
+        "c_f_disponibili": 20,
+        "prezzo_c_f": 29.99,
+        "sconto_c_f": "10%",
+        "sconto_c_f_membri_fedeli": "20%"
+    },
+    "vendita_copia_digitale": {
+        "c_d_disponibili": 200,
+        "prezzo_c_d": 19.99,
+        "sconto_c_d": "-10%",
+        "sconto_c_d_membri_fedeli": "-20%"
+    }
+}
+
+Piattaforma
+{
+    "_id": 1,
+    "nome": "GameCube",
+    "produzione": [
+        "Nintendo"  //una piattaforma può esser prodotta
+    ],              //da più compagnie 
+    "tipo": "Console da tavolo",
+    "data_uscita": 2001-09-14, //date
+    "giochi_supportati": [
+        ObjectId(gioco),
+        ObjectId(gioco)
+    ],
+    "vendita": {
+        "unita_disponibili": 5,
+        "prezzo_unita": 199.99,
+        "sconto": "-10%",
+        "sconto_membri_fedeli": "-20%"
+    }
+}
+
+Recensione
+{
+    "_id": 1,
+    "utente": ObjectId(utente), //utente che effettua la recensione
+    "gioco_recensito": ObjectId(gioco),
+    "stelline": 5,
+    "testo": "Questo gioco mi piace tanto"
+}
+
+CatalogoGiochi
+{
+    "_id": 1,
+    "nome": "Catalogo Giochi Nintendo",
+    "giochi": [
+        ObjectId(gioco),
+        ObjectId(gioco),
+        ObjectId(gioco)
+    ],
+    "piattaforme": [
+        ObjectId(piattaforma),
+        ObjectId(piattaforma),
+        ObjectId(piattaforma)
+    ]
+}
+
+Carrello
+{
+    "_id": 1,
+    "utente": ObjectId(utente),
+    "giochi_nel_carrello": [
+        ObjectId(gioco)
+    ],
+    "console_nel_carrello": [
+        ObjectId(piattaforma)
+    ],
+    "importo": 173.98 
+}
+
+Acquisto
+{
+    "_id": 1,
+    "numero_ordine": "H78GD8hgdg78",
+    "istante_acquisto": 1674996800,
+    "acquirente": ObjectId(utente),
+    "giochi_acquistati": [
+        ObjectId(gioco)
+    ],
+    "console_acquistate": [
+        ObjectId(piattaforma)
+    ],
+    "importo": 173.98
+}
+
+Promozione
+{
+    "_id": 1,
+    "nome": "Anniversario Game Heaven",
+    "durata": {
+        "inizio": 2025-04-14, //date
+        "fine": 2025-04-17, //date
+    },
+    "giochi_scontati": [
+        ObjectId(gioco),
+        ObjectId(gioco)
+    ],
+    "valore_sconto_giochi": "-50%",
+    "console_scontate": [
+        ObjectId(piattaforma),
+        ObjectId(piattaforma)
+    ],
+    "valore_sconto_console": "-40%",
+    "esclusiva_membri_fedeli": true
+}

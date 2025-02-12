@@ -1,0 +1,5257 @@
+[{
+  "_id": {
+    "$oid": "573a1391f29313caabcd68d0"
+  },
+  "plot": "A penniless young man tries to save an heiress from kidnappers and help her secure her inheritance.",
+  "genres": [
+    "Comedy",
+    "Short",
+    "Action"
+  ],
+  "runtime": 22,
+  "rated": "TV-G",
+  "cast": [
+    "Harold Lloyd",
+    "Mildred Davis",
+    "'Snub' Pollard",
+    "Peggy Cartwright"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BNzE1OWRlNDgtMTllNi00NTZiLWIyNTktYTk0MDY1ZWUwYTc5XkEyXkFqcGdeQXVyMjUxODE0MDY@._V1_SY1000_SX677_AL_.jpg",
+  "title": "From Hand to Mouth",
+  "fullplot": "As a penniless man worries about how he will manage to eat, he is joined by a young waif and her dog, who are in the same predicament. Meanwhile, across town a dishonest lawyer is working with a gang of criminals, trying to swindle an innocent young heiress out of her inheritance. As the heiress is on her way home from the lawyer's office, she notices the young man and the waif in the midst of their latest problem with the authorities, and she rescues them. Later on, the young man will have an unexpected opportunity to repay her for her kindness.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": {
+      "$numberLong": "-1578268800000"
+    }
+  },
+  "directors": [
+    "Alfred J. Goulding",
+    "Hal Roach"
+  ],
+  "writers": [
+    "H.M. Walker (titles)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-04-17 00:16:14.220000000",
+  "year": 1919,
+  "imdb": {
+    "rating": 7,
+    "votes": 639,
+    "id": 10146
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.3,
+      "numReviews": 71,
+      "meter": 55
+    },
+    "production": "Pathè Exchange",
+    "lastUpdated": {
+      "$date": "2015-08-21T18:45:11.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a1391f29313caabcd6d40"
+  },
+  "plot": "A tipsy doctor encounters his patient sleepwalking on a building ledge, high above the street.",
+  "genres": [
+    "Comedy",
+    "Short"
+  ],
+  "runtime": 26,
+  "rated": "PASSED",
+  "cast": [
+    "Harold Lloyd",
+    "Roy Brooks",
+    "Mildred Davis",
+    "Wallace Howe"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BODliMjc3ODctYjhlOC00MDM5LTgzNmUtMjQ1MmViNDQ0NzlhXkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_SY1000_SX677_AL_.jpg",
+  "title": "High and Dizzy",
+  "fullplot": "After a long wait, a young doctor finally has a patient come to his office. She is a young woman whose father has brought her to be treated for sleep-walking, but the father becomes annoyed with the doctor, and takes his daughter away. Soon afterward, the young doctor shares in a drinking binge with another doctor who has built a still in his office. After a series of misadventures, the two of them wind up in the same hotel where the daughter and her father are staying, leading to some hazardous predicaments.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": {
+      "$numberLong": "-1561334400000"
+    }
+  },
+  "directors": [
+    "Hal Roach"
+  ],
+  "writers": [
+    "Frank Terry (story)",
+    "H.M. Walker (titles)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-11 00:35:33.717000000",
+  "year": 1920,
+  "imdb": {
+    "rating": 7,
+    "votes": 646,
+    "id": 11293
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.4,
+      "numReviews": 30,
+      "meter": 70
+    },
+    "lastUpdated": {
+      "$date": "2015-06-27T19:17:10.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a1391f29313caabcd71f5"
+  },
+  "plot": "A young man, unaccustomed to children, must accompany a young girl on a train trip.",
+  "genres": [
+    "Comedy",
+    "Short"
+  ],
+  "runtime": 35,
+  "rated": "PASSED",
+  "cast": [
+    "Harold Lloyd",
+    "Mildred Davis",
+    "Anna Mae Bilson"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BYjgzYzY1NjEtYWQxZS00ZjA4LWJlYmQtYzRjNTg3NjUwNDRlXkEyXkFqcGdeQXVyMjUxODE0MDY@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Now or Never",
+  "fullplot": "Mary is looking after a young child whose parents have little time for her. So, when Mary travels home to meet her childhood sweetheart, she takes the child with her. Meanwhile, her boyfriend has a mishap on the road, and is tricked out of his money by a tramp. When the tramp then hitches a ride on a train, the boyfriend does so as well. At the station, he meets Mary and the child, and they plan to re-board the train together. But difficulties arise when Mary sees her boss boarding the same train - and there is also the problem that her boyfriend doesn't have a ticket.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": {
+      "$numberLong": "-1538956800000"
+    }
+  },
+  "directors": [
+    "Fred C. Newmeyer",
+    "Hal Roach"
+  ],
+  "writers": [
+    "H.M. Walker (titles)",
+    "Sam Taylor (scenario)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-06-25 00:02:16.613000000",
+  "year": 1921,
+  "imdb": {
+    "rating": 6.8,
+    "votes": 489,
+    "id": 12512
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.8,
+      "numReviews": 3
+    },
+    "lastUpdated": {
+      "$date": "2015-07-16T17:59:55.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a1393f29313caabcdda52"
+  },
+  "plot": "Jerry is determined to disrupt Tom's concert while Tom fights him with the piano without missing a single note.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Comedy"
+  ],
+  "runtime": 8,
+  "rated": "PASSED",
+  "title": "The Cat Concerto",
+  "poster": "https://m.media-amazon.com/images/M/MV5BZTJiNWI3ZGMtZWM2MC00NTFkLTljZmYtODViNTI3OWJhODdjXkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_SY1000_SX677_AL_.jpg",
+  "countries": [
+    "USA"
+  ],
+  "fullplot": "Tom enters from stage left in white tie and tails, sits at the piano, gets his focus as the orchestra in the pit beneath him warms up, and begins to play Liszt's \"Hungarian Rhapsody.\" Unbeknownst to Tom and the audience, Jerry is asleep across several of the low-note keys inside the instrument, so Tom's playing eventually wakes him. Jerry is pummeled by hammers, bounced by wires, and squeezed by Tom as the cat tries to play the concerto while dispensing with Jerry. Jerry's defensive antics add to the brio of the program and answer Tom with Jerry's own skillful musical attack. By the concerto's end, the duet leaves only one animal standing for the audience's applause.",
+  "num_mflix_comments": 1,
+  "released": {
+    "$date": {
+      "$numberLong": "-715910400000"
+    }
+  },
+  "directors": [
+    "Joseph Barbera",
+    "William Hanna"
+  ],
+  "writers": [
+    "William Hanna",
+    "Joseph Barbera"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "Won 1 Oscar. Another 1 nomination."
+  },
+  "lastupdated": "2015-09-01 01:03:30.147000000",
+  "year": 1947,
+  "imdb": {
+    "rating": 8.2,
+    "votes": 2687,
+    "id": 39251
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4.2,
+      "numReviews": 136,
+      "meter": 90
+    },
+    "lastUpdated": {
+      "$date": "2015-09-17T17:47:15.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a1395f29313caabce250e"
+  },
+  "plot": "A group of seven-year-old British children from widely ranging backgrounds are interviewed about a range of subjects. Director Michael Apted plans to reinterview them at seven-year ...",
+  "genres": [
+    "Documentary",
+    "Short",
+    "Biography"
+  ],
+  "runtime": 39,
+  "cast": [
+    "Douglas Keay",
+    "Bruce Balden",
+    "Jacqueline Bassett",
+    "Symon Basterfield"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTM3MTA3NzQ2N15BMl5BanBnXkFtZTcwNjM5NzYyMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Seven Up!",
+  "fullplot": "A group of seven-year-old British children from widely ranging backgrounds are interviewed about a range of subjects. Director Michael Apted plans to reinterview them at seven-year intervals to determine how their lives and attitudes have changed.",
+  "languages": [
+    "English",
+    "Latin"
+  ],
+  "released": {
+    "$date": {
+      "$numberLong": "-178588800000"
+    }
+  },
+  "directors": [
+    "Paul Almond"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-09-10 17:47:50.600000000",
+  "year": 1964,
+  "imdb": {
+    "rating": 8,
+    "votes": 2463,
+    "id": 58578
+  },
+  "countries": [
+    "UK"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4.1,
+      "numReviews": 3333,
+      "meter": 88
+    },
+    "lastUpdated": {
+      "$date": "2015-09-10T17:47:51.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a1395f29313caabce2717"
+  },
+  "plot": "A simple line attempts to woo his true love, a dot, away from the unkempt squiggle she prefers. But he'll have to learn to bend before she'll notice him.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Comedy"
+  ],
+  "runtime": 10,
+  "rated": "APPROVED",
+  "cast": [
+    "Robert Morley"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BOTI4NzA5YzMtNWIwYS00NTJiLTljNWYtNjBkOTAxMjVjNWQ3XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Dot and the Line: A Romance in Lower Mathematics",
+  "fullplot": "A simple line attempts to woo his true love, a dot, away from the unkempt squiggle she prefers. But he'll have to learn to bend before she'll notice him.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": {
+      "$numberLong": "-126316800000"
+    }
+  },
+  "directors": [
+    "Chuck Jones",
+    "Maurice Noble"
+  ],
+  "writers": [
+    "Norton Juster (original story and screenplay)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "Won 1 Oscar. Another 1 nomination."
+  },
+  "lastupdated": "2015-08-25 00:15:02.057000000",
+  "year": 1965,
+  "imdb": {
+    "rating": 7.7,
+    "votes": 1018,
+    "id": 59122
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4.2,
+      "numReviews": 208,
+      "meter": 93
+    },
+    "lastUpdated": {
+      "$date": "2015-08-11T18:17:50.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a1395f29313caabce2ef8"
+  },
+  "plot": "Christopher Robin's bear attempts to raid a beehive in a tall tree.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Family"
+  ],
+  "runtime": 25,
+  "rated": "G",
+  "cast": [
+    "Sterling Holloway",
+    "Junius Matthews",
+    "Hal Smith",
+    "Howard Morris"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BZmQ2OGZkOTQtNzJmZi00NDU3LTliNzMtOGNkN2Q5ZTMwNzU5XkEyXkFqcGdeQXVyNzY1NDgwNjQ@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Winnie the Pooh and the Honey Tree",
+  "fullplot": "Winnie the Pooh, the honey loving silly old bear attempts to get honey from a bee tree, so after climbing the tree didn't work, he borrows Christopher Robin's balloon, dunks himself in mud and floats to the top of the honey tree incognito as a little black rain cloud. After escaping the angry bees, Pooh decides to get honey the old fashion way: getting some from Rabbit, so after stuffing his face with all of Rabbit's honey, Pooh attempts to climb out Rabbit's front door, but becomes stuck! No matter how hard everyone tries, they can't get him out, so they wait for Pooh to lose weight before they can get him out. Then along comes Gopher who agrees to help get Pooh out and almost feeds him more honey! But then one morning, Pooh is finally freed from the doorway and ends up in another sticky situation-quite literally!",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": {
+      "$numberLong": "-123292800000"
+    }
+  },
+  "directors": [
+    "Wolfgang Reitherman"
+  ],
+  "writers": [
+    "A.A. Milne (books)",
+    "Larry Clemmons (story)",
+    "Xavier Atencio (story)",
+    "Vance Gerry (story)",
+    "Ralph Wright (story)",
+    "Ken Anderson (story)",
+    "Dick N. Lucas (story)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-09-12 00:32:12.507000000",
+  "year": 1966,
+  "imdb": {
+    "rating": 7.9,
+    "votes": 2113,
+    "id": 61199
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a1397f29313caabce5d90"
+  },
+  "plot": "The film is an artistically spare depiction of the Greek myth of Sysiphus, sentenced to eternally roll a stone up a mountain. The story is presented in a single, unbroken shot, consisting ...",
+  "genres": [
+    "Animation",
+    "Short"
+  ],
+  "runtime": 3,
+  "title": "Sisyphus",
+  "countries": [
+    "Hungary"
+  ],
+  "fullplot": "The film is an artistically spare depiction of the Greek myth of Sysiphus, sentenced to eternally roll a stone up a mountain. The story is presented in a single, unbroken shot, consisting of a dynamic line drawing of Sysiphus, the stone, and the mountainside.",
+  "released": {
+    "$date": "1974-10-01T00:00:00.000Z"
+  },
+  "directors": [
+    "Marcell Jankovics"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "Nominated for 1 Oscar. Another 1 nomination."
+  },
+  "lastupdated": "2015-05-29 00:44:32.700000000",
+  "year": 1974,
+  "imdb": {
+    "rating": 6.9,
+    "votes": 352,
+    "id": 73715
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4.2,
+      "numReviews": 47
+    },
+    "lastUpdated": {
+      "$date": "2015-09-03T18:08:40.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a1398f29313caabce90fc"
+  },
+  "plot": "A young boy sets out to revive his dead pet using the monstrous power of science.",
+  "genres": [
+    "Short",
+    "Comedy",
+    "Drama"
+  ],
+  "runtime": 29,
+  "rated": "PG",
+  "cast": [
+    "Shelley Duvall",
+    "Daniel Stern",
+    "Barret Oliver",
+    "Joseph Maher"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BNDMxODAyNjQ0MV5BMl5BanBnXkFtZTgwMzY0ODk1MDE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Frankenweenie",
+  "fullplot": "When young Victor's pet dog Sparky (who stars in Victor's home-made monster movies) is hit by a car, Victor decides to bring him back to life the only way he knows how. But when the bolt-necked \"monster\" wreaks havoc and terror in the hearts of Victor's neighbors, he has to convince them (and his parents) that despite his appearance, Sparky's still the good loyal friend he's always been.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1994-12-01T00:00:00.000Z"
+  },
+  "directors": [
+    "Tim Burton"
+  ],
+  "writers": [
+    "Tim Burton (based on an original idea by)",
+    "Leonard Ripps (screenplay)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-07-22 00:23:14.187000000",
+  "year": 1984,
+  "imdb": {
+    "rating": 7.3,
+    "votes": 8901,
+    "id": 87291
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a1398f29313caabce9a37"
+  },
+  "plot": "Larry organizes a talent show in an attempt to get on TV but the small town of Orkly, Idaho, isn't ready for his Olivia Newton-John impersonation.",
+  "genres": [
+    "Short",
+    "Comedy"
+  ],
+  "runtime": 35,
+  "cast": [
+    "Crispin Glover",
+    "Stefan Arngrim",
+    "John Bluto",
+    "Ken Butler"
+  ],
+  "num_mflix_comments": 0,
+  "title": "The Orkly Kid",
+  "fullplot": "Larry organizes a talent show in an attempt to get on TV but the small town of Orkly, Idaho, isn't ready for his Olivia Newton-John impersonation.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1985-10-01T00:00:00.000Z"
+  },
+  "directors": [
+    "Trent Harris"
+  ],
+  "writers": [
+    "Trent Harris"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-14 00:08:08.270000000",
+  "year": 1985,
+  "imdb": {
+    "rating": 7.6,
+    "votes": 182,
+    "id": 89741
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a1399f29313caabcee302"
+  },
+  "plot": "The Serengeti is a huge area of grassland in Tanzania, Africa. Once a year, in the time of drought, about two million herd animals like antelopes travel north to feed and mate before moving...",
+  "genres": [
+    "Documentary",
+    "Short"
+  ],
+  "runtime": 39,
+  "cast": [
+    "James Earl Jones"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTc5NjQ0NzgwMl5BMl5BanBnXkFtZTcwNTgxNTA0MQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Africa: The Serengeti",
+  "fullplot": "The Serengeti is a huge area of grassland in Tanzania, Africa. Once a year, in the time of drought, about two million herd animals like antelopes travel north to feed and mate before moving south again, when plants there begin to blossom.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1994-04-01T00:00:00.000Z"
+  },
+  "directors": [
+    "George Casey"
+  ],
+  "writers": [
+    "George Casey",
+    "Mose Richards"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-16 01:00:34.467000000",
+  "year": 1994,
+  "imdb": {
+    "rating": 7.4,
+    "votes": 535,
+    "id": 109049
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.7,
+      "numReviews": 750,
+      "meter": 73
+    },
+    "dvd": {
+      "$date": "1998-11-18T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 8,
+      "numReviews": 5,
+      "meter": 100
+    },
+    "lastUpdated": {
+      "$date": "2015-08-30T19:56:31.000Z"
+    },
+    "rotten": 0,
+    "production": "Houston Museum of Natural Scie",
+    "fresh": 5
+  }
+},
+{
+  "_id": {
+    "$oid": "573a139af29313caabcef637"
+  },
+  "countries": [
+    "Portugal"
+  ],
+  "genres": [
+    "Short"
+  ],
+  "runtime": 3,
+  "cast": [
+    "Joèo Cèsar Monteiro"
+  ],
+  "num_mflix_comments": 0,
+  "title": "Passeio com Johnny Guitar",
+  "lastupdated": "2015-04-13 00:50:12.777000000",
+  "languages": [
+    "Portuguese"
+  ],
+  "released": {
+    "$date": "1996-05-01T00:00:00.000Z"
+  },
+  "directors": [
+    "Joèo Cèsar Monteiro"
+  ],
+  "writers": [
+    "Joèo Cèsar Monteiro (screenplay)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "year": 1996,
+  "imdb": {
+    "rating": 6.1,
+    "votes": 81,
+    "id": 114097
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.2,
+      "numReviews": 1791,
+      "meter": 55
+    },
+    "dvd": {
+      "$date": "1996-12-24T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 4.9,
+      "numReviews": 6,
+      "meter": 17
+    },
+    "lastUpdated": {
+      "$date": "2015-08-02T18:55:31.000Z"
+    },
+    "rotten": 5,
+    "production": "Exclusive Media",
+    "fresh": 1
+  }
+},
+{
+  "_id": {
+    "$oid": "573a139df29313caabcfafb0"
+  },
+  "countries": [
+    "USA"
+  ],
+  "genres": [
+    "Animation",
+    "Short",
+    "Comedy"
+  ],
+  "runtime": 21,
+  "cast": [
+    "Peter Cullen",
+    "Jim Cummings",
+    "John Fiedler",
+    "Michael Gough"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTY3MjY0MzE3OV5BMl5BanBnXkFtZTcwODQyNDkyMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Boo to You Too! Winnie the Pooh",
+  "lastupdated": "2015-02-01 00:20:45.163000000",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1996-10-25T00:00:00.000Z"
+  },
+  "directors": [
+    "Rob LaDuca"
+  ],
+  "writers": [
+    "Carter Crocker"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 3,
+    "text": "Won 1 Primetime Emmy. Another 2 nominations."
+  },
+  "year": 1996,
+  "imdb": {
+    "rating": 7.2,
+    "votes": 224,
+    "id": 163558
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.8,
+      "numReviews": 810,
+      "meter": 78
+    },
+    "dvd": {
+      "$date": "2000-09-05T00:00:00.000Z"
+    },
+    "production": "Winstar",
+    "lastUpdated": {
+      "$date": "2015-08-18T18:59:54.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a139ff29313caabd00544"
+  },
+  "countries": [
+    "UK"
+  ],
+  "genres": [
+    "Short",
+    "Animation",
+    "Family"
+  ],
+  "runtime": 30,
+  "cast": [
+    "Kath Soucie",
+    "Frank Welker",
+    "B.J. Ward",
+    "Neil Ross"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTQ0MzAzNTM1M15BMl5BanBnXkFtZTcwOTM3MjEyMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Little Engine That Could",
+  "lastupdated": "2015-08-31 00:01:54.590000000",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1991-01-01T00:00:00.000Z"
+  },
+  "directors": [
+    "Dave Edwards"
+  ],
+  "writers": [
+    "Watty Piper (book)",
+    "Ray Rhamey (screenplay)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "year": 1991,
+  "imdb": {
+    "rating": 7.2,
+    "votes": 214,
+    "id": 186311
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.7,
+      "numReviews": 149,
+      "meter": 68
+    },
+    "production": "MCA Universal Home Video",
+    "lastUpdated": {
+      "$date": "2015-08-27T18:04:07.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13a1f29313caabd067b4"
+  },
+  "plot": "At a New Millennium Eve party Blackadder and Baldrick test their new time machine and ping pong through history encountering famous characters and changing events rather alarmingly....",
+  "genres": [
+    "Short",
+    "Comedy",
+    "History"
+  ],
+  "runtime": 33,
+  "cast": [
+    "Rowan Atkinson",
+    "Tony Robinson",
+    "Stephen Fry",
+    "Hugh Laurie"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTY1MTc4NjczNl5BMl5BanBnXkFtZTYwNjcyMzQ5._V1_SY1000_SX677_AL_.jpg",
+  "title": "Blackadder Back & Forth",
+  "lastupdated": "2015-09-16 00:23:03.747000000",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1999-12-06T00:00:00.000Z"
+  },
+  "directors": [
+    "Paul Weiland"
+  ],
+  "writers": [
+    "Richard Curtis",
+    "Ben Elton"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "year": 1999,
+  "imdb": {
+    "rating": 7.7,
+    "votes": 9074,
+    "id": 212579
+  },
+  "countries": [
+    "UK"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.7,
+      "numReviews": 6642,
+      "meter": 80
+    },
+    "dvd": {
+      "$date": "2001-05-15T00:00:00.000Z"
+    },
+    "lastUpdated": {
+      "$date": "2015-07-26T18:18:36.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13a3f29313caabd0e2d6"
+  },
+  "plot": "Michael Jordan Is Praised as the Greatest Basketball Player of All Time in This Documentary!",
+  "genres": [
+    "Documentary",
+    "Short",
+    "Sport"
+  ],
+  "runtime": 46,
+  "metacritic": 57,
+  "cast": [
+    "Michael Jordan",
+    "Phil Jackson",
+    "Doug Collins",
+    "Bob Greene"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTIyMDg2NTAyM15BMl5BanBnXkFtZTcwMzg3MDU1MQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Michael Jordan to the Max",
+  "fullplot": "Michael Jordan Is Praised as the Greatest Basketball Player of All Time in This Documentary!",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2000-05-05T00:00:00.000Z"
+  },
+  "directors": [
+    "Don Kempf",
+    "James D. Stern"
+  ],
+  "writers": [
+    "Jonathan Hock"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-23 00:30:38.937000000",
+  "year": 2000,
+  "imdb": {
+    "rating": 7.5,
+    "votes": 1640,
+    "id": 245280
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.8,
+      "numReviews": 3104,
+      "meter": 82
+    },
+    "dvd": {
+      "$date": "2001-02-13T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 6.2,
+      "numReviews": 27,
+      "meter": 67
+    },
+    "lastUpdated": {
+      "$date": "2015-09-15T19:18:35.000Z"
+    },
+    "rotten": 9,
+    "production": "Giant Screen Sport",
+    "fresh": 18
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13a4f29313caabd0ffd5"
+  },
+  "plot": "Wilshire Pig and Sheldon Snail discover a map to uncover Doctor Frankenswine's monster. All kinds of mishaps ensue in their quest.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Comedy"
+  ],
+  "runtime": 30,
+  "cast": [
+    "Tim Conner",
+    "Brian Cummings",
+    "Krisha Fairchild",
+    "Michele Mariana"
+  ],
+  "title": "Claymation Comedy of Horrors Show",
+  "fullplot": "Wilshire Pig and Sheldon Snail discover a map to uncover Doctor Frankenswine's monster. All kinds of mishaps ensue in their quest.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1991-05-29T00:00:00.000Z"
+  },
+  "directors": [
+    "Barry Bruce"
+  ],
+  "writers": [
+    "Barry Bruce",
+    "Mark Gustafson",
+    "Ryan Holznagel"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "Won 1 Primetime Emmy. Another 1 nomination."
+  },
+  "lastupdated": "2015-08-05 01:10:39.240000000",
+  "year": 1991,
+  "imdb": {
+    "rating": 6.4,
+    "votes": 112,
+    "id": 252993
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3,
+      "numReviews": 19,
+      "meter": 50
+    },
+    "dvd": {
+      "$date": "1994-09-21T00:00:00.000Z"
+    },
+    "lastUpdated": {
+      "$date": "2015-09-12T19:06:57.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13a6f29313caabd1748a"
+  },
+  "plot": "A mysterious BMW driver must protect an eccentric old foreigner from criminals.",
+  "genres": [
+    "Action",
+    "Short"
+  ],
+  "runtime": 6,
+  "cast": [
+    "Clive Owen",
+    "Tomas Milian"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BZTlhZWNhYjctODFmMy00YTc0LTgyYTctZmZjNDVhNDk5YTgyXkEyXkFqcGdeQXVyNzg5OTk2OA@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Ambush",
+  "fullplot": "The Driver is a shadowy BMW driver who serves as a chauffeur. On a dark night, he is carrying an elderly old Cuban. They are startled by a van full of armed terrorists, demanding a cache of diamonds stolen by the passenger. At first the Driver is willing to give it up, but when he learns that his cargo actually swallowed the diamonds, he decides to do the right thing.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2001-04-26T00:00:00.000Z"
+  },
+  "directors": [
+    "John Frankenheimer"
+  ],
+  "writers": [
+    "Andrew Kevin Walker"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-28 00:12:04.610000000",
+  "year": 2001,
+  "imdb": {
+    "rating": 7.2,
+    "votes": 3815,
+    "id": 283875
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.5,
+      "numReviews": 173,
+      "meter": 69
+    },
+    "lastUpdated": {
+      "$date": "2015-08-26T18:53:51.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13a6f29313caabd174fe"
+  },
+  "plot": "The Driver is carrying an East Asian child who has been chosen for a strange rite. He must drive him through a dark night in the city to get to a monk's house, while eluding several U.S. ...",
+  "genres": [
+    "Action",
+    "Short"
+  ],
+  "runtime": 6,
+  "cast": [
+    "Clive Owen",
+    "Mason Lee",
+    "Sonom Gualson",
+    "Brian Smyj"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMjEzNDgxMjE4MF5BMl5BanBnXkFtZTYwMzQxMzg5._V1_SY1000_SX677_AL_.jpg",
+  "title": "Chosen",
+  "fullplot": "The Driver is carrying an East Asian child who has been chosen for a strange rite. He must drive him through a dark night in the city to get to a monk's house, while eluding several U.S. cars out to get the child.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2001-05-10T00:00:00.000Z"
+  },
+  "directors": [
+    "Ang Lee"
+  ],
+  "writers": [
+    "David Carter"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-28 00:21:52.660000000",
+  "year": 2001,
+  "imdb": {
+    "rating": 7,
+    "votes": 3934,
+    "id": 283994
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.6,
+      "numReviews": 409
+    },
+    "lastUpdated": {
+      "$date": "2015-08-26T18:53:50.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13a6f29313caabd181dc"
+  },
+  "countries": [
+    "France"
+  ],
+  "genres": [
+    "Short",
+    "Animation"
+  ],
+  "runtime": 12,
+  "cast": [
+    "Daniel Bard",
+    "Thierry Doublet",
+    "Jacques Faure",
+    "Josette Lassaque"
+  ],
+  "num_mflix_comments": 1,
+  "title": "Dèjeuner du matin",
+  "lastupdated": "2015-06-20 01:06:21.743000000",
+  "languages": [
+    "French"
+  ],
+  "released": {
+    "$date": "1979-06-13T00:00:00.000Z"
+  },
+  "directors": [
+    "Patrick Bokanowski"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "year": 1974,
+  "imdb": {
+    "rating": 7.1,
+    "votes": 66,
+    "id": 287420
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.5,
+      "numReviews": 2
+    },
+    "lastUpdated": {
+      "$date": "2015-06-07T18:26:41.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13a8f29313caabd1cb43"
+  },
+  "plot": "3D Animated coffee beans get into a gun fight over a loud party next door. Bean1 cant sleep and so crashes the party and starts shooting all the Beans. Bean2 avoids being shot and sneaks ...",
+  "genres": [
+    "Short",
+    "Animation",
+    "Action"
+  ],
+  "runtime": 7,
+  "title": "Killer Bean 2: The Party",
+  "num_mflix_comments": 0,
+  "countries": [
+    "USA"
+  ],
+  "fullplot": "3D Animated coffee beans get into a gun fight over a loud party next door. Bean1 cant sleep and so crashes the party and starts shooting all the Beans. Bean2 avoids being shot and sneaks away with the CD which they have been playing loudly all night. Bean1 and Bean2 confront and agree to a 25 metre standoff gunfight. Bean2 is killed and Bean1 finally arrives back at home and collapses into bed 1 minute before his alarm clock goes off.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2000-08-08T00:00:00.000Z"
+  },
+  "directors": [
+    "Jeff Lew"
+  ],
+  "writers": [
+    "Jeff Lew"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2014-10-26 00:01:16.093000000",
+  "year": 2000,
+  "imdb": {
+    "rating": 7.3,
+    "votes": 301,
+    "id": 307057
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.6,
+      "numReviews": 89,
+      "meter": 55
+    },
+    "production": "Jeffery Lew",
+    "lastUpdated": {
+      "$date": "2015-08-26T18:31:50.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13a9f29313caabd1ee20"
+  },
+  "plot": "Upset by rumors that Halloween may end, Dracula calls his mild-mannered monsters together and delivers an ultimatum - either regain their frightening image, or leave his Transylvania castle forever.",
+  "genres": [
+    "Short",
+    "Comedy",
+    "Family"
+  ],
+  "runtime": 30,
+  "cast": [
+    "Judd Hirsch",
+    "Mariette Hartley",
+    "Henry Gibson",
+    "Jack Riley"
+  ],
+  "title": "The Halloween That Almost Wasn't",
+  "fullplot": "On Halloween night, Count Dracula summons all the classic horror monsters to demand that they either revamp themselves into the horrible, scary creatures they are supposed to be, or get out of his castle. Definite disco-culture influence here. Judd Hirsch looks like a Saturday Night Fever throwback. Fun for children!",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "1979-10-28T00:00:00.000Z"
+  },
+  "directors": [
+    "Bruce Bilson"
+  ],
+  "writers": [
+    "Coleman Jacoby"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 4,
+    "text": "Won 1 Primetime Emmy. Another 3 nominations."
+  },
+  "lastupdated": "2015-08-12 00:12:51.097000000",
+  "year": 1979,
+  "imdb": {
+    "rating": 7.7,
+    "votes": 237,
+    "id": 316318
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.6,
+      "numReviews": 715,
+      "meter": 82
+    },
+    "dvd": {
+      "$date": "1992-09-16T00:00:00.000Z"
+    },
+    "lastUpdated": {
+      "$date": "2015-05-11T19:42:11.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13abf29313caabd24315"
+  },
+  "plot": "Decades ago, the legendary James Brown sold his soul to the devil for fame and fortune. Now he wishes to renegotiate. Hired to take Mr. Brown to a rendezvous with the devil (Gary Oldman), ...",
+  "genres": [
+    "Action",
+    "Short",
+    "Adventure"
+  ],
+  "runtime": 9,
+  "cast": [
+    "Clive Owen",
+    "Gary Oldman",
+    "James Brown",
+    "Marilyn Manson"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMzc0NTMwNTIxMF5BMl5BanBnXkFtZTcwNTEzMTQyMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Beat the Devil",
+  "fullplot": "Decades ago, the legendary James Brown sold his soul to the devil for fame and fortune. Now he wishes to renegotiate. Hired to take Mr. Brown to a rendezvous with the devil (Gary Oldman), the driver soon finds himself entangled in fiendish plans.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2002-11-21T00:00:00.000Z"
+  },
+  "directors": [
+    "Tony Scott"
+  ],
+  "writers": [
+    "David Fincher (original concept)",
+    "David Carter",
+    "Greg Hahn",
+    "Vincent Ngo"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-16 00:24:43.180000000",
+  "year": 2002,
+  "imdb": {
+    "rating": 7.5,
+    "votes": 4843,
+    "id": 338768
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.8,
+      "numReviews": 706,
+      "meter": 78
+    },
+    "production": "Lionsgate",
+    "lastUpdated": {
+      "$date": "2015-08-05T20:06:03.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13abf29313caabd24951"
+  },
+  "plot": "The Driver finds himself in a dangerous, yet highly political situation; this time being pursued by a helicopter gunship while carrying a passenger with a suitcase... the contents of which ...",
+  "genres": [
+    "Short",
+    "Action",
+    "Adventure"
+  ],
+  "runtime": 8,
+  "cast": [
+    "Clive Owen",
+    "Don Cheadle",
+    "F. Murray Abraham",
+    "Clifton Powell"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMjAwMzA5NzI3MF5BMl5BanBnXkFtZTcwNjEzMTQyMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Ticker",
+  "fullplot": "The Driver finds himself in a dangerous, yet highly political situation; this time being pursued by a helicopter gunship while carrying a passenger with a suitcase... the contents of which will decide the fate of a nation.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2002-11-12T00:00:00.000Z"
+  },
+  "directors": [
+    "Joe Carnahan"
+  ],
+  "writers": [
+    "Joe Carnahan",
+    "David Fincher (based on an original concept created by)",
+    "Joe Sweet (based on a story by)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-28 00:17:45.627000000",
+  "year": 2002,
+  "imdb": {
+    "rating": 7.7,
+    "votes": 3796,
+    "id": 340398
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.9,
+      "numReviews": 219,
+      "meter": 79
+    },
+    "lastUpdated": {
+      "$date": "2015-08-15T18:32:54.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13abf29313caabd252e8"
+  },
+  "plot": "Scrat is putting one last acorn into a huge and very neatly arranged stash, but it keeps popping up. He jumps on it -- once too often, and the whole stockpile falls through a knothole in ...",
+  "genres": [
+    "Animation",
+    "Comedy",
+    "Short"
+  ],
+  "runtime": 5,
+  "cast": [
+    "Chris Wedge"
+  ],
+  "num_mflix_comments": 0,
+  "title": "Gone Nutty",
+  "fullplot": "Scrat is putting one last acorn into a huge and very neatly arranged stash, but it keeps popping up. He jumps on it -- once too often, and the whole stockpile falls through a knothole in the tree stump. The acorns and Scrat fall a very long way; on the way down, Scrat collects them into a huge ball. Everything hits the ground, and Scrat must pull out of the snow quickly to avoid one last acorn, which is becoming red-hot from the reentry force. It hits the Earth, with a major impact. But at least Scrat has that acorn - or does he?",
+  "countries": [
+    "USA"
+  ],
+  "released": {
+    "$date": "2002-11-28T00:00:00.000Z"
+  },
+  "directors": [
+    "Carlos Saldanha"
+  ],
+  "writers": [
+    "William H. Frake III (story)",
+    "Dan Shefelman (story)",
+    "Moroni (story)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "Nominated for 1 Oscar. Another 1 nomination."
+  },
+  "lastupdated": "2015-09-04 00:33:49.320000000",
+  "year": 2002,
+  "imdb": {
+    "rating": 7.6,
+    "votes": 2215,
+    "id": 342965
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.8,
+      "numReviews": 125
+    },
+    "production": "Fox",
+    "lastUpdated": {
+      "$date": "2015-07-23T19:29:06.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13abf29313caabd255d2"
+  },
+  "plot": "Scrat is putting one last acorn into a huge and very neatly arranged stash, but it keeps popping up. He jumps on it -- once too often, and the whole stockpile falls through a knothole in ...",
+  "genres": [
+    "Animation",
+    "Comedy",
+    "Short"
+  ],
+  "runtime": 5,
+  "cast": [
+    "Chris Wedge"
+  ],
+  "title": "Gone Nutty",
+  "fullplot": "Scrat is putting one last acorn into a huge and very neatly arranged stash, but it keeps popping up. He jumps on it -- once too often, and the whole stockpile falls through a knothole in the tree stump. The acorns and Scrat fall a very long way; on the way down, Scrat collects them into a huge ball. Everything hits the ground, and Scrat must pull out of the snow quickly to avoid one last acorn, which is becoming red-hot from the reentry force. It hits the Earth, with a major impact. But at least Scrat has that acorn - or does he?",
+  "countries": [
+    "USA"
+  ],
+  "released": {
+    "$date": "2002-11-28T00:00:00.000Z"
+  },
+  "directors": [
+    "Carlos Saldanha"
+  ],
+  "writers": [
+    "William H. Frake III (story)",
+    "Dan Shefelman (story)",
+    "Moroni (story)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "Nominated for 1 Oscar. Another 1 nomination."
+  },
+  "lastupdated": "2015-08-31 05:56:43.670000000",
+  "year": 2002,
+  "imdb": {
+    "rating": 7.6,
+    "votes": 2212,
+    "id": 342965
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.8,
+      "numReviews": 125
+    },
+    "production": "Fox",
+    "lastUpdated": {
+      "$date": "2015-07-23T19:29:06.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13acf29313caabd279bf"
+  },
+  "plot": "Red Flag is the international training exercise for air forces of allied countries where many of the world's best pilots meet for the most challenging flying of their careers. Red Flag is ...",
+  "genres": [
+    "Documentary",
+    "Short"
+  ],
+  "runtime": 40,
+  "rated": "G",
+  "cast": [
+    "John Stratton",
+    "Robert Novotny",
+    "Sam Morgan",
+    "Randy Cason"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTc1MTcwNzEwMF5BMl5BanBnXkFtZTcwOTIwNjAzMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Fighter Pilot: Operation Red Flag",
+  "fullplot": "Red Flag is the international training exercise for air forces of allied countries where many of the world's best pilots meet for the most challenging flying of their careers. Red Flag is the final training for pilots and their aircrews before being sent into actual combat. Follow pilot, John Stratton, as he makes his way through this extraordinary event held in the desert of Nevada.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2004-12-02T00:00:00.000Z"
+  },
+  "directors": [
+    "Stephen Low"
+  ],
+  "writers": [
+    "Stephen Low",
+    "Denny Kuhr (story)",
+    "Joe Stanley (story)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-25 00:11:58.057000000",
+  "year": 2004,
+  "imdb": {
+    "rating": 6.9,
+    "votes": 503,
+    "id": 353168
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.fighterpilotfilm.com/",
+    "viewer": {
+      "rating": 3.6,
+      "numReviews": 1308,
+      "meter": 74
+    },
+    "dvd": {
+      "$date": "2005-09-27T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 6.2,
+      "numReviews": 16,
+      "meter": 56
+    },
+    "lastUpdated": {
+      "$date": "2015-09-01T19:36:57.000Z"
+    },
+    "rotten": 7,
+    "production": "Stephen Low Distribution",
+    "fresh": 9
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13b6f29313caabd47d3b"
+  },
+  "plot": "The first twelve chapters of R. Kelly's rap opera in which a one-night stand triggers a series of revelations about the sexual deceits of its characters.",
+  "genres": [
+    "Short",
+    "Drama",
+    "Music"
+  ],
+  "runtime": 43,
+  "rated": "R",
+  "cast": [
+    "R. Kelly",
+    "Cat Wilson",
+    "Rolando Boyce",
+    "LeShay N. Tomlinson"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTg4NjQ1MzM1NV5BMl5BanBnXkFtZTcwMDE2NzMzMQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Trapped in the Closet: Chapters 1-12",
+  "fullplot": "The first twelve chapters of R. Kelly's rap opera in which a one-night stand triggers a series of revelations about the sexual deceits of its characters.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2005-11-01T00:00:00.000Z"
+  },
+  "directors": [
+    "R. Kelly",
+    "Jim Swaffield"
+  ],
+  "writers": [
+    "R. Kelly"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-21 00:31:56.593000000",
+  "year": 2005,
+  "imdb": {
+    "rating": 6.7,
+    "votes": 1566,
+    "id": 491587
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.6,
+      "numReviews": 4223,
+      "meter": 81
+    },
+    "dvd": {
+      "$date": "2005-11-08T00:00:00.000Z"
+    },
+    "production": "Jive Records",
+    "lastUpdated": {
+      "$date": "2015-07-29T18:32:07.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13b7f29313caabd49222"
+  },
+  "plot": "A documentary film crew arrive at a Latvian garbage dump to investigate reports of a giant mutated worm living in the garbage. When the worm story proves to be a myth, rather than waste ...",
+  "genres": [
+    "Documentary",
+    "Short"
+  ],
+  "runtime": 35,
+  "title": "Dream Land",
+  "countries": [
+    "Latvia",
+    "Germany"
+  ],
+  "fullplot": "A documentary film crew arrive at a Latvian garbage dump to investigate reports of a giant mutated worm living in the garbage. When the worm story proves to be a myth, rather than waste their trip, they decide to film the dump itself. Far from being a lifeless wasteland, the dump proves to be home to a multitude of birds and animals and a handful of people, all struggling to survive in an endless cycle of death, decay and rebirth. Insects and snakes, beavers and deer, men and machines play out their roles against the backdrop of an expanse of gently steaming garbage which, thanks to deft camera work, at times seems surreally beautiful.",
+  "num_mflix_comments": 0,
+  "released": {
+    "$date": "2005-04-02T00:00:00.000Z"
+  },
+  "directors": [
+    "Laila Pakalnina"
+  ],
+  "writers": [
+    "Maris Maskalans",
+    "Laila Pakalnina"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-09-01 00:02:28.147000000",
+  "year": 2004,
+  "imdb": {
+    "rating": 7.4,
+    "votes": 41,
+    "id": 497204
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 0,
+      "numReviews": 0
+    },
+    "lastUpdated": {
+      "$date": "2015-02-25T17:32:05.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13b8f29313caabd4bb49"
+  },
+  "plot": "Actor Robert Wuhl examines facts and myths in American history.",
+  "genres": [
+    "Documentary",
+    "Short",
+    "Comedy"
+  ],
+  "runtime": 30,
+  "rated": "TV-MA",
+  "cast": [
+    "Robert Wuhl",
+    "Elliott Brooke",
+    "Tucker Carlson",
+    "David Cross"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BOTY4ODIxMDM5NV5BMl5BanBnXkFtZTcwNzg5OTQ1MQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Assume the Position with Mr. Wuhl",
+  "fullplot": "Actor Robert Wuhl examines facts and myths in American history.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2006-04-01T00:00:00.000Z"
+  },
+  "directors": [
+    "Nick Doob",
+    "Chris Hegedus",
+    "D.A. Pennebaker"
+  ],
+  "writers": [
+    "Rebecca Reynolds",
+    "Allan Stephan",
+    "Robert Wuhl"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-04-02 00:01:21.530000000",
+  "year": 2006,
+  "imdb": {
+    "rating": 8.6,
+    "votes": 503,
+    "id": 788006
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4.2,
+      "numReviews": 32,
+      "meter": 88
+    },
+    "dvd": {
+      "$date": "2007-10-09T00:00:00.000Z"
+    },
+    "lastUpdated": {
+      "$date": "2015-05-01T18:59:40.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13b9f29313caabd4dd83"
+  },
+  "plot": "An animated short based on Hans Christian Andersen's tale about a poor young girl with a burning desire to find comfort and happiness in her life. Desperate to keep warm, the girl lights ...",
+  "genres": [
+    "Animation",
+    "Short",
+    "Drama"
+  ],
+  "runtime": 7,
+  "rated": "G",
+  "title": "The Little Matchgirl",
+  "poster": "https://m.media-amazon.com/images/M/MV5BMzg0ODg5MjgtN2E5My00YzA4LTlhNDUtZWZkMDA5ODRkOTAwXkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_SY1000_SX677_AL_.jpg",
+  "countries": [
+    "USA"
+  ],
+  "fullplot": "An animated short based on Hans Christian Andersen's tale about a poor young girl with a burning desire to find comfort and happiness in her life. Desperate to keep warm, the girl lights the matches she sells, and envisions a very different life for herself in the fiery flames filled with images of loving relatives, bountiful food, and a place to call home.",
+  "num_mflix_comments": 0,
+  "released": {
+    "$date": "2006-09-07T00:00:00.000Z"
+  },
+  "directors": [
+    "Roger Allers"
+  ],
+  "writers": [
+    "Hans Christian Andersen (original story)",
+    "Roger Allers (story)",
+    "Ed Gombert (story)",
+    "Kevin Harkey (story)",
+    "Mark Walton (story)",
+    "Ralph Zondag (story)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "Nominated for 1 Oscar. Another 1 nomination."
+  },
+  "lastupdated": "2015-09-14 10:18:13.237000000",
+  "year": 2006,
+  "imdb": {
+    "rating": 7.9,
+    "votes": 2127,
+    "id": 816562
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4.2,
+      "numReviews": 375,
+      "meter": 84
+    },
+    "lastUpdated": {
+      "$date": "2015-08-04T18:33:04.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13bbf29313caabd5333a"
+  },
+  "plot": "This half-hour animated TV special features the Shrek characters putting their own spin on holiday traditions.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Adventure"
+  ],
+  "runtime": 30,
+  "rated": "TV-PG",
+  "cast": [
+    "Mike Myers",
+    "Eddie Murphy",
+    "Cameron Diaz",
+    "Antonio Banderas"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BZDE0NGZkOGMtNGY4My00OTM4LTliM2MtM2Y5OTVjOTFmNTA5XkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Shrek the Halls",
+  "fullplot": "This half-hour animated TV special features the Shrek characters putting their own spin on holiday traditions.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2007-11-28T00:00:00.000Z"
+  },
+  "directors": [
+    "Gary Trousdale"
+  ],
+  "writers": [
+    "Gary Trousdale (screenplay)",
+    "Sean Bishop (screenplay)",
+    "Theresa Cullen (screenplay)",
+    "Bill Riling (screenplay)",
+    "William Steig (book)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 4,
+    "text": "4 nominations."
+  },
+  "lastupdated": "2015-09-06 00:36:38.010000000",
+  "year": 2007,
+  "imdb": {
+    "rating": 6.5,
+    "votes": 8846,
+    "id": 897387
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.5,
+      "numReviews": 27414,
+      "meter": 63
+    },
+    "dvd": {
+      "$date": "2008-11-04T00:00:00.000Z"
+    },
+    "production": "DreamWorks Animation",
+    "lastUpdated": {
+      "$date": "2015-09-10T18:38:55.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13bdf29313caabd59951"
+  },
+  "plot": "An underwater look at the diverse coastal regions of Southern Australia, New Guinea and the Indo-Pacific areas and the impact of global warming on the oceans.",
+  "genres": [
+    "Documentary",
+    "Short"
+  ],
+  "runtime": 40,
+  "metacritic": 77,
+  "rated": "G",
+  "cast": [
+    "Jim Carrey"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMjA4NzczODU2MV5BMl5BanBnXkFtZTcwNzU2ODQwMg@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Under the Sea 3D",
+  "fullplot": "An underwater look at the diverse coastal regions of Southern Australia, New Guinea and the Indo-Pacific areas and the impact of global warming on the oceans.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2009-02-13T00:00:00.000Z"
+  },
+  "directors": [
+    "Howard Hall"
+  ],
+  "writers": [
+    "Howard Hall",
+    "Toni Myers",
+    "Graeme Ferguson"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "2 nominations."
+  },
+  "lastupdated": "2015-09-04 00:12:18.367000000",
+  "year": 2009,
+  "imdb": {
+    "rating": 7.6,
+    "votes": 1316,
+    "id": 1020876
+  },
+  "countries": [
+    "USA",
+    "Canada"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.imax.com/underthesea/",
+    "viewer": {
+      "rating": 3.6,
+      "numReviews": 13630,
+      "meter": 73
+    },
+    "dvd": {
+      "$date": "2010-03-30T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 7.4,
+      "numReviews": 48,
+      "meter": 94
+    },
+    "boxOffice": "$34.6M",
+    "consensus": "Technically and visually dazzling...",
+    "rotten": 3,
+    "production": "IMAX/Warner Bros.",
+    "lastUpdated": {
+      "$date": "2015-08-18T18:17:48.000Z"
+    },
+    "fresh": 45
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13bff29313caabd5ebec"
+  },
+  "plot": "Goofy tries to set up his new home theater in time for the big game, with disastrous results.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Comedy"
+  ],
+  "runtime": 6,
+  "rated": "G",
+  "cast": [
+    "Corey Burton",
+    "Bill Farmer"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BM2VmZDg0YmQtZGIwMy00MjgzLWE1NDctNTU5OTZkZmIzMWM3XkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "How to Hook Up Your Home Theater",
+  "fullplot": "Goofy tries to set up his new home theater in time for the big game, with disastrous results.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2007-12-21T00:00:00.000Z"
+  },
+  "directors": [
+    "Kevin Deters",
+    "Stevie Wermers"
+  ],
+  "writers": [
+    "Kevin Deters (story)",
+    "Wilbert Plijnaar (story)",
+    "Stevie Wermers (story)",
+    "Dan Abraham (story)",
+    "Josie Trinidad (additional story)",
+    "Burny Mattinson (additional story)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "2 nominations."
+  },
+  "lastupdated": "2015-09-14 07:41:54.773000000",
+  "year": 2007,
+  "imdb": {
+    "rating": 7.5,
+    "votes": 532,
+    "id": 1114718
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.9,
+      "numReviews": 11
+    },
+    "lastUpdated": {
+      "$date": "2015-08-13T18:45:22.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13c2f29313caabd66a91"
+  },
+  "plot": "A stage magician's rabbit gets into a magical onstage brawl against his neglectful guardian with two magic hats.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Comedy"
+  ],
+  "runtime": 5,
+  "rated": "G",
+  "cast": [
+    "Doug Sweetland"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTEwNjMwMjc3MDdeQTJeQWpwZ15BbWU4MDg0OTA4MDIx._V1_SY1000_SX677_AL_.jpg",
+  "title": "Presto",
+  "fullplot": "Dignity. Poise. Mystery. We expect nothing less from the great, turn-of-the-century magician, Presto. But, when Presto forgets to feed his rabbit one too many times, well, there's really no telling what to expect! Follow the escalating high jinx of the amazing Presto, his rabbit Alec, and what happens onstage when a star magician's ego provokes some clever revenge from his neglected costar.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2008-06-27T00:00:00.000Z"
+  },
+  "directors": [
+    "Doug Sweetland"
+  ],
+  "writers": [
+    "Doug Sweetland",
+    "Ted Mathot (story)",
+    "Valerie LaPointe (story)",
+    "Justin Wright (story)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "Nominated for 1 Oscar. Another 1 nomination."
+  },
+  "lastupdated": "2015-08-28 00:25:38.643000000",
+  "year": 2008,
+  "imdb": {
+    "rating": 8.5,
+    "votes": 15430,
+    "id": 1245104
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4.2,
+      "numReviews": 3502,
+      "meter": 92
+    },
+    "dvd": {
+      "$date": "1998-01-01T00:00:00.000Z"
+    },
+    "lastUpdated": {
+      "$date": "2015-09-12T18:52:12.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13c4f29313caabd6d35b"
+  },
+  "plot": "A portrait of the acting craft of John Cazale and a tour through the movies that defined a generation.",
+  "genres": [
+    "Documentary",
+    "Short",
+    "Biography"
+  ],
+  "runtime": 39,
+  "cast": [
+    "John Cazale",
+    "Steve Buscemi",
+    "Sam Rockwell",
+    "Al Pacino"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTY3NTE3NzcxN15BMl5BanBnXkFtZTcwNzA3MjQ4Mw@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "I Knew It Was You: Rediscovering John Cazale",
+  "fullplot": "John Cazale was in only five films - The Godfather, The Conversation, The Godfather, Part Two, Dog Day Afternoon, and The Deer Hunter - each was nominated for Best Picture. Yet today most people don't even know his name. I KNEW IT WAS YOU is a fresh tour through movies that defined a generation.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2009-01-16T00:00:00.000Z"
+  },
+  "directors": [
+    "Richard Shepard"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-16 00:26:26.697000000",
+  "year": 2009,
+  "imdb": {
+    "rating": 7.9,
+    "votes": 1250,
+    "id": 1352717
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4,
+      "numReviews": 709,
+      "meter": 87
+    },
+    "dvd": {
+      "$date": "2010-11-30T00:00:00.000Z"
+    },
+    "production": "Oscilloscope Laboratories",
+    "lastUpdated": {
+      "$date": "2015-09-01T18:05:09.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13c7f29313caabd74468"
+  },
+  "plot": "A visual, 4-D experience of the battles of World War II featuring stories, archival footage and advanced special effects.",
+  "genres": [
+    "Short",
+    "War"
+  ],
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Kevin Bacon",
+    "Corbin Bleu",
+    "Patricia Clarkson",
+    "Kevin Connolly"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTQwNjU1NjE0NV5BMl5BanBnXkFtZTcwNTg4MzI1Mw@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Beyond All Boundaries",
+  "fullplot": "A visual, 4-D experience of the battles of World War II featuring stories, archival footage and advanced special effects.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2009-11-09T00:00:00.000Z"
+  },
+  "directors": [
+    "David Briggs"
+  ],
+  "writers": [
+    "Chris Ellis"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-26 00:59:10.417000000",
+  "year": 2009,
+  "imdb": {
+    "rating": 7.3,
+    "votes": 381,
+    "id": 1448751
+  },
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.KillerElite.com",
+    "viewer": {
+      "rating": 3.1,
+      "numReviews": 32143,
+      "meter": 42
+    },
+    "dvd": {
+      "$date": "2012-01-10T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 4.7,
+      "numReviews": 122,
+      "meter": 25
+    },
+    "boxOffice": "$25.1M",
+    "consensus": "A rote, utterly disposable Jason Statham vehicle that just happens to have Clive Owen and Robert De Niro in it.",
+    "rotten": 91,
+    "production": "Open Road Films",
+    "lastUpdated": {
+      "$date": "2015-09-12T18:16:39.000Z"
+    },
+    "fresh": 31
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13c8f29313caabd7677f"
+  },
+  "plot": "A filmmaker captures images that characterize the violence and repression as well as the hope of rebirth and remembrance in northeastern Thailand.",
+  "genres": [
+    "Short"
+  ],
+  "runtime": 17,
+  "cast": [
+    "Kumgieng Jittamaat",
+    "Miti Jittamaat",
+    "Phetmongkol Chantawong",
+    "Nuttapon Kemthong"
+  ],
+  "title": "A Letter to Uncle Boonmee",
+  "fullplot": "A filmmaker captures images that characterize the violence and repression as well as the hope of rebirth and remembrance in northeastern Thailand.",
+  "languages": [
+    "Thai"
+  ],
+  "released": {
+    "$date": "2009-05-05T00:00:00.000Z"
+  },
+  "directors": [
+    "Apichatpong Weerasethakul"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-06-30 00:07:31.310000000",
+  "year": 2009,
+  "imdb": {
+    "rating": 6.9,
+    "votes": 314,
+    "id": 1480648
+  },
+  "countries": [
+    "Thailand",
+    "UK",
+    "Germany"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.9,
+      "numReviews": 263,
+      "meter": 42
+    },
+    "dvd": {
+      "$date": "2011-08-02T00:00:00.000Z"
+    },
+    "production": "MTI Home Video",
+    "lastUpdated": {
+      "$date": "2015-08-17T18:48:17.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13c8f29313caabd76f3c"
+  },
+  "plot": "To the residents of Moraine, Ohio, General Motors was more than just a car company, it was the lifeblood of a community. In the wake of GM's 2008 announcement that it was closing the plant,...",
+  "genres": [
+    "Documentary",
+    "Short"
+  ],
+  "runtime": 40,
+  "cast": [
+    "Popeye Hurst",
+    "Kim Clay",
+    "Kate Geiger",
+    "Kathe Day"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMzQyNzk1NTE1OV5BMl5BanBnXkFtZTcwNjQwMTMzMw@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Last Truck: Closing of a GM Plant",
+  "fullplot": "To the residents of Moraine, Ohio, General Motors was more than just a car company, it was the lifeblood of a community. In the wake of GM's 2008 announcement that it was closing the plant, stunned workers looked back at their careers at GM, reminiscing about the opportunities, friendships and pride that the factory line had given them. Through their words, this documentary stands as an elegy to a dying American manufacturing system--and a timely look at the U.S. auto industry in crisis.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2012-11-29T00:00:00.000Z"
+  },
+  "directors": [
+    "Steven Bognar",
+    "Julia Reichert"
+  ],
+  "writers": [
+    "Steven Bognar",
+    "Julia Reichert"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "Nominated for 1 Oscar. Another 1 nomination."
+  },
+  "lastupdated": "2015-05-14 01:22:25.640000000",
+  "year": 2009,
+  "imdb": {
+    "rating": 6.9,
+    "votes": 231,
+    "id": 1487120
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 0,
+      "numReviews": 0
+    },
+    "lastUpdated": {
+      "$date": "2015-01-09T12:21:54.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13c9f29313caabd79496"
+  },
+  "plot": "A prying neighbor, a glassy-eyed drug dealer, and a husband brandishing both a weapon and a vendetta make up the welcome wagon. Set amidst the as-yet-unopened boxes and the hopes for a ...",
+  "genres": [
+    "Short",
+    "Drama"
+  ],
+  "runtime": 20,
+  "rated": "TV-14",
+  "cast": [
+    "Vincent D'Onofrio",
+    "Kevin Corrigan",
+    "Liane Balaban",
+    "Jamie Harrold"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BYzdkZTc2MmYtMGMwMC00ODNiLThjN2MtYjY4OWUyZjk3NTc2XkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The New Tenants",
+  "fullplot": "A prying neighbor, a glassy-eyed drug dealer, and a husband brandishing both a weapon and a vendetta make up the welcome wagon. Set amidst the as-yet-unopened boxes and the hopes for a fresh start of two men on what might just be the worst moving day ever. Their new apartment reveals its terrifying history in a film that is by turns funny, frightening, and unexpectedly romantic.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2010-03-06T00:00:00.000Z"
+  },
+  "directors": [
+    "Joachim Back"
+  ],
+  "writers": [
+    "Anders Thomas Jensen (original screenplay \"De Nye Lejere\")",
+    "David Rakoff (adaptation)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 3,
+    "text": "Won 1 Oscar. Another 2 nominations."
+  },
+  "lastupdated": "2015-08-25 01:08:58.400000000",
+  "year": 2009,
+  "imdb": {
+    "rating": 7,
+    "votes": 849,
+    "id": 1520428
+  },
+  "countries": [
+    "Denmark",
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.5,
+      "numReviews": 90,
+      "meter": 65
+    },
+    "website": "http://www.thenewtenantsfilm.com/",
+    "production": "Park Pictures",
+    "lastUpdated": {
+      "$date": "2015-09-10T19:12:46.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13cbf29313caabd7f35a"
+  },
+  "plot": "In the depths of a snowy forest in an unknown wartime, two soldiers from opposing armies try to outwit each other in a perilous game of Tic-Tac-Toe, until they find themselves outplayed by destiny.",
+  "genres": [
+    "Short",
+    "War"
+  ],
+  "runtime": 9,
+  "cast": [
+    "Nicky Naudè",
+    "Guillaume Tavi"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMjQ1MTdkYmItOGNlOS00MmU4LTkzMjMtMGNlOGEwYzNiNTZlXkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "8",
+  "fullplot": "In the depths of a snowy forest in an unknown wartime, two soldiers from opposing armies try to outwit each other in a perilous game of Tic-Tac-Toe, until they find themselves outplayed by destiny.",
+  "countries": [
+    "Switzerland",
+    "Serbia"
+  ],
+  "released": {
+    "$date": "2010-05-05T00:00:00.000Z"
+  },
+  "directors": [
+    "Acim Vasic"
+  ],
+  "writers": [
+    "Acim Vasic"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "2 nominations."
+  },
+  "lastupdated": "2015-09-11 00:12:39.137000000",
+  "year": 2010,
+  "imdb": {
+    "rating": 7.8,
+    "votes": 883,
+    "id": 1592502
+  },
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a13cbf29313caabd7f806"
+  },
+  "plot": "In Shinto religion, in order to make something sacred, man will tie a rope around it. This sacred quality of the tying can be applied also to Kinbaku, which is an erotic, spiritual, artistic connection between the people who are doing it",
+  "genres": [
+    "Documentary",
+    "Short"
+  ],
+  "runtime": 29,
+  "cast": [
+    "Steve Osada",
+    "Ageha Asagi",
+    "Haruki Yukimura",
+    "Shuhei Kitagawa"
+  ],
+  "title": "Kinbaku",
+  "fullplot": "Kinbaku, \"tight binding\", is a Japanese style of bondage which involves tying up the bottom using simple yet visually intricate patterns, with several pieces of rope usually hemp or jute. It started with samurais capturing enemies on battlefield 500 years ago.",
+  "languages": [
+    "Japanese",
+    "English"
+  ],
+  "released": {
+    "$date": "2011-01-23T00:00:00.000Z"
+  },
+  "directors": [
+    "Jouni Hokkanen"
+  ],
+  "writers": [
+    "Jouni Hokkanen (screenplay)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-01-18 00:00:10.827000000",
+  "year": 2010,
+  "imdb": {
+    "rating": 6.1,
+    "votes": 21,
+    "id": 1596572
+  },
+  "countries": [
+    "Finland"
+  ],
+  "type": "movie",
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13cbf29313caabd801ee"
+  },
+  "plot": "Jennie the terrier has everything a dog could ever wish for, but still feels that something is missing. She leaves home to discover what that is.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Family"
+  ],
+  "runtime": 24,
+  "cast": [
+    "Meryl Streep",
+    "Spike Jonze",
+    "Alain Goulem",
+    "Al Tuck"
+  ],
+  "title": "Higglety Pigglety Pop! or There Must Be More to Life",
+  "fullplot": "Jennie, a terrier, has it all -- but leaves home after deciding there must be more to life. In a distant town, she learns that the Mother Goose Theatre needs a leading lady. She applies; the manager tells her she lacks experience. She's not sure what that is, but sets out to get it. A cat who drives a milk truck provides Jennie with breakfast and a ride to a white house that's in need of a nanny; the catch is that if the nanny can't get the baby to eat, it's down to the basement where a lion resides. Can Jennie gain the experience she needs without becoming the lion's lunch? And, indeed, is there more to life, or in a land of lions and squalling babies, is there no place like home?",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2010-03-02T00:00:00.000Z"
+  },
+  "directors": [
+    "Chris Lavis",
+    "Maciek Szczerbowski"
+  ],
+  "writers": [
+    "Maurice Sendak (book)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-21 00:55:30.267000000",
+  "year": 2010,
+  "imdb": {
+    "rating": 6.9,
+    "votes": 153,
+    "id": 1603847
+  },
+  "countries": [
+    "Canada"
+  ],
+  "type": "movie",
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13cbf29313caabd8059a"
+  },
+  "plot": "When a ruthless brothel madame murders Jonah Hex's current quarry, the disfigured bounty hunter plans to make her pay.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Western"
+  ],
+  "runtime": 13,
+  "rated": "PG-13",
+  "cast": [
+    "Thomas Jane",
+    "Linda Hamilton",
+    "Jason Marsden",
+    "Michael Rooker"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BYjhmNjg5ZjktNzQ2Mi00NDQ3LWFkOWMtOWIyNTE5MjZmYjEyXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "DC Showcase: Jonah Hex",
+  "fullplot": "When a ruthless brothel madame murders Jonah Hex's current quarry, the disfigured bounty hunter plans to make her pay.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2010-07-27T00:00:00.000Z"
+  },
+  "directors": [
+    "Joaquim Dos Santos"
+  ],
+  "writers": [
+    "Joe R. Lansdale (screenplay)",
+    "Justin Gray (original story)",
+    "Jimmy Palmiotti (original story)",
+    "Phil Noto (original story)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-24 00:34:27.417000000",
+  "year": 2010,
+  "imdb": {
+    "rating": 7.4,
+    "votes": 1413,
+    "id": 1606600
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a13cdf29313caabd83b84"
+  },
+  "plot": "A night watchman spends time on a basketball court throwing a ball into the basket. He has become an expert. He shows his abilities to a simple janitor, who also like him, is there all night.",
+  "genres": [
+    "Short",
+    "Comedy",
+    "Drama"
+  ],
+  "runtime": 6,
+  "cast": [
+    "Ricardo Azevedo",
+    "Joèo Marèal"
+  ],
+  "num_mflix_comments": 0,
+  "title": "3x3",
+  "fullplot": "A night watchman spends time on a basketball court throwing a ball into the basket. He has become an expert. He shows his abilities to a simple janitor, who also like him, is there all night.",
+  "languages": [
+    "Portuguese"
+  ],
+  "released": {
+    "$date": "2009-03-12T00:00:00.000Z"
+  },
+  "directors": [
+    "Nuno Rocha"
+  ],
+  "writers": [
+    "Nuno Rocha (story)",
+    "Nuno Rocha"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-09-07 00:29:30.697000000",
+  "year": 2009,
+  "imdb": {
+    "rating": 6.9,
+    "votes": 206,
+    "id": 1654725
+  },
+  "countries": [
+    "Portugal"
+  ],
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a13cdf29313caabd83c4c"
+  },
+  "plot": "A mysterious man with missing memories asks very personal questions to a beautiful woman.",
+  "genres": [
+    "Short",
+    "Drama",
+    "Mystery"
+  ],
+  "runtime": 11,
+  "title": "Apricot",
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTM2NzE2NzE2NF5BMl5BanBnXkFtZTcwMjg0MjQ5Mw@@._V1_SY1000_SX677_AL_.jpg",
+  "countries": [
+    "Australia",
+    "France"
+  ],
+  "fullplot": "A mysterious man with missing memories asks very personal questions to a beautiful woman.",
+  "languages": [
+    "English"
+  ],
+  "cast": [
+    "Ewen Leslie",
+    "Laura Gordon",
+    "Joshua Rozzi",
+    "Alice Lily Zahalka"
+  ],
+  "directors": [
+    "Ben Briand"
+  ],
+  "writers": [
+    "Ben Briand"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-06-22 00:31:26.987000000",
+  "year": 2009,
+  "imdb": {
+    "rating": 7.3,
+    "votes": 345,
+    "id": 1655566
+  },
+  "type": "movie",
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13cff29313caabd88abd"
+  },
+  "plot": "Shrek gets in the Halloween spirit by challenging his fairytale friends to come up with scary stories for a contest. But the gang learn that they'll have to spend the night in Lord Farquaad's haunted castle before the winner is named.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Adventure"
+  ],
+  "runtime": 26,
+  "rated": "TV-PG",
+  "cast": [
+    "Mike Myers",
+    "Cameron Diaz",
+    "Antonio Banderas",
+    "Kristen Schaal"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BNjk5YWQwOGItNDE4NC00MDhjLWFhNmMtMDEzOGM4NDE2ZjRmXkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Scared Shrekless",
+  "fullplot": "Shrek gets in the Halloween spirit by challenging his fairytale friends to come up with scary stories for a contest. But the gang learn that they'll have to spend the night in Lord Farquaad's haunted castle before the winner is named.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2010-10-28T00:00:00.000Z"
+  },
+  "directors": [
+    "Gary Trousdale",
+    "Raman Hui"
+  ],
+  "writers": [
+    "Gary Trousdale (screenplay)",
+    "Sean Bishop (screenplay)",
+    "Claire Morrissey (story)",
+    "Robert Porter (story)",
+    "Sean Bishop (story)",
+    "William Steig (book)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 5,
+    "text": "5 nominations."
+  },
+  "lastupdated": "2015-08-29 00:19:49.813000000",
+  "year": 2010,
+  "imdb": {
+    "rating": 6.8,
+    "votes": 2338,
+    "id": 1725156
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.6,
+      "numReviews": 344,
+      "meter": 65
+    },
+    "dvd": {
+      "$date": "2011-09-13T00:00:00.000Z"
+    },
+    "production": "DreamWorks Animation",
+    "lastUpdated": {
+      "$date": "2015-09-17T17:46:20.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13cff29313caabd89b30"
+  },
+  "plot": "Amidst an old London clock shop, a small, quirky mantle clock comes to the aide of the store's more expensive clocks when a thief breaks in and threatens to steal them away.",
+  "genres": [
+    "Animation",
+    "Short"
+  ],
+  "runtime": 6,
+  "rated": "G",
+  "title": "Tick Tock Tale",
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMjMwMDIzMTA2MV5BMl5BanBnXkFtZTgwOTYzNzUwNjE@._V1_SY1000_SX677_AL_.jpg",
+  "countries": [
+    "USA"
+  ],
+  "fullplot": "Amidst an old London clock shop, a small, quirky mantle clock comes to the aide of the store's more expensive clocks when a thief breaks in and threatens to steal them away.",
+  "languages": [
+    "English"
+  ],
+  "cast": [
+    "Dean Wellins"
+  ],
+  "directors": [
+    "Dean Wellins"
+  ],
+  "writers": [
+    "Dean Wellins (story)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-08 00:37:57.210000000",
+  "year": 2010,
+  "imdb": {
+    "rating": 7.5,
+    "votes": 17,
+    "id": 1736313
+  },
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.breakawaythefilm.com/",
+    "viewer": {
+      "rating": 3,
+      "numReviews": 756,
+      "meter": 35
+    },
+    "dvd": {
+      "$date": "2012-06-26T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 5,
+      "numReviews": 5,
+      "meter": 20
+    },
+    "lastUpdated": {
+      "$date": "2015-09-13T18:07:43.000Z"
+    },
+    "rotten": 4,
+    "production": "Eros International",
+    "fresh": 1
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13cff29313caabd8a45f"
+  },
+  "plot": "The documentary is about the uniqueness of childhood and the exploration of the human mind. In an outdoor nursery based in the woods, children create their own individually constructed worlds and can test out the boundaries of reality.",
+  "genres": [
+    "Documentary",
+    "Short",
+    "Adventure"
+  ],
+  "runtime": 15,
+  "title": "Into the Middle of Nowhere",
+  "num_mflix_comments": 0,
+  "countries": [
+    "UK"
+  ],
+  "fullplot": "The documentary is about the uniqueness of childhood and the exploration of the human mind. In an outdoor nursery based in the woods, children create their own individually constructed worlds and can test out the boundaries of reality.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2010-06-01T00:00:00.000Z"
+  },
+  "directors": [
+    "Anna Frances Ewert"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-04-11 01:24:10.913000000",
+  "year": 2010,
+  "imdb": {
+    "rating": 7,
+    "votes": 9,
+    "id": 1744612
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 0,
+      "numReviews": 5
+    },
+    "production": "FilmBuff",
+    "lastUpdated": {
+      "$date": "2015-07-25T18:59:02.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13d0f29313caabd8d978"
+  },
+  "plot": "Following the conclusion of the storyline in the \"Fight For Your Right\" music video, the Beasties break into a liquor store, drop acid with groupies, and get into a breakdance competition with time-traveling future versions of themselves.",
+  "genres": [
+    "Short",
+    "Comedy",
+    "Music"
+  ],
+  "runtime": 30,
+  "cast": [
+    "Elijah Wood",
+    "Danny McBride",
+    "Seth Rogen",
+    "Susan Sarandon"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BZGJmYmY1ODQtZmUyMC00YWFjLWE0ZDQtZGM5YWI4NDc4MjQwXkEyXkFqcGdeQXVyNzg5OTk2OA@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Fight for Your Right Revisited",
+  "fullplot": "Following the conclusion of the storyline in the \"Fight For Your Right\" music video, the Beasties break into a liquor store, drop acid with groupies, and get into a breakdance competition with time-traveling future versions of themselves.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2011-01-20T00:00:00.000Z"
+  },
+  "directors": [
+    "Adam Yauch"
+  ],
+  "writers": [
+    "Adam Yauch"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-22 00:23:16.077000000",
+  "year": 2011,
+  "imdb": {
+    "rating": 8.1,
+    "votes": 3837,
+    "id": 1791504
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.8,
+      "numReviews": 45
+    },
+    "lastUpdated": {
+      "$date": "2015-08-20T19:02:02.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13d1f29313caabd9016e"
+  },
+  "plot": "Directed by Spike Jonze, Scenes from the Suburbs is a half-hour short film inspired by Arcade Fire's Grammy(r) award-winning album The Suburbs. Hailed as \"absolutely f--king gorgeous\" by ...",
+  "genres": [
+    "Short",
+    "Music"
+  ],
+  "runtime": 28,
+  "cast": [
+    "Sam Dillon",
+    "Paul Pluymen",
+    "Zoe Graham",
+    "Ashlin Williamson"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNDEwMDI5Nl5BMl5BanBnXkFtZTcwODEwMzg0NA@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Scenes from the Suburbs",
+  "fullplot": "Directed by Spike Jonze, Scenes from the Suburbs is a half-hour short film inspired by Arcade Fire's Grammy(r) award-winning album The Suburbs. Hailed as \"absolutely f--king gorgeous\" by INDIEWIRE at its U.S. premiere at 2011's SXSW festival, this collaborative effort between Spike and the band is a part of Arcade Fire's The Suburbs Deluxe release.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2011-03-01T00:00:00.000Z"
+  },
+  "directors": [
+    "Spike Jonze"
+  ],
+  "writers": [
+    "Will Butler",
+    "Win Butler",
+    "Spike Jonze"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 3,
+    "text": "3 nominations."
+  },
+  "lastupdated": "2015-09-02 00:04:23.477000000",
+  "year": 2011,
+  "imdb": {
+    "rating": 7.4,
+    "votes": 1631,
+    "id": 1823744
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4.2,
+      "numReviews": 12
+    },
+    "lastUpdated": {
+      "$date": "2015-07-14T18:41:27.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13d1f29313caabd907b6"
+  },
+  "plot": "A story set in the bonny blue highlands of Scotland, and centered on Nessie, the friendly Loch Ness monster, her best friend MacQuack the rubber duck, and how the duo came to live in the ...",
+  "genres": [
+    "Animation",
+    "Short"
+  ],
+  "runtime": 5,
+  "rated": "G",
+  "cast": [
+    "Billy Connolly"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BYWQyZWExOGMtOWU3YS00NGI2LTkyZWEtMDY0NDdkOWI4YmM1XkEyXkFqcGdeQXVyNjE1NDkwNDQ@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Ballad of Nessie",
+  "fullplot": "A story set in the bonny blue highlands of Scotland, and centered on Nessie, the friendly Loch Ness monster, her best friend MacQuack the rubber duck, and how the duo came to live in the moor they call home. Problems arrive in the form of a land developer named MacFroogle, who wants to build a mini-golf empire on top of Nessie's home.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2011-07-15T00:00:00.000Z"
+  },
+  "directors": [
+    "Stevie Wermers"
+  ],
+  "writers": [
+    "Regina Conroy",
+    "Stevie Wermers",
+    "Kevin Deters"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-08 00:38:02.350000000",
+  "year": 2011,
+  "imdb": {
+    "rating": 7.1,
+    "votes": 335,
+    "id": 1827536
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.6,
+      "numReviews": 290,
+      "meter": 59
+    },
+    "production": "Walt Disney Animation Studios",
+    "lastUpdated": {
+      "$date": "2015-08-13T19:11:52.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13d2f29313caabd913dc"
+  },
+  "genres": [
+    "Short",
+    "Sci-Fi"
+  ],
+  "runtime": 45,
+  "title": "Slow Action",
+  "countries": [
+    "UK"
+  ],
+  "lastupdated": "2015-06-15 03:15:33.967000000",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2011-01-28T00:00:00.000Z"
+  },
+  "directors": [
+    "Ben Rivers"
+  ],
+  "writers": [
+    "Mark von Schlegell (dialogue)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "year": 2011,
+  "imdb": {
+    "rating": 6.7,
+    "votes": 79,
+    "id": 1836918
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 0,
+      "numReviews": 1
+    },
+    "lastUpdated": {
+      "$date": "2015-06-20T19:35:34.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13d2f29313caabd91c7f"
+  },
+  "countries": [
+    "France"
+  ],
+  "genres": [
+    "Animation",
+    "Short",
+    "Comedy"
+  ],
+  "runtime": 6,
+  "cast": [
+    "Spike Jonze",
+    "Pierre Le-Tan",
+    "Soko"
+  ],
+  "num_mflix_comments": 1,
+  "title": "Mourir auprès de toi",
+  "lastupdated": "2015-07-27 00:15:06.357000000",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2011-05-14T00:00:00.000Z"
+  },
+  "directors": [
+    "Simon Cahn",
+    "Spike Jonze"
+  ],
+  "writers": [
+    "Olympia Le-Tan (creator)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 3,
+    "text": "3 nominations."
+  },
+  "year": 2011,
+  "imdb": {
+    "rating": 7.2,
+    "votes": 354,
+    "id": 1843214
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 0.5,
+      "numReviews": 1
+    },
+    "website": "http://www.cinegraphe.net/mbfdcine.html",
+    "lastUpdated": {
+      "$date": "2015-07-06T19:50:28.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13d4f29313caabd987c1"
+  },
+  "plot": "A fable of a young boy who is coming of age in the most peculiar of circumstances. Tonight is the very first time his Papa and Grandpa are taking him to work. In an old wooden boat they row...",
+  "genres": [
+    "Animation",
+    "Short"
+  ],
+  "runtime": 7,
+  "rated": "G",
+  "cast": [
+    "Krista Sheffler",
+    "Tony Fucile",
+    "Phil Sheridan"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BZThmZjNjOTctNjhjNy00OGE5LTlhODEtNTRkMWE3NzJjMjdmXkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "La Luna",
+  "fullplot": "A fable of a young boy who is coming of age in the most peculiar of circumstances. Tonight is the very first time his Papa and Grandpa are taking him to work. In an old wooden boat they row far out to sea, and with no land in sight, they stop and wait. A big surprise awaits the little boy as he discovers his family's most unusual line of work. Should he follow the example of his Papa, or his Grandpa? Will he be able to find his own way in the midst of their conflicting opinions and timeworn traditions?",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2012-06-22T00:00:00.000Z"
+  },
+  "directors": [
+    "Enrico Casarosa"
+  ],
+  "writers": [
+    "Enrico Casarosa (screenplay)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "Nominated for 1 Oscar. Another 1 nomination."
+  },
+  "lastupdated": "2015-08-20 00:57:13.390000000",
+  "year": 2011,
+  "imdb": {
+    "rating": 8,
+    "votes": 7306,
+    "id": 1957945
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4.1,
+      "numReviews": 251
+    },
+    "production": "Disney Pixar",
+    "lastUpdated": {
+      "$date": "2015-09-14T17:44:11.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13d4f29313caabd9887f"
+  },
+  "plot": "In this breathtaking science fiction spectacle, a strange mechanical device lands on a desolate world and uses the planet to undergo a startling transformation, that has profound implications for an entire galaxy.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Action"
+  ],
+  "runtime": 5,
+  "title": "Abiogenesis",
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTM1OTM4ODczMV5BMl5BanBnXkFtZTcwMzg3MjA2NQ@@._V1_SY1000_SX677_AL_.jpg",
+  "countries": [
+    "New Zealand"
+  ],
+  "fullplot": "In this breathtaking science fiction spectacle, a strange mechanical device lands on a desolate world and uses the planet to undergo a startling transformation, that has profound implications for an entire galaxy.",
+  "released": {
+    "$date": "2012-05-26T00:00:00.000Z"
+  },
+  "directors": [
+    "Richard Mans"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-03-31 01:50:30.257000000",
+  "year": 2011,
+  "imdb": {
+    "rating": 6.7,
+    "votes": 187,
+    "id": 1959325
+  },
+  "type": "movie",
+  "tomatoes": {
+    "website": "http://www.facebook.com/americanmarymovie",
+    "viewer": {
+      "rating": 3.3,
+      "numReviews": 4601,
+      "meter": 52
+    },
+    "dvd": {
+      "$date": "2013-06-18T00:00:00.000Z"
+    },
+    "critic": {
+      "rating": 5.5,
+      "numReviews": 47,
+      "meter": 57
+    },
+    "lastUpdated": {
+      "$date": "2015-08-17T18:42:25.000Z"
+    },
+    "consensus": "It suffers a bit from some uneven acting and an underwhelming climax, but American Mary utilizes pitch black humor and striking visuals to deliver gory, freaky thrills for body horror enthusiasts.",
+    "rotten": 20,
+    "production": "Xlrator Media",
+    "fresh": 27
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13d6f29313caabd9ea98"
+  },
+  "plot": "As the village of Berk prepares for its winter holiday, the resident dragons all inexplicably fly away.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Adventure"
+  ],
+  "runtime": 22,
+  "cast": [
+    "Jay Baruchel",
+    "Gerard Butler",
+    "Craig Ferguson",
+    "America Ferrera"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BNjY5MjQ3YTktYmE4Ni00NGQyLTlkZGItYmNiZDVhNGFmZGM1XkEyXkFqcGdeQXVyNDQ2MTMzODA@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Dragons: Gift of the Night Fury",
+  "fullplot": "The Viking town of Berk, now enjoying its new alliance with the dragons, is preparing for its annual winter holiday of Snoggletog. However, that spirit is threatened when all the dragons, except Toothless who needs Hiccup to help him, suddenly fly away for some reason. While Astrid ineffectually tries to salvage the occasion, Hiccup decides to build Toothless a new prosthetic to allow him to fly independently, only to have the dragon take off as well. However, as the holiday approaches, Hiccup finds himself swept up to learn the dragons' secret the hard way and to find a solution to bring them home early.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2011-11-15T00:00:00.000Z"
+  },
+  "directors": [
+    "Tom Owens"
+  ],
+  "writers": [
+    "Adam F. Goldberg (screenplay)",
+    "Cressida Cowell (book)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "2 nominations."
+  },
+  "lastupdated": "2015-09-01 00:11:01.693000000",
+  "year": 2011,
+  "imdb": {
+    "rating": 7.6,
+    "votes": 3953,
+    "id": 2065968
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4.1,
+      "numReviews": 376,
+      "meter": 82
+    },
+    "dvd": {
+      "$date": "2012-02-14T00:00:00.000Z"
+    },
+    "lastUpdated": {
+      "$date": "2015-08-20T18:31:24.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13d6f29313caabda1016"
+  },
+  "plot": "Manny, Sid and Diego get in trouble with Santa and have to get their names off of the naughty list.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Adventure"
+  ],
+  "runtime": 26,
+  "rated": "TV-PG",
+  "cast": [
+    "Ray Romano",
+    "John Leguizamo",
+    "Denis Leary",
+    "Queen Latifah"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BYTMzMjZhNjAtZDBmMS00MzA0LTljNjUtZGNlMGNiYTc5ODg4XkEyXkFqcGdeQXVyNTE0MDY4Mjk@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Ice Age: A Mammoth Christmas",
+  "lastupdated": "2015-09-14 02:05:40.810000000",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2011-11-24T00:00:00.000Z"
+  },
+  "directors": [
+    "Karen Disher"
+  ],
+  "writers": [
+    "Sam Harper",
+    "Mike Reiss"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "year": 2011,
+  "imdb": {
+    "rating": 6.5,
+    "votes": 7240,
+    "id": 2100546
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.4,
+      "numReviews": 104,
+      "meter": 54
+    },
+    "dvd": {
+      "$date": "2011-11-26T00:00:00.000Z"
+    },
+    "lastUpdated": {
+      "$date": "2015-09-11T18:41:20.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13d7f29313caabda18f5"
+  },
+  "plot": "A documentary on five seniors living in a retirement resort in Florida - men and women who came decades ago with their spouses by their sides, and now find themselves grappling with love, loss and the universal desire for human connection.",
+  "genres": [
+    "Documentary",
+    "Short",
+    "Comedy"
+  ],
+  "runtime": 40,
+  "title": "Kings Point",
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTQ3NDA2NTcwM15BMl5BanBnXkFtZTcwOTI3MDY5OA@@._V1_SY1000_SX677_AL_.jpg",
+  "countries": [
+    "USA"
+  ],
+  "fullplot": "In the 1970s and 80s, hundreds of thousands of senior citizens migrated from New York City to Kings Point, a typical retirement community, located just outside West Palm Beach, Florida. Lured by blue skies, sunshine, palm trees, and the promise of a rich social life, they bought their way to paradise for just a $1,500 down payment. Now, as an aging community faces its own mortality, paradise has begun to exact a higher price. Through the experiences of six longtime residents, 'Kings Point' captures both the allure and the darker complexities of living in a world where 'nobody gets too close.' Poignant, funny and dark, 'Kings Point' is a deeply empathetic portrait of the last act of the American Dream.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2012-10-12T00:00:00.000Z"
+  },
+  "directors": [
+    "Sari Gilman"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "Nominated for 1 Oscar. Another 1 nomination."
+  },
+  "lastupdated": "2015-08-19 00:02:11.377000000",
+  "year": 2012,
+  "imdb": {
+    "rating": 6.7,
+    "votes": 166,
+    "id": 2109153
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.5,
+      "numReviews": 5
+    },
+    "production": "Wider Film Projects",
+    "lastUpdated": {
+      "$date": "2015-09-14T17:43:29.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13d8f29313caabda53b2"
+  },
+  "plot": "Maggie Simpson spends the day in the Ayn Rand School for Tots.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Comedy"
+  ],
+  "runtime": 5,
+  "rated": "PG",
+  "title": "The Longest Daycare",
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTU2Mjc2NDY3Ml5BMl5BanBnXkFtZTcwMTA3NjExOQ@@._V1_SY1000_SX677_AL_.jpg",
+  "countries": [
+    "USA"
+  ],
+  "fullplot": "Maggie Simpson spends the day in the Ayn Rand School for Tots.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2012-07-13T00:00:00.000Z"
+  },
+  "directors": [
+    "David Silverman"
+  ],
+  "writers": [
+    "James L. Brooks",
+    "Matt Groening",
+    "Al Jean",
+    "David Mirkin",
+    "Joel H. Cohen",
+    "Michael Price"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "Nominated for 1 Oscar. Another 1 nomination."
+  },
+  "lastupdated": "2015-09-05 00:35:55.190000000",
+  "year": 2012,
+  "imdb": {
+    "rating": 7.3,
+    "votes": 3624,
+    "id": 2175842
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 0,
+      "numReviews": 0
+    },
+    "lastUpdated": {
+      "$date": "2014-10-20T21:20:46.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13d8f29313caabda6891"
+  },
+  "plot": "A sexy maid equipped with a chainsaw is a family's only hope against hordes of the undead zombies.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Action"
+  ],
+  "runtime": 7,
+  "title": "Chainsaw Maid",
+  "num_mflix_comments": 1,
+  "countries": [
+    "Japan"
+  ],
+  "fullplot": "A sexy maid equipped with a chainsaw is a family's only hope against hordes of the undead zombies.",
+  "languages": [
+    "Japanese"
+  ],
+  "released": {
+    "$date": "2007-12-08T00:00:00.000Z"
+  },
+  "directors": [
+    "Takena Nagao"
+  ],
+  "writers": [
+    "Takena Nagao"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-06-25 00:29:04.097000000",
+  "year": 2007,
+  "imdb": {
+    "rating": 6.9,
+    "votes": 99,
+    "id": 2197863
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 5,
+      "numReviews": 2,
+      "meter": 100
+    },
+    "dvd": {
+      "$date": "2012-07-31T00:00:00.000Z"
+    },
+    "production": "LionsGate Entertainment",
+    "lastUpdated": {
+      "$date": "2015-08-24T19:06:41.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13d9f29313caabda9807"
+  },
+  "plot": "SHIELD agent Sitwell is assigned to recover an abandoned Chitauri weapon being used by a young couple robbing a bank",
+  "genres": [
+    "Short",
+    "Action",
+    "Sci-Fi"
+  ],
+  "runtime": 12,
+  "cast": [
+    "Lizzy Caplan",
+    "Jesse Bradford",
+    "Maximiliano Hernèndez",
+    "Titus Welliver"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTM2MzY1ODcyN15BMl5BanBnXkFtZTcwNTE3OTIxOA@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Marvel One-Shot: Item 47",
+  "fullplot": "This film shows a couple - Claire and Benny - robbing banks with a piece of alien technology that they've recovered from the New York battle site. Eventually we see them in a motel room with a load of money. Their neighbor starts playing music really loud. Benny goes out to investigate, but doesn't return.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2012-09-25T00:00:00.000Z"
+  },
+  "directors": [
+    "Louis D'Esposito"
+  ],
+  "writers": [
+    "Eric Pearson (screenplay)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-09-14 09:47:20.330000000",
+  "year": 2012,
+  "imdb": {
+    "rating": 6.7,
+    "votes": 4166,
+    "id": 2247732
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 1.8,
+      "numReviews": 33
+    },
+    "lastUpdated": {
+      "$date": "2015-08-24T18:07:21.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13d9f29313caabdaaac6"
+  },
+  "plot": "Puss in Boots returns with the help of three kittens to rescue a precious ruby from the evil Whisperer.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Adventure"
+  ],
+  "runtime": 13,
+  "cast": [
+    "Antonio Banderas",
+    "Gilles Marini",
+    "Charlotte Newhouse",
+    "Chris Miller"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BNjc1MDRhY2UtZjVkMC00MThiLThjYjAtMGQ5ZGRhNThjYWMyXkEyXkFqcGdeQXVyMjEzMDMwMTI@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Puss in Boots: The Three Diablos",
+  "fullplot": "The infamous French thief The Whisperer has stolen a princess' ruby and Puss in Boots is on a mission to recover the precious stone. But Puss must somehow first tame The Three Diablos, three cute little kittens who were The Whisperer's henchmen, before they endanger the mission in this purrfectly charming comedy adventure.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2012-02-24T00:00:00.000Z"
+  },
+  "directors": [
+    "Raman Hui"
+  ],
+  "writers": [
+    "Tom Wheeler (screenplay)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-29 00:51:35.327000000",
+  "year": 2012,
+  "imdb": {
+    "rating": 7.1,
+    "votes": 2230,
+    "id": 2268617
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.8,
+      "numReviews": 10
+    },
+    "lastUpdated": {
+      "$date": "2015-09-02T18:14:48.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13daf29313caabdacfe9"
+  },
+  "plot": "Transforming familiar objects into fresh guacamole.",
+  "genres": [
+    "Animation",
+    "Short"
+  ],
+  "runtime": 2,
+  "title": "Fresh Guacamole",
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BOGVjMGM4MWMtM2I2NC00ZDM1LWEwZmMtZDljYjA2N2MwZjU5XkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_SY1000_SX677_AL_.jpg",
+  "countries": [
+    "USA"
+  ],
+  "fullplot": "Transforming familiar objects into fresh guacamole.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2012-03-02T00:00:00.000Z"
+  },
+  "directors": [
+    "PES"
+  ],
+  "writers": [
+    "PES"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "Nominated for 1 Oscar. Another 1 nomination."
+  },
+  "lastupdated": "2015-08-15 00:57:34.427000000",
+  "year": 2012,
+  "imdb": {
+    "rating": 7.3,
+    "votes": 2623,
+    "id": 2309977
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.6,
+      "numReviews": 46,
+      "meter": 26
+    },
+    "production": "Shree International",
+    "lastUpdated": {
+      "$date": "2015-08-07T18:27:16.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13daf29313caabdad7c0"
+  },
+  "plot": "Director PES recreates five classic arcade games (Centipede, Frogger, Asteroids, Space Invaders, and Pac-Man) by manipulating familiar objects in stop-motion.",
+  "genres": [
+    "Animation",
+    "Short"
+  ],
+  "runtime": 2,
+  "title": "Game Over",
+  "countries": [
+    "USA"
+  ],
+  "fullplot": "Director PES recreates five classic arcade games (Centipede, Frogger, Asteroids, Space Invaders, and Pac-Man) by manipulating familiar objects in stop-motion.",
+  "num_mflix_comments": 1,
+  "released": {
+    "$date": "2006-06-08T00:00:00.000Z"
+  },
+  "directors": [
+    "PES"
+  ],
+  "writers": [
+    "PES"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-06-19 00:30:37.403000000",
+  "year": 2006,
+  "imdb": {
+    "rating": 6.8,
+    "votes": 238,
+    "id": 2318505
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 0,
+      "numReviews": 1,
+      "meter": 100
+    },
+    "lastUpdated": {
+      "$date": "2015-01-08T08:50:04.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13dcf29313caabdb0bda"
+  },
+  "plot": "Botasky and Packy are private contractors, working in the Middle East, with support from a distant helicopter-mobile base. Their jobs are as \"sniper\" and \"spotter\", the spotter is the team ...",
+  "genres": [
+    "Animation",
+    "Short",
+    "Action"
+  ],
+  "runtime": 22,
+  "cast": [
+    "Satoshi Hino",
+    "Hiroshi Tsuchida"
+  ],
+  "num_mflix_comments": 1,
+  "title": "Cat Shit One",
+  "fullplot": "Botasky and Packy are private contractors, working in the Middle East, with support from a distant helicopter-mobile base. Their jobs are as \"sniper\" and \"spotter\", the spotter is the team lead (as is accurate military protocol). Their assignment is to extract two captives, an ally, and a local. The characters are 1. Rabbits (contractors), and 2. Camels (locals). Rabbits seem to have been chosen due to the Japanese word for Rabbit is Usagi, which can be interpreted to be U.S.A. GI. The Team must interpret the situation, and decide whether to extract the victims themselves or wait for further support. Things seem to be moving rapidly in a negative direction, so the Team elects to split up, and do the extraction themselves. They split up, with Packy going into a village to locate and pull the victims out, and Botasky providing over-watch and sniping support. The fighting is rapid, and smooth, with Packy showing a great deal of speed and agility. The sniping is rapid and smooth. Packy's weapon transfers are perfect. His shooting is controlled and precise, no wasted spray and pray mag dumps. The enemy gets ground support, which complicates things, Botasky is located and shut down as a sniper, and the rescue seems to be compromised, until the Team gets it's own Air Support.",
+  "languages": [
+    "Japanese",
+    "English"
+  ],
+  "released": {
+    "$date": "2011-02-05T00:00:00.000Z"
+  },
+  "directors": [
+    "Kazuya Sasahara"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-09-17 02:12:04.460000000",
+  "year": 2010,
+  "imdb": {
+    "rating": 7.1,
+    "votes": 897,
+    "id": 2368669
+  },
+  "countries": [
+    "Japan"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.6,
+      "numReviews": 233,
+      "meter": 68
+    },
+    "dvd": {
+      "$date": "2015-05-25T00:00:00.000Z"
+    },
+    "lastUpdated": {
+      "$date": "2015-08-24T18:25:51.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13dcf29313caabdb1e4e"
+  },
+  "plot": "Seven girls, a mansion perched on a Cycladic rock, a cycle of lessons on discipline, desire and demise-infinitely.",
+  "genres": [
+    "Short",
+    "Drama"
+  ],
+  "runtime": 35,
+  "cast": [
+    "Ariane Labed",
+    "Isolda Dychauk",
+    "Clèmence Poèsy",
+    "Evangelia Randou"
+  ],
+  "num_mflix_comments": 0,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMjI5MDYwODg3Ml5BMl5BanBnXkFtZTgwOTY5NjQxMDE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Capsule",
+  "fullplot": "Seven girls, a mansion perched on a Cycladic rock, a cycle of lessons on discipline, desire and demise-infinitely.",
+  "languages": [
+    "French"
+  ],
+  "released": {
+    "$date": "2012-08-03T00:00:00.000Z"
+  },
+  "directors": [
+    "Athina Rachel Tsangari"
+  ],
+  "writers": [
+    "Athina Rachel Tsangari",
+    "Aleksandra Waliszewska"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-05-27 00:15:14.060000000",
+  "year": 2012,
+  "imdb": {
+    "rating": 6.2,
+    "votes": 104,
+    "id": 2386140
+  },
+  "countries": [
+    "Greece"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4.1,
+      "numReviews": 12
+    },
+    "website": "http://www.eatingalabama.com/",
+    "production": "FilmBuff",
+    "lastUpdated": {
+      "$date": "2015-07-27T18:45:50.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13dcf29313caabdb1f1e"
+  },
+  "plot": "\"The Education Of Mohammad Hussein\" is an intimate look at how the largest Muslim community in the U.S. responds to the provocations of an antiIslamic preacher. Through the eyes of children...",
+  "genres": [
+    "Documentary",
+    "Short",
+    "Drama"
+  ],
+  "runtime": 38,
+  "title": "The Education of Mohammad Hussein",
+  "poster": "https://m.media-amazon.com/images/M/MV5BOTAwNzQ5MDU4OV5BMl5BanBnXkFtZTgwNDgyMDkxMjE@._V1_SY1000_SX677_AL_.jpg",
+  "countries": [
+    "USA"
+  ],
+  "fullplot": "\"The Education Of Mohammad Hussein\" is an intimate look at how the largest Muslim community in the U.S. responds to the provocations of an antiIslamic preacher. Through the eyes of children, the film examines what it is like to come of age as a Muslim in the United States a decade after the 2001 terrorist attacks.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2013-05-15T00:00:00.000Z"
+  },
+  "directors": [
+    "Heidi Ewing",
+    "Rachel Grady"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "2 nominations."
+  },
+  "lastupdated": "2015-08-20 00:10:17.673000000",
+  "year": 2013,
+  "imdb": {
+    "rating": 5.4,
+    "votes": 66,
+    "id": 2386922
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.9,
+      "numReviews": 43,
+      "meter": 68
+    },
+    "dvd": {
+      "$date": "2013-12-03T00:00:00.000Z"
+    },
+    "website": "http://www.mrangelmovie.com/",
+    "production": "Uncork'd Entertainment",
+    "lastUpdated": {
+      "$date": "2015-09-13T17:27:29.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13ddf29313caabdb3ba3"
+  },
+  "plot": "Simon knows ducks quite well. They make noise, fly, swim, some even roll. Sometimes, it's a bit confusing and Simon gets lost.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Drama"
+  ],
+  "runtime": 12,
+  "title": "Palmipèdarium",
+  "countries": [
+    "France"
+  ],
+  "fullplot": "Simon knows ducks quite well. They make noise, fly, swim, some even roll. Sometimes, it's a bit confusing and Simon gets lost.",
+  "released": {
+    "$date": "2012-09-01T00:00:00.000Z"
+  },
+  "directors": [
+    "Jèrèmy Clapin"
+  ],
+  "writers": [
+    "Jèrèmy Clapin"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 3,
+    "text": "3 nominations."
+  },
+  "lastupdated": "2015-06-06 00:38:09.653000000",
+  "year": 2012,
+  "imdb": {
+    "rating": 6.6,
+    "votes": 60,
+    "id": 2421764
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 0,
+      "numReviews": 0
+    },
+    "website": "http://www.breakingthecycledocumentary.com/",
+    "lastUpdated": {
+      "$date": "2015-08-19T19:15:13.000Z"
+    }
+  },
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13dff29313caabdb9550"
+  },
+  "plot": "Amidst the rain in a singing city, two umbrellas- one blue, one not- fall eternally in love.",
+  "genres": [
+    "Animation",
+    "Short"
+  ],
+  "runtime": 7,
+  "rated": "G",
+  "cast": [
+    "Sarah Jaffe"
+  ],
+  "num_mflix_comments": 2,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTUxMDczNTI3OF5BMl5BanBnXkFtZTcwNjY3MTExOQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Blue Umbrella",
+  "fullplot": "Amidst the rain in a singing city, two umbrellas- one blue, one not- fall eternally in love.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2013-06-21T00:00:00.000Z"
+  },
+  "directors": [
+    "Saschka Unseld"
+  ],
+  "writers": [
+    "Saschka Unseld"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-26 01:04:49.070000000",
+  "year": 2013,
+  "imdb": {
+    "rating": 7.7,
+    "votes": 4320,
+    "id": 2616880
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4,
+      "numReviews": 256,
+      "meter": 80
+    },
+    "production": "Walt Disney Pictures",
+    "lastUpdated": {
+      "$date": "2015-09-12T18:15:28.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13e0f29313caabdbb029"
+  },
+  "plot": "Lovers start games.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Drama"
+  ],
+  "runtime": 15,
+  "title": "Love Games",
+  "num_mflix_comments": 1,
+  "countries": [
+    "South Korea"
+  ],
+  "fullplot": "Lovers start games.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2013-02-10T00:00:00.000Z"
+  },
+  "directors": [
+    "Joung Yumi"
+  ],
+  "writers": [
+    "Joung Yumi"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 3,
+    "text": "3 nominations."
+  },
+  "lastupdated": "2015-08-29 00:16:38.750000000",
+  "year": 2012,
+  "imdb": {
+    "rating": 7,
+    "votes": 26,
+    "id": 2671600
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 2.5,
+      "numReviews": 3
+    },
+    "lastUpdated": {
+      "$date": "2015-08-20T18:41:03.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13e1f29313caabdbd215"
+  },
+  "plot": "The mole who went to look for the beach of his dreams, but found a lot of asses and no free space.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Adventure"
+  ],
+  "runtime": 5,
+  "title": "Krot na more",
+  "countries": [
+    "Russia"
+  ],
+  "lastupdated": "2014-06-26 01:04:33.577000000",
+  "num_mflix_comments": 0,
+  "released": {
+    "$date": "2012-09-01T00:00:00.000Z"
+  },
+  "directors": [
+    "Anna Kadykova"
+  ],
+  "writers": [
+    "Anna Kadykova (story)",
+    "Anna Kadykova"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "year": 2012,
+  "imdb": {
+    "rating": "",
+    "votes": "",
+    "id": 2765306
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.3,
+      "numReviews": 86,
+      "meter": 60
+    },
+    "website": "http://movie.mtime.com/157125/",
+    "production": "China Lion Films",
+    "lastUpdated": {
+      "$date": "2015-09-15T18:02:38.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13e2f29313caabdbe848"
+  },
+  "plot": "A game of football turns deadly as an uninvited player joins in.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Adventure"
+  ],
+  "runtime": 7,
+  "title": "Everything I Can See From Here",
+  "countries": [
+    "UK"
+  ],
+  "fullplot": "A game of football turns deadly as an uninvited player joins in.",
+  "num_mflix_comments": 0,
+  "released": {
+    "$date": "2013-02-01T00:00:00.000Z"
+  },
+  "directors": [
+    "Bjorn-Erik Aschim",
+    "Sam Taylor"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "Nominated for 1 BAFTA Film Award. Another 1 nomination."
+  },
+  "lastupdated": "2015-01-14 00:00:55.700000000",
+  "year": 2013,
+  "imdb": {
+    "rating": 5.9,
+    "votes": 34,
+    "id": 2819436
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 0,
+      "numReviews": 0
+    },
+    "lastUpdated": {
+      "$date": "2015-02-28T17:25:47.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13e2f29313caabdbf103"
+  },
+  "plot": "Stranded in the midst of a zombie apocalypse, a man sets in motion an unlikely plan to protect the precious cargo he carries: his infant daughter.",
+  "genres": [
+    "Short",
+    "Drama",
+    "Fantasy"
+  ],
+  "runtime": 7,
+  "cast": [
+    "Andy Rodoreda",
+    "Alison Gallagher",
+    "Ruth Venn",
+    "Yolanda Ramke"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTkyNzUwMDkxOV5BMl5BanBnXkFtZTcwNjcxMzM2OQ@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Cargo",
+  "fullplot": "Stranded in the midst of a zombie apocalypse, a man sets in motion an unlikely plan to protect the precious cargo he carries: his infant daughter.",
+  "countries": [
+    "Australia"
+  ],
+  "released": {
+    "$date": "2014-05-23T00:00:00.000Z"
+  },
+  "directors": [
+    "Ben Howling",
+    "Yolanda Ramke"
+  ],
+  "writers": [
+    "Yolanda Ramke"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-15 00:41:17.787000000",
+  "year": 2013,
+  "imdb": {
+    "rating": 7.7,
+    "votes": 880,
+    "id": 2842128
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.6,
+      "numReviews": 50
+    },
+    "lastUpdated": {
+      "$date": "2015-09-10T19:19:15.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13e4f29313caabdc1e9b"
+  },
+  "plot": "A prisoner discovers a magical box with a baneful secret that he falls foul to.",
+  "genres": [
+    "Short",
+    "Drama",
+    "Fantasy"
+  ],
+  "runtime": 8,
+  "cast": [
+    "Tom Cullen",
+    "Michael Gould",
+    "Yuri Klimov",
+    "Franc Zalewski"
+  ],
+  "num_mflix_comments": 1,
+  "title": "Room 8",
+  "fullplot": "A prisoner discovers a magical box with a baneful secret that he falls foul to.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2013-04-24T00:00:00.000Z"
+  },
+  "directors": [
+    "James W. Griffiths"
+  ],
+  "writers": [
+    "James W. Griffiths",
+    "Geoffrey Fletcher (original idea and outline script by)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "Won 1 BAFTA Film Award. Another 1 nomination."
+  },
+  "lastupdated": "2015-06-26 00:50:12.640000000",
+  "year": 2013,
+  "imdb": {
+    "rating": 8,
+    "votes": 762,
+    "id": 2949338
+  },
+  "countries": [
+    "UK",
+    "Poland"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 3.9,
+      "numReviews": 5
+    },
+    "lastUpdated": {
+      "$date": "2015-06-12T18:34:23.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13e5f29313caabdc40c9"
+  },
+  "plot": "A dimension-traveling wizard gets stuck in the 21st century because cell-phone radiation interferes with his magic. With his home world on the brink of war, he seeks help from a jaded ...",
+  "genres": [
+    "Short",
+    "Comedy",
+    "Fantasy"
+  ],
+  "runtime": 11,
+  "cast": [
+    "Tahmoh Penikett",
+    "Erin Karpluk",
+    "Penelope Corrin",
+    "David Oliver Mes"
+  ],
+  "num_mflix_comments": 0,
+  "title": "The Portal",
+  "fullplot": "A dimension-traveling wizard gets stuck in the 21st century because cell-phone radiation interferes with his magic. With his home world on the brink of war, he seeks help from a jaded travel agent who he mistakes for a great sorceress. Without his powers to prove his identity, she has trouble taking him seriously, but finally agrees to reveal the secrets of our world in exchange for a lunch date.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2014-03-22T00:00:00.000Z"
+  },
+  "directors": [
+    "Jonathan Williams"
+  ],
+  "writers": [
+    "Jonathan Williams"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-05-18 04:10:22.737000000",
+  "year": 2014,
+  "imdb": {
+    "rating": 8,
+    "votes": 187,
+    "id": 3009714
+  },
+  "countries": [
+    "Canada"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 0,
+      "numReviews": 0
+    },
+    "lastUpdated": {
+      "$date": "2015-06-15T18:13:35.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13e6f29313caabdc4591"
+  },
+  "plot": "A super powered vigilante defies the law using extreme violence to fight crime.",
+  "genres": [
+    "Short",
+    "Action",
+    "Fantasy"
+  ],
+  "runtime": 10,
+  "cast": [
+    "Nick Smyth",
+    "Rick Cordeiro",
+    "Justin T. Lee"
+  ],
+  "num_mflix_comments": 0,
+  "title": "The Flying Man",
+  "fullplot": "A super powered vigilante defies the law using extreme violence to fight crime.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2013-07-12T00:00:00.000Z"
+  },
+  "directors": [
+    "Marcus Alqueres"
+  ],
+  "writers": [
+    "Marcus Alqueres (story)",
+    "Henry Grazinoli",
+    "Marcus Alqueres"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-13 00:00:44.677000000",
+  "year": 2013,
+  "imdb": {
+    "rating": 7,
+    "votes": 507,
+    "id": 3018700
+  },
+  "countries": [
+    "Canada"
+  ],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4,
+      "numReviews": 6
+    },
+    "lastUpdated": {
+      "$date": "2015-06-29T18:50:21.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13e7f29313caabdc80cd"
+  },
+  "plot": "Prison Terminal: The Last Days of Private Jack Hall is a moving cinema verite documentary that breaks through the walls of one of Americas oldest maximum security prisons to tell the story ...",
+  "genres": [
+    "Documentary",
+    "Short",
+    "Biography"
+  ],
+  "runtime": 40,
+  "title": "Prison Terminal: The Last Days of Private Jack Hall",
+  "num_mflix_comments": 2,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTU3OTU2OTAyOF5BMl5BanBnXkFtZTgwNzIwNTg5MDE@._V1_SY1000_SX677_AL_.jpg",
+  "countries": [
+    "USA"
+  ],
+  "fullplot": "Prison Terminal: The Last Days of Private Jack Hall is a moving cinema verite documentary that breaks through the walls of one of Americas oldest maximum security prisons to tell the story of the final months in the life of a terminally ill prisoner and the hospice volunteers, they themselves prisoners, who care for him. The film draws from footage shot over a six-month period behind the walls of the Iowa State Penitentiary and provides a fascinating and often poignant account of how the hospice experience can profoundly touch even the forsaken lives of the incarcerated.",
+  "languages": [
+    "English"
+  ],
+  "directors": [
+    "Edgar Barens"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "Nominated for 1 Oscar. Another 1 nomination."
+  },
+  "lastupdated": "2015-09-01 01:20:22.507000000",
+  "year": 2013,
+  "imdb": {
+    "rating": 7.9,
+    "votes": 233,
+    "id": 3145026
+  },
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": 4.1,
+      "numReviews": 38
+    },
+    "website": "http://www.prisonterminal.com/",
+    "lastUpdated": {
+      "$date": "2015-09-12T19:19:39.000Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "573a13e8f29313caabdc9e72"
+  },
+  "countries": [
+    "USA"
+  ],
+  "genres": [
+    "Short",
+    "Comedy"
+  ],
+  "runtime": 7,
+  "cast": [
+    "Clancy McLain",
+    "Taylor Anthony Miller",
+    "Denver Milord",
+    "Jim O'Heir"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMjM0NDU0NTIzOV5BMl5BanBnXkFtZTgwNDQyNTUzMDE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Boats",
+  "lastupdated": "2015-08-09 00:55:54.523000000",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2013-09-20T00:00:00.000Z"
+  },
+  "directors": [
+    "Justin Dec"
+  ],
+  "writers": [
+    "Justin Dec"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 4,
+    "text": "4 nominations."
+  },
+  "year": 2013,
+  "imdb": {
+    "rating": 6.4,
+    "votes": 137,
+    "id": 3205728
+  },
+  "type": "movie",
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13e8f29313caabdca142"
+  },
+  "num_mflix_comments": 0,
+  "genres": [
+    "Animation",
+    "Short"
+  ],
+  "runtime": 1,
+  "title": "Neko no shukai",
+  "countries": [
+    "Japan"
+  ],
+  "lastupdated": "2015-05-07 00:47:09.187000000",
+  "languages": [
+    "Japanese"
+  ],
+  "cast": [
+    "Yuka Terasaki",
+    "Rei Nakagawa",
+    "Takeshi Maeda"
+  ],
+  "directors": [
+    "Makoto Shinkai"
+  ],
+  "writers": [
+    "Makoto Shinkai"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "year": 2007,
+  "imdb": {
+    "rating": 7.5,
+    "votes": 79,
+    "id": 3210416
+  },
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a13e8f29313caabdcaaea"
+  },
+  "plot": "A documentary that follows Dr. Patricia C. Wright's mission to help lemurs, the highly evolved creatures who arrived on Madagascar millions of years ago as castaways but are now highly endangered.",
+  "genres": [
+    "Documentary",
+    "Short",
+    "Adventure"
+  ],
+  "runtime": 39,
+  "metacritic": 66,
+  "rated": "G",
+  "cast": [
+    "Morgan Freeman",
+    "Hantanirina Rasamimanana",
+    "Patricia Wright"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTY2ODAwMzQxMV5BMl5BanBnXkFtZTgwOTY3MzA3MDE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Island of Lemurs: Madagascar",
+  "lastupdated": "2015-09-15 02:13:01.643000000",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2014-09-05T00:00:00.000Z"
+  },
+  "directors": [
+    "David Douglas"
+  ],
+  "writers": [
+    "Drew Fellman"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 2,
+    "text": "2 nominations."
+  },
+  "year": 2014,
+  "imdb": {
+    "rating": 7.1,
+    "votes": 590,
+    "id": 3231010
+  },
+  "countries": [
+    "Canada",
+    "USA",
+    "Madagascar"
+  ],
+  "type": "movie",
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13ebf29313caabdd14dc"
+  },
+  "plot": "Prospect is the unusual coming-of-age story of a teenage girl on a toxic alien planet. She and her father hunt for precious materials aiming to strike it rich. When the father is attacked by a roving bandit, the daughter must take control.",
+  "genres": [
+    "Short",
+    "Action",
+    "Drama"
+  ],
+  "runtime": 14,
+  "cast": [
+    "Thomas Castle",
+    "Tony Doupe",
+    "Callie Harlow",
+    "Joshua Miles"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMjE3ODU1OTk0M15BMl5BanBnXkFtZTgwNTk1MTQ1MTE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Prospect",
+  "fullplot": "Prospect is the unusual coming-of-age story of a teenage girl on a toxic alien planet. She and her father hunt for precious materials aiming to strike it rich. When the father is attacked by a roving bandit, the daughter must take control.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2014-03-26T00:00:00.000Z"
+  },
+  "directors": [
+    "Christopher Caldwell",
+    "Zeek Earl"
+  ],
+  "writers": [
+    "Christopher Caldwell"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-04-15 00:14:08.113000000",
+  "year": 2014,
+  "imdb": {
+    "rating": 7.4,
+    "votes": 148,
+    "id": 3448526
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a13ecf29313caabdd21a3"
+  },
+  "plot": "In 1985, Kung Fury, the toughest martial artist cop in Miami, goes back in time to kill the worst criminal of all time - kung fuhrer Hitler.",
+  "genres": [
+    "Short",
+    "Action",
+    "Comedy"
+  ],
+  "runtime": 31,
+  "cast": [
+    "David Sandberg",
+    "Jorma Taccone",
+    "Steven Chew",
+    "Leopold Nilsson"
+  ],
+  "num_mflix_comments": 2,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMjQwMjU2ODU5NF5BMl5BanBnXkFtZTgwNTU1NjM4NTE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Kung Fury",
+  "fullplot": "During an unfortunate series of events a friend of Kung Fury is assassinated by the most dangerous kung fu master criminal of all time; Adolf Hitler, a.k.a Kung Fèhrer. Kung Fury decides to travel back in time, to Nazi Germany, in order to kill Hitler and end the Nazi empire once and for all.",
+  "languages": [
+    "English",
+    "Swedish",
+    "German"
+  ],
+  "released": {
+    "$date": "2015-05-28T00:00:00.000Z"
+  },
+  "directors": [
+    "David Sandberg"
+  ],
+  "writers": [
+    "David Sandberg"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-09-10 17:20:55.477000000",
+  "year": 2015,
+  "imdb": {
+    "rating": 8.3,
+    "votes": 24575,
+    "id": 3472226
+  },
+  "countries": [
+    "Sweden"
+  ],
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a13ecf29313caabdd2280"
+  },
+  "plot": "It's a post Christmas play date and the toys have to go up against the fearsome and aggressive new dino toys.",
+  "genres": [
+    "Animation",
+    "Short",
+    "Adventure"
+  ],
+  "runtime": 22,
+  "rated": "TV-G",
+  "cast": [
+    "Tom Hanks",
+    "Tim Allen",
+    "Kristen Schaal",
+    "Kevin McKidd"
+  ],
+  "poster": "https://m.media-amazon.com/images/M/MV5BOTc2OTA1MDM4M15BMl5BanBnXkFtZTgwNjczMDk5MjE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Toy Story That Time Forgot",
+  "fullplot": "The story takes place after a Christmas holiday with the regular toys finding themselves trapped in unusual territory with a group of new and delusional action figures. Together they must find their way back to their child's bedroom and to safety.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2014-12-02T00:00:00.000Z"
+  },
+  "directors": [
+    "Steve Purcell"
+  ],
+  "writers": [
+    "Steve Purcell"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 7,
+    "text": "7 nominations."
+  },
+  "lastupdated": "2015-08-20 00:16:11.313000000",
+  "year": 2014,
+  "imdb": {
+    "rating": 7.3,
+    "votes": 2931,
+    "id": 3473654
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie",
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13eff29313caabdd797d"
+  },
+  "plot": "Eventually everyone runs out of time - but before that happens to you, make some time to go on a journey, a journey through directorial duo Becky Sloan and Joseph Pelling's existentialist ...",
+  "genres": [
+    "Animation",
+    "Short"
+  ],
+  "runtime": 3,
+  "cast": [
+    "Baker Terry"
+  ],
+  "num_mflix_comments": 1,
+  "title": "Don't Hug Me I'm Scared 2: Time",
+  "fullplot": "Eventually everyone runs out of time - but before that happens to you, make some time to go on a journey, a journey through directorial duo Becky Sloan and Joseph Pelling's existentialist universe of temporal confusion, TV guides and bathtime. A sequel to Becky & Joe's original mind-bending viral hit \"Don't Hug Me I'm Scared\", which has amassed over 13 million views on YouTube to date and inspired a wave of related videos, Don't Hug Me I'm Scared II\" is an unsettling lesson in the dangers of time and the perils of metaphysical introspection.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2014-03-08T00:00:00.000Z"
+  },
+  "directors": [
+    "Joseph Pelling",
+    "Becky Sloan"
+  ],
+  "writers": [
+    "Joseph Pelling (created by)",
+    "Becky Sloan",
+    "Joseph Pelling",
+    "Hugo Donkin",
+    "Baker Terry",
+    "Becky Sloan"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-13 00:28:15.723000000",
+  "year": 2014,
+  "imdb": {
+    "rating": 7.5,
+    "votes": 124,
+    "id": 3633758
+  },
+  "countries": [
+    "UK"
+  ],
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a13f4f29313caabde1225"
+  },
+  "plot": "BAG MAN is the understated story of a 12 year old African American boy, who takes us on an introspective journey out of the city and into the remote countryside of upstate New York. With a ...",
+  "genres": [
+    "Short",
+    "Action",
+    "Drama"
+  ],
+  "runtime": 15,
+  "cast": [
+    "Judah Bellamy",
+    "Raushanah Simmons",
+    "Michael Frederic",
+    "P.J. Sosko"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTcxNjU0ODMxM15BMl5BanBnXkFtZTgwMjgxMDQ3MjE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Bag Man",
+  "fullplot": "BAG MAN is the understated story of a 12 year old African American boy, who takes us on an introspective journey out of the city and into the remote countryside of upstate New York. With a mysterious duffle bag in hand, its contents unknown to us, we journey from the urban hustle of Harlem, into the winter-ravaged woodlands a world away. On the road, we slowly discover his real intentions, and the significance of what is hidden inside a young boy's bag.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2014-09-10T00:00:00.000Z"
+  },
+  "directors": [
+    "Jonathan Baker",
+    "Josh Baker"
+  ],
+  "writers": [
+    "Jonathan Baker",
+    "Jonathan Baker",
+    "Josh Baker",
+    "Josh Baker"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-27 00:30:19.307000000",
+  "year": 2014,
+  "imdb": {
+    "rating": 7.6,
+    "votes": 47,
+    "id": 4029524
+  },
+  "countries": [
+    "USA"
+  ],
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a13f5f29313caabde2ed7"
+  },
+  "plot": "On a remote planet a Master watches his Apprentice carryout tests with nanotechnology as she tries to prove herself worthy of advancement.",
+  "genres": [
+    "Short",
+    "History",
+    "Mystery"
+  ],
+  "runtime": 7,
+  "cast": [
+    "Aidan Gillen",
+    "Aisling Franciosi"
+  ],
+  "title": "Ambition",
+  "fullplot": "The story of one of the most important space exploration endeavours of this decade. Just as Gillen's enigmatic Master encourages Franciosi's Apprentice to seek out the key to life amidst a rugged alien landscape, ESA has been on a decade-long ambitious journey of its own, to unlock the mysteries of a comet and the origins of our Solar System with its Rosetta spacecraft, hundreds of millions of kilometres from Earth. Ambition complements the ongoing communication about Rosetta and adds a \"human dimension\" to the scientific and technological achievements of the mission, which include curiosity, drive and ambition.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2014-10-24T00:00:00.000Z"
+  },
+  "directors": [
+    "Tomek Baginski"
+  ],
+  "writers": [
+    "Tomek Baginski (screenplay)",
+    "Tomek Baginski",
+    "Jacek Dukaj (story)",
+    "Afolabi Kuti (screenplay)",
+    "Tobiasz Piatkowski (story)",
+    "Jan Pomierny (story)",
+    "Jan Pomierny (story)"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-09-02 00:29:03.413000000",
+  "year": 2014,
+  "imdb": {
+    "rating": 7.7,
+    "votes": 351,
+    "id": 4127138
+  },
+  "countries": [
+    "Poland",
+    "Ireland",
+    "Iceland"
+  ],
+  "type": "movie",
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13f5f29313caabde445e"
+  },
+  "plot": "The dark year 2204, in a world that has seen 73 years of continuous war. A Shaman is sent on a mission to convert the soul of a giant battle colossus.",
+  "genres": [
+    "Short",
+    "Drama",
+    "Sci-Fi"
+  ],
+  "runtime": 18,
+  "cast": [
+    "Danny Shayler",
+    "David Sayers",
+    "Susanne Wuest",
+    "Edmund Jèger"
+  ],
+  "num_mflix_comments": 3,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTYyODA0NzEwM15BMl5BanBnXkFtZTgwODk1NDQ0NzE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Shaman",
+  "lastupdated": "2015-09-14 17:30:49.397000000",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2015-04-18T00:00:00.000Z"
+  },
+  "directors": [
+    "Marco Kalantari"
+  ],
+  "writers": [
+    "Marco Kalantari"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "year": 2015,
+  "imdb": {
+    "rating": 8.2,
+    "votes": 11,
+    "id": 4215858
+  },
+  "countries": [
+    "Austria",
+    "Japan"
+  ],
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a13f7f29313caabde5c78"
+  },
+  "plot": "This portrait of Hilary Knight, the artist behind the iconic Eloise books, sees him reflecting on his life as an illustrator and his relationship to his most successful work.",
+  "genres": [
+    "Documentary",
+    "Short"
+  ],
+  "countries": [
+    "USA"
+  ],
+  "cast": [
+    "Lena Dunham",
+    "Hilary Knight"
+  ],
+  "title": "It's Me, Hilary: The Man Who Drew Eloise",
+  "fullplot": "This portrait of Hilary Knight, the artist behind the iconic Eloise books, sees him reflecting on his life as an illustrator and his relationship to his most successful work.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2015-01-24T00:00:00.000Z"
+  },
+  "directors": [
+    "Matt Wolf"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-26 00:31:14.587000000",
+  "year": 2015,
+  "imdb": {
+    "rating": 6.2,
+    "votes": 52,
+    "id": 4322280
+  },
+  "type": "movie",
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13f7f29313caabde7250"
+  },
+  "plot": "The silent routine of 5 Nuns living in the West Bank wilderness is disturbed when an Israeli settler family breaks down right outside the convent just as the Sabbath comes into effect.",
+  "genres": [
+    "Short",
+    "Comedy"
+  ],
+  "runtime": 15,
+  "cast": [
+    "Huda Al Imam",
+    "Ruth Farhi",
+    "Maya Koren",
+    "Shady Srour"
+  ],
+  "num_mflix_comments": 1,
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTQ2MDkxMDMzM15BMl5BanBnXkFtZTgwNjU3ODE3NTE@._V1_SY1000_SX677_AL_.jpg",
+  "title": "Ave Maria",
+  "fullplot": "Nuns of the 'Sisters of Mercy' convent in the middle of the West Bank wilderness have their daily routine of silence and prayer disrupted when a family of religious Israeli settlers crash their car into the convent's wall. The Sabbath is approaching and they need to get home urgently, however, because of the Sabbath laws, the Israelis can't operate a phone to call for assistance, and the Nuns have taken a vow of silence. Together they have to come up with an unorthodox plan to help them get home.",
+  "languages": [
+    "Arabic",
+    "English",
+    "Hebrew"
+  ],
+  "released": {
+    "$date": "2015-06-21T00:00:00.000Z"
+  },
+  "directors": [
+    "Basil Khalil"
+  ],
+  "writers": [
+    "Basil Khalil",
+    "Daniel Yèèez Khalil"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-08-26 00:17:23.353000000",
+  "year": 2015,
+  "imdb": {
+    "rating": 6.7,
+    "votes": 7,
+    "id": 4419794
+  },
+  "countries": [
+    "France",
+    "Germany",
+    "Palestine"
+  ],
+  "type": "movie"
+},
+{
+  "_id": {
+    "$oid": "573a13f8f29313caabde9156"
+  },
+  "countries": [
+    "USA"
+  ],
+  "genres": [
+    "Short",
+    "Drama",
+    "Romance"
+  ],
+  "runtime": 14,
+  "cast": [
+    "Margaret Singer",
+    "Sarah Ellen Stephens"
+  ],
+  "title": "Hallway",
+  "lastupdated": "2015-05-21 21:15:39.987000000",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2015-03-14T00:00:00.000Z"
+  },
+  "directors": [
+    "Leah Shore"
+  ],
+  "writers": [
+    "Leah Shore"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "year": 2015,
+  "imdb": {
+    "rating": "",
+    "votes": "",
+    "id": 4522158
+  },
+  "type": "movie",
+  "num_mflix_comments": 0
+},
+{
+  "_id": {
+    "$oid": "573a13f9f29313caabdeaf9b"
+  },
+  "plot": "Glen is barely a man. In a desperate attempt to tap into his masculinity he attends a primal scream therapy session, surrounded by wailing men he cannot even make a sound. When another ...",
+  "genres": [
+    "Short",
+    "Drama"
+  ],
+  "runtime": 11,
+  "cast": [
+    "Gordon Peardon"
+  ],
+  "title": "Manoman",
+  "fullplot": "Glen is barely a man. In a desperate attempt to tap into his masculinity he attends a primal scream therapy session, surrounded by wailing men he cannot even make a sound. When another member of the class pushes Glen too far he finally lets something out- a miniature version of himself which does whatever it wants, regardless of the consequences.",
+  "languages": [
+    "English"
+  ],
+  "released": {
+    "$date": "2015-05-01T00:00:00.000Z"
+  },
+  "directors": [
+    "Simon Cartwright"
+  ],
+  "writers": [
+    "Simon Cartwright"
+  ],
+  "awards": {
+    "wins": 0,
+    "nominations": 1,
+    "text": "1 nomination."
+  },
+  "lastupdated": "2015-05-14 16:02:43.700000000",
+  "year": 2015,
+  "imdb": {
+    "rating": "",
+    "votes": "",
+    "id": 4636194
+  },
+  "countries": [
+    "UK"
+  ],
+  "type": "movie",
+  "num_mflix_comments": 0
+}]
