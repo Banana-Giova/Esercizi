@@ -42,7 +42,7 @@ public class UtenteController {
 	}
 	
 	@PatchMapping(path="/modifica_password/{idUtente}")
-	public boolean elimina(@PathVariable int idUtente, String new_password) {
+	public boolean mod_password(@PathVariable int idUtente, String new_password) {
 		return service.modificaPassword(idUtente, new_password);
 	}
 }

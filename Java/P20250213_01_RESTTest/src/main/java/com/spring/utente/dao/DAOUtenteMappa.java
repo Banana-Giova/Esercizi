@@ -21,13 +21,13 @@ public class DAOUtenteMappa {
 		return new ArrayList<>(mappa.values());
 	}
 
-	public Utente selectById(Integer idUtente) {
-		return mappa.get(idUtente);
+	public Utente selectById(Integer matricola) {
+		return mappa.get(matricola);
 	}
 
-	public Utente delete(Integer idUtente) {
-		if (mappa.containsKey(idUtente)) {
-			Utente utente = mappa.remove(idUtente);
+	public Utente delete(Integer matricola) {
+		if (mappa.containsKey(matricola)) {
+			Utente utente = mappa.remove(matricola);
 			return utente;
 		} else {
 			return null;
