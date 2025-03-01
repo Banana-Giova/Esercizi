@@ -1,9 +1,9 @@
-package com.spring.rubrica.dto;
+package com.spring.apprubrica.dto;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import com.spring.rubrica.entity.*;
+import com.spring.apprubrica.entity.*;
 
 public class RubricaAndContattiDTO {
     private RubricaTelefonica rubrica;
@@ -31,11 +31,18 @@ public class RubricaAndContattiDTO {
 		return gruppi_appartenenza;
 	}
     
-    public void addContatto(ContattoTelefonico con) {
-    	this.contatti.put(con.getContact_id(), con);
+    public boolean addContatto(ContattoTelefonico con) {
+    	if (!contatti.containsKey(con.getContact_id())) {
+    		contatti.put(con.getContact_id(), con);
+    		return true;
+    	} return false;
     }
     
     public ContattoTelefonico removeContatto(String con_id) {
-    	return this.contatti.remove(con_id);
+    	return contatti.remove(con_id);
+    }
+    
+    public ContattoTelefonico getContatto(String con_id) {
+    	return contatti.get(con_id);
     }
 }

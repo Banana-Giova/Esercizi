@@ -1,4 +1,4 @@
-package com.spring.rubrica.dto;
+package com.spring.apprubrica.dto;
 
 public class ContattoNomeCognomeDTO {
 	private String nome, cognome;

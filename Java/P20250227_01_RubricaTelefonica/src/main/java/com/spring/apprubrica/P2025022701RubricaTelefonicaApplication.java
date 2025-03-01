@@ -1,4 +1,4 @@
-package com.spring.rubrica;
+package com.spring.apprubrica;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,12 +1,12 @@
-package com.spring.rubrica.dto;
+package com.spring.apprubrica.entity;
 
-import com.spring.rubrica.utility.RubricaUtility;
+import com.spring.apprubrica.utility.RubricaUtility;
 
-public class RubricaTelefonicaDTO {
+public class RubricaTelefonica {
 	private String proprietario;
 	private int id, anno_creazione;
 	
-	public RubricaTelefonicaDTO() {
+	public RubricaTelefonica() {
 	}
 
 	public int getId() {
@@ -33,17 +33,18 @@ public class RubricaTelefonicaDTO {
 		this.anno_creazione = anno_creazione;
 	}
 
-	public RubricaTelefonicaDTO(String proprietario, int anno_creazione) {
+	public RubricaTelefonica(String proprietario, int anno_creazione) {
 		super();
 		this.id = RubricaUtility.generateRegKey();
 		this.proprietario = proprietario;
 		this.anno_creazione = anno_creazione;
 	}
 	
-	public RubricaTelefonicaDTO(int id, String proprietario, int anno_creazione) {
+	public RubricaTelefonica(int id, String proprietario, int anno_creazione) {
 		super();
 		this.id = id;
 		this.proprietario = proprietario;
 		this.anno_creazione = anno_creazione;
 	}
 }
+

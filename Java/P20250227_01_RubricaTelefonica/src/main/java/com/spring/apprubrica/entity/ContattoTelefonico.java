@@ -1,10 +1,10 @@
-package com.spring.rubrica.entity;
+package com.spring.apprubrica.entity;
 import java.time.LocalDate;
 
-import com.spring.rubrica.utility.RubricaUtility;
+import com.spring.apprubrica.utility.RubricaUtility;
 
 public class ContattoTelefonico {
-	private String nome, cognome, numero, gruppo_appartenza, contact_id;
+	private String nome, cognome, numero, gruppo_appartenenza, contact_id;
 	private int id;
 	private LocalDate data_nascita;
 	private boolean preferito;
@@ -44,12 +44,12 @@ public class ContattoTelefonico {
 		this.numero = numero;
 	}
 
-	public String getGruppo_appartenza() {
-		return gruppo_appartenza;
+	public String getGruppo_appartenenza() {
+		return gruppo_appartenenza;
 	}
 
-	public void setGruppo_appartenza(String gruppo_appartenza) {
-		this.gruppo_appartenza = gruppo_appartenza;
+	public void setGruppo_appartenenza(String gruppo_appartenza) {
+		this.gruppo_appartenenza = gruppo_appartenza;
 	}
 
 	public LocalDate getData_nascita() {
@@ -83,7 +83,7 @@ public class ContattoTelefonico {
 		this.nome = nome;
 		this.cognome = cognome;
 		this.numero = numero;
-		this.gruppo_appartenza = (gruppo_appartenza != null? gruppo_appartenza : "default");
+		this.gruppo_appartenenza = (gruppo_appartenza != null? gruppo_appartenza : "default");
 		this.data_nascita = data_nascita;
 		this.preferito = (preferito != null? preferito : false);
 		this.contact_id = (nome + cognome).toLowerCase() + ((Integer)this.id).toString();
@@ -96,7 +96,7 @@ public class ContattoTelefonico {
 		this.nome = nome;
 		this.cognome = cognome;
 		this.numero = numero;
-		this.gruppo_appartenza = (gruppo_appartenza != null? gruppo_appartenza : "default");
+		this.gruppo_appartenenza = (gruppo_appartenza != null? gruppo_appartenza : "default");
 		this.data_nascita = data_nascita;
 		this.preferito = (preferito != null? preferito : false);
 		this.contact_id = (nome + cognome).toLowerCase() + ((Integer)this.id).toString();
