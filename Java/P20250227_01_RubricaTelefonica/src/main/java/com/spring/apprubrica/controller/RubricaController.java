@@ -24,27 +24,27 @@ public class RubricaController {
 	*
 	*/
 
-	@PostMapping(path="/registra", consumes = "application/json")
+	@PostMapping(path="", consumes = "application/json")
 	public boolean addRubrica(@Valid @RequestBody RubricaTelefonicaDTO rub) {
 		return service.addRubrica(rub);
 	}
 	
-	@DeleteMapping(path="/cancella/{rub_id}")
+	@DeleteMapping(path="/{rub_id}")
 	public boolean removeRubrica(@PathVariable int rub_id) {
 		return service.removeRubrica(rub_id);
 	}
 	
-	@GetMapping(path="/visualizza/{rub_id}", produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(path="/{rub_id}", produces = MediaType.APPLICATION_JSON_VALUE)
 	public RubricaTelefonicaDTO getRubrica(@PathVariable int rub_id) {
 		return service.getRubrica(rub_id);
 	}
 	
-	@GetMapping(path="/visualizza", produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(path="", produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<RubricaTelefonicaDTO> getAllRubriche() {
 		return service.getAllRubriche();
 	}
 	
-	@PutMapping(path = "/modifica/{rub_id}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+	@PutMapping(path = "/{rub_id}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
 	public RubricaTelefonicaDTO modificaRubrica(
 								@PathVariable int rub_id, 
 								@Valid @RequestBody ModificaRubricaRequest request) {
@@ -74,22 +74,22 @@ public class RubricaController {
 	*
 	*/
 	
-	@GetMapping(path="/visualizza/proprietari_totali", produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(path="/proprietari_totali", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ProprietariTotaliDTO getProprietariTotali() {
 		return service.getProprietariTotali();
 	}
 	
-	@GetMapping(path="/visualizza/piu_vecchia", produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(path="/piu_vecchia", produces = MediaType.APPLICATION_JSON_VALUE)
 	public RubricaTelefonicaDTO getOldestRubrica() {
 		return service.getOldestRubrica();
 	}
 	
-	@GetMapping(path="/visualizza/anni_creazione", produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(path="/anni_creazione", produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<Integer> anniCreazioneCres() {
 		return service.anniCreazioneCres();
 	}
 	
-	@GetMapping(path="/visualizza/plus/{rub_id}", produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(path="/{rub_id}/plus", produces = MediaType.APPLICATION_JSON_VALUE)
 	public RubricaPlusDTO getRubricaPlus(@PathVariable int rub_id) {
 		return service.getRubricaPlus(rub_id);
 	}
