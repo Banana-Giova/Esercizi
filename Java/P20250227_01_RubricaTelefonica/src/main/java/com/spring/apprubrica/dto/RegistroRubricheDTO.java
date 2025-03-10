@@ -1,5 +1,7 @@
 package com.spring.apprubrica.dto;
 
+import com.spring.apprubrica.dao.DAOContatti;
+import com.spring.apprubrica.dao.DAORubriche;
 import com.spring.apprubrica.entity.*; 
 import com.spring.apprubrica.exception.ContattoNotFoundException;
 import com.spring.apprubrica.exception.RubricaNotFoundException;
@@ -37,6 +39,20 @@ public class RegistroRubricheDTO {
 	    if (!registro_rubriche.get(rub_id).getContatti().containsKey(con_id)) {
 	        throw new ContattoNotFoundException("Contatto con ID " + con_id + " non trovato nella rubrica " + rub_id);
 	    }
+	}
+	
+	public static void updateRegistroRubriche(DAORubriche dao_rub) {
+		List<RubricaTelefonica> rub_list = dao_rub.selectAll();
+		for (RubricaTelefonica rub : rub_list) {
+			addRubrica(rub);
+		}
+	}
+	
+	public static void updateRegistroContatti(DAOContatti dao_con) {
+		List<ContattoTelefonico> con_list = dao_con.selectAll();
+		for (ContattoTelefonico con : con_list) {
+			addContatto(con.getRub_id(), con);
+		}
 	}
 	
 	/*

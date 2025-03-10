@@ -5,7 +5,7 @@ import com.spring.apprubrica.utility.RubricaUtility;
 
 public class ContattoTelefonico {
 	private String nome, cognome, numero, gruppo_appartenenza, contact_id;
-	private int id;
+	private int id, rub_id;
 	private LocalDate data_nascita;
 	private boolean preferito;
 	
@@ -20,6 +20,14 @@ public class ContattoTelefonico {
 		this.id = id;
 	}
 
+	public int getRub_id() {
+		return rub_id;
+	}
+
+	public void setRub_id(int rub_id) {
+		this.rub_id = rub_id;
+	}
+	
 	public String getNome() {
 		return nome;
 	}
@@ -76,10 +84,11 @@ public class ContattoTelefonico {
 		this.contact_id = contact_id;
 	}
 
-	public ContattoTelefonico(String nome, String cognome, String numero, String gruppo_appartenza,
+	public ContattoTelefonico(int rub_id, String nome, String cognome, String numero, String gruppo_appartenza,
 			LocalDate data_nascita, Boolean preferito) {
 		super();
 		this.id = RubricaUtility.generateNewContact();
+		this.rub_id = rub_id;
 		this.nome = nome;
 		this.cognome = cognome;
 		this.numero = numero;
@@ -89,10 +98,11 @@ public class ContattoTelefonico {
 		this.contact_id = (nome + cognome).toLowerCase() + ((Integer)this.id).toString();
 	}
 	
-	public ContattoTelefonico(int id, String nome, String cognome, String numero, String gruppo_appartenza,
+	public ContattoTelefonico(int id, int rub_id, String nome, String cognome, String numero, String gruppo_appartenza,
 			LocalDate data_nascita, Boolean preferito) {
 		super();
 		this.id = id;
+		this.rub_id = rub_id;
 		this.nome = nome;
 		this.cognome = cognome;
 		this.numero = numero;

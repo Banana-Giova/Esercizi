@@ -32,11 +32,20 @@ public class ContattoTelefonicoDTO {
     @PastOrPresent(message = "La data di nascita non può essere nel futuro")
     private LocalDate data_nascita;
 	
+    private int rub_id;
 	private String con_id;
 	
 	private boolean preferito;
 	
 	public ContattoTelefonicoDTO() {
+	}
+	
+	public int getRub_id() {
+		return rub_id;
+	}
+
+	public void setRub_id(int rub_id) {
+		this.rub_id = rub_id;
 	}
 	
 	public String getNome() {
@@ -95,9 +104,10 @@ public class ContattoTelefonicoDTO {
 		this.con_id = contact_id;
 	}
 	
-	public ContattoTelefonicoDTO(String con_id, String nome, String cognome, String numero, String gruppo_appartenza,
+	public ContattoTelefonicoDTO(int rub_id, String con_id, String nome, String cognome, String numero, String gruppo_appartenza,
 			LocalDate data_nascita, Boolean preferito) {
 		super();
+		this.rub_id = rub_id;
 		this.nome = nome;
 		this.cognome = cognome;
 		this.numero = numero;

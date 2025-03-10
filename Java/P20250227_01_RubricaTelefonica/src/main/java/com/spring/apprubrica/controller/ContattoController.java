@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import com.spring.apprubrica.dto.*;
 import com.spring.apprubrica.service.ContattoService;
+import com.spring.apprubrica.utility.RubricaUtility;
 
 import jakarta.validation.Valid;
 
@@ -26,6 +27,7 @@ public class ContattoController {
 	
 	@PostMapping(path="/{rub_id}", consumes = "application/json")
 	public boolean addContatto(@Valid @PathVariable int rub_id, @RequestBody ContattoTelefonicoDTO con) {
+		RubricaUtility.checkContactIntegrity(con, rub_id);
 		return service.addContatto(rub_id, con);
 	}
 	
