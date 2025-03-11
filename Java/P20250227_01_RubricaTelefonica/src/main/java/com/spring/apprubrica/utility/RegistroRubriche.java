@@ -1,11 +1,13 @@
-package com.spring.apprubrica.dto;
+package com.spring.apprubrica.utility;
 
+import com.spring.apprubrica.dto.*;
 import com.spring.apprubrica.dao.DAOContatti;
 import com.spring.apprubrica.dao.DAORubriche;
+import com.spring.apprubrica.dto.RubricaAndContattiDTO;
+import com.spring.apprubrica.dto.RubricaPlusDTO;
 import com.spring.apprubrica.entity.*; 
 import com.spring.apprubrica.exception.ContattoNotFoundException;
 import com.spring.apprubrica.exception.RubricaNotFoundException;
-import com.spring.apprubrica.utility.*;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -14,7 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class RegistroRubricheDTO {
+public class RegistroRubriche {
 	
 	private static HashMap<Integer, RubricaAndContattiDTO> registro_rubriche = new HashMap<Integer, RubricaAndContattiDTO>();
 	
@@ -241,3 +243,132 @@ public class RegistroRubricheDTO {
 			   .collect(Collectors.toList());
 	}
 }
+
+//package com.spring.apprubrica.utility;
+//
+//import com.spring.apprubrica.dto.*;
+//import com.spring.apprubrica.dao.DAOContatti;
+//import com.spring.apprubrica.dao.DAORubriche;
+//import com.spring.apprubrica.dto.RubricaAndContattiDTO;
+//import com.spring.apprubrica.dto.RubricaPlusDTO;
+//import com.spring.apprubrica.entity.*; 
+//import com.spring.apprubrica.exception.ContattoNotFoundException;
+//import com.spring.apprubrica.exception.RubricaNotFoundException;
+//
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.stereotype.Component;
+//
+//import java.time.LocalDate;
+//import java.util.ArrayList;
+//import java.util.Collection;
+//import java.util.HashMap;
+//import java.util.List;
+//import java.util.stream.Collectors;
+//
+//@Component  // Aggiungi questa annotazione per fare della classe un bean gestito da Spring
+//public class RegistroRubriche {
+//
+//    private final HashMap<Integer, RubricaAndContattiDTO> registro_rubriche = new HashMap<>();
+//
+//    private final DAORubriche daoRubriche;
+//    private final DAOContatti daoContatti;
+//
+//    @Autowired
+//    public RegistroRubriche(DAORubriche daoRubriche, DAOContatti daoContatti) {
+//        this.daoRubriche = daoRubriche;
+//        this.daoContatti = daoContatti;
+//        updateRegistroRubriche();  // Inizializza i dati all'istanziazione del bean
+//        updateRegistroContatti();  // Inizializza i dati all'istanziazione del bean
+//    }
+//
+//    public HashMap<Integer, RubricaAndContattiDTO> getRegistroRubriche() {
+//        return registro_rubriche;
+//    }
+//
+//    // Controlli e utility
+//    public void isRubrica(int rub_id) {
+//        if (!registro_rubriche.containsKey(rub_id)) {
+//            throw new RubricaNotFoundException("Rubrica con ID " + rub_id + " non trovata!");
+//        }
+//    }
+//
+//    public void isContatto(int rub_id, String con_id) {
+//        isRubrica(rub_id);
+//        if (!registro_rubriche.get(rub_id).getContatti().containsKey(con_id)) {
+//            throw new ContattoNotFoundException("Contatto con ID " + con_id + " non trovato nella rubrica " + rub_id);
+//        }
+//    }
+//
+//    public void updateRegistroRubriche() {
+//        List<RubricaTelefonica> rub_list = daoRubriche.selectAll();
+//        for (RubricaTelefonica rub : rub_list) {
+//            addRubrica(rub);
+//        }
+//    }
+//
+//    public void updateRegistroContatti() {
+//        List<ContattoTelefonico> con_list = daoContatti.selectAll();
+//        for (ContattoTelefonico con : con_list) {
+//            addContatto(con.getRub_id(), con);
+//        }
+//    }
+//
+//    // Funzionalità relative alle rubriche
+//    public void addRubrica(RubricaTelefonica rub) {
+//        registro_rubriche.put(rub.getId(), new RubricaAndContattiDTO(rub));
+//    }
+//
+//    public void removeRubrica(int rub_id) {
+//        isRubrica(rub_id);
+//        registro_rubriche.remove(rub_id);
+//    }
+//
+//    public RubricaTelefonica modProprietario(int rub_id, String new_proprietario) {
+//        isRubrica(rub_id);
+//        registro_rubriche.get(rub_id).getRubrica().setProprietario(new_proprietario);
+//        return registro_rubriche.get(rub_id).getRubrica();
+//    }
+//
+//    public RubricaTelefonica modAnnoCreazione(int rub_id, int new_anno) {
+//        isRubrica(rub_id);
+//        registro_rubriche.get(rub_id).getRubrica().setAnno_creazione(new_anno);
+//        return registro_rubriche.get(rub_id).getRubrica();
+//    }
+//
+//    // Funzionalità extra relative alle rubriche
+//    public RubricaPlusDTO getRubricaPlus(int rub_id) {
+//        isRubrica(rub_id);
+//        int num_contatti = registro_rubriche.get(rub_id).getContatti().values().size();
+//        return RubricaUtility.INRub_OUTRubPlusDTO(registro_rubriche.get(rub_id).getRubrica(), num_contatti);
+//    }
+//
+//    // Funzionalità per una data rubrica
+//    public void addContatto(int rub_id, ContattoTelefonico con) {
+//        isRubrica(rub_id);
+//        registro_rubriche.get(rub_id).addContatto(con);
+//        HashMap<String, ArrayList<ContattoTelefonico>> gruppi_appartenenza = registro_rubriche.get(rub_id).getGruppi_appartenenza();
+//        if (!gruppi_appartenenza.containsKey(con.getGruppo_appartenenza())) {
+//            gruppi_appartenenza.put(con.getGruppo_appartenenza(), new ArrayList<ContattoTelefonico>());
+//        }
+//        gruppi_appartenenza.get(con.getGruppo_appartenenza()).add(con);
+//    }
+//
+//    public boolean removeContatto(int rub_id, String con_id) {
+//        isContatto(rub_id, con_id);
+//        ContattoTelefonico rem_con = registro_rubriche.get(rub_id).removeContatto(con_id);
+//        if (rem_con != null) {
+//            HashMap<String, ArrayList<ContattoTelefonico>> gruppi_appartenenza = registro_rubriche.get(rub_id).getGruppi_appartenenza();
+//            gruppi_appartenenza.get(rem_con.getGruppo_appartenenza()).removeIf(c -> c.equals(rem_con));
+//            return true;
+//        }
+//        return false;
+//    }
+//
+//    public ContattoTelefonico getContatto(int rub_id, String con_id) {
+//        isContatto(rub_id, con_id);
+//        return registro_rubriche.get(rub_id).getContatti().get(con_id);
+//    }
+//
+//    // Altri metodi per modificare i contatti...
+//    // (stesso schema per gli altri metodi)
+//}

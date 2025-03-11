@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import com.spring.apprubrica.dao.DAORubriche;
 import com.spring.apprubrica.dto.*;
 import com.spring.apprubrica.entity.RubricaTelefonica;
+import com.spring.apprubrica.utility.RegistroRubriche;
 import com.spring.apprubrica.utility.RubricaUtility;
 
 @Service
@@ -27,14 +28,14 @@ public class RubricaServiceImpl implements RubricaService {
 	@Override
 	public boolean addRubrica(RubricaTelefonicaDTO rub) {
 		RubricaTelefonica entity = RubricaUtility.INRubDTO_OUTRub_NOID(rub);
-		RegistroRubricheDTO.addRubrica(entity);
+		RegistroRubriche.addRubrica(entity);
 		dao.insert(entity);
 		return true;
 	}
 
 	@Override
 	public boolean removeRubrica(int rub_id) {
-		RegistroRubricheDTO.removeRubrica(rub_id);
+		RegistroRubriche.removeRubrica(rub_id);
 		dao.delete(rub_id);
 		return true;
 	}
@@ -53,14 +54,14 @@ public class RubricaServiceImpl implements RubricaService {
 
 	@Override
 	public RubricaTelefonicaDTO modProprietario(int rub_id, String new_proprietario) {
-		RegistroRubricheDTO.modProprietario(rub_id, new_proprietario);
+		RegistroRubriche.modProprietario(rub_id, new_proprietario);
 		dao.selectById(rub_id).setProprietario(new_proprietario);
 		return getRubrica(rub_id);
 	}
 
 	@Override
 	public RubricaTelefonicaDTO modAnnoCreazione(int rub_id, int new_anno) {
-		RegistroRubricheDTO.modAnnoCreazione(rub_id, new_anno);
+		RegistroRubriche.modAnnoCreazione(rub_id, new_anno);
 		dao.selectById(rub_id).setAnno_creazione(new_anno);
 		return getRubrica(rub_id);
 	}
@@ -101,7 +102,7 @@ public class RubricaServiceImpl implements RubricaService {
 
 	@Override
 	public RubricaPlusDTO getRubricaPlus(int rub_id) {
-		return RegistroRubricheDTO.getRubricaPlus(rub_id);
+		return RegistroRubriche.getRubricaPlus(rub_id);
 	}
 
 }
