@@ -18,6 +18,8 @@ public class ContattoServiceImpl implements ContattoService {
 
 	@Autowired
 	private DAOContatti dao;
+	@Autowired
+	private RegistroRubriche reg_rub;
 	
 	/*
 	 * 
@@ -28,62 +30,62 @@ public class ContattoServiceImpl implements ContattoService {
 	@Override
 	public boolean addContatto(int rub_id, ContattoTelefonicoDTO con) {
 		ContattoTelefonico entity = RubricaUtility.INConDTO_OUTCon_NOID(con);
-		RegistroRubriche.addContatto(rub_id, entity);
+		reg_rub.addContatto(rub_id, entity);
 		dao.insert(entity);
 		return true;
 	}
 
 	@Override
 	public boolean removeContatto(int rub_id, String con_id) {
-		RegistroRubriche.removeContatto(rub_id, con_id);
+		reg_rub.removeContatto(rub_id, con_id);
 		dao.delete(con_id);
 		return true;
 	}
 
 	@Override
 	public ContattoTelefonicoDTO getContatto(int rub_id, String con_id) {
-		RegistroRubriche.isContatto(rub_id, con_id);
+		reg_rub.isContatto(rub_id, con_id);
 		return RubricaUtility.INCon_OUTConDTO(dao.selectById(con_id));
 	}
 
 	@Override
 	public ContattoTelefonicoDTO modNomeContatto(int rub_id, String con_id, String new_nome) {
-		RegistroRubriche.modNomeContatto(rub_id, con_id, new_nome);
+		reg_rub.modNomeContatto(rub_id, con_id, new_nome);
 		dao.selectById(con_id).setNome(new_nome);
 		return getContatto(rub_id, con_id);
 	}
 
 	@Override
 	public ContattoTelefonicoDTO modCognomeContatto(int rub_id, String con_id, String new_cognome) {
-		RegistroRubriche.modCognomeContatto(rub_id, con_id, new_cognome);
+		reg_rub.modCognomeContatto(rub_id, con_id, new_cognome);
 		dao.selectById(con_id).setCognome(new_cognome);
 		return getContatto(rub_id, con_id);
 	}
 
 	@Override
 	public ContattoTelefonicoDTO modNumeroContatto(int rub_id, String con_id, String new_numero) {
-		RegistroRubriche.modNumeroContatto(rub_id, con_id, new_numero);
+		reg_rub.modNumeroContatto(rub_id, con_id, new_numero);
 		dao.selectById(con_id).setNumero(new_numero);
 		return getContatto(rub_id, con_id);
 	}
 
 	@Override
 	public ContattoTelefonicoDTO modGruppoContatto(int rub_id, String con_id, String new_gruppo) {
-		RegistroRubriche.modGruppoContatto(rub_id, con_id, new_gruppo);
+		reg_rub.modGruppoContatto(rub_id, con_id, new_gruppo);
 		dao.selectById(con_id).setGruppo_appartenenza(new_gruppo);
 		return getContatto(rub_id, con_id);
 	}
 
 	@Override
 	public ContattoTelefonicoDTO modDataContatto(int rub_id, String con_id, LocalDate new_date) {
-		RegistroRubriche.modDataContatto(rub_id, con_id, new_date);
+		reg_rub.modDataContatto(rub_id, con_id, new_date);
 		dao.selectById(con_id).setData_nascita(new_date);
 		return getContatto(rub_id, con_id);
 	}
 
 	@Override
 	public ContattoTelefonicoDTO modPrefContatto(int rub_id, String con_id, boolean pref) {
-		RegistroRubriche.modPrefContatto(rub_id, con_id, pref);
+		reg_rub.modPrefContatto(rub_id, con_id, pref);
 		dao.selectById(con_id).setPreferito(pref);
 		return getContatto(rub_id, con_id);
 	}
@@ -96,37 +98,37 @@ public class ContattoServiceImpl implements ContattoService {
 	
 	@Override
 	public List<ContattoTelefonicoDTO> getAllContatti(int rub_id) {
-		return RegistroRubriche.getAllContatti(rub_id);
+		return reg_rub.getAllContatti(rub_id);
 	}
 
 	@Override
 	public int getNumeroContatti(int rub_id) {
-		return RegistroRubriche.getNumeroContatti(rub_id);
+		return reg_rub.getNumeroContatti(rub_id);
 	}
 
 	@Override
 	public ContattoTelefonicoDTO getContattoByNumero(int rub_id, String numero) {
-		return RegistroRubriche.getContattoByNumero(rub_id, numero);
+		return reg_rub.getContattoByNumero(rub_id, numero);
 	}
 
 	@Override
 	public List<ContattoNomeCognomeDTO> getNomeCognomeGruppo(int rub_id, String gruppo) {
-		return RegistroRubriche.getNomeCognomeGruppo(rub_id, gruppo);
+		return reg_rub.getNomeCognomeGruppo(rub_id, gruppo);
 	}
 
 	@Override
 	public int getNumContattiInGruppo(int rub_id, String gruppo) {
-		return RegistroRubriche.getNumContattiInGruppo(rub_id, gruppo);
+		return reg_rub.getNumContattiInGruppo(rub_id, gruppo);
 	}
 
 	@Override
 	public boolean destroyGroup(int rub_id, String gruppo) {
-		return RegistroRubriche.destroyGroup(rub_id, gruppo);
+		return reg_rub.destroyGroup(rub_id, gruppo);
 	}
 
 	@Override
 	public List<ContattoTelefonicoDTO> getPreferiti(int rub_id) {
-		return RegistroRubriche.getPreferiti(rub_id);
+		return reg_rub.getPreferiti(rub_id);
 	}
 
 }

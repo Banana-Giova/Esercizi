@@ -2,9 +2,26 @@ package com.spring.apprubrica.entity;
 
 import com.spring.apprubrica.utility.RubricaUtility;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "rubriche")
 public class RubricaTelefonica {
-	private String proprietario;
-	private int id, anno_creazione;
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @Column(name = "proprietario", nullable = false, length = 50) // Aggiungi le caratteristiche delle colonne
+    private String proprietario;
+
+    @Column(name = "anno_creazione", nullable = false)
+    private int anno_creazione;
 	
 	public RubricaTelefonica() {
 	}

@@ -3,12 +3,49 @@ import java.time.LocalDate;
 
 import com.spring.apprubrica.utility.RubricaUtility;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "contatti_telefonici") // Nome della tabella nel database
 public class ContattoTelefonico {
-	private String nome, cognome, numero, gruppo_appartenenza, contact_id;
-	private int id, rub_id;
-	private LocalDate data_nascita;
-	private boolean preferito;
-	
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Autogenerazione del campo ID
+    private int id;
+
+    @Column(name = "rub_id", nullable = false) // La chiave esterna che punta alla rubrica
+    private int rub_id;
+    
+//    @ManyToOne
+//    @JoinColumn(name = "rub_id", insertable = false, updatable = false)
+//    private RubricaTelefonica rubrica;
+
+    @Column(name = "nome", nullable = false, length = 50)
+    private String nome;
+
+    @Column(name = "cognome", nullable = false, length = 50)
+    private String cognome;
+
+    @Column(name = "numero", nullable = false, length = 15)
+    private String numero;
+
+    @Column(name = "gruppo_appartenenza", nullable = false, length = 50)
+    private String gruppo_appartenenza;
+
+    @Column(name = "data_nascita")
+    private LocalDate data_nascita;
+
+    @Column(name = "preferito", nullable = false)
+    private boolean preferito;
+
+    @Column(name = "contact_id", nullable = false, unique = true, length = 100)
+    private String contact_id;
+    
 	public ContattoTelefonico() {
 	}
 

@@ -18,6 +18,8 @@ public class RubricaServiceImpl implements RubricaService {
 
 	@Autowired
 	private DAORubriche dao;
+	@Autowired
+	private RegistroRubriche reg_rub;
 	
 	/*
 	 * 
@@ -28,14 +30,14 @@ public class RubricaServiceImpl implements RubricaService {
 	@Override
 	public boolean addRubrica(RubricaTelefonicaDTO rub) {
 		RubricaTelefonica entity = RubricaUtility.INRubDTO_OUTRub_NOID(rub);
-		RegistroRubriche.addRubrica(entity);
+		reg_rub.addRubrica(entity);
 		dao.insert(entity);
 		return true;
 	}
 
 	@Override
 	public boolean removeRubrica(int rub_id) {
-		RegistroRubriche.removeRubrica(rub_id);
+		reg_rub.removeRubrica(rub_id);
 		dao.delete(rub_id);
 		return true;
 	}
@@ -54,14 +56,14 @@ public class RubricaServiceImpl implements RubricaService {
 
 	@Override
 	public RubricaTelefonicaDTO modProprietario(int rub_id, String new_proprietario) {
-		RegistroRubriche.modProprietario(rub_id, new_proprietario);
+		reg_rub.modProprietario(rub_id, new_proprietario);
 		dao.selectById(rub_id).setProprietario(new_proprietario);
 		return getRubrica(rub_id);
 	}
 
 	@Override
 	public RubricaTelefonicaDTO modAnnoCreazione(int rub_id, int new_anno) {
-		RegistroRubriche.modAnnoCreazione(rub_id, new_anno);
+		reg_rub.modAnnoCreazione(rub_id, new_anno);
 		dao.selectById(rub_id).setAnno_creazione(new_anno);
 		return getRubrica(rub_id);
 	}
@@ -102,7 +104,7 @@ public class RubricaServiceImpl implements RubricaService {
 
 	@Override
 	public RubricaPlusDTO getRubricaPlus(int rub_id) {
-		return RegistroRubriche.getRubricaPlus(rub_id);
+		return reg_rub.getRubricaPlus(rub_id);
 	}
 
 }
