@@ -32,7 +32,10 @@ public class ContattoTelefonicoDTO {
     @PastOrPresent(message = "La data di nascita non può essere nel futuro")
     private LocalDate data_nascita;
 	
+    @NotNull(message = "La rubrica non può essere nulla")
+    @NotBlank(message = "La rubrica non può essere vuota")
     private int rub_id;
+    
 	private String con_id;
 	
 	private boolean preferito;

@@ -1,21 +1,22 @@
 package com.spring.apprubrica.utility;
 
+import java.util.Random;
+
 import com.spring.apprubrica.dto.*;
 import com.spring.apprubrica.entity.*;
 import com.spring.apprubrica.exception.*;
 
 public class RubricaUtility {
-	public static int reg_key = 0;
-	public static int contact_count = 0;
 
-	public static synchronized int generateRegKey() {
-		reg_key++;
-		return reg_key;
-	}
-	
-	public static synchronized int generateNewContact() {
-		contact_count++;
-		return contact_count;
+	public static synchronized String generateNewContact() {
+		Random rng = new Random();
+		Integer contact_int = rng.nextInt(9999);
+		StringBuilder contact_num = new StringBuilder(((Integer)contact_int).toString());
+		while (contact_num.length() < 4) {
+			contact_num.insert(0, "0");
+		}
+		
+		return contact_num.toString();
 	}
 	
 	public static RubricaTelefonica INRubDTO_OUTRub(RubricaTelefonicaDTO dto) {
@@ -23,19 +24,19 @@ public class RubricaUtility {
 	}
 	
 	public static RubricaTelefonica INRubDTO_OUTRub_NOID(RubricaTelefonicaDTO dto) {
-		return new RubricaTelefonica(RubricaUtility.generateRegKey(), dto.getProprietario(), dto.getAnno_creazione());
+		return new RubricaTelefonica(dto.getProprietario(), dto.getAnno_creazione());
 	}
 	
 	public static RubricaTelefonicaDTO INRub_OUTRubDTO(RubricaTelefonica rub) {
 		return new RubricaTelefonicaDTO(rub.getId(), rub.getProprietario(), rub.getAnno_creazione());
 	}
 	
-	public static ContattoTelefonico INConDTO_OUTCon_NOID(ContattoTelefonicoDTO dto) {
-		return new ContattoTelefonico(RubricaUtility.generateNewContact(), dto.getRub_id(), dto.getNome(), dto.getCognome(), dto.getNumero(), dto.getGruppo_appartenenza(), dto.getData_nascita(), dto.isPreferito());
+	public static ContattoTelefonico INConDTO_OUTCon_NOID(ContattoTelefonicoDTO dto, RubricaTelefonica rubrica) {
+		return new ContattoTelefonico(rubrica, dto.getNome(), dto.getCognome(), dto.getNumero(), dto.getGruppo_appartenenza(), dto.getData_nascita(), dto.isPreferito());
 	}
 	
 	public static ContattoTelefonicoDTO INCon_OUTConDTO(ContattoTelefonico con) {
-		return new ContattoTelefonicoDTO(con.getRub_id(), con.getContact_id(), con.getNome(), con.getCognome(), con.getNumero(), con.getGruppo_appartenenza(), con.getData_nascita(), con.isPreferito());
+		return new ContattoTelefonicoDTO(con.getRubrica().getId(), con.getContact_id(), con.getNome(), con.getCognome(), con.getNumero(), con.getGruppo_appartenenza(), con.getData_nascita(), con.isPreferito());
 	}
 	
 	public static ContattoNomeCognomeDTO INCon_OUTNomeCognome(ContattoTelefonico con) {

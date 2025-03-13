@@ -1,7 +1,5 @@
 package com.spring.apprubrica.entity;
 
-import com.spring.apprubrica.utility.RubricaUtility;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -52,7 +50,6 @@ public class RubricaTelefonica {
 
 	public RubricaTelefonica(String proprietario, int anno_creazione) {
 		super();
-		this.id = RubricaUtility.generateRegKey();
 		this.proprietario = proprietario;
 		this.anno_creazione = anno_creazione;
 	}

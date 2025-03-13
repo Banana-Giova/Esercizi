@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Component;
@@ -66,7 +67,7 @@ public class RegistroRubriche {
     public void updateRegistroContatti() {
         List<ContattoTelefonico> con_list = daoContatti.selectAll();
         for (ContattoTelefonico con : con_list) {
-            addContatto(con.getRub_id(), con);
+            addContatto(con.getRubrica().getId(), con);
         }
     }
 	
@@ -76,12 +77,21 @@ public class RegistroRubriche {
 	*
 	*/
 
+	public RubricaTelefonica getRubrica(int rub_id) {
+		isRubrica(rub_id);
+		return registro_rubriche.get(rub_id).getRubrica();
+	}
+    
 	public void addRubrica(RubricaTelefonica rub) {
 		registro_rubriche.put(rub.getId(), new RubricaAndContattiDTO(rub));
 	}
 	
 	public void removeRubrica(int rub_id) {
 		isRubrica(rub_id);
+		Set<String> con_da_eliminare = registro_rubriche.get(rub_id).getContatti().keySet();
+		for (String con : con_da_eliminare) {
+			removeContatto(rub_id, con);
+		}
 		registro_rubriche.remove(rub_id);
 	}
 	

@@ -1,7 +1,5 @@
 package com.spring.apprubrica.dto;
 
-import com.spring.apprubrica.utility.RubricaUtility;
-
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -48,13 +46,6 @@ public class RubricaTelefonicaDTO {
             throw new IllegalArgumentException("L'anno non può essere maggiore di quello attuale");
         }
         this.anno_creazione = anno_creazione;
-	}
-
-	public RubricaTelefonicaDTO(String proprietario, int anno_creazione) {
-		super();
-		this.id = RubricaUtility.generateRegKey();
-		this.proprietario = proprietario;
-		this.anno_creazione = anno_creazione;
 	}
 	
 	public RubricaTelefonicaDTO(int id, String proprietario, int anno_creazione) {

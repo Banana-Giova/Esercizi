@@ -29,7 +29,8 @@ public class ContattoServiceImpl implements ContattoService {
 	
 	@Override
 	public boolean addContatto(int rub_id, ContattoTelefonicoDTO con) {
-		ContattoTelefonico entity = RubricaUtility.INConDTO_OUTCon_NOID(con);
+		reg_rub.isRubrica(rub_id);
+		ContattoTelefonico entity = RubricaUtility.INConDTO_OUTCon_NOID(con, reg_rub.getRubrica(rub_id));
 		reg_rub.addContatto(rub_id, entity);
 		dao.insert(entity);
 		return true;

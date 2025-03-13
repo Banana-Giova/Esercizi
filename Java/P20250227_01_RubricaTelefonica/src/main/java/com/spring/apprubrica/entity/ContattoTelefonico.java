@@ -1,6 +1,9 @@
 package com.spring.apprubrica.entity;
 import java.time.LocalDate;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import com.spring.apprubrica.utility.RubricaUtility;
 
 import jakarta.persistence.Column;
@@ -8,6 +11,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -18,12 +23,13 @@ public class ContattoTelefonico {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Autogenerazione del campo ID
     private int id;
 
-    @Column(name = "rub_id", nullable = false) // La chiave esterna che punta alla rubrica
-    private int rub_id;
+//    @Column(name = "rub_id", nullable = false) // La chiave esterna che punta alla rubrica
+//    private int rub_id;
     
-//    @ManyToOne
-//    @JoinColumn(name = "rub_id", insertable = false, updatable = false)
-//    private RubricaTelefonica rubrica;
+    @ManyToOne
+    @JoinColumn(name = "rubrica", insertable = false, updatable = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    private RubricaTelefonica rubrica;
 
     @Column(name = "nome", nullable = false, length = 50)
     private String nome;
@@ -57,12 +63,12 @@ public class ContattoTelefonico {
 		this.id = id;
 	}
 
-	public int getRub_id() {
-		return rub_id;
+	public RubricaTelefonica getRubrica() {
+		return rubrica;
 	}
 
-	public void setRub_id(int rub_id) {
-		this.rub_id = rub_id;
+	public void setRub_id(RubricaTelefonica rubrica) {
+		this.rubrica = rubrica;
 	}
 	
 	public String getNome() {
@@ -121,31 +127,57 @@ public class ContattoTelefonico {
 		this.contact_id = contact_id;
 	}
 
-	public ContattoTelefonico(int rub_id, String nome, String cognome, String numero, String gruppo_appartenza,
+	public ContattoTelefonico(RubricaTelefonica rubrica, String nome, String cognome, String numero, String gruppo_appartenza,
 			LocalDate data_nascita, Boolean preferito) {
 		super();
-		this.id = RubricaUtility.generateNewContact();
-		this.rub_id = rub_id;
+		this.rubrica = rubrica;
 		this.nome = nome;
 		this.cognome = cognome;
 		this.numero = numero;
 		this.gruppo_appartenenza = (gruppo_appartenza != null? gruppo_appartenza : "default");
 		this.data_nascita = data_nascita;
 		this.preferito = (preferito != null? preferito : false);
-		this.contact_id = (nome + cognome).toLowerCase() + ((Integer)this.id).toString();
+		this.contact_id = (nome + cognome).toLowerCase() + RubricaUtility.generateNewContact();
 	}
 	
-	public ContattoTelefonico(int id, int rub_id, String nome, String cognome, String numero, String gruppo_appartenza,
+	public ContattoTelefonico(int id, RubricaTelefonica rubrica, String nome, String cognome, String numero, String gruppo_appartenza,
 			LocalDate data_nascita, Boolean preferito) {
 		super();
 		this.id = id;
-		this.rub_id = rub_id;
+		this.rubrica = rubrica;
 		this.nome = nome;
 		this.cognome = cognome;
 		this.numero = numero;
 		this.gruppo_appartenenza = (gruppo_appartenza != null? gruppo_appartenza : "default");
 		this.data_nascita = data_nascita;
 		this.preferito = (preferito != null? preferito : false);
-		this.contact_id = (nome + cognome).toLowerCase() + ((Integer)this.id).toString();
+		this.contact_id = (nome + cognome).toLowerCase() + RubricaUtility.generateNewContact();
+	}
+	
+	public ContattoTelefonico(RubricaTelefonica rubrica, String nome, String cognome, String numero, String gruppo_appartenza,
+			LocalDate data_nascita, Boolean preferito, String contact_id) {
+		super();
+		this.rubrica = rubrica;
+		this.nome = nome;
+		this.cognome = cognome;
+		this.numero = numero;
+		this.gruppo_appartenenza = (gruppo_appartenza != null? gruppo_appartenza : "default");
+		this.data_nascita = data_nascita;
+		this.preferito = (preferito != null? preferito : false);
+		this.contact_id = contact_id;
+	}
+	
+	public ContattoTelefonico(int id, RubricaTelefonica rubrica, String nome, String cognome, String numero, String gruppo_appartenza,
+			LocalDate data_nascita, Boolean preferito, String contact_id) {
+		super();
+		this.id = id;
+		this.rubrica = rubrica;
+		this.nome = nome;
+		this.cognome = cognome;
+		this.numero = numero;
+		this.gruppo_appartenenza = (gruppo_appartenza != null? gruppo_appartenza : "default");
+		this.data_nascita = data_nascita;
+		this.preferito = (preferito != null? preferito : false);
+		this.contact_id = contact_id;
 	}
 }
