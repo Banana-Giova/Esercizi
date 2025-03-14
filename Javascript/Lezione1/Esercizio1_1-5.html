@@ -1,39 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizi Javascript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;  /* Fondo scuro */
+            color: #e0e0e0;  /* Testo chiaro */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: #f1f1f1;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid #444;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #e0e0e0;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #883a3a; /* Colore blu scuro per il bottone */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px 0;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #a84c4c; /* Colore al passaggio del mouse */
+        }
+
+        .exercise-container {
+            background-color: #1f1f1f; /* Contenitore scuro */
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+        }
+
+        .exercise-container p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        .exercises {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .mode-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #6200ee;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .mode-toggle:hover {
+            background-color: #3700b3;
+        }
+    </style>
+</head>
 <body>
 
 <h1>Esercizi Javascript</h1>
-<br><br>
 
-<h3>Esercizio 1</h3>
-<script src="./Esercizio1_1.js"></script>
-<button type="button" onclick="mostraNome()">Qual è il mio nome?</button>
-<p id="Esercizio_1"></p>
-<br><hr><br>
+<div class="exercises">
+<center>
+    <div class="exercise-container">
+        <h3>Esercizio 1</h3>
+        <script src="./Esercizio1_1.js"></script>
+        <button type="button" onclick="showNome()">Qual è il mio nome?</button>
+        <p id="Esercizio_1"></p>
+    </div>
 
-<h3>Esercizio 2</h3>
-<script src="./Esercizio1_2.js"></script>
-<button type="button" onclick="cambiaNumero()">Cambia valore del numero!</button>
-<p id="Esercizio_2"></p>
-<br><hr><br>
+    <hr>
 
-<h3>Esercizio 3</h3>
-<script src="./Esercizio1_3.js"></script>
-<button type="button" onclick="mostraNome()">Qual è il mio nome?</button>
-<p id="Esercizio_3"></p>
-<br><hr><br>
+    <div class="exercise-container">
+        <h3>Esercizio 2</h3>
+        <script src="./Esercizio1_2.js"></script>
+        <script>winload1= () => showNumero('Esercizio_2.1')</script>
+        <p id="Esercizio_2.1"></p>
+        <button type="button" onclick="changeNumero('Esercizio_2.2')">Cambia valore del numero!</button>
+        <p id="Esercizio_2.2"></p>
+    </div>
 
-<h3>Esercizio 4</h3>
-<script src="./Esercizio1_4.js"></script>
-<button type="button" onclick="mostraNome()">Qual è il mio nome?</button>
-<p id="Esercizio_4"></p>
-<br><hr><br>
+    <hr>
 
-<h3>Esercizio 5</h3>
-<script src="./Esercizio1_5.js"></script>
-<button type="button" onclick="mostraNome()">Qual è il mio nome?</button>
-<p id="Esercizio_5"></p>
-<br><hr><br>
+    <div class="exercise-container">
+        <h3>Esercizio 3</h3>
+        <script src="./Esercizio1_3.js"></script>
+        <button type="button" onclick="showX('Esercizio_3.1'), showY('Esercizio_3.2'), showZ('Esercizio_3.3')">Mostra X, Y e Z!</button>
+        <p id="Esercizio_3.1"></p>
+        <p id="Esercizio_3.2"></p>
+        <p id="Esercizio_3.3"></p>
+    </div>
+
+    <hr>
+
+    <div class="exercise-container">
+        <h3>Esercizio 4</h3>
+        <script src="./Esercizio1_4.js"></script>
+        <p id="Esercizio_4.1"></p>
+        <script>winload2 = () => showBebes('Esercizio_4.1')</script>
+        <button type="button" onclick="convertBebes('Esercizio_4.2')">Convertire la variabile?</button>
+        <p id="Esercizio_4.2"></p>
+    </div>
+
+    <hr>
+
+    <div class="exercise-container">
+        <h3>Esercizio 5</h3>
+        <script src="./Esercizio1_5.js"></script>
+        <button type="button" onclick="showWeekdays('Esercizio_5')">Quali sono i giorni della settimana?</button>
+        <p id="Esercizio_5"></p>
+    </div>
+
+    <div class="exercise-container">
+        <h3>Esercizio 6</h3>
+        <script src="./Esercizio1_6.js"></script>
+        <p id="Esercizio_5.1"></p>
+        <script>winload3 = () => showNumbers('Esercizio_5.1')</script>
+        <button type="button" onclick="showSumNAvg('Esercizio_5.2')">A quanto ammontano la somma e la media?</button>
+        <p id="Esercizio_5.2"></p>
+    </div>
+
+    <div class="exercise-container">
+        <h3>Esercizio 7</h3>
+        <script src="./Esercizio1_7.js"></script>
+        <button type="button" onclick="showWeekdays('Esercizio_5')">Quali sono i giorni della settimana?</button>
+        <p id="Esercizio_5"></p>
+    </div>
+
+    <div class="exercise-container">
+        <h3>Esercizio 8</h3>
+        <script src="./Esercizio1_8.js"></script>
+        <button type="button" onclick="showWeekdays('Esercizio_5')">Quali sono i giorni della settimana?</button>
+        <p id="Esercizio_5"></p>
+    </div>
+
+    <div class="exercise-container">
+        <h3>Esercizio 9</h3>
+        <script src="./Esercizio1_9.js"></script>
+        <button type="button" onclick="showWeekdays('Esercizio_5')">Quali sono i giorni della settimana?</button>
+        <p id="Esercizio_5"></p>
+    </div>
+
+    <div class="exercise-container">
+        <h3>Esercizio 10</h3>
+        <script src="./Esercizio1_10.js"></script>
+        <button type="button" onclick="showWeekdays('Esercizio_5')">Quali sono i giorni della settimana?</button>
+        <p id="Esercizio_5"></p>
+    </div>
+
+    <div class="exercise-container">
+        <h3>Esercizio 11</h3>
+        <script src="./Esercizio1_11.js"></script>
+        <button type="button" onclick="showWeekdays('Esercizio_5')">Quali sono i giorni della settimana?</button>
+        <p id="Esercizio_5"></p>
+    </div>
+
+    <script>
+        window.onload = () => {
+            winload1();
+            winload2();
+            winload3();
+        }
+    </script>
+</div>
+
+</center>
 
 </body>
-</html> 
+</html>

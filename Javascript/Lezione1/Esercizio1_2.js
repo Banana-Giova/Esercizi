@@ -1,11 +1,12 @@
 let numero = 100;
 
-let mostraNumero = () => {
+let showNumero = (id) => {
     console.log(numero);
-    document.getElementById("Esercizio_2").innerText = `Valore del numero: ${numero}`;
+    document.getElementById(id).innerText = 
+        `Valore del numero: ${numero}`;
 };
 
-let cambiaNumero = (numero) => {
-    numero = numero - 70;
-    mostraNumero(numero);
+let changeNumero = (id) => {
+    numero = numero - 30;
+    showNumero(id);
 };
