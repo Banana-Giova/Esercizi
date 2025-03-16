@@ -93,6 +93,63 @@
         .mode-toggle:hover {
             background-color: #3700b3;
         }
+
+        form {
+            background-color: #1f1f1f;  /* Stesso colore scuro del contenitore dell'esercizio */
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form input[type="number"] {
+            background-color: #333333;  /* Colore scuro per gli input */
+            color: #e0e0e0;  /* Testo chiaro */
+            border: 1px solid #444;  /* Bordo chiaro ma visibile */
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            width: 100%;
+            transition: border-color 0.3s;
+        }
+
+        form input[type="number"]:focus {
+            border-color: #6200ee;  /* Colore di bordo blu quando l'input è selezionato */
+            outline: none;
+        }
+
+        form input[type="button"] {
+            background-color: #883a3a;  /* Colore blu scuro per il bottone */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        form input[type="button"]:hover {
+            background-color: #a84c4c;  /* Colore al passaggio del mouse */
+        }
+
+        form label {
+            color: #f1f1f1;  /* Colore chiaro per le etichette */
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+        form .form-group {
+            width: 100%;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
@@ -153,17 +210,43 @@
     <div class="exercise-container">
         <h3>Esercizio 6</h3>
         <script src="./Esercizio1_6.js"></script>
-        <p id="Esercizio_5.1"></p>
-        <script>winload3 = () => showNumbers('Esercizio_5.1')</script>
-        <button type="button" onclick="showSumNAvg('Esercizio_5.2')">A quanto ammontano la somma e la media?</button>
-        <p id="Esercizio_5.2"></p>
+        <form id="frm1" action="/action_page.php">
+            <div class="form-group">
+                <label for="n1">N.1</label>
+                <input type="number" id="n1" name="n1" min="1">
+            </div>
+            <div class="form-group">
+                <label for="n2">N.2</label>
+                <input type="number" id="n2" name="n2" min="1">
+            </div>
+            <div class="form-group">
+                <label for="n3">N.3</label>
+                <input type="number" id="n3" name="n3" min="1">
+            </div>
+            <div class="form-group">
+                <label for="n4">N.4</label>
+                <input type="number" id="n4" name="n4" min="1">
+            </div>
+            <div class="form-group">
+                <label for="n5">N.5</label>
+                <input type="number" id="n5" name="n5" min="1">
+            </div>
+            <input type="button" onclick="calcSumNAvg('frm1', 'Esercizio_6')" value="A quanto ammontano la somma e la media?">
+        </form>
+        <p id="Esercizio_6"></p>
     </div>
 
     <div class="exercise-container">
         <h3>Esercizio 7</h3>
         <script src="./Esercizio1_7.js"></script>
-        <button type="button" onclick="showWeekdays('Esercizio_5')">Quali sono i giorni della settimana?</button>
-        <p id="Esercizio_5"></p>
+        <form id="frm1" action="/action_page.php">
+            <div class="form-group">
+                <label for="eta">Qual è il tuo anno di nascita?</label>
+                <input type="number" id="eta" name="eta" min="1900" max="2024">
+            </div>
+            <input type="button" onclick="calcAging('eta', 'Esercizio_7')" value="Calcola età!">
+        </form>
+        <p id="Esercizio_7"></p>
     </div>
 
     <div class="exercise-container">
@@ -198,7 +281,6 @@
         window.onload = () => {
             winload1();
             winload2();
-            winload3();
         }
     </script>
 </div>

@@ -1,16 +1,17 @@
-const numbers = [47, 74, 65, 56, 33];
+let calcSumNAvg = (formId, resultId) => {
+    const form = document.getElementById(formId);
+    let numbers = [];
+    const inputs = form.querySelectorAll('input[type="number"]');
 
-let showNumbers = (id) => {
-    console.log(numbers);
-    document.getElementById(id).innerText = numbers;
-}
+    inputs.forEach(input => {
+        numbers.push(parseFloat(input.value));
+    });
 
-let showSumNAvg = (id) => {
     const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
     const avg = sum / numbers.length;
     
     console.log
         (`La somma dei numeri è ${sum}\nLa media dei numeri è ${avg}`);
-    document.getElementById(id).innerText = 
+    document.getElementById(resultId).innerText = 
         `La somma dei numeri è ${sum}\nLa media dei numeri è ${avg}`;
 }
