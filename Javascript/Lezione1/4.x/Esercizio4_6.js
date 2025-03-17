@@ -1,11 +1,11 @@
-let calcSumNAvg = (formId, resultId) => {
+let calcForSumNAvg = (formId, resultId) => {
     const form = document.getElementById(formId);
     let numbers = [];
     const inputs = form.querySelectorAll('input[type="number"]');
 
-    inputs.forEach(input => {
+    for (let input of inputs) {
         numbers.push(parseInt(input.value));
-    });
+    }
 
     const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
     const avg = sum / numbers.length;

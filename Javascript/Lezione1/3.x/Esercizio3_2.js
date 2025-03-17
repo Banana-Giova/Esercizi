@@ -2,8 +2,11 @@ const curr_anno = 2025;
 
 let calcAging = (intId, resultId) => {
 
-    const anno_nascita = parseFloat(document.getElementById(intId).value);
-    
+    const anno_nascita = parseInt(document.getElementById(intId).value);
+    if (anno_nascita < 1900 || anno_nascita > 2024 || isNaN(anno_nascita)) {
+        throw TypeError("L'anno deve essere fra il 1900 e l'anno corrente.")
+    }
+
     const curr_age = curr_anno - anno_nascita;
     const hundred = 100 - curr_age;
 

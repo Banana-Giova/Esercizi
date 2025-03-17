@@ -1,12 +1,12 @@
-let numero = 100;
+let numero1 = 100;
 
 let showNumero = (id) => {
-    console.log(numero);
+    console.log(numero1);
     document.getElementById(id).innerText = 
-        `Valore del numero: ${numero}`;
+        `Valore del numero: ${numero1}`;
 };
 
 let changeNumero = (id) => {
-    numero = numero - 30;
+    numero1 -= 30;
     showNumero(id);
 };
