@@ -33,7 +33,7 @@ let theGame = (status) => {
         <form id="frm3" action="/action_page.php">
             <div class="form-group">
                 <label for="tentativo"></label>
-                <input type="number" id="tentativo" name="tentativo" min="0" max="100">
+                <input type="number" id="tentativo" name="tentativo" min="0" max="100" placeholder="Prova ad indovinare!">
             </div>
             <div class="counter">
                 <h4>Tentativi:</h4><p id="count">${conteggio}</p>
@@ -52,7 +52,7 @@ let theGame = (status) => {
         <form id="frm3" action="/action_page.php">
             <div class="form-group">
                 <label for="tentativo"></label>
-                <input type="number" id="tentativo" name="tentativo" min="0" max="100">
+                <input type="number" id="tentativo" name="tentativo" min="0" max="100" placeholder="Ritenta!">
             </div>
             <div class="counter">
                 <h4>Tentativi:</h4><p id="count">${conteggio}</p>
@@ -78,7 +78,7 @@ let theGame = (status) => {
         <form id="frm3" action="/action_page.php">
             <div class="form-group">
                 <label for="tentativo"></label>
-                <input type="number" id="tentativo" name="tentativo" min="0" max="100">
+                <input type="number" id="tentativo" name="tentativo" min="0" max="100" placeholder="Inserisci un numero intero valido!">
             </div>
             <div class="counter">
                 <h4>Tentativi:</h4><p id="count">${conteggio}</p>

@@ -1,10 +1,11 @@
 let hrBall = (resultId) => {
     let hr_count = 1;
-    let result_html =         `
+    let result_html = `
+    <h3>Prisma di Mazinga</h3>
     <hr style="width: 1%; height: 2px; background-color: white;">
 
     `;
-    let anti_html =         `
+    let anti_html = `
 
     <hr style="width: 1%; height: 2px; background-color: white;">        
     `;
