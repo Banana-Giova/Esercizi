@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizi Javascript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; 
+            color: #e0e0e0;  
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: #f1f1f1;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid #444;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #e0e0e0;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #883a3a; 
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px 0;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #a84c4c; 
+        }
+
+        .exercise-container {
+            background-color: #1f1f1f; 
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+        }
+
+        .exercise-container p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        .exercises {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .mode-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #6200ee;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .mode-toggle:hover {
+            background-color: #3700b3;
+        }
+
+        form {
+            background-color: #1f1f1f; 
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form input[type="number"] {
+            background-color: #333333;  
+            color: #e0e0e0; 
+            border: 1px solid #444; 
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            width: 100%;
+            transition: border-color 0.3s;
+        }
+
+        form input[type="number"]:focus {
+            border-color: #6200ee;  
+            outline: none;
+        }
+
+        form input[type="button"] {
+            background-color: #883a3a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        form input[type="button"]:hover {
+            background-color: #a84c4c; 
+        }
+
+        form label {
+            color: #f1f1f1;  
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+        form .form-group {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #444;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        td {
+            background-color: #222;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #2a2a2a;
+        }
+
+        tr:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Esercizi Javascript</h1>
+
+<div class="exercises">
+<center>
+    <div class="exercise-container">
+        <h3>Esercizio 5.1</h3>
+        <script src="./5.x/Esercizio5_1.js"></script>
+        <form id="frm1" action="/action_page.php">
+            <div class="form-group">
+                <label for="boolean1">Argomento 1</label>
+                <input type="text" id="boolean1" name="boolean1">
+            </div>
+            <div class="form-group">
+                <label for="boolean2">Argomento 2</label>
+                <input type="text" id="boolean2" name="boolean2">
+            </div>
+            <input type="button" onclick="checkIfEqual('boolean1', 'boolean2', 'Esercizio_1')" value="Sono uguali i due argomenti forniti?">
+        </form>
+        <p id="Esercizio_1"></p>
+    </div>
+
+    <div class="exercise-container">
+        <h3>Esercizio 5.2</h3>
+        <script src="./5.x/Esercizio5_2.js"></script>
+        <form id="frm2" action="/action_page.php">
+            <div class="form-group">
+                <label for="numbWeek">Scrivi un numero da 1 a 7.</label>
+                <br><br>
+                <input type="number" id="numbWeek" name="numbWeek">
+            </div>
+            <input type="button" onclick="rangeChecker('numbWeek', 'Esercizio_2')" value="Indovina il giorno della settimana!">
+        </form>
+        <p id="Esercizio_2"></p>
+    </div>
+
+    <div class="exercise-container">
+        <h3>Esercizio 5.3</h3>
+        <script src="./5.x/Esercizio5_3.js"></script>
+        <script>winload1 = () => newGame('Esercizio_3')</script>
+        <p id="Esercizio_3"></p>
+    </div>
+
+    <div class="exercise-container">
+        <h3>Esercizio 5.4</h3>
+        <script src="./5.x/Esercizio5_4.js"></script>
+        <script>winload2 = () => hrBall('Esercizio_4')</script>
+        <p id="Esercizio_4"></p>
+    </div>
+    
+    <script>
+        window.onload = () => {
+            winload1();
+            winload2();
+        }
+    </script>
+</div>
+
+</center>
+
+</body>
+</html>
