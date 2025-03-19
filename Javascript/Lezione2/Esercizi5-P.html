@@ -4,238 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esercizi Javascript</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212; 
-            color: #e0e0e0;  
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
-
-        h1 {
-            color: #ffffff;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        h3 {
-            color: #f1f1f1;
-            margin-bottom: 10px;
-            font-size: 1.5em;
-        }
-
-        hr {
-            width: 80%;
-            border: 1px solid #444;
-            margin: 20px 0;
-        }
-
-        p {
-            font-size: 1.1em;
-            color: #e0e0e0;
-            margin: 10px 0;
-        }
-
-        button {
-            background-color: #883a3a; 
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-            border-radius: 5px;
-            margin: 5px 0;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #a84c4c; 
-        }
-
-        .exercise-container {
-            background-color: #1f1f1f; 
-            padding: 20px;
-            width: 80%;
-            max-width: 800px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            margin-bottom: 30px;
-        }
-
-        .exercise-container p {
-            font-size: 1.2em;
-            line-height: 1.5;
-        }
-
-        .exercises {
-            width: 100%;
-            padding: 10px;
-        }
-
-        .mode-toggle {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            background-color: #6200ee;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .mode-toggle:hover {
-            background-color: #3700b3;
-        }
-
-        form {
-            background-color: #1f1f1f; 
-            padding: 20px;
-            width: 80%;
-            max-width: 800px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            margin-bottom: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        form input[type="text"] {
-            background-color: #333333;  
-            color: #e0e0e0; 
-            border: 1px solid #444; 
-            padding: 10px;
-            font-size: 1em;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            width: 100%;
-            transition: border-color 0.3s;
-        }
-
-        form input[type="text"]:focus {
-            border-color: #6200ee;  
-            outline: none;
-        }
-
-        form input[type="number"] {
-            background-color: #333333;  
-            color: #e0e0e0; 
-            border: 1px solid #444; 
-            padding: 10px;
-            font-size: 1em;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            width: 100%;
-            transition: border-color 0.3s;
-        }
-
-        form input[type="number"]:focus {
-            border-color: #6200ee;  
-            outline: none;
-        }
-
-        form input[type="button"] {
-            background-color: #883a3a;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-            border-radius: 5px;
-            margin-top: 10px;
-            transition: background-color 0.3s;
-        }
-
-        form input[type="button"]:hover {
-            background-color: #a84c4c; 
-        }
-
-        .radio-container {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 15px;
-            flex-wrap: wrap; 
-        }
-
-        form input[type="radio"] {
-            accent-color:rgb(238, 0, 0);
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-
-        form input[type="radio"]:checked {
-            background-color:rgb(238, 0, 0);
-            color: #fff;
-        }
-
-        form input[type="radio"]:hover {
-            transform: scale(1.1);
-        }
-
-        form label {
-            color: #f1f1f1;
-            font-size: 1.1em;
-            margin-left: 5px;
-        }
-
-
-        form .form-group {
-            width: 100%;
-            margin-bottom: 15px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        table, th, td {
-            border: 1px solid #444;
-        }
-
-        th, td {
-            padding: 12px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #333;
-            color: #fff;
-        }
-
-        td {
-            background-color: #222;
-        }
-
-        tr:nth-child(even) td {
-            background-color: #2a2a2a;
-        }
-
-        tr:hover {
-            background-color: #444;
-
-        }
-
-        .box {
-            background-color: #333;  
-            color: #fff;  
-            padding: 20px; 
-            border-radius: 8px; 
-            border: 2px rgb(73, 10, 10); 
-            max-width: 400px; 
-            margin: 20px auto;
-            text-align: center;  
-        }
-
-    </style>
+    <link rel="stylesheet" href="./Esercizi5-P.css">
 </head>
 <body>
 
@@ -340,6 +109,44 @@
         <br>
         <button type="button" onclick="jobP1('Esercizio_7')">Saluta il mondo con 2 secondi di delay!</button>
         <p id="Esercizio_7"></p>
+    </div>
+
+    <hr>
+
+    <div class="exercise-container">
+        <h3>Esercizio P.2</h3>
+        <script src="./P.x/EsercizioP_2.js"></script>
+        <form id="frm2" action="/action_page.php">
+            <div class="form-group">
+                <label for="oddOrEven">Scrivi un numero.</label>
+                <br><br>
+                <input type="number" id="oddOrEven" name="oddOrEven" placeholder="Inserire numero...">
+            </div>
+            <input type="button" onclick="jobP2('oddOrEven', 'Esercizio_8')" value="Pari o dispari?">
+        </form>
+        <p id="Esercizio_8"></p>
+    </div>
+
+    <hr>
+
+    <div class="exercise-container">
+        <h3>Esercizio P.3</h3>
+        <script src="./P.x/EsercizioP_3.js"></script>
+        <br>
+        <h4>Siamo in una caverna virtuale, vediamo se c'è eco!</h4>
+        <br>
+        <button type="button" onclick="jobP3('Esercizio_9')">Saluta il mondo!</button>
+        <p id="Esercizio_9"></p>
+    </div>
+
+    <hr>
+
+    <div class="exercise-container">
+        <h3>Esercizio P.4</h3>
+        <script src="./P.x/EsercizioP_4.js"></script>
+        <br>
+        <button type="button" onclick="jobP4('Esercizio_10')">In quale callback sono?</button>
+        <p id="Esercizio_10"></p>
     </div>
 
     <script>
