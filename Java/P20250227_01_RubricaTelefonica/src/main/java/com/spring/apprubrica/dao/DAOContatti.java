@@ -1,12 +1,15 @@
 package com.spring.apprubrica.dao;
 
 import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
 import com.spring.apprubrica.entity.ContattoTelefonico;
 
-public interface DAOContatti {
+public interface DAOContatti extends JpaRepository<ContattoTelefonico, Integer> {
 
-	public boolean insert(ContattoTelefonico contatto);
-	public List<ContattoTelefonico> selectAll();
-	public ContattoTelefonico selectById(String con_id);
-	public boolean delete(String con_id);
+	public <S extends ContattoTelefonico> S save(S contatto);
+	public List<ContattoTelefonico> findAll();
+	public Optional<ContattoTelefonico> findById(String con_id);
+	public boolean deleteById(String con_id);
 }

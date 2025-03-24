@@ -1,10 +1,15 @@
 package com.spring.apprubrica.entity;
 
+//import java.util.ArrayList;
+//import java.util.List;
+//
+//import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+//import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -21,6 +26,9 @@ public class RubricaTelefonica {
     @Column(name = "anno_creazione", nullable = false)
     private int anno_creazione;
 	
+//    @OneToMany(mappedBy = "rubrica", cascade = CascadeType.ALL, orphanRemoval = true)
+//    private List<ContattoTelefonico> contatti;
+    
 	public RubricaTelefonica() {
 	}
 
@@ -47,18 +55,16 @@ public class RubricaTelefonica {
 	public void setAnno_creazione(int anno_creazione) {
 		this.anno_creazione = anno_creazione;
 	}
+	
+//    public List<ContattoTelefonico> getContatti() {
+//        return contatti;
+//    }
 
 	public RubricaTelefonica(String proprietario, int anno_creazione) {
 		super();
 		this.proprietario = proprietario;
 		this.anno_creazione = anno_creazione;
-	}
-	
-	public RubricaTelefonica(int id, String proprietario, int anno_creazione) {
-		super();
-		this.id = id;
-		this.proprietario = proprietario;
-		this.anno_creazione = anno_creazione;
+//		this.contatti = new ArrayList<>();
 	}
 }
 

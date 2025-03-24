@@ -33,17 +33,17 @@ public class RegistroRubriche {
         updateRegistroRubriche();
         updateRegistroContatti();
     }
-	
+
 	public HashMap<Integer, RubricaAndContattiDTO> getRegistro_rubriche() {
 		return registro_rubriche;
 	}
-	
+
 	/*
 	 * 
 	Controlli e utility
 	*
 	*/
-	
+
 	public void isRubrica(int rub_id) {
 	    if (!registro_rubriche.containsKey(rub_id)) {
 	        throw new RubricaNotFoundException("Rubrica con ID " + rub_id + " non trovata!");
@@ -58,14 +58,14 @@ public class RegistroRubriche {
 	}
 	
     public void updateRegistroRubriche() {
-        List<RubricaTelefonica> rub_list = daoRubriche.selectAll();
+        List<RubricaTelefonica> rub_list = daoRubriche.findById();
         for (RubricaTelefonica rub : rub_list) {
             addRubrica(rub);
         }
     }
 
     public void updateRegistroContatti() {
-        List<ContattoTelefonico> con_list = daoContatti.selectAll();
+        List<ContattoTelefonico> con_list = daoContatti.findAll();
         for (ContattoTelefonico con : con_list) {
             addContatto(con.getRubrica().getId(), con);
         }

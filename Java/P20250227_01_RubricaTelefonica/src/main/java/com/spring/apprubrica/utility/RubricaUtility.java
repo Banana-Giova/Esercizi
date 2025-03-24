@@ -19,10 +19,6 @@ public class RubricaUtility {
 		return contact_num.toString();
 	}
 	
-	public static RubricaTelefonica INRubDTO_OUTRub(RubricaTelefonicaDTO dto) {
-		return new RubricaTelefonica(dto.getId(), dto.getProprietario(), dto.getAnno_creazione());
-	}
-	
 	public static RubricaTelefonica INRubDTO_OUTRub_NOID(RubricaTelefonicaDTO dto) {
 		return new RubricaTelefonica(dto.getProprietario(), dto.getAnno_creazione());
 	}

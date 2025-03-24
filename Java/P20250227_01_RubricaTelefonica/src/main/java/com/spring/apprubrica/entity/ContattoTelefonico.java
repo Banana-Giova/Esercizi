@@ -27,9 +27,10 @@ public class ContattoTelefonico {
 //    private int rub_id;
     
     @ManyToOne
-    @JoinColumn(name = "rubrica", insertable = false, updatable = false)
+    @JoinColumn(name = "rubrica")
     @OnDelete(action = OnDeleteAction.CASCADE)
     private RubricaTelefonica rubrica;
+    //Mi serve che ogni contatto possa essere associato ad una rubrica, che ad una rubrica possano essere associati più contatti e che se la rubrica viene concellata si cancellano anche i suoi contatti
 
     @Column(name = "nome", nullable = false, length = 50)
     private String nome;
@@ -140,37 +141,9 @@ public class ContattoTelefonico {
 		this.contact_id = (nome + cognome).toLowerCase() + RubricaUtility.generateNewContact();
 	}
 	
-	public ContattoTelefonico(int id, RubricaTelefonica rubrica, String nome, String cognome, String numero, String gruppo_appartenza,
-			LocalDate data_nascita, Boolean preferito) {
-		super();
-		this.id = id;
-		this.rubrica = rubrica;
-		this.nome = nome;
-		this.cognome = cognome;
-		this.numero = numero;
-		this.gruppo_appartenenza = (gruppo_appartenza != null? gruppo_appartenza : "default");
-		this.data_nascita = data_nascita;
-		this.preferito = (preferito != null? preferito : false);
-		this.contact_id = (nome + cognome).toLowerCase() + RubricaUtility.generateNewContact();
-	}
-	
 	public ContattoTelefonico(RubricaTelefonica rubrica, String nome, String cognome, String numero, String gruppo_appartenza,
 			LocalDate data_nascita, Boolean preferito, String contact_id) {
 		super();
-		this.rubrica = rubrica;
-		this.nome = nome;
-		this.cognome = cognome;
-		this.numero = numero;
-		this.gruppo_appartenenza = (gruppo_appartenza != null? gruppo_appartenza : "default");
-		this.data_nascita = data_nascita;
-		this.preferito = (preferito != null? preferito : false);
-		this.contact_id = contact_id;
-	}
-	
-	public ContattoTelefonico(int id, RubricaTelefonica rubrica, String nome, String cognome, String numero, String gruppo_appartenza,
-			LocalDate data_nascita, Boolean preferito, String contact_id) {
-		super();
-		this.id = id;
 		this.rubrica = rubrica;
 		this.nome = nome;
 		this.cognome = cognome;
