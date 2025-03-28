@@ -11,5 +11,5 @@ public interface DAOContatti extends JpaRepository<ContattoTelefonico, Integer> 
 	public <S extends ContattoTelefonico> S save(S contatto);
 	public List<ContattoTelefonico> findAll();
 	public Optional<ContattoTelefonico> findById(String con_id);
-	public boolean deleteById(String con_id);
+	public boolean deleteById(String con_id); //should be void
 }
