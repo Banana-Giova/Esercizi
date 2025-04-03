@@ -1,0 +1,2 @@
+numpy==1.23.5  # Stable version known to avoid this error
+pandas==1.5.3   # Compatible with numpy 1.23

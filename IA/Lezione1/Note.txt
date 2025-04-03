@@ -1,0 +1,2 @@
+Data: Giovedì 03/04/2025
+Argomenti: introduzione generale, pandas, dataframes
