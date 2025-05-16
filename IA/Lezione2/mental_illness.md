@@ -11,4 +11,4 @@ bash
 
     conda create -n myenv python=3.11
     conda activate myenv
-    pip install numpy==1.23.5 pandas==1.5.3 matplotlib
+    pip install numpy==1.23.5 pandas==1.5.3 matplotlib==3.6.0
