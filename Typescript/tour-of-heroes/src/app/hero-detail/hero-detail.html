@@ -1,0 +1,27 @@
+<div *ngIf="hero">
+  <!--
+    ngIf → Direttiva Strutturale
+     - Se "hero" esiste, ciò che c'è nel <div> viene mostrato.
+     - L'asterisco è una scorciatoia sintattica, inserisce
+       tutto il blocco in un ng-template.
+     - L'ng-template a sua volta è un contenitore usato per
+       definire blocchi di codice che vanno renderizzati
+       condizionalmente.
+  -->
+  <h2>{{hero.name | uppercase}} - Dettagli</h2>
+  <!-- 
+    Data Binding Types: - Interpolation
+     - Component → View
+     - Mostra dati come testo nel template
+  -->
+  <div><span>ID: </span>{{hero.id}}</div>
+  <div>
+      <label for="name">Nome dell'Eroe: </label>
+      <input id="name" [(ngModel)]="hero.name" placeholder="name">
+      <!--
+      Data Binding Types - Two-Way Binding
+       - View ⇄ Component
+       - Collega un input in modo bidirezionale
+      -->
+  </div>
+</div>

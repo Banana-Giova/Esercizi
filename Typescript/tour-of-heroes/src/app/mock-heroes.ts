@@ -1,7 +1,7 @@
 import { Hero } from './hero';
 
-export const MockHeroes: Hero[] = [
-    {id: 1, name: 'Homander'},
+export const MOCKHEROES: Hero[] = [
+    {id: 1, name: 'Vilgax'},
     {id: 2, name: 'L\'Uomo Ringo'},
     {id: 3, name: 'Mastro Lindo'},
     {id: 4, name: 'PizzettaQueen'},
@@ -10,5 +10,5 @@ export const MockHeroes: Hero[] = [
     {id: 7, name: 'Sergio Formaggini'},
     {id: 8, name: 'Franco'},
     {id: 9, name: 'Capitan Crotone'},
-    {id: 10, name: 'Michele'},
+    {id: 10, name: 'Homander'},
 ];

@@ -1,6 +1,41 @@
-<h2>{{hero.name | uppercase}} Details</h2>
-<div><span>id: </span>{{hero.id}}</div>
-<div>
-    <label for="name">Hero name: </label>
-    <input id="name" [(ngModel)]="hero.name" placeholder="name">
-</div>
+<h2>I Miei Eroi</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <!--
+      - Direttiva strutturale
+      - Si tratta di "Angular Template Syntax", come se
+        stessi scrivendo "for (let hero of heroes) { }"
+      - Dichiara una variabile chiamata 'hero' per ogni
+        elemento nell'array indicato, mentre itera.
+    -->
+
+    <!--
+      Data Binding Types: - Property Binding
+       - Aggiungi la classe 'selected' a questo elemento 
+         solo se hero === selectedHero.
+    -->
+    <button [class.selected]="hero === selectedHero" 
+            type="button" (click)="onSelect(hero)">
+      <!--
+        Data Binding Types: - Event Binding
+         - View → Component
+         - Risponde a eventi dell’utente (click, input, ecc.)      
+      -->
+      <span class="badge">{{hero.id}}</span>
+      <span class="name">{{hero.name}}</span>
+    </button>
+  </li>
+</ul>
+
+<!--
+  Il Selector sottostante renderizza il componente
+  nella vista.
+-->
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<!--
+  Data Binding Types: - Property Binding
+
+   - Il property binding è una forma di sintassi usata 
+     per assegnare dinamicamente un valore da TypeScript 
+     a una proprietà HTML o Angular, nel template.
+-->
