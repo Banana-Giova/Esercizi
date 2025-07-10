@@ -1,3 +1,19 @@
 <h1>{{title}}</h1>
-<app-heroes></app-heroes>
+<nav>
+  <a routerLink="/heroes">Heroes</a>
+</nav>
+<!--
+ <nav>: è un elemento rappresenta una sezione di navigazione 
+ all'interno della tua applicazione. È una convenzione semantica 
+ che aiuta a strutturare il contenuto e a migliorare l'accessibilità.
+
+ Gli anchor con routerLink sono dei link che utilizzano 
+ la direttiva routerLink di Angular per navigare verso 
+ la rotta associata al percorso selezionato dall'utente.
+
+ Quando l'utente clicca su questo link, Angular aggiorna 
+ l'URL del browser e carica il componente associato 
+ alla rotta richiesta senza ricaricare l'intera pagina.
+-->
+<router-outlet></router-outlet>
 <app-messages></app-messages>

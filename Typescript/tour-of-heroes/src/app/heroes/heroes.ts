@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService } from '../hero-service';
 import { MessageService } from '../message-service';
-import { pipe, tap } from 'rxjs';
+import { tap } from 'rxjs';
 
 @Component({ // componente padre di hero-details
   selector: 'app-heroes',
@@ -78,4 +78,9 @@ export class Heroes implements OnInit {
     this.selectedHero = hero;
     this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
   }
-}
+}/*
+ Quel $ dentro la stringa è una template literal 
+ di JavaScript/TypeScript, ed è usato per inserire 
+ espressioni dinamiche dentro una stringa in modo 
+ semplice e leggibile.
+*/

@@ -24,4 +24,22 @@
        - Collega un input in modo bidirezionale
       -->
   </div>
+  <div><span>Voto: </span>{{hero.likes}}</div>
+  
+  <app-hero-like
+    [hero_name]="hero.name"
+    (emettiLike)="on_like($event)">
+    <!--
+     $event è una variabile speciale predefinita da Angular 
+     che rappresenta il payload o i dati dell’evento emesso.
+
+     Quando il componente figlio <app-hero-like> emette 
+     un evento con @Output() emettiLike = new EventEmitter(), 
+     il valore passato a emit() sarà disponibile come $event.
+
+     $event è solo il segnaposto nel template 
+     per il valore dell’evento.
+    -->
+  </app-hero-like>
+
 </div>
