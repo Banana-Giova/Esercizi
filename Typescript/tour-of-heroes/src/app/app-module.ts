@@ -33,8 +33,7 @@ import { HeroLike } from './hero-like/hero-like';
     Heroes,
     HeroDetail,
     Messages,
-    HeroLike,
-    Dashboard
+    HeroLike
   ],
   imports: [
     BrowserModule,
