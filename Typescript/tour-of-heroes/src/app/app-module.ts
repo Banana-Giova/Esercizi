@@ -8,7 +8,6 @@ import { Heroes } from './heroes/heroes';
 import { HeroDetail } from './hero-detail/hero-detail';
 import { Messages } from './messages/messages';
 import { HeroLike } from './hero-like/hero-like';
-import { Dashboard } from './dashboard/dashboard';
 
 /*
  Un modulo in Angular è una struttura fondamentale 
