@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Heroes } from './heroes/heroes';
+import { Dashboard } from './dashboard/dashboard';
+import { HeroDetail } from './hero-detail/hero-detail';
 
 const routes: Routes = [
-  { path: 'heroes', component: Heroes }
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: 'dashboard', component: Dashboard },
+  { path: 'heroes', component: Heroes },
+  { path: 'detail/:id', component: HeroDetail }
 ];
 /*
  Una route serve a definire la mappatura tra

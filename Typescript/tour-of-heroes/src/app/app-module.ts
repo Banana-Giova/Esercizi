@@ -1,6 +1,7 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
@@ -8,6 +9,7 @@ import { Heroes } from './heroes/heroes';
 import { HeroDetail } from './hero-detail/hero-detail';
 import { Messages } from './messages/messages';
 import { HeroLike } from './hero-like/hero-like';
+import { Dashboard } from './dashboard/dashboard';
 
 /*
  Un modulo in Angular è una struttura fondamentale 
@@ -33,7 +35,8 @@ import { HeroLike } from './hero-like/hero-like';
     Heroes,
     HeroDetail,
     Messages,
-    HeroLike
+    HeroLike,
+    Dashboard
   ],
   imports: [
     BrowserModule,
@@ -41,8 +44,9 @@ import { HeroLike } from './hero-like/hero-like';
     AppRoutingModule
   ],
   providers: [
-    provideBrowserGlobalErrorListeners()
+    provideBrowserGlobalErrorListeners(),
+    provideHttpClient(withInterceptorsFromDi())
   ],
-  bootstrap: [App]
+  bootstrap: [ App ]
 })
 export class AppModule { }

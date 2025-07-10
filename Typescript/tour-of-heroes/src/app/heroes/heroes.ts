@@ -72,15 +72,4 @@ export class Heroes implements OnInit {
      contesto ed un nuovo event listener.
     */
   }
-
-  selectedHero?: Hero;
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
-  }
-}/*
- Quel $ dentro la stringa è una template literal 
- di JavaScript/TypeScript, ed è usato per inserire 
- espressioni dinamiche dentro una stringa in modo 
- semplice e leggibile.
-*/
+}

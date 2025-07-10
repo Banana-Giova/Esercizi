@@ -1,0 +1,10 @@
+<div class="dashboard-header">
+  <h2>Top Heroes</h2>
+  <button class="refresh" (click)="refreshHeroes()" title="Refresh heroes list">♼</button>
+</div>
+
+<div class="heroes-menu">
+  <a *ngFor="let hero of top_heroes" routerLink="/detail/{{hero.id}}">
+    {{hero.name}}
+  </a>
+</div>

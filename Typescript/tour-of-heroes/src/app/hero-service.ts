@@ -3,6 +3,7 @@ import { Hero } from './hero';
 import { MOCKHEROES } from './mock-heroes';
 import { MessageService } from './message-service';
 import { Observable, of } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 /*
  Questo decoratore indica ad Angular che la classe 
@@ -20,16 +21,38 @@ import { Observable, of } from 'rxjs';
 */
 
 export class HeroService {
-  constructor(private messageService: MessageService) { }
+  constructor(
+    private http: HttpClient,
+    private messageService: MessageService
+  ) { }
+
+  private heroesUrl = 'mock_heroes.json';
+
+  private log(message: string) {
+  this.messageService.add(`HeroService: ${message}`);
+  }
+
+  getObsHero(id: number): Observable<Hero> {
+    const hero = MOCKHEROES.find(h => h.id === id)!;
+    /*
+     Il punto esclamativo alla fine è un operatore:
+     "non- null assertion". Forza TypeScript a credere
+     che il risultato esiste.
+    */
+    this.log(`fetched hero id=${id}`);
+    return of(hero);
+  }
 
   getObsHeroes(): Observable<Hero[]> {
+    console.log(this.http.get(this.heroesUrl).subscribe())
     const heroes$ = of(MOCKHEROES);
     /*
      La funzione 'of()' crea un osservabile che
      emette i valori passati come argomenti.
     */
-    this.messageService.add('HeroService: fetched heroes');
+    this.log('fetched heroes')
     return heroes$;
+    }
   }
   /*
  - Un Osservabile è un flusso di dati asincrono che
@@ -45,4 +68,3 @@ export class HeroService {
     Questo processo è simile a un flusso continuo di informazioni 
     che gli osservatori possono ascoltare e/o gestire.
 */
-}

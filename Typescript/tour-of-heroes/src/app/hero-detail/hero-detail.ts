@@ -1,6 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { Hero } from '../hero';
+import { HeroService } from '../hero-service';
 import { MessageService } from '../message-service';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+import { tap } from 'rxjs';
 
 @Component({ //componente figlio
   selector: 'app-hero-detail',
@@ -10,7 +14,37 @@ import { MessageService } from '../message-service';
 })
 
 export class HeroDetail {
-  constructor (private messageService: MessageService) {}
+  constructor(
+    private route: ActivatedRoute,
+    private heroService: HeroService,
+    private messageService: MessageService,
+    private location: Location
+  ) {}
+
+  ngOnInit(): void {
+    this.getHero();
+  }
+
+  getHero(): void {
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    this.heroService.getObsHero(id).pipe(
+    tap(hero => this.hero = hero)
+    ).subscribe();
+  }
+  /*
+    this.route:
+    - Serve per accedere alle informazioni sulla route corrente, 
+      inclusi i parametri, la query string, ecc.
+    snapshot:
+    - È un oggetto che rappresenta lo stato attuale della route 
+      in un dato momento (uno "scatto").
+    - È utile quando non vuoi reagire ai cambiamenti, 
+      ma solo leggere una volta il valore del parametro.
+    param.get('id':
+    - paramMap è una mappa di tutti i parametri della route 
+      definiti nel tuo routing.
+    - Ad esempio, se hai questa configurazione nel tuo app.routes.ts
+  */
 
   @Input() hero?: Hero;
   /*
@@ -34,6 +68,16 @@ export class HeroDetail {
         this.hero.likes = Number(user_like);
         this.messageService.add(`HeroDetailComponent: ${this.hero.name} has been rated ${Number(user_like)}`);
         // Funzione di conversione, non casting! 
+        /*
+        Quel $ dentro la stringa è una template literal 
+        di JavaScript/TypeScript, ed è usato per inserire 
+        espressioni dinamiche dentro una stringa in modo 
+        semplice e leggibile.
+        */
     }
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 }
