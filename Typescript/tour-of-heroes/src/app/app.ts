@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class App {
   protected title = 'Tour degli Eroi';
+  menuOpen = false;
+  
+  toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+  }
 }

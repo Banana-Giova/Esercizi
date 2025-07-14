@@ -48,25 +48,26 @@ export class HeroDetail {
 
   @Input() hero?: Hero;
   /*
- Questo è un decoratore Angular.
- Indica che la proprietà hero può ricevere un valore 
- da un componente genitore.
+    Questo è un decoratore Angular.
+    Indica che la proprietà hero può ricevere un valore 
+    da un componente genitore.
 
- Serve per stabilire un data binding da parent a child.
- In questo caso si fa uso di Property Binding.
+    Serve per stabilire un data binding da parent a child.
+    In questo caso si fa uso di Property Binding.
 
- Il componente padre costruisce il componente figlio
- e decide cosa ascoltare. Dunque passa delle proprietà
- al figlio ed ascolta degli eventi.
+    Il componente padre costruisce il componente figlio
+    e decide cosa ascoltare. Dunque passa delle proprietà
+    al figlio ed ascolta degli eventi.
 
- Il figlio può notificare un cambiamento, ma non
- modificare direttamente il dato.
-*/
+    Il figlio può notificare un cambiamento, ma non
+    modificare direttamente il dato.
+  */
 
     on_like(user_like:string) {
       if (this.hero) {
         this.hero.likes = Number(user_like);
-        this.messageService.add(`HeroDetailComponent: ${this.hero.name} has been rated ${Number(user_like)}`);
+        this.messageService.message = [`HeroDetailComponent: ${this.hero.name} has been rated ${Number(user_like)}`];
+        this.save();
         // Funzione di conversione, non casting! 
         /*
         Quel $ dentro la stringa è una template literal 
@@ -76,6 +77,21 @@ export class HeroDetail {
         */
     }
   }
+
+  save(): void {
+    if (this.hero) {
+      this.heroService.updateHero(this.hero)
+        .subscribe(() => window.location.reload())
+    }
+  }
+
+  delete(): void {
+    if (this.hero) {
+      this.heroService.deleteHero(this.hero)
+        .subscribe(() => this.location.back())
+    }
+  }
+
 
   goBack(): void {
     this.location.back();

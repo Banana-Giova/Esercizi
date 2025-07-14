@@ -4,7 +4,8 @@
 </div>
 
 <div class="heroes-menu">
-  <a *ngFor="let hero of top_heroes" routerLink="/detail/{{hero.id}}">
+  <a *ngFor="let hero of top_heroes" 
+      routerLink="/detail/{{hero.id}}">
     {{hero.name}}
   </a>
 </div>

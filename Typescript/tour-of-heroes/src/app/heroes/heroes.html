@@ -7,3 +7,17 @@
     </a>
   </li>
 </ul>
+
+<div>
+  <label for="new-hero">Nome eroe: </label>
+  <input id="new-hero" #heroName />
+<!-- 
+  #heroName è una template reference variable.
+  Permette di accedere al valore dell'input direttamente nel template.
+  Esempio: heroName.value restituisce il testo inserito.
+  Utile per operazioni rapide senza usare [(ngModel)].
+-->
+  <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
+    Aggiungi eroe!
+  </button>
+</div>

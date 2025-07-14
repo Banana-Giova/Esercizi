@@ -10,6 +10,7 @@ import { HeroDetail } from './hero-detail/hero-detail';
 import { Messages } from './messages/messages';
 import { HeroLike } from './hero-like/hero-like';
 import { Dashboard } from './dashboard/dashboard';
+import { HeroSearch } from './hero-search/hero-search';
 
 /*
  Un modulo in Angular è una struttura fondamentale 
@@ -27,6 +28,10 @@ import { Dashboard } from './dashboard/dashboard';
     (ad esempio lazy loading).
   - Condividere funzionalità tra diverse parti dell’app 
     tramite l’import/export.
+
+  Un componente è una sezione di codice con un
+  proprio selettore, un proprio stile e le proprie
+  dipendenze. Concettualmente, somiglia ad un'interfaccia.
 */
 
 @NgModule({
@@ -36,7 +41,8 @@ import { Dashboard } from './dashboard/dashboard';
     HeroDetail,
     Messages,
     HeroLike,
-    Dashboard
+    Dashboard,
+    HeroSearch
   ],
   imports: [
     BrowserModule,

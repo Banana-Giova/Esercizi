@@ -19,13 +19,15 @@ export class Dashboard implements OnInit {
 
   ngOnInit(): void {
     this.getHeroes();
-    this.getTopHeroes();
   };
 
   getHeroes(): void {
     this.heroService.getObsHeroes().pipe(
     tap(heroes => this.heroes = heroes)
-    ).subscribe();
+    ).subscribe(() =>  {
+      this.getTopHeroes();
+    }
+  );
   };
 
   getTopHeroes(): void {

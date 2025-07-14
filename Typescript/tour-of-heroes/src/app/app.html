@@ -1,8 +1,12 @@
 <h1>{{title}}</h1>
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <br><br>
-  <a routerLink="/heroes">Heroes</a>
+<nav class="dropdown-nav">
+  <button class="menu-toggle" (click)="toggleMenu()">☰ Menu</button>
+
+  <div class="menu-content" *ngIf="menuOpen">
+    <a routerLink="/dashboard" (click)="menuOpen = false" routerLinkActive="active">Dashboard</a>
+    <a routerLink="/heroes" (click)="menuOpen = false" routerLinkActive="active">Eroi</a>
+    <app-hero-search></app-hero-search>
+  </div>
 </nav>
 <!--
  <nav>: è un elemento rappresenta una sezione di navigazione 

@@ -25,6 +25,10 @@
        - Collega un input in modo bidirezionale
       -->
   </div>
+  <button type="button" (click)="save()">Salva!</button>
+  <button type="button" class="delete" title="delete hero"
+    (click)="delete()">X</button>
+
   <div><span>Voto: </span>{{hero.likes}}</div>
   
   <app-hero-like

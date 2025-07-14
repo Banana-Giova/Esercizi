@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService } from '../hero-service';
-import { MessageService } from '../message-service';
 import { tap } from 'rxjs';
 
 @Component({ // componente padre di hero-details
@@ -14,8 +13,7 @@ import { tap } from 'rxjs';
 
 export class Heroes implements OnInit {
   heroes: Hero[] = [];
-  constructor(private heroService: HeroService, 
-              private messageService: MessageService) {}
+  constructor(private heroService: HeroService) {}
   /*
    - Il costruttore è responsabile dell'atto di creazione
      dell'istanza del componente.
@@ -71,5 +69,9 @@ export class Heroes implements OnInit {
      Ogni volta che lo si chiama viene aperto un nuovo
      contesto ed un nuovo event listener.
     */
+  }
+
+  add(name:string): void {
+    this.heroService.addHero(name);
   }
 }
